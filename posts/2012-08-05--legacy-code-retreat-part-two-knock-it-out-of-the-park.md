@@ -1,14 +1,3 @@
-<!--
-id: 28752243811
-link: http://monospacedmonologues.com/post/28752243811/legacy-code-retreat-part-two-knock-it-out-of-the-park
-slug: legacy-code-retreat-part-two-knock-it-out-of-the-park
-date: Sun Aug 05 2012 07:41:00 GMT+0100 (BST)
-publish: 2012-08-05
-tags: 
-title: Legacy Code Retreat part two: knock it out of the park
--->
-
-
 [Part
 one](http://monospacedmonologues.com/post/28626062275/legacy-code-retreat-part-one-get-it-under-test)
 was about understanding the code. Part two is all about changing it.
@@ -107,4 +96,3 @@ concept, and [Adi Bolboaca](http://twitter.com/adibolb) and [Erik
 Talboom][@talkboomerik] for driving it home. I’d also like to thank J.
 B. for creating the code base we all hate. I loved the day, and I hope
 to run another Legacy Code Retreat soon.
-

@@ -1,14 +1,3 @@
-<!--
-id: 11969111291
-link: http://monospacedmonologues.com/post/11969111291/comprehending-lists
-slug: comprehending-lists
-date: Thu Oct 27 2011 00:50:00 GMT+0100 (BST)
-publish: 2011-10-027
-tags:
-title: Comprehending Lists
--->
-
-
 Today I ran a workshop on functional programming in object-oriented
 languages at a [London Software Craftsmanship
 Community](http://www.meetup.com/london-software-craftsmanship) meetup.
@@ -149,4 +138,3 @@ I’ve written all these examples in a fictional language, so if you want
 to code it, you’ll have to reimplement them. That said, you don’t have
 to try and code it. Just think about it. When you’ve got it, post it in
 the comments.
-

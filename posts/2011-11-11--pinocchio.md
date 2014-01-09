@@ -1,14 +1,3 @@
-<!--
-id: 12627672433
-link: http://monospacedmonologues.com/post/12627672433/pinocchio
-slug: pinocchio
-date: Fri Nov 11 2011 04:08:25 GMT+0000 (GMT)
-publish: 2011-11-011
-tags: 
-title: Pinocchio
--->
-
-
 Continuing in the vein of forbidding things because they are BAD, here’s
 another one that I hope will leave you scratching your head a little.
 
@@ -178,4 +167,3 @@ defensive checks. Instead, I can concentrate on expressing the intent.
 we do, and I’d like to lose it. We’ll tackle that one in the next post,
 coming [soon](http://developer.valvesoftware.com/wiki/Valve_Time) to a
 blog near you.
-

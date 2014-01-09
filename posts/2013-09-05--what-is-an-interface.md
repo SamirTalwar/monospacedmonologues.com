@@ -1,14 +1,3 @@
-<!--
-id: 60306730432
-link: http://monospacedmonologues.com/post/60306730432/what-is-an-interface
-slug: what-is-an-interface
-date: Thu Sep 05 2013 00:06:00 GMT+0100 (BST)
-publish: 2013-09-05
-tags: 
-title: What is an interface?
--->
-
-
 Interfaces are my favourite part of programming. They’re the part that
 makes me stop for a second (or a minute, or an hour, or a day) and
 actually think about my job. Because my job isn’t really about writing
@@ -146,4 +135,3 @@ else’s, and attempt to understand how it is they want the computer to
 operate. It requires creating for the benefit of someone else.
 
 In short, interfaces are about *design*.
-

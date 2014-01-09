@@ -1,14 +1,3 @@
-<!--
-id: 34556960603
-link: http://monospacedmonologues.com/post/34556960603/the-brutal-refactoring-game
-slug: the-brutal-refactoring-game
-date: Mon Oct 29 2012 10:08:46 GMT+0000 (GMT)
-publish: 2012-10-029
-tags: 
-title: The Brutal Refactoring Game
--->
-
-
 Let’s play a game.
 
 The rules are simple: write some code. Oh, and you have to do it right.
@@ -94,4 +83,3 @@ TDD cycle is “refactor” doesn’t mean the red and green steps can be
 shoddy, because we don’t always refactor. As Jeffrey Mayer says, if you
 haven’t got the time to do it right, when will you find the time to do
 it over?
-

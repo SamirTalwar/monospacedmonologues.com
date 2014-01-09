@@ -1,14 +1,3 @@
-<!--
-id: 49250842364
-link: http://monospacedmonologues.com/post/49250842364/the-social-networking-kata
-slug: the-social-networking-kata
-date: Tue Apr 30 2013 11:36:40 GMT+0100 (BST)
-publish: 2013-04-030
-tags: 
-title: The Social Networking Kata
--->
-
-
 Last week, [Sandro](https://twitter.com/sandromancuso) and I had a lot
 of fun running [our monthly hands-on
 session](http://www.meetup.com/london-software-craftsmanship/events/115289022/)
@@ -55,4 +44,3 @@ people expressed an interest in taking it home and continuing the
 exercise. And when you’re done, you can always add more: pictures,
 hashtags, whatever. It doesn’t even require brainpower—just open up
 Twitter and pick a feature.
-

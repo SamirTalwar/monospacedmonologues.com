@@ -1,14 +1,3 @@
-<!--
-id: 71841647264
-link: http://monospacedmonologues.com/post/71841647264/new-years-resolution
-slug: new-years-resolution
-date: Wed Jan 01 2014 12:41:01 GMT+0000 (GMT)
-publish: 2014-01-01
-tags: 
-title: New Year's Resolution
--->
-
-
 At work, we run monthly coding workshops to give people an opportunity
 to hone their development skills. The idea is to provide an environment
 in which the results don’t matter, letting people take their time and
@@ -70,4 +59,3 @@ or the energy to do a good job. I’d forgotten my limits, and my
 colleagues wasted their time because of it.
 
 So here’s my new year’s resolution: do better at fewer things.
-

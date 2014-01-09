@@ -1,14 +1,3 @@
-<!--
-id: 55093170643
-link: http://monospacedmonologues.com/post/55093170643/define-your-subset
-slug: define-your-subset
-date: Mon Jul 15 2013 18:18:01 GMT+0100 (BST)
-publish: 2013-07-015
-tags: 
-title: Define your Subset
--->
-
-
 Every tool you use will be inadequate. Every design you create will be
 inaccurate. Everything you do will be imperfect.
 
@@ -72,4 +61,3 @@ from scratch or (more pragmatically) by augmenting one you like. Publish
 it somewhere internally and make sure that it’s easy to edit as you grow
 as an organisation and as developers. Use it to define your subset, so
 that everyone in the team is able to understand and maintain your work.
-

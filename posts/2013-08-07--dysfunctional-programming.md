@@ -1,14 +1,3 @@
-<!--
-id: 57611810234
-link: http://monospacedmonologues.com/post/57611810234/dysfunctional-programming
-slug: dysfunctional-programming
-date: Wed Aug 07 2013 15:05:00 GMT+0100 (BST)
-publish: 2013-08-07
-tags: 
-title: Dysfunctional Programming
--->
-
-
 There’s a problem with learning a new programming paradigm: you often
 have to learn a new language simultaneously. So at [SoCraTes
 2013](http://socrates-conference.de/) in Germany, I decided I’d run a
@@ -63,4 +52,3 @@ Give it a try and let me know how it goes. This lot had fun.
 
 Next time on Monospaced Monologues: everything I learnt at SoCraTes
 2013.
-

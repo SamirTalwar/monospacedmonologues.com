@@ -1,14 +1,3 @@
-<!--
-id: 13632594873
-link: http://monospacedmonologues.com/post/13632594873/functional-poker-hands-in-java
-slug: functional-poker-hands-in-java
-date: Fri Dec 02 2011 13:20:00 GMT+0000 (GMT)
-publish: 2011-12-02
-tags: 
-title: Functional Poker Hands in Java
--->
-
-
 A few weeks ago, I wrote about [a workshop I ran at Skills
 Matter](http://monospacedmonologues.com/post/12118361399/workshop-functional-programming-in-oo-languages)
 and posed the question to you guys. If you haven’t seen it, I encourage
@@ -85,4 +74,3 @@ a ton of methods—more than you usually would? How hard was it to name
 things? Was it more complicated than mine or simpler?
 
 Did you learn anything?
-

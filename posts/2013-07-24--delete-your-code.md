@@ -1,14 +1,3 @@
-<!--
-id: 56342912170
-link: http://monospacedmonologues.com/post/56342912170/delete-your-code
-slug: delete-your-code
-date: Wed Jul 24 2013 17:53:00 GMT+0100 (BST)
-publish: 2013-07-024
-tags: 
-title: Delete Your Code
--->
-
-
 That was my battle cry at Palantir’s first ever code retreat.
 
 Last weekend, we spent two and a half days out in the beautiful English
@@ -138,4 +127,3 @@ Oh, and the drinks and the weather were sublime.
 
 ![Pimms and
 Sunshine](https://lh5.googleusercontent.com/-t6szwtrq-i8/UerI38_ZghI/AAAAAAAAAa8/uz0yhDn8UIU/w718-h957-no/1374341313103.jpg)
-

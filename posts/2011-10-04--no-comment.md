@@ -1,14 +1,3 @@
-<!--
-id: 11029147396
-link: http://monospacedmonologues.com/post/11029147396/no-comment
-slug: no-comment
-date: Tue Oct 04 2011 20:37:00 GMT+0100 (BST)
-publish: 2011-10-04
-tags: 
-title: No Comment
--->
-
-
 **Unless you have a damn good reason, don’t write comments.**
 
 And if you see a comment, you should probably delete it.
@@ -171,6 +160,3 @@ comments are indeed open. Hit me.
     broken. [↩](#fnref:p11029147396-1)
 
 2.  I wish. [↩](#fnref:p11029147396-2)
-
-
-

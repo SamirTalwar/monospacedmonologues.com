@@ -1,14 +1,3 @@
-<!--
-id: 54510150313
-link: http://monospacedmonologues.com/post/54510150313/refactoring-to-feature
-slug: refactoring-to-feature
-date: Wed Jul 03 2013 14:26:55 GMT+0100 (BST)
-publish: 2013-07-03
-tags: 
-title: Refactoring to Feature
--->
-
-
 *A note, while I’ve got you:* I’ve decided I will be posting a new
 article every Wednesday for the forseeable future. Hopefully I can hold
 this up. Writing one per week is going to be hard, but I think I can
@@ -91,4 +80,3 @@ change often.
 I’d love to hear if this works for you. Please give it a try next time
 you start implementing a change to your product. And then let me know
 how it goes.
-

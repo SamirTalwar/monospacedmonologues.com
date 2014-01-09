@@ -1,14 +1,3 @@
-<!--
-id: 12118361399
-link: http://monospacedmonologues.com/post/12118361399/workshop-functional-programming-in-oo-languages
-slug: workshop-functional-programming-in-oo-languages
-date: Sun Oct 30 2011 15:56:00 GMT+0000 (GMT)
-publish: 2011-10-030
-tags: 
-title: Workshop: Functional programming in OO languages
--->
-
-
 As I mentioned on Wednesday, I recently ran a session on functional
 programming in object-oriented languages. By that, I really mean
 “languages that weren’t designed with functional code in mind”. This
@@ -110,4 +99,3 @@ When you’re done, throw up your solution on the web somewhere and post a
 link in the comments here. Even if you only do a little bit, I’d love to
 see the results. I’ll be posting up my own in a couple of weeks, after
 people have had a chance to write their own.
-

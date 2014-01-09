@@ -1,14 +1,3 @@
-<!--
-id: 36617913577
-link: http://monospacedmonologues.com/post/36617913577/querying-the-web-with-scraperwiki
-slug: querying-the-web-with-scraperwiki
-date: Mon Nov 26 2012 22:31:52 GMT+0000 (GMT)
-publish: 2012-11-026
-tags: 
-title: Querying the web with ScraperWiki
--->
-
-
 A few weeks ago, a friend of mine, [Michael
 Cook](https://twitter.com/mtrc), retweeted a request for up-to-date
 discounts on the Steam store:
@@ -74,4 +63,3 @@ you take a look at the scraper I wrote, you can use their API to query
 all Steam prices for the last four days, and over time, that database
 will grow. Perhaps in 2013, this will be a really useful data source,
 and I’m really glad to have been a part of building it.
-

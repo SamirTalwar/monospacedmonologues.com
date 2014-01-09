@@ -1,14 +1,3 @@
-<!--
-id: 28626062275
-link: http://monospacedmonologues.com/post/28626062275/legacy-code-retreat-part-one-get-it-under-test
-slug: legacy-code-retreat-part-one-get-it-under-test
-date: Fri Aug 03 2012 14:11:00 GMT+0100 (BST)
-publish: 2012-08-03
-tags: 
-title: Legacy Code Retreat part one: get it under test
--->
-
-
 It’s been a while, but people have convinced me that I need to crank
 this one out.
 
@@ -133,4 +122,3 @@ fixing the code base.
 [*Part two of the Legacy Code Retreat double act is now available. I
 hope you enjoy
 it.*](http://monospacedmonologues.com/post/28752243811/legacy-code-retreat-part-two-knock-it-out-of-the-park)
-

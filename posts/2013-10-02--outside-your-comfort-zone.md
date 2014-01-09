@@ -1,14 +1,3 @@
-<!--
-id: 62904891588
-link: http://monospacedmonologues.com/post/62904891588/outside-your-comfort-zone
-slug: outside-your-comfort-zone
-date: Wed Oct 02 2013 16:21:41 GMT+0100 (BST)
-publish: 2013-10-02
-tags: 
-title: Outside your comfort zone
--->
-
-
 I’ve shied away from the word “programmer” for a long time because I
 don’t think it accurately represents what I do. It implies that the most
 important thing about the job is the magic words that come out of our
@@ -75,4 +64,3 @@ pretty damn friendly.
 In short:
 
 ![Go Outside and Meet People](http://i.imgur.com/08Y3HI1.png)
-

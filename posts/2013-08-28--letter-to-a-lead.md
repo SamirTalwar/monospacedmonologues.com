@@ -1,14 +1,3 @@
-<!--
-id: 59578714256
-link: http://monospacedmonologues.com/post/59578714256/letter-to-a-lead
-slug: letter-to-a-lead
-date: Wed Aug 28 2013 12:26:21 GMT+0100 (BST)
-publish: 2013-08-028
-tags: 
-title: Letter to a Lead
--->
-
-
 Dear Developer,
 
 Thank you for taking the time to review my pull request. I have to
@@ -75,4 +64,3 @@ Dear developer, don’t be a dick.
 Your faithful colleague,
 
 Samir Talwar.
-

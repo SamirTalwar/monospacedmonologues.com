@@ -1,14 +1,3 @@
-<!--
-id: 46427054295
-link: http://monospacedmonologues.com/post/46427054295/dont-call-us-well-call-you
-slug: dont-call-us-well-call-you
-date: Wed Mar 27 2013 16:18:39 GMT+0000 (GMT)
-publish: 2013-03-027
-tags: 
-title: Don't Call Us. We'll Call You.
--->
-
-
 I’ve been thinking about why I dislike Ruby on Rails for over a year
 now. It’s not the much-touted “convention over configuration”—that’s
 actually quite lovely. It’s not the ever-increasing rate of zero-day
@@ -77,4 +66,3 @@ our software. Why add more?
 UK](http://devoxx.com/display/UK13/Home) for giving me the cannon fodder
 I needed to finally write this blog post, after months of thinking about
 it.*
-

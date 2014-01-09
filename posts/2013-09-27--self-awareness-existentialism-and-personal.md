@@ -1,14 +1,3 @@
-<!--
-id: 62433306888
-link: http://monospacedmonologues.com/post/62433306888/self-awareness-existentialism-and-personal
-slug: self-awareness-existentialism-and-personal
-date: Fri Sep 27 2013 19:18:00 GMT+0100 (BST)
-publish: 2013-09-027
-tags: 
-title: Self-awareness, existentialism and personal responsibility.
--->
-
-
 We kicked off [SoCraTes UK 2013](http://socratesuk.org/) with lightning
 talks, and it was then that the theme of the conference was set. They
 all influenced the coming days in some ways (especially
@@ -63,4 +52,3 @@ so you can do it better next time.
 
 It’s important to deliver *value* to your customers (whatever value is;
 I’m still not sure), but it’s also important to have fun along the way.
-

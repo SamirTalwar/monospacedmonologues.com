@@ -1,14 +1,3 @@
-<!--
-id: 51465038762
-link: http://monospacedmonologues.com/post/51465038762/live-coding-at-a-conference-and-why-it-is-scary
-slug: live-coding-at-a-conference-and-why-it-is-scary
-date: Mon May 27 2013 11:25:00 GMT+0100 (BST)
-publish: 2013-05-027
-tags: 
-title: Live Coding at a Conference, and why it is Scary
--->
-
-
 ![I'm speaking at I.T.A.K.E.](http://i.imgur.com/X6MvZiU.png)
 
 In less than a week, I’m giving my first ever professional talk at the
@@ -69,4 +58,3 @@ Now the presentation is finally coming together, and I feel pretty good
 about the result. I hope it goes well on Friday (and if not, you’ll be
 able to laugh at the recording later). My fingers are well and truly
 crossed.
-

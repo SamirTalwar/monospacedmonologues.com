@@ -1,14 +1,3 @@
-<!--
-id: 12745057103
-link: http://monospacedmonologues.com/post/12745057103/fairy-godmother
-slug: fairy-godmother
-date: Sun Nov 13 2011 17:49:00 GMT+0000 (GMT)
-publish: 2011-11-013
-tags: 
-title: Fairy Godmother
--->
-
-
 In our [last
 installment](http://monospacedmonologues.com/post/12627672433/pinocchio),
 we looked at a piece of code and removed some of the nulls. At the end
@@ -104,4 +93,3 @@ into a constant value somewhere, it’d be clean and easy to read too.
     cache.set("books", books);
 
 Three nulls down, one to go. I’m looking forward to the last one.
-

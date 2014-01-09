@@ -1,14 +1,3 @@
-<!--
-id: 11534596516
-link: http://monospacedmonologues.com/post/11534596516/stringly-typed
-slug: stringly-typed
-date: Sun Oct 16 2011 19:53:00 GMT+0100 (BST)
-publish: 2011-10-016
-tags: 
-title: Stringly Typed
--->
-
-
 At the first [FP Day](http://www.fpday.net/) on Friday, I attended a
 talk by Don Syme on [F\#
 3.0](http://research.microsoft.com/en-us/um/cambridge/projects/fsharp/).
@@ -104,4 +93,3 @@ Wrap them in a well-tested library that takes care of the details, or
 even put them in their own resource file.
 
 Data’s not code. Stop treating it like it should be.
-

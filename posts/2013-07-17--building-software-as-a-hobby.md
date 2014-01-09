@@ -1,14 +1,3 @@
-<!--
-id: 55701966135
-link: http://monospacedmonologues.com/post/55701966135/building-software-as-a-hobby
-slug: building-software-as-a-hobby
-date: Wed Jul 17 2013 18:07:46 GMT+0100 (BST)
-publish: 2013-07-017
-tags: 
-title: Building software as a hobby
--->
-
-
 I want to make things for everyone.
 
 I haven’t done that in a while. The last big project I did was
@@ -39,4 +28,3 @@ same time.
 
 I’m really looking forward to the next few months. Hopefully, with a bit
 of luck and a lot of hard work, I’ll have some announcements to make.
-

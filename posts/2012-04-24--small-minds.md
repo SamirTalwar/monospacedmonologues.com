@@ -1,14 +1,3 @@
-<!--
-id: 21736971253
-link: http://monospacedmonologues.com/post/21736971253/small-minds
-slug: small-minds
-date: Tue Apr 24 2012 22:45:00 GMT+0100 (BST)
-publish: 2012-04-024
-tags: 
-title: Small Minds
--->
-
-
 I had the opportunity on Sunday to help mentor kids at a one-off
 CoderDojo in Shoreditch. After a head count, we realised we had as many
 mentors as kids, so we got to pair up one-on-one. After drawing straws
@@ -41,4 +30,3 @@ discovering how his website has developed in the mean time [at a future
 CoderDojo](http://coderdojo.com/). I really encourage anyone with a
 passion for their craft to sign up and help teach small kids how this
 stuff works.
-

@@ -1,14 +1,3 @@
-<!--
-id: 13794728271
-link: http://monospacedmonologues.com/post/13794728271/global-day-of-coderetreat
-slug: global-day-of-coderetreat
-date: Mon Dec 05 2011 22:15:34 GMT+0000 (GMT)
-publish: 2011-12-05
-tags: 
-title: Global Day of Coderetreat
--->
-
-
 Here’s what you do. On Saturday morning, at ridiculous o’clock (i.e.
 around 8), you walk into a room which has a delicious breakfast all laid
 out. There are some people running about shouting at each other about
@@ -283,4 +272,3 @@ to [Valtech UK](https://twitter.com/valtech) for providing us with a
 great space and delicious food. It was, by all accounts, a great
 success, and I’m looking forward to doing it again soon. And hopefully
 I’ll know what I’m doing next time.*
-

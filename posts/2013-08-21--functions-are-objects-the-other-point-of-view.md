@@ -1,14 +1,3 @@
-<!--
-id: 58923319303
-link: http://monospacedmonologues.com/post/58923319303/functions-are-objects-the-other-point-of-view
-slug: functions-are-objects-the-other-point-of-view
-date: Wed Aug 21 2013 17:15:00 GMT+0100 (BST)
-publish: 2013-08-021
-tags: 
-title: Functions are Objects: the other point of view
--->
-
-
 There’s a feature in Java 8 which nicely embodies one of the differences
 between the class-oriented structure of Java and functional languages.
 It lies in the way you implement lambdas.
@@ -131,4 +120,3 @@ corner and I’m really looking forward to them.
 release](http://jdk8.java.net/lambda/). The latest versions of [IntelliJ
 IDEA](http://www.jetbrains.com/idea/) have great support for Java 8 with
 lambdas.*
-

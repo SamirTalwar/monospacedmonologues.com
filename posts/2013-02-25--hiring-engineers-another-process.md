@@ -1,14 +1,3 @@
-<!--
-id: 43988020379
-link: http://monospacedmonologues.com/post/43988020379/hiring-engineers-another-process
-slug: hiring-engineers-another-process
-date: Mon Feb 25 2013 16:21:00 GMT+0000 (GMT)
-publish: 2013-02-025
-tags: 
-title: Hiring Engineers, another Process
--->
-
-
 This post was prompted by [Eran Hammer’s excellent article on
 hiring](http://hueniverse.com/2013/02/hiring-engineers-a-process/) what
 he describes as “non-conforming great talent”. It’s part rebuttal, part
@@ -186,4 +175,3 @@ this post partially as a way to try and get some concrete thoughts out.
 I’d like everyone else to do the same. The status quo is awful, and the
 only way it’s going to improve at all is if people tell others how
 they’re making it better.
-

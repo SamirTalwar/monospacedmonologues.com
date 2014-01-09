@@ -1,14 +1,3 @@
-<!--
-id: 32667495742
-link: http://monospacedmonologues.com/post/32667495742/solidifying-your-design
-slug: solidifying-your-design
-date: Mon Oct 01 2012 15:02:17 GMT+0100 (BST)
-publish: 2012-10-01
-tags: 
-title: Solidifying your Design
--->
-
-
 When someone asks me how to design and build a system full of
 interlocking, moving parts, I just point them at SOLID. These bad boys
 don’t just apply to your code. They should be an integral part of your
@@ -103,4 +92,3 @@ That’s all five. There’s obviously more that plays into building a
 maintainable architecture, but hopefully this will be helpful. The
 realisation has definitely improved the way I think about software
 design.
-

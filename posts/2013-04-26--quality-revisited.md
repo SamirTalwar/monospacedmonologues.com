@@ -1,14 +1,3 @@
-<!--
-id: 48923454095
-link: http://monospacedmonologues.com/post/48923454095/quality-revisited
-slug: quality-revisited
-date: Fri Apr 26 2013 12:41:55 GMT+0100 (BST)
-publish: 2013-04-026
-tags: 
-title: Quality, Revisited
--->
-
-
 Wow, that was a lot of great feedback in a few hours.
 
 So let’s talk about it.
@@ -52,4 +41,3 @@ looking forward to it.
 
 Thanks so much again to everyone who retweeted, commented and gave
 advice on the post. I really appreciate it.
-

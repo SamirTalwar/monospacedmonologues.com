@@ -1,14 +1,3 @@
-<!--
-id: 54018347100
-link: http://monospacedmonologues.com/post/54018347100/simplifying-your-design-with-higher-order-functions
-slug: simplifying-your-design-with-higher-order-functions
-date: Thu Jun 27 2013 16:17:00 GMT+0100 (BST)
-publish: 2013-06-027
-tags: 
-title: Simplifying your Design with Higher-Order Functions
--->
-
-
 That was the name of the ~~talk~~ live-coding demonstration I gave at [I
 T.A.K.E.](http://itakeunconf.com/), a conference in Bucharest, Romania.
 
@@ -233,4 +222,3 @@ through the code and understand what everything is at any given point),
 I was able to write concise code that is still perfectly understandable.
 
 OK, I used `reduce`. But apart from that, isn’t it pretty?
-

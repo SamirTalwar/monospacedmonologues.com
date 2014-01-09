@@ -1,14 +1,3 @@
-<!--
-id: 56975511684
-link: http://monospacedmonologues.com/post/56975511684/dependency-inversion-and-how-to-get-it-wrong
-slug: dependency-inversion-and-how-to-get-it-wrong
-date: Wed Jul 31 2013 17:04:01 GMT+0100 (BST)
-publish: 2013-07-031
-tags: 
-title: Dependency Inversion, and how to get it wrong
--->
-
-
 I’ve been building a new application in Clojure over the last week or
 so, and it seems to be going quite well. I like the syntax, using a
 functional language has been great, and it’s got enough gold in it that
@@ -97,4 +86,3 @@ responsibility. Use it wisely. When it becomes difficult to change a
 test or write a new one, or when you have to change a hundred tests to
 make a one-line change to some behaviour, ask yourself: what are my
 tests telling me about the quality of my code?
-

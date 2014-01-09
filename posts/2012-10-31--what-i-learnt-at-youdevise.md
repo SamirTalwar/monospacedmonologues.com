@@ -1,14 +1,3 @@
-<!--
-id: 34706515722
-link: http://monospacedmonologues.com/post/34706515722/what-i-learnt-at-youdevise
-slug: what-i-learnt-at-youdevise
-date: Wed Oct 31 2012 16:31:00 GMT+0000 (GMT)
-publish: 2012-10-031
-tags: 
-title: What I learnt at youDevise
--->
-
-
 Today is my last day at youDevise (or [TIM Group](http://timgroup.com/),
 as it’s now known). I’ve loved it here, but it’s time to move on and do
 something a little different. With that in mind, I made a list of all
@@ -107,4 +96,3 @@ There we are. Almost a hundred things I learnt. I came up with that list
 in fifteen minutes on the train last week. I hope that after a couple of
 years at my next job at [Palantir](http://palantir.com/), I can do even
 better than that.
-
