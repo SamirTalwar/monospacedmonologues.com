@@ -8,9 +8,8 @@ one though. Half the people that read that will think I’m an idiot. The
 other half will shrug and say, “We taught *you* this, boy.” (The latter
 don’t need to keep reading.)
 
-Why this insane proposal? It’s my opinion that there’s
-always^[1](#fn:p11029147396-1)^ a better way. Let’s take a fairly simple
-example:
+Why this insane proposal? It’s my opinion that there’s always[^1] a
+better way. Let’s take a fairly simple example:
 
     // cannot have an odd number of sprockets
     if (n % 2 == 1) {
@@ -40,8 +39,7 @@ Here, the code explains itself. No comments are needed, and as a bonus,
 the logic is reusable. If I put that function somewhere sensible, I can
 use it anywhere, and when our new sales guy, Mr. Fibonacci, tells me
 we’re we’re now packaging our sprockets in far more aesthetically
-pleasing boxes, I can adjust it once and clock off
-early.^[2](#fn:p11029147396-2)^
+pleasing boxes, I can adjust it once and clock off early.[^2]
 
 You do that already? Excellent. OK, let’s take a look at a different
 example. Say you write some JavaScript with jQuery to highlight all the
@@ -154,9 +152,5 @@ code. I think it looks pretty good.
 I should probably point out that while the title is “No Comment”,
 comments are indeed open. Hit me.
 
-* * * * *
-
-1.  Not always. But most of the time. All rules can be
-    broken. [↩](#fnref:p11029147396-1)
-
-2.  I wish. [↩](#fnref:p11029147396-2)
+[^1]: Not always. But most of the time. All rules can be broken.
+[^2]: I wish.
