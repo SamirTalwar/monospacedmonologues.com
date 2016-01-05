@@ -6,9 +6,9 @@ One bit at a time.
 
 ---
 
-I'm currently available for work, automating everything and teaching others how to do the same. Allow me to explain.
+I'm currently available for work in London or remotely, automating everything and teaching others how to do the same. Allow me to explain.
 
-(Or, if you're impatient, [get in touch immediately](samir@noodlesandwich.com).)
+(Or, if you're impatient, [get in touch immediately](mailto:samir@noodlesandwich.com).)
 
 ## Automating Data Transformation
 
@@ -22,7 +22,7 @@ Maybe you have unit tests, maybe you don't. Nevertheless, your QAs are working r
 
 Let's turn that on its head. Write the tests first, and set up quick feedback cycles so that developers know as soon as they've broken anything, before they have time to commit.
 
-I can help get your tests in place, build the feeback infrastructure, and train your developers and QAs on how to do the same.
+I can help get your tests in place, build the feedback infrastructure, and train your developers and QAs on how to do the same.
 
 ## Automating Requirements
 
@@ -50,6 +50,6 @@ You can guess where the problems are, or you can measure it and solve it for goo
 
 ---
 
-If you need something automated, or your team needs help learning how to do it for themselves, let me know. You can email me at [samir@noodlesandwich.com](), or check out [my website][Noodle Sandwich] for more details.
+If you need something automated, or your team needs help learning how to do it for themselves, let me know. You can email me at [samir@noodlesandwich.com](mailto:samir@noodlesandwich.com), or check out [my website][Noodle Sandwich] for more details.
 
 [Noodle Sandwich]: http://noodlesandwich.com/
