@@ -51,12 +51,13 @@ So I did. Here's how I roll.
   3. Start working.
   4. When I realise I forgot to switch branch and I've committed twice already, type [`git switch-to my-feature`][git switch-to] to change to a new branch, keep all my current commits and remove them from the master branch.
   5. When I'm done, type [`git pr`][git pull-request] to push the branch and open up a web page with a button to create pull request. I was tempted to automate submitting the pull request, but I find that reading the diff beforehand often helps me find any issues.
+  6. Let Slack find the pull request and automatically post it. If I have to use something that's not Slack again I'm definitely making [Hubot][] do it.
 
 And of course, when I get clobbered by someone else's merge, I just type [`git upm`][git upm], which runs [`git up`][git update-master] and then merges the changes into my current branch. Then I fix the conflicts and push again. The pull request is automatically updated.
 
 ---
 
-All these commands have been in my Git configuration since 2014 or so, and they've become more and more sophisticated and stable as time has progressed. But I don't advise you use them. They're set up to work just the way I want them, and you deserve something just as fitting for you. Think about the commands you find hard to type or that require multiple steps, and go from there. Start by creating simple git aliases using the command `git config --global --set alias.my-alias-name command`. For example, this lets you type [`git a`][git add-all] to stage everything, including deleted files:
+All these commands have been in my Git configuration since 2014 or so, and they've become more and more sophisticated and stable as time has progressed. But I don't advise you use them. They're set up to work just the way I want them, and you deserve something just as fitting for you. Think about the commands you find hard to type or that require multiple steps, and go from there. Start by creating simple git aliases using the command `git config --global alias.my-alias-name command`. For example, this lets you type [`git a`][git add-all] to stage everything, including deleted files:
 
     git config --global alias.a 'add --all'
 
@@ -67,6 +68,7 @@ You can also run scripts from aliases. I use [`git p`][git pull-everything] to p
 And there are plenty more examples in my own [.gitconfig][].
 
 [autojump]: https://github.com/wting/autojump
+[Hubot]: https://hubot.github.com/
 [.gitconfig]: https://github.com/SamirTalwar/fygm/blob/master/dotfiles/gitconfig
 [git add-all]: https://github.com/SamirTalwar/fygm/blob/master/dotfiles/gitconfig#L42
 [git pull-everything]: https://github.com/SamirTalwar/fygm/blob/master/dotfiles/gitconfig#L23
