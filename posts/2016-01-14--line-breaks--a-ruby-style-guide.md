@@ -1,6 +1,6 @@
 # Line Breaks: A Ruby Style Guide
 
-I don't mean "style guide" as in a full guidebook, but rather a guide to styling Ruby with regard to two very specific circumstances: when to use **parentheses** on function and method invocation, and whether to use braces or `do … end` for blocks.
+I don't mean "style guide" as in a full guidebook, but rather a guide to styling Ruby with regard to two very specific circumstances: when to use **parentheses** on function and method invocation, and whether to use **braces or `do … end`** for blocks.
 
 This is my personal recommendation and the style I try to follow. I couldn't really care less what you use as long as you're consistent inside a single project.
 
@@ -46,11 +46,11 @@ When calling a method that has side effects, avoid parentheses. This shows that 
 
     describe 'number' do
       it 'can be added to another number' do
-        expect(5 + 2).to be(7)
+        expect(5 + 2).to eq(7)
       end
     end
 
-In the RSpec example above, `describe` and `it` have side effects. `expect` and `be` do not, but `to` does.
+In the RSpec example above, `describe` and `it` have side effects. `expect` and `eq` do not, but `to` does.
 
 When calling a method that takes a block, avoid parentheses.
 
