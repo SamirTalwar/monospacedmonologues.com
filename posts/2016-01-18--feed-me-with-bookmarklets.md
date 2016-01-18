@@ -12,7 +12,7 @@ Take a look at the DOM structure of this website. Specifically, the `<head>`. Op
 
 Right before the variables start, there's a line that looks like this:
 
-    <link href="http://monospacedmonologues.com/rss" type="application/rss+xml" rel="alternate"></liink>
+    <link href="http://monospacedmonologues.com/rss" type="application/rss+xml" rel="alternate"></link>
 
 Most websites with RSS feeds have one of these. Similarly, sites with Atom feeds, such as [Seth Godin's blog][Seth's Blog], usually have something like this:
 
@@ -28,7 +28,7 @@ Once we have that, we can get the feed's URL by accessing the `href` property:
 
     var feedUrl = element.href;
 
-Feedly has a standard URL structure for the page where you can view a feed and potentially subscribe to it. It looks like this: *https://feedly.com/i/subscription/feed/<feed URL>*. We can construct it with simple string concatenation:
+Feedly has a standard URL structure for the page where you can view a feed and potentially subscribe to it. It looks like this: *https://feedly.com/i/subscription/feed/&lt;feed URL&gt;*. We can construct it with simple string concatenation:
 
     var feedlySubscriptionUrl = 'https://feedly.com/i/subscription/feed/' + feedUrl;
 
