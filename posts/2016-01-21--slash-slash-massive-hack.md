@@ -94,9 +94,10 @@ We can also use our type system to document our code. Taking another one of Hilt
 
 We could embed most of that information into the types:
 
-    def estimateCuteness(kitten: Alive[Kitten]): Either[NotAKittenException, CutenessEstimate] = { … }
+    def estimateCuteness(kitten: Alive[Kitten]):
+            Either[NotAKittenException, CutenessEstimate] = { … }
 
-This code is clearly a function that takes an alive kitten and returns either a `NotAKittenException` on failure, or a `CutenessEstimate` on success. The only thing missing from this is *why* we might throw a `NotAKittenException`. And we can write a test for that.
+This code is clearly a function that takes an alive kitten and returns either a `NotAKittenException` on failure, or a `CutenessEstimate` on success. The only information missing from this line are the circumstances in which we might return a `NotAKittenException`. And we can write a test for that.
 
 ## The Best Argument For Code Comments
 
