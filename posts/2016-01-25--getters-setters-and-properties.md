@@ -2,7 +2,7 @@
 
 The last rule of [Object Calisthenics][] is:
 
-    > No getters, setters or properties.
+> No getters, setters or properties.
 
 Last week, I was at [eXtreme Tuesday Club][] (a.k.a. *XTC*) for a beer and a conversation, and something happened that hasn't happened there in a while. Someone new to the industry came along. (I can't remember their name, but if it was you, post a comment!) For ages, XTC has been dying because no new blood, but due to stellar leadership and [fantastic marketing][Extreme all the Tuesdays!], things are starting to pick up again.
 
