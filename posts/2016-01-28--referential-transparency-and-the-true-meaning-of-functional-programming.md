@@ -62,7 +62,9 @@ Consider the ease of adding a new `List<T>` implementation. You need to add a ne
 
 Now consider adding a new method to the `List<T>` interface—one that can't be implemented on the interface itself as a default method. You can't do it. Any change you make will break every implementation of `List<T>` on the planet. When dealing with object-oriented code in which data and behaviour are coupled, extending the number of implementations of an interface is trivial, but extending the behaviours on the interface is tricky without a lot of extra work.
 
-Now consider the `List[A]` abstract class in Scala, which aligns pretty well with other functional languages.
+---
+
+Let's step to the side for a moment and look at the `List[A]` abstract class in Scala, which aligns pretty well with other functional languages.
 
     sealed abstract class List[+A] extends Seq[A] { // simplified
       def isEmpty: Boolean
