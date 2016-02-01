@@ -14,41 +14,45 @@ What this means is that the Newton-Raphson method is a method for finding some i
 
 The classic example of a use of the method is the *square root* function. The method doesn't allow us to solve this directly, but it does allow us to solve a related problem.
 
-The square root function, `sqrt`, is defined as $x : x^2 = n$. Unfortunately, if we want to find the square root of $9$, the method can't find $x : x^2 = 9$. However, if we subtract $9$ from both sides, we *can* solve for this function:
+The square root function, `sqrt`, is defined as $x : x^2 = y$. Unfortunately, if we want to find the square root of $9$, the method can't find $x : x^2 = 9$. However, if we subtract $9$ from both sides, we *can* solve for this function:
 
 $ f(x) = x^2 - 9 $
 
 The first thing we do is find the derivative of this function. I'm not going to go into calculus, so if you're not sure why, just trust me when I say that the derivative, $f^\\prime(x) = 2x$.
 
-We then pick a starting value, $x\_0$. This should be a value that's a good guess for the number we're going for. The actual number, $n$, can be used in this case as something that's obviously not the right answer (unless $n = 1$, of course), but isn't orders of magnitude out.
+We then pick a starting value, $x\_0$. This should be a value that's a good guess for the number we're going for. The actual number, $y$, can be used in this case as something that's obviously not the right answer (unless $y = 1$, of course), but isn't well out.
 
 Then we iterate using the method to find $x\_1$, then $x\_2$, then $x\_3$, and so on. In general, we can calculate $x\_(n + 1)$ as:
 
 $ x\_(n + 1) = x\_n - (f(x\_n)) / (f^\prime(x\_n)) $
 
+In the case of the square root function, this is:
+
+$ x\_(n + 1) = x\_n - ({:x\_n:}^2 - y) / (2 x\_n) $
+
 We keep iterating until the change is 0, or so close to it as to be negligible.
 
-So let's try it, starting from $n = 9$:
+So let's try it, starting from $y = 9$:
 
 $ x\_0 = 9 $
 
-$ x\_1 = x\_0 - ({:x\_0:}^2 - 9) / (2 * x\_0) = 5 $
+$ x\_1 = x\_0 - ({:x\_0:}^2 - 9) / (2 x\_0) = 5 $
 
-$ x\_2 = x\_1 - ({:x\_1:}^2 - 9) / (2 * x\_1) = 3.4 $
+$ x\_2 = x\_1 - ({:x\_1:}^2 - 9) / (2 x\_1) = 3.4 $
 
-$ x\_3 = x\_2 - ({:x\_2:}^2 - 9) / (2 * x\_2) = 3.02352941176471... $
+$ x\_3 = x\_2 - ({:x\_2:}^2 - 9) / (2 x\_2) = 3.02352941176471... $
 
-$ x\_4 = x\_3 - ({:x\_3:}^2 - 9) / (2 * x\_3) = 3.00009155413138... $
+$ x\_4 = x\_3 - ({:x\_3:}^2 - 9) / (2 x\_3) = 3.00009155413138... $
 
-$ x\_5 = x\_4 - ({:x\_4:}^2 - 9) / (2 * x\_4) = 3.00000000139698... $
+$ x\_5 = x\_4 - ({:x\_4:}^2 - 9) / (2 x\_4) = 3.00000000139698... $
 
-$ x\_6 = x\_5 - ({:x\_5:}^2 - 9) / (2 * x\_5) = 3.0 $
+$ x\_6 = x\_5 - ({:x\_5:}^2 - 9) / (2 x\_5) = 3.0 $
 
-$ x\_7 = x\_6 - ({:x\_6:}^2 - 9) / (2 * x\_6) = 3.0 $
+$ x\_7 = x\_6 - ({:x\_6:}^2 - 9) / (2 x\_6) = 3.0 $
 
 And we're done. The square root of 9 is 3.0 exactly.
 
-You can use this for any (positive) number. I've got a working Scala version below which works in very much the same way.
+You can use this for any (positive) number, not just square numbers. I've got a working Scala version below which works in very much the same way.
 
 <script src="https://gist.github.com/SamirTalwar/e5830fb05677862a97af.js"></script>
 
