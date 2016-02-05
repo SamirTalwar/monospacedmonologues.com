@@ -5,7 +5,7 @@ This week, I tried to explain the difference as I see it between object-oriented
   1. [Getters, Setters and Properties][]
   2. [Why Couple Data to Behaviour?][]
   3. [The Other Trade-off: Separating Data and Behaviour][]
-  3. [Referential Transparency, And The True Meaning Of Functional Programming][]
+  4. [Referential Transparency, And The True Meaning Of Functional Programming][]
 
 [Getters, Setters and Properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
 [Why Couple Data to Behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
