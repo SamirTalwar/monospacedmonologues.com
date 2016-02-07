@@ -32,9 +32,9 @@ $ x\_(n + 1) = x\_n - ({:x\_n:}^2 - y) / (2 x\_n) $
 
 We keep iterating until the change is 0, or so close to it as to be negligible.
 
-So let's try it, starting from $y = 9$:
+So let's try it with $y = 9$, starting from $x\_0 = 1$, which is probably not the right answer, but is probably not too far off in the grand scheme of things:
 
-$ x\_0 = 9 $
+$ x\_0 = 1 $
 
 $ x\_1 = x\_0 - ({:x\_0:}^2 - 9) / (2 x\_0) = 5 $
 
@@ -52,11 +52,33 @@ $ x\_7 = x\_6 - ({:x\_6:}^2 - 9) / (2 x\_6) = 3.0 $
 
 And we're done. The square root of 9 is 3.0 exactly.
 
-You can use this for any (positive) number, not just square numbers. I've got a working Scala version below which works in very much the same way.
+You can use this for any (positive) number, not just square numbers. I've got a working Scala version below which works in very much the same way ([and it's on GitHub too][numeric-experiments]).
 
-<script src="https://gist.github.com/SamirTalwar/e5830fb05677862a97af.js"></script>
+    class NewtonRaphson(
+        f: Double => Double,
+        fDerivative: Double => Double,
+        epsilon: Double = 0.000000000000001
+    ) {
+      def iterate(x: Double): Double =
+        x - f(x) / fDerivative(x)
 
-The `squareRoot` function primes the method with $f$ and $f^\\prime$, then immediately invokes the `apply` method with $n$ in order to calculate $sqrt(n)$. The `iterate` method performs a single iteration, and so is fairly simple and boring. The `apply` method, however, is interesting, and so I'd like to explain how it works.
+      def apply(start: Double): Double =
+        Stream.iterate(start)(iterate)
+          .sliding(2)
+          .map { case Stream(a, b) => (a, b) }
+          .dropWhile { case (a, b) => scala.math.abs(a - b) >= epsilon }
+          .next
+          ._2
+    }
+
+    def squareRoot(n: Double): Double = {
+      if (n < 0)
+        return Double.NaN
+
+      new NewtonRaphson(x => x * x - n, x => 2 * x).apply(n)
+    }
+
+The `squareRoot` function primes the method with $f$ and $f^\\prime$, then immediately invokes the `apply` method with $1$ in order to calculate $sqrt(n)$. The `iterate` method performs a single iteration, and so is fairly simple and boring. The `apply` method, however, is interesting, and so I'd like to explain how it works.
 
 First of all, it constructs a lazy stream of subsequent iterations of $x\_0$:
 
@@ -66,12 +88,13 @@ It then creates a sliding iterator of two items on top of that, and converts it 
 
 $ (x\_0, x\_1), (x\_1, x\_2), (x\_2, x\_3), ... $
 
-We want the first pair where the two values are the same (or close enough), so it drops elements from this stream while the difference is greater than `epsilon`. It then grabs the first element from the resulting stream, and then the second part of the tuple. It gets the second, rather than the first, to ensure we have performed at least one iteration and therefore will return `NaN` if things went pear-shaped in the `iterate` method.
+We want the first pair where the two values are the same (or close enough), so it drops elements from this stream while the difference is greater than `epsilon`. It then grabs the first element from the resulting stream, and then the second part of the tuple. It gets the second, rather than the first, because it's one more iteration and will therefore be the more accurate answer if they are still different.
 
 And that, folks, is how you calculate the square root of a number.
 
 [Slash Slash Massive Hack]: http://monospacedmonologues.com/post/137738860257/slash-slash-massive-hack
 [Newton's method]: https://en.wikipedia.org/wiki/Newton's_method
+[numeric-experiments]: https://github.com/SamirTalwar/numeric-experiments
 
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
