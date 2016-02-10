@@ -46,7 +46,7 @@ That's your average `Function<F, T>`. `Supplier<T>`, on the other hand, is norma
         private final Random random = new Random();
 
         @Override
-        public Double apply() {
+        public Double get() {
             return random.nextDouble();
         }
     }
