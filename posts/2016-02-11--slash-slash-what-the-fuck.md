@@ -2,7 +2,7 @@
 
 A few days ago, [Peter Hilton][@peterhilton] was talking about the [fast inverse square root][] method on the [Software Craftsmanship Slack][], which he uses in his presentation, [Layout & typography for beautiful code][]. I love that this function exists, and I decided to blog about it.
 
-First, let me explain what it means. The *inverse square root* of a number, $y$, is simply $1 / sqrt(y)$, or $y^(-2)$. [Last week, I explained how to use the Newton-Raphson method for finding the square root of a number.][Solving Problems By Trying Over And Over Again: the Newton-Raphson Method] We can use the same method for finding the inverse square root. If you haven't read that article, follow the previous link and read that first.
+First, let me explain what it means. The *inverse square root* of a number, $y$, is simply $1 / sqrt(y)$, or $y^(-1/2)$. [Last week, I explained how to use the Newton-Raphson method for finding the square root of a number.][Solving Problems By Trying Over And Over Again: the Newton-Raphson Method] We can use the same method for finding the inverse square root. If you haven't read that article, follow the previous link and read that first.
 
 The inverse square root of a number is defined as $x : x^(-2) = y$. Just like last time, we can subtract $y$ from both sides to get the function $x : x^(-2) - y = 0$, and so our function, $f$, can be defined as $f(x) = x^(-2) - y$.
 
@@ -54,7 +54,7 @@ As useful as the Newton-Raphson method is, it's *slow*. Iteration is not a good 
         return y;
     }
 
-… Yup. That makes sense. One of the lines really does make use of the magic number, `0x5f3759df`. No, I don't know where it came from, and clearly, from the comment, no one else does either. But it works. Looking at it, we can see that it does some bit-wise magic, then performs one iteration of *something*. This iteration is actually the same mathematical we came up with earlier with different variable names; `x2` is $y / 2$ and `y` is $x\_n$, except on the left-hand side, where it's $x\_(n + 1)$. When we substitute those values in, this is what we get:
+… Yup. That makes sense. One of the lines really does make use of the magic number, `0x5f3759df`. No, I don't know where it came from, and clearly, from the comment, no one else does either. But it works. Looking at it, we can see that it does some bit-wise magic, then performs one iteration of *something*. This iteration is actually the same mathematical expression we came up with earlier, but with different variable names; `x2` is $y / 2$ and `y` is $x\_n$, except on the left-hand side, where it's $x\_(n + 1)$. When we substitute those values in, this is what we get:
 
 $ x\_(n + 1) = x\_n(3 / 2 - y / 2 x\_n^2) $
 
