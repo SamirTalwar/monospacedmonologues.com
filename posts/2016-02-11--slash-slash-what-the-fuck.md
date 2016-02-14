@@ -65,12 +65,14 @@ The beauty in this function comes before the Newton-Raphson iteration though. Th
 I wasn't sure if I believed it, so I [rewrote the function in Scala][FastInverseSquareRoot.scala] and [benchmarked both functions][numeric-experiments] using [JMH][] in throughput mode, with both a small number, $0.25$, and a large one, $1000000000$. Take a look at my results.
 
     Benchmark                                    Mode  Cnt       Score      Error   Units
-    FastInverseSquareRootBenchmark.largeNumber  thrpt   20  364327.510 ± 6054.767  ops/ms
-    FastInverseSquareRootBenchmark.smallNumber  thrpt   20  365125.964 ± 7416.265  ops/ms
-    InverseSquareRootBenchmark.largeNumber      thrpt   20     284.051 ±    6.977  ops/ms
-    InverseSquareRootBenchmark.smallNumber      thrpt   20     181.565 ±    3.117  ops/ms
+    FastInverseSquareRootBenchmark.largeNumber  thrpt   20  129367.045 ± 2370.629  ops/ms
+    FastInverseSquareRootBenchmark.smallNumber  thrpt   20  130160.521 ± 2762.351  ops/ms
+    InverseSquareRootBenchmark.largeNumber      thrpt   20     322.564 ±    6.168  ops/ms
+    InverseSquareRootBenchmark.smallNumber      thrpt   20     204.608 ±    2.396  ops/ms
 
-it turns out that the fast inverse square root function is **over a thousand times faster** than the original function, with approximately 360,000 operations *per millisecond* on my computer. Granted, it's less precise, but for certain domains, that's a great trade-off.
+(Thanks so much to [Aleksander Shipilev][@shipilev], who I believe is the main author of JMH, for correcting these benchmarks in the comments.)
+
+it turns out that the fast inverse square root function is **over 400 times faster** than the original function, with approximately 120,000 operations *per millisecond* on my computer. Granted, it's less precise, but for certain domains, that's a great trade-off. Of course, C implementation would be even faster, because reinterpretation casting is tricky on the JVM.
 
 Sometimes, great software requires great design. But sometimes, it's great engineering that matters.
 
@@ -78,6 +80,8 @@ Sometimes, great software requires great design. But sometimes, it's great engin
 [Software Craftsmanship Slack]: http://slack.softwarecraftsmanship.org/
 [fast inverse square root]: https://en.wikipedia.org/wiki/Fast_inverse_square_root
 [Layout & typography for beautiful code]: http://hilton.org.uk/presentations/beautiful-code
+
+[@shipilev]: https://twitter.com/shipilev
 [JMH]: http://openjdk.java.net/projects/code-tools/jmh/
 
 [Solving Problems By Trying Over And Over Again: the Newton-Raphson Method]: http://monospacedmonologues.com/post/138595611508/solving-problems-by-trying-over-and-over-again
