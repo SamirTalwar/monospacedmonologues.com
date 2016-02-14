@@ -70,7 +70,7 @@ I wasn't sure if I believed it, so I [rewrote the function in Scala][FastInverse
     InverseSquareRootBenchmark.largeNumber      thrpt   20     322.564 ±    6.168  ops/ms
     InverseSquareRootBenchmark.smallNumber      thrpt   20     204.608 ±    2.396  ops/ms
 
-(Thanks so much to [Aleksander Shipilev][@shipilev], who I believe is the main author of JMH, for correcting these benchmarks in the comments.)
+(Thanks so much to [Aleksey Shipilev][@shipilev], who I believe is the main author of JMH, for correcting these benchmarks in the comments.)
 
 it turns out that the fast inverse square root function is **over 400 times faster** than the original function, with approximately 120,000 operations *per millisecond* on my computer. Granted, it's less precise, but for certain domains, that's a great trade-off. Of course, C implementation would be even faster, because reinterpretation casting is tricky on the JVM.
 
