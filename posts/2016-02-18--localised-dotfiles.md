@@ -58,4 +58,5 @@ That last block is a function that sets up a working environment for one of my c
 I try to make an effort to keep this file as small as possible. `$PATH` manipulation that used to be in my `.zshenv.local` file is now in my [`.zshenv`][.zshenv] file, surrounded by `if` blocks when necessary. It's nice to have a split between private and public, though, and while this isn't the fanciest of tricks, simple works.
 
 [javav]: https://github.com/SamirTalwar/fygm/blob/master/bin/mac/javav
+[.zshenv]: https://github.com/SamirTalwar/fygm/blob/master/dotfiles/zshenv
 [Docker Machine]: https://docs.docker.com/machine/overview/
