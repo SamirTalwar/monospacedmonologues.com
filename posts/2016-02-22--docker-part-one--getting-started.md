@@ -1,3 +1,5 @@
+# Docker, Part One: Getting Started
+
 We’ve been using Docker heavily in development, test and production for about six months now, and more and more, I’m asked how to get started with it and use it. I thought I’d write a quick guide to Making Things Happen™ on your local machine, and perhaps touch on deploying services inside Docker containers in the future.
 
 ## First and foremost, what is Docker?
@@ -10,44 +12,41 @@ Of course, all this means you need to be running Linux. Fortunately, it’s easy
 
 ## Running Docker on Windows and Mac
 
-The recommended method of running Docker on a non-Linux operating system is to use Docker Machine, a VM provisioning tool, to spin up a Linux virtual machine. It's suggested you use the [Docker Toolbox][] to install Docker, Docker Machine, and also VirtualBox, which is the VM host we'll use.
+The recommended method of running Docker on a non-Linux operating system is to use Docker Machine, a VM provisioning tool, to spin up a Linux virtual machine. It's suggested you use the [Docker Toolbox][] to install Docker and Docker Machine. Docker Toolbox also installs [Docker Compose][], which we use for managing multiple containers at once, and [VirtualBox][], a free, open-source virtual machine host.
 
-Unfortunately, Docker Machine doesn't yet work on Windows 10, so if you're running that, you'll have to wait a while. I tried a number of tricks and debugged a lot, but no dice. You can, of course, install an [Ubuntu Linux][Ubuntu for desktops] VM into [VirtualBox][] and follow the Linux instructions below.
+On Windows, Docker Toolbox is your best choice—just download and run the installer. On Mac OS, you can take the same approach, but I prefer to use [Homebrew][] and [Caskroom][], which I use for installing most of my developer tools. If you already have Homebrew, you can install everything you need by running:
 
-[Ubuntu for desktops]: http://www.ubuntu.com/desktop
-[VirtualBox]: https://www.virtualbox.org/
-
-### Installing with Docker Toolbox
-
-Just download and run the installer. It's easy.
-
-### Installing with Homebrew
-
-On Windows, Docker Toolbox is your best choice. On Mac OS, you can take the same approach, but I prefer to use [Homebrew][], which I use for installing most of my developer tools. If you already have Homebrew, you can install everything you need by running:
-
+    $ brew tap caskroom/cask
     $ brew update
     $ brew install docker docker-machine docker-compose
+    $ brew cask install virtualbox
+
+[Docker Toolbox]: https://www.docker.com/toolbox
+[Docker Compose]: https://docs.docker.com/compose/
+[VirtualBox]: https://www.virtualbox.org/
+[Homebrew]: http://brew.sh/
+[Caskroom]: http://caskroom.io/
 
 ### Creating a VM
 
-On Windows, a *Docker Quickstart Terminal* shortcut is installed, but I had no luck with it, unfortunately.
+If you installed Docker Toolbox, all you need to do is run the *Docker Quickstart* shortcut that should have been installed for you. On Windows, this runs in Cygwin, a Unix terminal in Windows which makes life way more consistent.
 
 Once you have installed Docker and Docker Machine, you can create a new VM on VirtualBox:
 
-    $ docker-machine create --driver=virtualbox docker
+    $ docker-machine create --driver=virtualbox default
 
-This will create a new VM named "docker". It'll take a while to download everything the first time, but then you'll have a shiny new VM. It should have already started, but if not, you can start it using `docker-machine start docker`, and stop it using `docker-machine stop docker`.
+This will create a new VM named "default". It'll take a while to download everything the first time, but then you'll have a shiny new VM. It should have already started, but if not, you can start it using `docker-machine start default`, and stop it using `docker-machine stop default`.
 
 ### Connecting to the VM
 
-Finally, we need to connect our Docker client on the Windows or Mac host to the Docker server running inside the VM. We do this by setting some environment variables. Type `docker-machine env docker` and you'll see something like the following:
+Finally, we need to connect our Docker client on the Windows or Mac host to the Docker server running inside the VM. We do this by setting some environment variables. Type `docker-machine env default` and you'll see something like the following:
 
     export DOCKER_TLS_VERIFY="1"
     export DOCKER_HOST="tcp://192.168.99.100:2376"
-    export DOCKER_CERT_PATH="~/.docker/machine/machines/docker"
-    export DOCKER_MACHINE_NAME="docker"
+    export DOCKER_CERT_PATH="~/.docker/machine/machines/default"
+    export DOCKER_MACHINE_NAME="default"
     # Run this command to configure your shell:
-    # eval "$(docker-machine env docker)"
+    # eval "$(docker-machine env default)"
 
 Copy that last line from your output into your terminal prompt to run all those `export` commands.
 
@@ -55,8 +54,8 @@ Copy that last line from your output into your terminal prompt to run all those 
 
 You'll need to run that command each time you want to interact with your Docker server in a new terminal session. This is boring and error-prone, so I've added the following to my `.zshenv` file in my home directory; you can do the same thing if you use Bash by adding it to your `.bash_profile` file.
 
-    if [[ "$("$(which gtimeout || which timeout)" 3 docker-machine status docker 2>/dev/null)" == 'Running' ]]; then
-        eval "$(docker-machine env docker)"
+    if [[ "$("$(which gtimeout || which timeout)" 3 docker-machine status default 2>/dev/null)" == 'Running' ]]; then
+        eval "$(docker-machine env default)"
     fi
 
 That simple script asks `docker-machine` if the VM is up and running, and if so, runs those `export` commands. This means that you will have to do it manually if the VM is stopped when you start your terminal session.
@@ -66,9 +65,6 @@ The command times out after three seconds in case something is wrong, so your sh
     $ brew install coreutils
 
 With all that, you should be able to get started.
-
-[Docker Toolbox]: https://www.docker.com/toolbox
-[Homebrew]: http://brew.sh/
 
 ## Running Docker on Linux
 
@@ -131,11 +127,7 @@ If it didn't work, and the output doesn't look much like that at all, then read 
 
 ### But it broke!
 
-It's likely that either the service didn't start correctly or the connection between the client and the server failed. The former is beyond the scope of this article; the latter is often just a problem with your VM state or your environment variables.
-
-#### Windows
-
-**FILL ME IN**
+It's probable that either the service didn't start correctly or the connection between the client and the server failed. The former is beyond the scope of this article; the latter is often just a problem with your VM state or your environment variables.
 
 #### Windows, Mac or Linux with Docker Machine
 
@@ -145,21 +137,21 @@ First off, check that your environment variables are set correctly. If you're us
 
 Afterwards, run:
 
-    $ docker-machine env docker
+    $ docker-machine env default
 
 Then compare the two sets of environment variables. They should be the same, possibly with more in the first batch. If not, check you put the correct commands into your `.zshenv` or `.bash_profile` files and start a new terminal window or tab.
 
-Next, you should check whether the machine is running at all. Executing `docker-machine status docker` should print out `Running`. If it doesn't, you need to start it: type `docker-machine start docker`. If it is, it may be stuck.
+Next, you should check whether the machine is running at all. Executing `docker-machine status default` should print out `Running`. If it doesn't, you need to start it: type `docker-machine start default`. If it is, it may be stuck.
 
 First of all, try restarting it:
 
-    $ docker-machine restart docker
+    $ docker-machine restart default
 
 Remember that this will restart any running Docker processes, so be wary before doing it without thinking.
 
 If you still get no connection, try SSHing into the box:
 
-    $ docker-machine ssh docker
+    $ docker-machine ssh default
 
 Once there, you can view the Docker logs by checking */var/log/docker.log*. Look for any errors and start Googling.
 
