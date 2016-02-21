@@ -65,8 +65,6 @@ This particular image is tiny, as you'd expect; it's only 960 bytes. But it's no
 
 You have two images on your system. One is tagged *hello-world*, but the other has no tag at all, just an ID. It's there because just like Git commits, each Docker image depends on a previous image until you reach the root. The *virtual size* is the size of the image plus all its parents; the actual image may be much smaller. For example, the *hello-world* image itself (ID *af340544ed62* on my computer) takes no space at all; it's purely there to invoke the correct command.
 
-## What's In An Image?
-
 We can use the `docker inspect` tool to delve deep into the composition of an image.
 
     $ docker inspect hello-world
@@ -120,7 +118,7 @@ Two things are different about this. First of all, this image has no parent—it
 
 This command copies a file from the host to the container. You'll have to trust me when I say it's the `hello` script that's being invoked in the child image.
 
-Now, this has already been run. One interesting thing about the way Docker works is that containers are created from images, but images are created by *committing* a container, which takes a running container and saves its disk as an image. We'll see how to do this ourselves soon. Each of the two images that make up `hello-world` are constructed like this.
+Now, this has already been run. One interesting thing about the way Docker works is that containers are created from images, but images are created by *committing* a container, which takes a running container and saves its disk as an image. We'll see how to do this ourselves soon. Each of the two images that make up `hello-world` are
 
 In short, we asked for an image, and we got two.
 
