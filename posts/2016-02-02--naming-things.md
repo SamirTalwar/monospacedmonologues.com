@@ -4,7 +4,7 @@ A couple of weeks ago, [I promised to talk about naming][Slash Slash Massive Hac
 
 > If you can name a function really well, it probably does one thing and one thing only. This means you've figured out a decent way to separate your concerns, which means that often, the name is really all you need to know. (Expect more on naming in a future post.)
 
-I just opened up Stack Overflow and clicked on [the latest question][Stack Overflow Question #35119755][^1][^2] to find this code:
+I just opened up Stack Overflow and clicked on [the latest question][Stack Overflow Question #35119755][^1] to find this code:
 
     function createList() {
         $.ajax({
@@ -113,8 +113,7 @@ Great. Two functions, one purpose each, totally decoupled. I'm much happier. And
 
 Marvellous.
 
-[^1]: Code on Stack Overflow is licenced under [Creative Commons Attribution-ShareAlike 3.0 Unported][].
-[^2]: And by looking at the timestamp, you can see I'm writing this on Sunday night.
+[^1]: I'm really sorry to the author of this code. I don't mean to pick on them—it really was at random, and I honestly wouldn't have an issue with this code as-is most of the time. Code on Stack Overflow is licenced under [Creative Commons Attribution-ShareAlike 3.0 Unported][].
 
 [Slash Slash Massive Hack]: http://monospacedmonologues.com/post/137738860257/slash-slash-massive-hack
 [Stack Overflow Question #35119755]: https://stackoverflow.com/questions/35119755/checkboxes-and-number-fields-set-by-jquery-appear-for-a-split-second-then-sudde
