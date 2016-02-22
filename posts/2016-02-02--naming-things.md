@@ -27,7 +27,7 @@ I just opened up Stack Overflow and clicked on [the latest question][Stack Overf
         });
     }
 
-Look at the contents, and then look at the name of the function: `createList`. Does that jive[^3] with you?
+Look at the contents, and then look at the name of the function: `createList`. Does that resonate with you?
 
 Let me enumerate the things *I* think this function's doing. Of course, I could be wrong. One of the issues with legacy code is that we often are.
 
@@ -115,7 +115,6 @@ Marvellous.
 
 [^1]: Code on Stack Overflow is licenced under [Creative Commons Attribution-ShareAlike 3.0 Unported][].
 [^2]: And by looking at the timestamp, you can see I'm writing this on Sunday night.
-[^3]: I honestly have no idea if I'm using the word "jive" ironically or not.
 
 [Slash Slash Massive Hack]: http://monospacedmonologues.com/post/137738860257/slash-slash-massive-hack
 [Stack Overflow Question #35119755]: https://stackoverflow.com/questions/35119755/checkboxes-and-number-fields-set-by-jquery-appear-for-a-split-second-then-sudde
