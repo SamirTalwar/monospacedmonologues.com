@@ -1,14 +1,21 @@
 # Docker, Part One: Getting Started
 
-We’ve been using Docker heavily in development, test and production for about six months now, and more and more, I’m asked how to get started with it and use it. I thought I’d write a quick guide to Making Things Happen™ on your local machine, and perhaps touch on deploying services inside Docker containers in the future.
+I've been using Docker heavily in development, test and production for almost a year now, and more and more, I’m asked how to get started with it and use it. I thought I’d write a quick guide to Making Things Happen™ on your local machine, and perhaps touch on deploying services inside Docker containers in the future.
 
 ## First and foremost, what is Docker?
 
 I’m fairly sure at this point we’re familiar with virtual machines and their impact on software development. Many organisations now run their server applications and services inside virtual machines to keep them contained and ensure that one failing, buggy or out-of-control service doesn’t impact another. We even rent virtual machines from cloud providers such as Amazon, Rackspace, Joyent and many more.
 
-Docker is based on an aspect of the Linux kernel called LXC, or Linux Containers. LXC is often referred to as “lightweight VMs”, so called because it allows you to get VM-like capabilities, including segregated file systems, memory caps and separate networking layers, but without paying the price of having several operating systems running on one computer. This is done by sharing the kernel: each container re-uses the Linux kernel, which means less overhead per container. While I can only run two or three VMs on my laptop before it slows to a crawl, the same machine can often run 20 or 30 containers, especially if each one doesn’t require a lot of CPU time or dedicated memory.
+Docker is based on [control groups (cgroups)][cgroups] and [namespace isolation][] in the Linux kernel, as well as union filesystems such as [aufs][], which together allow it to *contain* processes and directory structures in containers.[^libcontainer update] These containers are often referred to as “lightweight VMs”, so called because they allow you to get VM-like capabilities, including segregated file systems, memory caps and separate networking layers, but without paying the price of having several operating systems running on one computer. This is done by sharing the kernel: each container re-uses the Linux kernel, which means less overhead per container. While I can only run two or three VMs on my laptop before it slows to a crawl, the same machine can often run 20 or 30 containers, especially if each one doesn’t require a lot of CPU time or dedicated memory.
 
 Of course, all this means you need to be running Linux. Fortunately, it’s easy to spin up a virtual machine specifically for the purpose of running Docker containers.
+
+[^libcontainer update]: Thanks to [Peter Idah][@peteridah] for updating me. I originally wrote that it was based on Linux Containers (LXC), but Docker now uses libcontainer, which is essentially its own implementation.
+
+[cgroups]: https://en.wikipedia.org/wiki/Cgroups
+[namespace isolation]: https://en.wikipedia.org/wiki/Cgroups#NAMESPACE-ISOLATION
+[aufs]: https://en.wikipedia.org/wiki/Aufs
+[@peteridah]: https://twitter.com/peteridah
 
 ## Running Docker on Windows and Mac
 
@@ -31,7 +38,7 @@ On Windows, Docker Toolbox is your best choice—just download and run the insta
 
 If you installed Docker Toolbox, all you need to do is run the *Docker Quickstart* shortcut that should have been installed for you. On Windows, this runs in Cygwin, a Unix terminal in Windows which makes life way more consistent.
 
-Once you have installed Docker and Docker Machine, you can create a new VM on VirtualBox:
+If you're going the manual route, once you have installed Docker and Docker Machine, you can create a new VM on VirtualBox:
 
     $ docker-machine create --driver=virtualbox default
 
@@ -50,7 +57,7 @@ Finally, we need to connect our Docker client on the Windows or Mac host to the 
 
 Copy that last line from your output into your terminal prompt to run all those `export` commands.
 
-#### Every Time?
+### Every Time?
 
 You'll need to run that command each time you want to interact with your Docker server in a new terminal session. This is boring and error-prone, so I've added the following to my `.zshenv` file in my home directory; you can do the same thing if you use Bash by adding it to your `.bash_profile` file.
 
@@ -125,6 +132,8 @@ This message shows that your installation appears to be working correctly.
 
 If it didn't work, and the output doesn't look much like that at all, then read on. Otherwise, if you see that or something quite like it, you're good to go! The next article will cover using Docker for something useful. You can skip the rest of this article and move straight on to the next one.
 
+[Docker Hub]: https://hub.docker.com/
+
 ### But it broke!
 
 It's probable that either the service didn't start correctly or the connection between the client and the server failed. The former is beyond the scope of this article; the latter is often just a problem with your VM state or your environment variables.
@@ -169,4 +178,6 @@ If that doesn't work on your distro, try this:
 
 Often, restarting a stuck Docker service will solve your problem. Note that this will stop all of your processes, so be careful.
 
-[Docker Hub]: https://hub.docker.com/
+### Same Time, Same Place
+
+I'm going to be going for a while. Tune in tomorrow for a more low-level analysis on how Docker works.
