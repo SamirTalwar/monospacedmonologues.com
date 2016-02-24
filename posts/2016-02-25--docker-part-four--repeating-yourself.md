@@ -194,6 +194,6 @@ If you don't provide a command to run after the image name in your `docker run` 
     What is Docker? | Opensource.com
     Containers everywhere! Getting started with Docker • The Register
 
-Often, we set this to `--help` or something useful so that starting a container with no arguments prints some useful output. In this case, though, I just felt like providing a default, and what better than Docker itself?
+Often, we set this to the command to be run in the container by default—like `irb` for the `ruby` image. However, if we set an entry point, the two are concatenated, just as when providing a command to `docker run`. In these cases, we usually set the command to `--help` or something useful so that starting a container with no arguments prints some useful output. This time, though, I just felt like providing a default, and what better than Docker itself?
 
 [Dockerfile reference]: https://docs.docker.com/engine/reference/builder/
