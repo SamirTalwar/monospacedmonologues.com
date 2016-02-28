@@ -113,19 +113,22 @@ So, I got to writing a Dockerfile (named *api.Dockerfile*, because it's specific
     COPY api/pom.xml /app/api/pom.xml
     COPY api/src /app/api/src
     WORKDIR /app
+    RUN mvn package
 
-    RUN mvn clean package
-    CMD mvn --projects=api exec:java
+    ENTRYPOINT ["mvn", "--projects=api"]
+    CMD ["exec:java"]
 
 A lot of that is boilerplate. Let's go through it. In turn, we:
 
   1. "Expose" port 8080 to the outside world. This is a way of instructing an image to *declare* that a port is exposed, which means we can ask it to map all its ports. More on this in a bit.
   2. Install Maven. We need `curl` to download that, so the second line does that. The next batch downloads Maven (version 3.3.9, currently) and untars it to */opt/maven*.
   3. Copy the relevant files over—specifically, the *pom.xml* files, which instruct Maven on how to build my application, and the source code of the application itself.
-  4. Build the application using `mvn clean package`.
+  4. Build the application using `mvn package`.
   5. Finally, set up the image to run the following command on start, which instructs the "api" subproject to run itself as a Java application:
 
         mvn --projects=api exec:java
+
+     We split the command into an entry point, Maven itself, tied to a subproject, which shouldn't change, and the command to be passed to Maven, which might well change. This means that we could, for example, use the same image to run the tests.
 
 Right, time to build it:
 
