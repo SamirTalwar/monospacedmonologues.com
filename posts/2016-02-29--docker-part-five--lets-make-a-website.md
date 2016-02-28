@@ -93,9 +93,11 @@ So. We have a web service. Let's package it up. As this is a Scala application, 
 [azul/zulu-openjdk]: https://hub.docker.com/r/azul/zulu-openjdk/
 [Zulu]: https://www.azul.com/products/zulu/
 
-So, I got to writing a Docker file. Here's what I ended up with:
+So, I got to writing a Dockerfile (named *api.Dockerfile*, because it's specific to my *api* subproject). Here's what I ended up with:
 
     FROM azul/zulu-openjdk:8
+
+    EXPOSE 8080
 
     RUN apt-get update && apt-get install -y curl
 
@@ -107,26 +109,44 @@ So, I got to writing a Docker file. Here's what I ended up with:
     RUN tar xf /opt/maven/apache-maven-bin.tar.gz -C /opt/maven --strip-components=1 \
         && rm /opt/maven/apache-maven-bin.tar.gz
 
-    COPY . /app
+    COPY pom.xml /app/pom.xml
+    COPY api/pom.xml /app/api/pom.xml
+    COPY api/src /app/api/src
     WORKDIR /app
+
     RUN mvn clean package
     CMD mvn --projects=api exec:java
 
-A lot of that is boilerplate. The first thing I need to do is install Maven. I need `curl` to download that, so the second line does that. The next batch downloads Maven (version 3.3.9, currently) and untars it to `/opt/maven`. Then, finally, I copy my code over, build the application and set up the image to run the following command on start:
+A lot of that is boilerplate. Let's go through it. In turn, we:
 
-    mvn --projects=api exec:java
+  1. "Expose" port 8080 to the outside world. This is a way of instructing an image to *declare* that a port is exposed, which means we can ask it to map all its ports. More on this in a bit.
+  2. Install Maven. We need `curl` to download that, so the second line does that. The next batch downloads Maven (version 3.3.9, currently) and untars it to */opt/maven*.
+  3. Copy the relevant files over—specifically, the *pom.xml* files, which instruct Maven on how to build my application, and the source code of the application itself.
+  4. Build the application using `mvn clean package`.
+  5. Finally, set up the image to run the following command on start, which instructs the "api" subproject to run itself as a Java application:
 
-That instructs the "api" project, which is currently the only one, to run a Java class (and it knows what it is), which starts the server. Right, time to build it:
+        mvn --projects=api exec:java
+
+Right, time to build it:
 
     $ docker build --tag=samirtalwar/bemorerandom.com-api .
 
-Cue about ten minutes of waiting around while Maven downloads the world. (Do not run this over a capped Internet connection. Seriously.) Once it's done, we can run it:
+Cue about ten minutes of waiting around while Maven downloads the world. (Do not run this over a capped Internet connection. Seriously.) This is partially because the `package` Maven task depends on `test`, which means the tests have to run, which means all the test dependencies (and there are many) must be downloaded. As one of the tests starts the application, we even spend some time with it running before it's through.
 
-    docker run -p 8080:8080 --rm -it samirtalwar/bemorerandom.com-api
+Once it's done, we can run it:
 
-And we have a web server! That `-p 8080:8080` tells Docker to forward port 8080 on the host (in my case, my Docker Machine VM) to the container, and it looks to be working fine:
+    docker run -P --rm -it --name=bemorerandom.com-api samirtalwar/bemorerandom.com-api
 
-    $ http $(docker-machine ip):8080/xkcd
+And we have a web server! (Eventually, after Maven downloads the *exec* plugin, which wasn't needed until just now.) That `-P` tells Docker to forward all exposed ports to the Docker host, and we can ask Docker itself which port it was forwarded to:
+
+    $ docker port bemorerandom.com-api
+    8080/tcp -> 0.0.0.0:32781
+
+Port 8080 on the container has been forwarded to port 32781 on the host. (If I wanted to fix the port, for example, to port 9000 on the host, then I'd use `-p 9000:8080` instead.)
+
+So then, it's time to hit the web service. It looks to be working fine:
+
+    $ http $(docker-machine ip):32781/xkcd
     HTTP/1.1 200 OK
     Content-Encoding: gzip
     Content-Length: 94
@@ -143,4 +163,4 @@ And we have a web server! That `-p 8080:8080` tells Docker to forward port 8080 
 
 So far, so good. Except I hate it.
 
-Building this takes forever. Each time anything changes, it has to download all the dependencies again, taking over ten minutes on my poor ADSL connection, which runs through copper wires that were installed in the reign of King Henry VIII. Tomorrow, we're going to look at ways to mitigate this problem.
+Building this takes forever. Each time anything changes, it has to download all the dependencies again, taking over ten minutes on my poor ADSL connection, which runs through miles of copper wires that were installed in the reign of King Henry VIII before it reaches the nearest exchange at the other end of town. Tomorrow, we're going to look at ways to mitigate this problem.
