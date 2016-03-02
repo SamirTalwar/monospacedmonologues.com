@@ -72,7 +72,7 @@ I decided to go with Artifactory because I've used it before (and because I spen
 
 Next, I configured Maven to treat it as a repository, using the *~/.m2/settings.xml* file. It was running on port 8081 with the same port forwarded to the host, so I used my Docker Machine IP address to do this. However, for the build, I copied a *settings.xml* file that used the special IP address *172.17.0.1*. This IP address is always the Docker host, as far as the containers are concerned. The host sets up its own subnet to communicate with containers and allow them to communicate easily with each other (which we'll talk about soon), with IP adresses in the 172.17.0.0/16 range. As of Docker 1.9, the IP address of the host is the first one in that range. (It used to be 172.17.42.1 for some reason—when they changed it, they broke *everything* at my last client.)
 
-Next, I configured Artifactory to proxy both Maven Central and Twitter's own Maven repository, with Twitter's ranking first. witter have some of their stuff on both, and only their own works. */me grumbles a lot*
+Next, I configured Artifactory to proxy both Maven Central and Twitter's own Maven repository, with Twitter's ranking first. Twitter have some of their stuff on both, and only their own works. */me grumbles a lot*
 
 The first time I ran the build after this, it was even slower. You can imagine that a proxy server discovering the remote repositories for the first time would be. The second time, though, it was super-fast.
 
