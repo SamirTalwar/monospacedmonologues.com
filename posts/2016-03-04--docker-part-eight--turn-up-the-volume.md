@@ -70,8 +70,8 @@ So where does this leave us? If we want to preserve our database data, we can us
     $ docker run \
         -d \
         --name=postgres \
-        -p 5432:5432 \
-        -v ~/Projects/bemorerandom.com/postgresql:/var/lib/postgresql \
+        --net=bemorerandom \
+        -v ~/Projects/bemorerandom.com/postgresql:/var/lib/postgresql/data \
         postgres
 
 Now, if I inspect the logs, I might see it won't start. Something like this:
@@ -125,11 +125,11 @@ I want to talk briefly about two anti-patterns that are often recommended by the
 
 The first is mounting a volume without specifying a host directory. You can do this by providing the `-v` switch with only the container directory:
 
-    $ docker run -d -v /var/lib/postgresql postgres
+    $ docker run -d -v /var/lib/postgresql/data postgres
 
 The second is a *data container*, which is a container which hosts the volumes.
 
-    $ docker run --name=postgresql-data -d -v /var/lib/postgresql busybox true
+    $ docker run --name=postgresql-data -d -v /var/lib/postgresql/data postgres true
 
 We can then run our real container with volumes mounted from the data container:
 
