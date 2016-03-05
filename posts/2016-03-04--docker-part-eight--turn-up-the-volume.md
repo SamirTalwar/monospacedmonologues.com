@@ -139,4 +139,4 @@ Both of these create volume mounts, but hide them away in */var/lib/docker* with
 
 ---
 
-This has been a really hard week for me, as these postss have taken way longer than planned. Next week, I'm going to keep things a little less intense and concentrate on more of the management side of software development (I think). I'll be back to talking about Docker the following week, starting with orchestrating multiple containers using Docker Compose.
+This has been a really hard week for me, as these posts have taken way longer than planned. Next week, I'm going to keep things a little less intense and concentrate on more of the management side of software development (I think). I'll be back to talking about Docker the following week, starting with orchestrating multiple containers using Docker Compose.
