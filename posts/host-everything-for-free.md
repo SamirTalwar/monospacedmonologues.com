@@ -69,6 +69,7 @@ Jekyll has much more functionality than this. For example, it can generate a blo
 [Liquid]: https://github.com/Shopify/liquid/wiki
 [Markdown]: https://daringfireball.net/projects/markdown/
 [Textile]: http://redcloth.org/textile
+[YAML]: http://yaml.org/
 
 ### Let's see what it looks like
 
@@ -78,11 +79,11 @@ Install the latest version of Ruby if you don't have it already (I recommend usi
 
     $ gem install github-pages
 
-If you have installed RVM, I'd recommend segregating your GitHub Pages gemset from others beforehand so that you don't get gem collisions, and marking the directory as such:
+If you have installed RVM, I'd recommend segregating your GitHub Pages "gemset" from others beforehand so that you don't get gem collisions, and marking the directory as such:
 
     $ rvm use --create --ruby-version ruby@github-pages
 
-This will create two files, *.ruby-version* and *.ruby-gemset*, that instruct RVM to always use this particular Ruby version and gemset in this directory. For example, at the time of writing, I'm running the latest version of Ruby (v2.3.0), so my *.ruby-version* is `ruby-2.3.0` and my *.ruby-gemset*, as specified, is `github-pages`. Then install your gems as normal.
+This will create a special directory for your GitHub Pages gems, and switch your `GEM_HOME` environment variable so that you only use the gems in that directory. It will also create two files, *.ruby-version* and *.ruby-gemset*, that instruct RVM to always use this particular Ruby version and gemset in this directory. For example, at the time of writing, I'm running the latest version of Ruby (v2.3.0), so my *.ruby-version* is `ruby-2.3.0` and my *.ruby-gemset*, as specified, is `github-pages`. Then install your gems as normal.
 
 Once you've done that, you can start a Jekyll server. The Jekyll server compiles your files *once*, when it starts, into a website and stores it in the *_site* directory.
 
@@ -138,10 +139,37 @@ When you want to make a change, just `git commit` and `git push`. Your changes w
 
 ## Your domain, because you're worth it
 
-## cdnjs.com, because files are big and not your problem
+Once you have your website up and running, you might want to register it with a custom domain name. For example, I don't use [samirtalwar.github.io](), I use [noodlesandwich.com]().
 
-## Heroku, for when you need that server back
+The first step towards this is to register a domain name. There are countless domain name registrars out there, and you're welcome to pick any of them as long as they allow you to just buy a domain name without hosting. I'm a fan of [Hover][], which has average pricing, a very usable control panel and great customer support, but it's by no means the only one. Just stay away from the really big names such as GoDaddy and 123-reg and you'll be fine.
+
+Once you've got your domain, you'll need to point it to GitHub. If you want to use a subdomain (which I use for [talks.samirtalwar.com]()), this is easier. Head over to your domain name registrar and opt to customise the DNS settings for your new domain. If you're not sure how to do this, Googling "DNS [name of your registrar]" usually finds a useful tutorial.
+
+Once you're there, you'll need to set the appropriate records. If you're looking to set up a subdomain, create a `CNAME` record with the name of your subdomain ("talks", in my case) and your GitHub domain as the target. If you're looking to point your entire "apex" domain to GitHub Pages, then you'll need to set up two `A` records with no name (or sometimes "@"), and the two GitHub IP addresses as the values. You can find the IP addresses on GitHub's own instructions for [setting up an apex domain][GitHub: Setting up an apex domain].
+
+![DNS set-up][dns-set-up.png]
+
+Finally, you just need to create a file in the root of your website source repository called *CNAME*. It should have one line, which contains the domain you're looking to point to it. Nothing more, nothing less. For example, if you owned *example.com*, the contents of *CNAME* would be:
+
+    example.com
+
+Easy.
+
+![GitHub CNAME][github-cname.png]
+
+It can take up to 72 hours for your registrar's DNS servers to propagate the new DNS settings all over the world. That said, it's usually closer to 24 for an existing domain, and can take as little as 15 minutes for a brand new domain. Keep checking your new domain, and hopefully you'll have your website up and running on a custom domain hopefully you'll have your website up and running on a custom domain name before long.
+
+[Hover]: https://www.hover.com/
+[GitHub: Setting up an apex domain]: https://help.github.com/articles/setting-up-an-apex-domain/
+
+---
+
+Next time, we'll look at hosting images and other files, as well as third-party assets such as CSS and JavaScript.
+
+## CDNs, because files are big and not your problem
 
 ## S3, if you have buckets of assets
+
+## Heroku, for when you need that server back
 
 ## CloudFlare, and your 15 minutes of fame
