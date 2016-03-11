@@ -1,8 +1,16 @@
 # Building Is The Job Of The Compiler
 
-A few years ago, [Kevlin Henney][@KevlinHenney] spoke on the topic of *The Programmer* at [Devoxx UK][]. In his talk, he mentioned an article I can no longer find. It was a long piece, written in the 1990s, musing on the job of the programmer. In the article, the author wrote something very striking I'll attempt to paraphrase here.
+A few years ago, [Kevlin Henney][@KevlinHenney] spoke on the topic of *The Programmer* at [Devoxx UK][]. In his talk, he mentioned an article by Jack Reeves, [What Is Software Design?][] It's a long piece, written in 1992, musing on design, building and the job of the programmer. In the article, the author wrote something very striking.[^Thanks to @tomwhoscontrary]
 
-> Programmers do not build software. Building is the job of the compiler.
+> This lesson is that programming is not about building software; programming is about designing software.
+>
+> ...
+>
+> After reviewing the software development life cycle as I understood it, I concluded that the only software documentation that actually seems to satisfy the criteria of an engineering design is the source code listings.
+>
+> ...
+>
+> If source code is a software design, then actually building software is done by compilers and linkers.
 
 We often use the word "build" to refer to the act of creating software, but that word demotes us to people following a set of instructions. We write the instructions.
 
@@ -12,5 +20,8 @@ It's my dream that one day in the future, all work will be creative work, simply
 
 Building is the job of the compiler. A machine. Humans create.
 
+[^Thanks to @tomwhoscontrary]: Thanks to [Tom Anderson][@tomwhoscontrary] for finding the article for me. The original version of this post paraphrased it, as I could not find it.
+
+[What Is Software Design?]: http://www.bleading-edge.com/Publications/C++Journal/Cpjour2.htm
 [@KevlinHenney]: https://twitter.com/KevlinHenney
 [Devoxx UK]: http://www.devoxx.co.uk/
