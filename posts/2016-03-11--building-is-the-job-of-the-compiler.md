@@ -24,4 +24,5 @@ Building is the job of the compiler. A machine. Humans create.
 
 [What Is Software Design?]: http://www.bleading-edge.com/Publications/C++Journal/Cpjour2.htm
 [@KevlinHenney]: https://twitter.com/KevlinHenney
+[@tomwhoscontrary]: https://twitter.com/tomwhoscontrary
 [Devoxx UK]: http://www.devoxx.co.uk/
