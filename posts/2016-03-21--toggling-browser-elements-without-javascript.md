@@ -12,7 +12,7 @@ On the web, it's pretty typical to use JavaScript for this. Here's a restaurant 
 
 Click on the options and watch the `.selected` style apply to the selected item.
 
-<a class="jsbin-embed" href="https://jsbin.com/soteca/6/embed?html,css,output">Toggles with JavaScript on jsbin.com</a>
+<p data-height="268" data-theme-id="0" data-slug-hash="jqBZvO" data-default-tab="result" data-user="SamirTalwar" class="codepen">See the Pen <a href="http://codepen.io/SamirTalwar/pen/jqBZvO/">toggles with JavaScript</a> by Samir Talwar (<a href="http://codepen.io/SamirTalwar">@SamirTalwar</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 Now, there's two problems here. One is that we're not using semantic HTML. The second is that we're using JavaScript, and I'd rather avoid it.
 
@@ -26,7 +26,7 @@ This is really a form, and as such, should have `<input>` elements. As they're o
 
 We can set those up… but they look pretty boring.
 
-<a class="jsbin-embed" href="https://jsbin.com/soteca/4/embed?html,css,output">Toggles with boring radio buttons on jsbin.com</a>
+<p data-height="268" data-theme-id="0" data-slug-hash="dMvdqm" data-default-tab="result" data-user="SamirTalwar" class="codepen">See the Pen <a href="http://codepen.io/SamirTalwar/pen/dMvdqm/">toggles with boring radio buttons</a> by Samir Talwar (<a href="http://codepen.io/SamirTalwar">@SamirTalwar</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 However, now we have state. Those radio buttons are checked and unchecked, and we can detect this in CSS with the `:checked` pseudo-class selector. We can use that to trigger a style change to a sibling with the `+` or `~` sibling selectors.
 
@@ -35,10 +35,10 @@ However, now we have state. Those radio buttons are checked and unchecked, and w
       color: #000;
     }
 
-As the `<label`> triggers the radio button, we can hide the button and just keep the label. A bit more styling and voila: we have an example that looks exactly like the first one, but uses semantic HTML and CSS instead of JavaScript.
+As the `<label>` triggers the radio button, we can hide the button and just keep the label. A bit more styling and voila: we have an example that looks exactly like the first one, but uses semantic HTML and CSS instead of JavaScript.
 
-<a class="jsbin-embed" href="https://jsbin.com/soteca/5/embed?html,css,output">Toggles with CSS on jsbin.com</a>
+<p data-height="268" data-theme-id="0" data-slug-hash="mPWXzz" data-default-tab="result" data-user="SamirTalwar" class="codepen">See the Pen <a href="http://codepen.io/SamirTalwar/pen/mPWXzz/">toggles with CSS</a> by Samir Talwar (<a href="http://codepen.io/SamirTalwar">@SamirTalwar</a>) on <a href="http://codepen.io">CodePen</a>.</p>
 
 As much as I like instructing the computer what to do, I prefer to declare the state of things and have my environment—in this case, my browser—figure it out. My procedural code needs testing, maintaining and debugging. HTML and CSS need none of that.
 
-<script src="https://static.jsbin.com/js/embed.min.js?3.35.11"></script>
+<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
