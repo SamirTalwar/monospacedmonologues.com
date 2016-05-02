@@ -157,7 +157,7 @@ Easy.
 
 ![GitHub CNAME][github-cname.png]
 
-It can take up to 72 hours for your registrar's DNS servers to propagate the new DNS settings all over the world. That said, it's usually closer to 24 for an existing domain, and can take as little as 15 minutes for a brand new domain. Keep checking your new domain, and hopefully you'll have your website up and running on a custom domain hopefully you'll have your website up and running on a custom domain name before long.
+It can take up to 72 hours for your registrar's DNS servers to propagate the new DNS settings all over the world. That said, it's usually closer to 24 for an existing domain, and can take as little as 15 minutes for a brand new domain. Keep checking your new domain, and hopefully you'll have your website up and running on a custom domain name before long.
 
 [Hover]: https://www.hover.com/
 [GitHub: Setting up an apex domain]: https://help.github.com/articles/setting-up-an-apex-domain/
