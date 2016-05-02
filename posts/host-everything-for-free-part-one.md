@@ -1,4 +1,4 @@
-# Host Everything For Free
+# Host Everything For Free, Part One
 
 *Or very very cheap, at least.*
 
@@ -165,11 +165,3 @@ It can take up to 72 hours for your registrar's DNS servers to propagate the new
 ---
 
 Next time, we'll look at hosting images and other files, as well as third-party assets such as CSS and JavaScript.
-
-## CDNs, because files are big and not your problem
-
-## S3, if you have buckets of assets
-
-## Heroku, for when you need that server back
-
-## CloudFlare, and your 15 minutes of fame
