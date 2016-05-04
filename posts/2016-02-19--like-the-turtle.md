@@ -6,7 +6,7 @@
 
 I've been re-learning tmux these last two weeks, living happily in my shell, with vim in a pane among a shell or three. It's been wonderful. I never want to go back to using an IDE.
 
-![tmux](https://s3-eu-west-1.amazonaws.com/monospacedmonologues.com/2016-02-19+-+tmux.png)
+![tmux](http://assets.monospacedmonologues.com/2016-02-19+-+tmux.png)
 
 To be fair, if I could get good refactoring support for JavaScript, I'd switch back in a second. But I'm pretty sure that's impossible, so I'm not too worried about anyone calling me on it. (PureScript, anyone?)
 

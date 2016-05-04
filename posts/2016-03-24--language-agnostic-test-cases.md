@@ -8,7 +8,7 @@ One advantage of this is that it constrains you to test the command-line interfa
 
 Another interesting feature is that if you switch programming languages, your tests can stay the same. We switched languages twice in an hour, from Bash to awk to Python. During the rewrites, our tests stayed exactly the same.
 
-![Smoke output](https://s3-eu-west-1.amazonaws.com/monospacedmonologues.com/2016-03-24+-+smoke.png)
+![Smoke output](http://assets.monospacedmonologues.com/2016-03-24+-+smoke.png)
 
 This got me thinking a lot. For high-level integration tests, *should* we be using test frameworks that are coupled to the programming language? Wouldn't it be better to use frameworks that are coupled to the interface? One that pops to mind is [Aspec][], an HTTP API test framework that, sadly, looks pretty defunct. Its tests look like this (taken straight from the linked article):
 

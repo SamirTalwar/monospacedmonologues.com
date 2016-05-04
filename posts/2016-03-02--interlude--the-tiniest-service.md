@@ -54,7 +54,7 @@ You should have two terminals waiting for input. The client is waiting for the s
 
 See what happened? Your input got sent straight to the client.
 
-![Sassy `nc`](https://s3-eu-west-1.amazonaws.com/monospacedmonologues.com/2016-03-02+-+sassy+nc.png)
+![Sassy `nc`](http://assets.monospacedmonologues.com/2016-03-02+-+sassy+nc.png)
 
 We can short-circuit the typing by simply piping something in. In one shell, type this:
 
@@ -78,7 +78,7 @@ This is a web server, so we can use `curl` to talk to it:
     $ curl localhost:3000
     Hi there, mate.
 
-![`curl` to `nc`](https://s3-eu-west-1.amazonaws.com/monospacedmonologues.com/2016-03-02+-+nc+to+curl.png)
+![`curl` to `nc`](http://assets.monospacedmonologues.com/2016-03-02+-+nc+to+curl.png)
 
 Magic. The only problem is that the "web server" exists after a single request. We can solve this by restarting it again in a loop:
 
@@ -102,7 +102,7 @@ So here's the Dockerfile for the simplest web service:
 
 Easy, right? Just build it and spin it up. And, in case you lose this, remember [I made one for you and stuck it on GitHub][the-tiniest-service]. You can even run it.
 
-![the-tiniest-service](https://s3-eu-west-1.amazonaws.com/monospacedmonologues.com/2016-03-02+-+the-tiniest-service.png)
+![the-tiniest-service](http://assets.monospacedmonologues.com/2016-03-02+-+the-tiniest-service.png)
 
 [RFC 2616]: https://www.w3.org/Protocols/rfc2616/rfc2616.txt
 [the-tiniest-service]: https://github.com/SamirTalwar/the-tiniest-service/tree/dockerfile
