@@ -1,5 +1,14 @@
 # Docker, Part Seventeen: Continuous Deployment
 
+*Apologies folks. I wrote this ages ago and apparently never published it. Well, late is better than never, so here it is!*
+
+*You may want to remind yourself of [Docker Compose][Docker, Part Ten: Docker Compose] and [The Guts Of Docker Compose][Docker, Part Eleven: The Guts Of Docker Compose] first.*
+
+[Docker, Part Ten: Docker Compose]: http://monospacedmonologues.com/post/141079525786/docker-part-ten-docker-compose
+[Docker, Part Eleven: The Guts Of Docker Compose]: http://monospacedmonologues.com/post/141136358098/docker-part-eleven-the-guts-of-docker-compose
+
+---
+
 Once we have a container, we can run it on a server.
 
     $ ssh my-production-server docker-compose up -d
