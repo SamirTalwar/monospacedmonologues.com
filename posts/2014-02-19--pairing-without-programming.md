@@ -14,5 +14,5 @@ Oh, and [we're hiring][Codurance Careers]. :-D
 
 [@sandromancuso]: https://twitter.com/sandromancuso
 [Codurance]: http://codurance.com/
-[Codurance Careers]: http://codurance.com/careers/craftsman.html
+[Codurance Careers]: https://codurance.com/careers/
 [LSCC]: http://londonswcraft.com/

@@ -2,7 +2,7 @@ Last week, [Sandro][Codurance Team] and I flew to Bucharest to meet [Alex][Alex 
 
 [Codurance Team]: http://codurance.com/aboutus/ourteam/
 [Adi Bolboaca]: http://adrianbolboaca.ro/
-[Aki Salmi]: http://about.me/aksalmi
+[Aki Salmi]: https://about.me/rinkkasatiainen
 [Alex Bolboaca]: http://alexbolboaca.ro/
 [Peter Kofler]: http://code-cop.org/
 
@@ -14,6 +14,8 @@ That feeling didn't last. By mid-afternoon, we were lagging, and people were dri
 
 [Mob Programming]: http://monospacedmonologues.com/post/91841399505/mob-programming-and-the-importance-of-fun-at-work
 [minimum viable product]: http://en.wikipedia.org/wiki/Minimum_viable_product
+
+[[MORE]]
 
 I, personally, was a bit dejected when we split apart. I thought that six skilled people should be able to do anything together. Pairing with Alex cheered me up very quickly, as we worked towards an acceptance test that focused us on what *we* really cared about, while the others did different things. Aki and Peter worked on a new interface for the page handling, extending its capabilities while preserving the functionality at first. Sandro and Adi decided to show each other their styles of unit testing, as they're very different.
 

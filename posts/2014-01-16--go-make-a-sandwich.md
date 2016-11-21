@@ -14,6 +14,6 @@ When you come back, things will be different.
 
 The human brain is an exceptionally powerful machine, as long as we operate it right. It's not a computer. It doesn't have distinct rules on how input gets translated to output. Sometimes it's important to think about anything *but* the task at hand if we want to really consider all approaches to solving the problem.
 
-[Real World Scala: Dependency Injection (DI)]: http://jonasboner.com/2008/10/06/real-world-scala-dependency-injection-di/
+[Real World Scala: Dependency Injection (DI)]: http://jonasboner.com/real-world-scala-dependency-injection-di/
 [Taking baby steps]: http://talboomerik.be/2012/01/16/taking-baby-steps/
 [Fortunately, the Milk…]: http://www.amazon.co.uk/Fortunately-Milk/dp/1408841762
