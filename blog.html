@@ -63,6 +63,23 @@
         white-space: pre;
     }
 
+    img {
+      box-sizing: border-box;
+      margin-bottom: 20px;
+      padding: 10px;
+    }
+
+    figure {
+      margin-bottom: 20px;
+    }
+      figure > img {
+        margin-bottom: 0;
+      }
+      figure > figcaption {
+        text-align: center;
+        font-style: italic;
+      }
+
     /* DEFAULT CSS */
     #branding {
         {block:IfNotHeaderImage}padding: 40px 0;{/block:IfNotHeaderImage}
@@ -190,10 +207,6 @@
         .post-content h3 {
             font-size: 13pt;
             margin-bottom: 10px;
-        }
-        .post-content img {
-            margin-bottom: 20px;
-            padding: 10px;
         }
         .post-content .citation {
             text-align: right;
