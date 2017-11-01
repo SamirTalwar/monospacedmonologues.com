@@ -25,4 +25,4 @@ Whatever you decide, make sure you're considering the whole cost. Bending the fr
 [Don't Call Us. We'll Call You.]: http://monospacedmonologues.com/post/46427054295/dont-call-us-well-call-you
 [Rack]: https://rack.github.io/
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

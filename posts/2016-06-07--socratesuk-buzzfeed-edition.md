@@ -82,7 +82,7 @@ Until next year, folks.
 
 [SoCraTes UK]: http://socratesuk.org/
 
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <style>
     .post-content > p {
