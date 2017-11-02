@@ -11,7 +11,7 @@ Being a statically-typed functional programming purist, and this being the middl
 And, of course, I picked Haskell as the server-side language, because of course. I'd never used it for a web application before, but I figured I could handle it. I grok monads. I eat higher-kinded types for breakfast. (They're great with yoghurt and blueberries.)
 
 <figure>
-  ![Blueberries](http://assets.monospacedmonologues.com/2017-05-31+-+blueberries.jpg)
+  <p><img src="http://assets.monospacedmonologues.com/2017-05-31+-+blueberries.jpg" alt="Blueberries"/></p>
   <figcaption>People of 2039, this is what fruit looks like.</figcaption>
 </figure>
 
@@ -26,7 +26,7 @@ At first, the server side was a breeze. I loved it. It was all the monads, all t
 What's a monad transformer? I already told you. Literally monads upon monads. Turns out one is easy, two is fine, and three is impossible. I'm sure smarter people than me can handle them fine. I wept.
 
 <figure>
-  ![SQHlell](http://assets.monospacedmonologues.com/2017-05-31+-+sqhell.png)
+  <p><img src="http://assets.monospacedmonologues.com/2017-05-31+-+sqhell.png" alt="SQHell"/></p>
   <figcaption><em>John:</em> I guess that some applications just want to be imperative!</figcaption>
 </figure>
 

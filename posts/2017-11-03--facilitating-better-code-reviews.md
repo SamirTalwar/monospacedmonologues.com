@@ -13,7 +13,7 @@ Code reviews are a pretty charged topic for many developers. Some argue they don
 What this tells us is that they're pretty popular. If they weren't, no one would have an opinion in the first place.
 
 <figure>
-  ![xkcd #386: Duty Calls](https://imgs.xkcd.com/comics/duty_calls.png)
+  <p><img src="https://imgs.xkcd.com/comics/duty_calls.png" alt="xkcd #386: Duty Calls"/></p>
   <figcaption>Obligatory xkcd.</figcaption>
 </figure>
 

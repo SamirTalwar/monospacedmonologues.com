@@ -7,7 +7,7 @@ Last time, we figured out how to host static web pages for free on GitHub pages.
 My blog, [*monospacedmonologues.com*][monospacedmonologues.com], is pretty text-heavy, but gets a sprinkling of pictures once in a while. The blog itself is really just a [Tumblr][] blog, and so I don't host it anywhere I can store files. But that doesn't matter, because the images can be hosted anywhere.
 
 <figure>
-    <img src="blog.png" alt="my blog"/>
+    <p><img src="blog.png" alt="my blog"/></p>
     <figcaption>Even the pictures on my blog are code-heavy.</figcaption>
 </figure>
 
@@ -30,7 +30,7 @@ Amazon, along with a few of the other cloud providers, use the term "bucket" to 
 Open up the *S3* service.
 
 <figure>
-    <img src="opening S3.png" alt="opening S3"/>
+    <p><img src="opening S3.png" alt="opening S3"/></p>
     <figcaption>The list of services can be a little daunting.</figcaption>
 </figure>
 
