@@ -14,7 +14,7 @@ What this tells us is that they're pretty popular. If they weren't, no one would
 
 <figure>
   <p><img src="https://imgs.xkcd.com/comics/duty_calls.png" alt="xkcd #386: Duty Calls"/></p>
-  <figcaption>Obligatory xkcd.</figcaption>
+  <figcaption><a href="https://xkcd.com/386/">Obligatory xkcd.</a></figcaption>
 </figure>
 
 So, given that many teams use code reviews as a technique to improve code quality, how can we make them more efficient, more effective, and most of all, more fun?
