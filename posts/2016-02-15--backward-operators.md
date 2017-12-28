@@ -62,9 +62,3 @@ So in my head, it was absolutely correct. Even though it's obviously wrong.
 [Structure and Interpretation of Computer Programs]: http://mitpress.mit.edu/sicp/
 [Section 1.2.2: Tree Recursion]: https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html#%_toc_%_sec_1.2.2
 [Currying]: https://en.wikipedia.org/wiki/Currying
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    asciimath2jax: {delimiters: [['$','$']]}
-});
-</script>

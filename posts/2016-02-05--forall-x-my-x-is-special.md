@@ -20,9 +20,3 @@ You probably aren't as special as you think you are.
 
 [@pedromsantos]: https://twitter.com/pedromsantos
 [Behavior-driven development]: https://en.wikipedia.org/wiki/Behavior-driven_development
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    asciimath2jax: {delimiters: [['$','$']]}
-});
-</script>

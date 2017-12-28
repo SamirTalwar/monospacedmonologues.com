@@ -88,9 +88,3 @@ Sometimes, great software requires great design. But sometimes, it's great engin
 [numeric-experiments]: https://github.com/SamirTalwar/numeric-experiments
 [NewtonRaphson.scala]: https://github.com/SamirTalwar/numeric-experiments/blob/master/implementation/src/main/scala/com/noodlesandwich/numeric/NewtonRaphson.scala
 [FastInverseSquareRoot.scala]: https://github.com/SamirTalwar/numeric-experiments/blob/master/implementation/src/main/scala/com/noodlesandwich/numeric/FastInverseSquareRoot.scala
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    asciimath2jax: {delimiters: [['$','$']]}
-});
-</script>

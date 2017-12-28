@@ -690,7 +690,14 @@
         });
     </script>
 
-     <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=AM_HTMLorMML'></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=AM_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        asciimath2jax: {
+          delimiters: [['$','$']],
+        },
+    });
+    </script>
 
     {block:IfGoogleAnalyticsID}
     <script type="text/javascript">

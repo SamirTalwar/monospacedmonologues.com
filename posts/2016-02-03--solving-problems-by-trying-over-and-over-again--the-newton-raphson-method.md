@@ -95,9 +95,3 @@ And that, folks, is how you calculate the square root of a number.
 [Slash Slash Massive Hack]: http://monospacedmonologues.com/post/137738860257/slash-slash-massive-hack
 [Newton's method]: https://en.wikipedia.org/wiki/Newton's_method
 [numeric-experiments]: https://github.com/SamirTalwar/numeric-experiments
-
-<script type="text/x-mathjax-config">
-MathJax.Hub.Config({
-    asciimath2jax: {delimiters: [['$','$']]}
-});
-</script>
