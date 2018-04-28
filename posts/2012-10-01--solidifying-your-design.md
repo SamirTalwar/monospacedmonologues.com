@@ -1,3 +1,8 @@
+---
+title: "Solidifying your Design"
+date: 2012-10-01T14:02:17Z
+---
+
 When someone asks me how to design and build a system full of
 interlocking, moving parts, I just point them at SOLID. These bad boys
 don’t just apply to your code. They should be an integral part of your

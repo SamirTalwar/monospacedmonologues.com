@@ -1,3 +1,8 @@
+---
+title: "Rekord: Java Beans must die"
+date: 2014-05-19T16:52:00Z
+---
+
 In programming, duplication is the enemy.
 
 We see it everywhere. Code, copied and pasted because "we have no time". Entire pieces of infrastructure lifted from one project to the next, rather than extracted and shared. Domain objects scattered through applications, every one slightly different. API connection layers written again and again, each one in a different style, doing the same, exact thing with new and interesting bugs.

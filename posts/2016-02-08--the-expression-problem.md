@@ -1,3 +1,8 @@
+---
+title: "The Expression Problem"
+date: 2016-02-08T08:00:32Z
+---
+
 The week before last, I wrote about functional programming and how it relates to object-oriented programming. I asked [Ganesh Sittampalam][@eleganesh] to take a look and he told me that I was mostly right, and to Google "the expression problem".
 
 So I did. Before I go on, you might want to read the previous posts. Or not. That's cool too.

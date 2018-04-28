@@ -1,3 +1,8 @@
+---
+title: "Custom Web Apps… In A Bookmarklet"
+date: 2016-01-20T08:00:23Z
+---
+
 A couple days ago, I demonstrated how to use a bookmarklet to automate the time-consuming process of discovering a link to an RSS or Atom feed and subscribe to it. Today I want to do something a bit weirder.
 
 I once wrote a JIRA plugin to reformat the Agile board (how I hate that it's called "Agile"… it's nothing of the sort) to something more useful for a project manager. It reformatted it so that every box was very small and colour-coded by discipline (front-end, back-end, infrastructure, design, etc.), making it easy to see where the bottlenecks were in a sprint. I didn't use JIRA's plugin architecture though—it's a nightmare. Instead I just wrote some JavaScript to do the work. With a website with sane markup, which fortunately JIRA has, it's often far more trivial and maintainable to write something to manipulate the client than it is to write server-side code.

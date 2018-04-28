@@ -1,3 +1,8 @@
+---
+title: "You Don't Need To Rebase"
+date: 2017-12-06T08:00:30Z
+---
+
 *This post is loosely based on a discussion with [Beverley Newing][@WebDevBev] and others on the [Codebar][] Slack team.*
 
 ---

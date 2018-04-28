@@ -1,3 +1,8 @@
+---
+title: "Feed Me With Bookmarklets"
+date: 2016-01-18T08:00:18Z
+---
+
 If you've been reading this blog since the start of the year, you may have noticed that posts go up at 08:00 UTC (…ish) every weekday. This is intentional, and I hope to keep it going all year.
 
 I use Tumblr as my blogging engine, which lets me schedule posts. I then use [IFTTT][] to push a link to Twitter, which it does within minutes. If you follow me, you'll see them. However, I know a lot of people, especially techies, prefer to use a feed reader. Personally, I use [Feedly][], mostly because when Google Reader shut down, Feedly allowed me to import my feeds very easily.

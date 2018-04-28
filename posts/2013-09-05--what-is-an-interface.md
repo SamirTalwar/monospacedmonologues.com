@@ -1,3 +1,8 @@
+---
+title: "What is an interface?"
+date: 2013-09-04T23:06:00Z
+---
+
 Interfaces are my favourite part of programming. They’re the part that
 makes me stop for a second (or a minute, or an hour, or a day) and
 actually think about my job. Because my job isn’t really about writing

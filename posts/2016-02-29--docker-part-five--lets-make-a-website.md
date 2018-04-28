@@ -1,3 +1,8 @@
+---
+title: "Docker, Part Five: Let's Make A Website"
+date: 2016-02-29T08:00:32Z
+---
+
 OK, the weekend has happened and I can't remember where we left off. So let's recap, as much for my sake as for yours.
 
 We had this program, *google.rb*, that Googled:

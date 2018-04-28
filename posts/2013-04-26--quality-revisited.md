@@ -1,3 +1,8 @@
+---
+title: "Quality, Revisited"
+date: 2013-04-26T11:41:55Z
+---
+
 Wow, that was a lot of great feedback in a few hours.
 
 So let’s talk about it.

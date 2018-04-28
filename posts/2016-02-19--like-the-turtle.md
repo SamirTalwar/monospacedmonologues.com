@@ -1,3 +1,8 @@
+---
+title: "Like The Turtle"
+date: 2016-02-19T08:00:11Z
+---
+
 > Try to be like the turtle—at ease in your own shell.
 >
 > <cite>— Bill Copeland</cite>

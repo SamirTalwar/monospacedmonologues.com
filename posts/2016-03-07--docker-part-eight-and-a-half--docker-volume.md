@@ -1,3 +1,8 @@
+---
+title: "Docker, Part Eight and a Half: docker volume"
+date: 2016-03-07T08:00:37Z
+---
+
 I know I said I wouldn't be writing about Docker this week but I wanted to correct the record. After Friday's post, [Lewis][@_lwis] got in touch to ask why I hadn't talked about the new Docker volumes. (Thanks Lewis!) I have to confess, I hadn't even heard of them. Like the new networking functionality, `docker volume` represents a shift in the way of thinking towards more than just containers. Instead of volumes being an attribute of a container, they're entities in their own right.
 
 [@_lwis]: https://twitter.com/_lwis

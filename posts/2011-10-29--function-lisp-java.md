@@ -1,3 +1,8 @@
+---
+title: "Function<Lisp, Java>"
+date: 2011-10-29T00:02:00Z
+---
+
 If you read the last blog post through the eyes of a Java developer, you
 may wonder exactly how you toss functions around willy-nilly like we did
 for our implementation of `map`. You can’t pass functions around like

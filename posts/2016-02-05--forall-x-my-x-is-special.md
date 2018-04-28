@@ -1,3 +1,8 @@
+---
+title: "$∀x :$ My $x$ Is Special"
+date: 2016-02-05T08:00:19Z
+---
+
 An ex-colleague of mine, [Pedro Moreira Santos][@pedromsantos], once made an observation to me that I thought was incredibly insightful. Paraphrasing him:
 
 > Every manager says the same thing: "This will never work. My team is special."

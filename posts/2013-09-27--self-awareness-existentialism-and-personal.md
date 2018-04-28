@@ -1,3 +1,8 @@
+---
+title: "Self-awareness, existentialism and personal responsibility."
+date: 2013-09-27T18:18:00Z
+---
+
 We kicked off [SoCraTes UK 2013](http://socratesuk.org/) with lightning
 talks, and it was then that the theme of the conference was set. They
 all influenced the coming days in some ways (especially

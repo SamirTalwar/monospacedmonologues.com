@@ -1,3 +1,8 @@
+---
+title: "Automating The World"
+date: 2016-01-05T08:30:22Z
+---
+
 It's official. I'm going to automate everything.
 
 One bit at a time.

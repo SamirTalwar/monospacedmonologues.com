@@ -1,3 +1,8 @@
+---
+title: "Querying the web with ScraperWiki"
+date: 2012-11-26T22:31:52Z
+---
+
 A few weeks ago, a friend of mine, [Michael
 Cook](https://twitter.com/mtrc), retweeted a request for up-to-date
 discounts on the Steam store:

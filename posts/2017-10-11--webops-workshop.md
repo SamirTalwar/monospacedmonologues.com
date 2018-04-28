@@ -1,3 +1,8 @@
+---
+title: "WebOps Workshop"
+date: 2017-10-11T07:00:18Z
+---
+
 Over this year, I've been delivering [a talk/live presentation/workshop on "WebOps"][webops-workshop], or DevOps-style operations for the web.
 
 Here's the premise:

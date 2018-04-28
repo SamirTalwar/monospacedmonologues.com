@@ -1,3 +1,8 @@
+---
+title: "Too Many Cooks"
+date: 2014-11-09T10:51:00Z
+---
+
 Last week, [Sandro][Codurance Team] and I flew to Bucharest to meet [Alex][Alex Bolboaca] and [Adi Bolboaca][], [Aki Salmi][] and [Peter Kofler][]. We didn't know what to expect: the agenda was to try a "hardcore coderetreat", in which the constraints would be incredibly difficult, but when you have six headstrong, opinionated people in a room, you really have no idea what's going to happen.
 
 [Codurance Team]: http://codurance.com/aboutus/ourteam/

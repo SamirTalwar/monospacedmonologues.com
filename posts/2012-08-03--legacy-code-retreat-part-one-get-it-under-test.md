@@ -1,3 +1,8 @@
+---
+title: "Legacy Code Retreat part one: get it under test"
+date: 2012-08-03T13:11:00Z
+---
+
 It’s been a while, but people have convinced me that I need to crank
 this one out.
 

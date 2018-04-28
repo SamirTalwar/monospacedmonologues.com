@@ -1,3 +1,8 @@
+---
+title: "Pinocchio"
+date: 2011-11-11T04:08:25Z
+---
+
 Continuing in the vein of forbidding things because they are BAD, here’s
 another one that I hope will leave you scratching your head a little.
 

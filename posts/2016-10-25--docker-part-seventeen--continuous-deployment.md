@@ -1,3 +1,8 @@
+---
+title: "Docker, Part Seventeen: Continuous Deployment"
+date: 2016-10-25T07:00:30Z
+---
+
 *Apologies folks. I wrote this ages ago and apparently never published it. Well, late is better than never, so here it is!*
 
 *You may want to remind yourself of [Docker Compose][Docker, Part Ten: Docker Compose] and [The Guts Of Docker Compose][Docker, Part Eleven: The Guts Of Docker Compose] first.*

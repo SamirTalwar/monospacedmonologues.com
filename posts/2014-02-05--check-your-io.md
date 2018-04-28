@@ -1,3 +1,8 @@
+---
+title: "Check your I/O"
+date: 2014-02-05T17:30:00Z
+---
+
 In Haskell, there's something known as the *IO monad*. The way it works is this: if you have it, you can do I/O. If you don't have it, you can't. You can pass it around, but you can never produce it from nothing. (Haskell aficionados, the comments are open for flaming in 3, 2, 1…)
 
 Before we continue, I should elaborate a bit on what I/O *is*. It's basically anything that reaches out of the safe confines of your executable and touches the system in which it lives. For example:

@@ -1,3 +1,8 @@
+---
+title: "Smalltalk, A Functional Programming Language"
+date: 2016-02-09T08:00:17Z
+---
+
 I was watching [Sandi Metz][@sandimetz]'s talk, [Nothing is Something][], recommended to me by [Pawel Duda][@pawelduda] in the comments of my post, [Why Couple Data to Behaviour?][]. In the talk, she said something that I've always found fascinating.
 
 In the talk, Sandi compares booleans in Ruby (and other "object-oriented" programming languages) to booleans in Smalltalk. She points out that Smalltalk has six keywords, and `if` isn't one of them. So how do you branch, without an `if` keyword?

@@ -1,3 +1,8 @@
+---
+title: "State of Mind"
+date: 2016-01-07T08:30:23Z
+---
+
 On 30th December, I started a diet and exercise plan, because what the hell, it's New Year's and I'd been pigging out for the entire month on barbecue and beer Down Under. It's really simple, but there's a bit of a twist.
 
 The plan is as follows:

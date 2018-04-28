@@ -1,3 +1,8 @@
+---
+title: "Comprehending Lists"
+date: 2011-10-26T23:50:00Z
+---
+
 Today I ran a workshop on functional programming in object-oriented
 languages at a [London Software Craftsmanship
 Community](http://www.meetup.com/london-software-craftsmanship) meetup.

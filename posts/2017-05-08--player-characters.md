@@ -1,3 +1,8 @@
+---
+title: "Player Characters"
+date: 2017-05-08T07:30:30Z
+---
+
 I was at [GameCamp][] this weekend, learning more about how to design games.
 
 I love the GameCamp community. More than anything, it's inclusive: if you're there, you must like games, and we like games too, so let's talk about games!

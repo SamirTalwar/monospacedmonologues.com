@@ -1,3 +1,8 @@
+---
+title: "Surround Yourself With Good Examples"
+date: 2016-01-15T08:00:36Z
+---
+
 > It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration.
 >
 > <cite>[Edgar W. Dijkstra, 18th June 1975][How do we tell truths that might hurt?]</cite>

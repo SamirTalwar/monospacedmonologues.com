@@ -1,3 +1,8 @@
+---
+title: "Global Day of Coderetreat"
+date: 2011-12-05T22:15:34Z
+---
+
 Here’s what you do. On Saturday morning, at ridiculous o’clock (i.e.
 around 8), you walk into a room which has a delicious breakfast all laid
 out. There are some people running about shouting at each other about

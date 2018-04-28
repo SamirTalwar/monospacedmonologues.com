@@ -1,3 +1,8 @@
+---
+title: "I've Got 99 Problems And Asynchronous Programming Is 127 Of Them"
+date: 2016-10-27T07:00:34Z
+---
+
 On Monday, I gave a talk at Codemotion Berlin entitled… well, it's a long title. I don't need to say it twice.
 
 Anyway, [I thought you might be interested in reading it.][Talk] Yes, reading it. My talks are essays first.

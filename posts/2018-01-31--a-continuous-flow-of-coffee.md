@@ -1,3 +1,8 @@
+---
+title: "A Continuous Flow Of Coffee"
+date: 2018-01-31T08:00:21Z
+---
+
 I've watched software developers (in the broadest sense—programmers, designers, testers, managers, coaches, etc.) struggle with the idea of "one-piece continuous flow" for a long time.
 
 Recently I was reminded of my favourite metaphor for this. I was in [Brooklyn Coffee][] (the best little café in London) and watched the staff (there's typically 3 people working there at any given time) work. I was waiting to place my order, but there were two people operating the coffee machine and one handling something in the back, so I had to wait about a minute before one of the baristas (who happens to own the place) came to take my order.

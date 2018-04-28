@@ -1,3 +1,8 @@
+---
+title: "Highly Strung"
+date: 2014-09-26T15:37:00Z
+---
+
 This blog post is way overdue.
 
 A couple of months ago, I wrote a talk entitled [Highly Strung][] for the [Virtual Java User Group (vJUG)][Virtual Java User Group] on when and how to use strings in your code.

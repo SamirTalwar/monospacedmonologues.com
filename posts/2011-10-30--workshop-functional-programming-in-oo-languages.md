@@ -1,3 +1,8 @@
+---
+title: "Workshop: Functional programming in OO languages"
+date: 2011-10-30T15:56:00Z
+---
+
 As I mentioned on Wednesday, I recently ran a session on functional
 programming in object-oriented languages. By that, I really mean
 “languages that weren’t designed with functional code in mind”. This

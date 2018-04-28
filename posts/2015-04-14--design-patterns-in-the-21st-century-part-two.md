@@ -1,3 +1,8 @@
+---
+title: "Design Patterns in the 21st Century: The Abstract Factory Pattern"
+date: 2015-04-14T08:51:27Z
+---
+
 This is part two of my talk, [Design Patterns in the 21st Century][].
 
 [Design Patterns in the 21st Century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html

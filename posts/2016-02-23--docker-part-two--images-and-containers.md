@@ -1,3 +1,8 @@
+---
+title: "Docker, Part Two: Images and Containers"
+date: 2016-02-23T08:00:15Z
+---
+
 We left off, dear reader, with you running the following:
 
     $ docker run hello-world

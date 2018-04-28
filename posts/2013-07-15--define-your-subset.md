@@ -1,3 +1,8 @@
+---
+title: "Define your Subset"
+date: 2013-07-15T17:18:01Z
+---
+
 Every tool you use will be inadequate. Every design you create will be
 inaccurate. Everything you do will be imperfect.
 

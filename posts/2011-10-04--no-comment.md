@@ -1,3 +1,8 @@
+---
+title: "No Comment"
+date: 2011-10-04T19:37:00Z
+---
+
 **Unless you have a damn good reason, don’t write comments.**
 
 And if you see a comment, you should probably delete it.

@@ -1,3 +1,8 @@
+---
+title: "Getters, Setters and Properties"
+date: 2016-01-25T08:30:21Z
+---
+
 The last rule of [Object Calisthenics][] is:
 
 > No getters, setters or properties.

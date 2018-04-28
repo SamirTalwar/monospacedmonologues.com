@@ -1,3 +1,8 @@
+---
+title: "Design Patterns in the 21st Century, Part One"
+date: 2015-04-13T11:23:36Z
+---
+
 I've been having a bit of trouble blogging recently. In an effort to get back into it, I thought I'd take [a talk that I presented at JAX London last year][Design Patterns in the 21st Century], split it up into blog-sized posts as it's pretty long, and post them all week. If you haven't read it before or seen the talk, I hope you enjoy it.
 
 Oh, and if you'd rather just read the whole thing in one go, flick through the slides (which are almost entirely code), or watch the recorded version as a video, head to [my talks page][Design Patterns in the 21st Century].

@@ -1,3 +1,8 @@
+---
+title: "New Year's Resolution"
+date: 2014-01-01T12:41:01Z
+---
+
 At work, we run monthly coding workshops to give people an opportunity
 to hone their development skills. The idea is to provide an environment
 in which the results don’t matter, letting people take their time and

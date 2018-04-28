@@ -1,3 +1,8 @@
+---
+title: "A software craftsman is"
+date: 2014-05-14T13:29:40Z
+---
+
 Someone who aspires to quality.
 
 Someone who considers the means as well as the ends. Alternatively, one who realises that everything has more than one outcome, and that as many of them as possible should be considered.

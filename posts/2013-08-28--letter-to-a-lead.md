@@ -1,3 +1,8 @@
+---
+title: "Letter to a Lead"
+date: 2013-08-28T11:26:21Z
+---
+
 Dear Developer,
 
 Thank you for taking the time to review my pull request. I have to

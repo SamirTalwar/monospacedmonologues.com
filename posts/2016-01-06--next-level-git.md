@@ -1,3 +1,8 @@
+---
+title: "Next Level Git"
+date: 2016-01-06T08:30:19Z
+---
+
 It's no secret to anyone I've ever worked with that I essentially run my working life with an ever-growing, ever-changing set of shell scripts.
 
 It is, however, somewhat of a secret that all of these are [hosted on GitHub][FYGM].

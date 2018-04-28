@@ -1,3 +1,8 @@
+---
+title: "Design Patterns in the 21st Century: The Adapter Pattern"
+date: 2015-04-15T09:28:48Z
+---
+
 This is part three of my talk, [Design Patterns in the 21st Century][].
 
 [Design Patterns in the 21st Century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html

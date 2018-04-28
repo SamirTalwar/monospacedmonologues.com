@@ -1,3 +1,8 @@
+---
+title: "Skillful Sailing"
+date: 2016-02-26T08:00:25Z
+---
+
 > It is not the ship so much as the skillful sailing that assures the prosperous voyage.
 >
 > <cite>— George William Curtis</cite>

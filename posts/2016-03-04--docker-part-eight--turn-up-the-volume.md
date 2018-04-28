@@ -1,3 +1,8 @@
+---
+title: "Docker, Part Eight: Turn Up The Volume"
+date: 2016-03-04T08:00:39Z
+---
+
 (Can you tell I'm enjoying these awful puns?)
 
 Yesterday, we created a container for PostgreSQL, my database of choice in a pinch. This was fairly simple, but had a problem you don't see with stateless applications: the data on disk needs to be preserved across restarts and even replacements of the container.

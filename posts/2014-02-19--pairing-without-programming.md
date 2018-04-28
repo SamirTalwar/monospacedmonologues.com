@@ -1,3 +1,8 @@
+---
+title: "Pairing without programming"
+date: 2014-02-19T17:00:05Z
+---
+
 Pairing is often associated with programming. There's a Wikipedia article about pair programming, but nothing on pairing in general. And yet, it's a fantastic technique for getting anything done well, especially when neither of you really know exactly how to approach a problem.
 
 For a week and a half now, I've been working with [Sandro][@sandromancuso] on the business side of [Codurance][]. From next week, I'll be heading to a client to do some actual programming, but in the mean time, I've been working on recruiting, promotion, client relations, and I've also had a little more time to spend on [LSCC][].

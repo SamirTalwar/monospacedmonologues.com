@@ -1,3 +1,8 @@
+---
+title: "Public Speaking Is Hard"
+date: 2017-12-15T08:00:18Z
+---
+
 Last week, I spoke at [Computer Science Noobs][] on the subject of type systems. I'm still in the process of writing up the talk (and make no promises about if and when it will be finished), but I realised something that I wish I'd realised sooner.
 
 It turns out I really don't like talks.

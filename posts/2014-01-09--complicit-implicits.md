@@ -1,3 +1,8 @@
+---
+title: "Complicit Implicits"
+date: 2014-01-09T14:41:34Z
+---
+
 Imagine we have a calculator, written in Scala.
 
     class Calculator {

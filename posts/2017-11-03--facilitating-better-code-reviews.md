@@ -1,3 +1,8 @@
+---
+title: "Facilitating Better Code Reviews"
+date: 2017-11-03T08:00:12Z
+---
+
 Over the weekend, I asked a lot of people a few questions about code reviews.
 
 I have an agenda. [We're working on a product that intends to take the pain out of code review.][Prodo.AI] We want to make the best product possible, and that starts with understanding where the pain is.

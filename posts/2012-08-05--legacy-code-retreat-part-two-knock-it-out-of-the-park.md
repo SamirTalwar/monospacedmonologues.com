@@ -1,3 +1,8 @@
+---
+title: "Legacy Code Retreat part two: knock it out of the park"
+date: 2012-08-05T06:41:00Z
+---
+
 [Part
 one](http://monospacedmonologues.com/post/28626062275/legacy-code-retreat-part-one-get-it-under-test)
 was about understanding the code. Part two is all about changing it.

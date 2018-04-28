@@ -1,3 +1,8 @@
+---
+title: "Lean, Reactive Event-Sourcing"
+date: 2016-10-14T07:00:26Z
+---
+
 *a.k.a. ALL OF THE BUZZWORDS.*
 
 ---

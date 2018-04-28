@@ -1,3 +1,8 @@
+---
+title: "Language-Agnostic Test Cases"
+date: 2016-03-24T08:00:22Z
+---
+
 When pairing with [@sleepyfox][] on a kata, we decided to write the code in a shell script. Someone snarkily asked how we were going to test-drive our solution. So, after a second of thought, I remembered my test framework, [Smoke][].
 
 Smoke is a little different from other test frameworks. It was designed to test code written in any language, so you don't write the tests in code. You simply specify the input to be provided to the program via command-line arguments and STDIN, and the expected STDOUT, STDERR and exit statuses. To do this, you just create five text files (though you can leave some out) with the `.args`, `.in`, `.out`, `.err` and `.status` file extensions.

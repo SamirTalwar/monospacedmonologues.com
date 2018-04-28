@@ -1,3 +1,8 @@
+---
+title: "#SoCraTesUK, Buzzfeed Edition"
+date: 2016-06-07T07:00:25Z
+---
+
 People came to beautiful Wotton House, the new venue for [SoCraTes UK][], from all over Europe.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">I&#39;m on my way to LGW! And I have wifi onboard <a href="https://twitter.com/hashtag/socratesuk?src=hash">#socratesuk</a> <a href="https://t.co/3rUWB7Vykq">pic.twitter.com/3rUWB7Vykq</a></p>&mdash; Aki Salmi (@rinkkasatiainen) <a href="https://twitter.com/rinkkasatiainen/status/738241927041187840">June 2, 2016</a></blockquote>

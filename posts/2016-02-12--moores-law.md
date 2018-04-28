@@ -1,3 +1,8 @@
+---
+title: "Moore's Law"
+date: 2016-02-12T08:00:29Z
+---
+
 The fast inverse square root function I talked about yesterday is often attributed to John Carmack. The fact is, no one really knows where it came from, but it speaks to Carmack's legendary status that such an amazing feat of engineering is commonly assumed to be written by him.
 
 So I thought, for today, I'd muse about something Carmack once said:

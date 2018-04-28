@@ -1,3 +1,8 @@
+---
+title: "Naming Things"
+date: 2016-02-02T08:00:27Z
+---
+
 A couple of weeks ago, [I promised to talk about naming][Slash Slash Massive Hack].
 
 > If you can name a function really well, it probably does one thing and one thing only. This means you've figured out a decent way to separate your concerns, which means that often, the name is really all you need to know. (Expect more on naming in a future post.)

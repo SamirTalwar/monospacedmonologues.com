@@ -1,3 +1,8 @@
+---
+title: "Don't Call Us. We'll Call You."
+date: 2013-03-27T16:18:39Z
+---
+
 I’ve been thinking about why I dislike Ruby on Rails for over a year
 now. It’s not the much-touted “convention over configuration”—that’s
 actually quite lovely. It’s not the ever-increasing rate of zero-day

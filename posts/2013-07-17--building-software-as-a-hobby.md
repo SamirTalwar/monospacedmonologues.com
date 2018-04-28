@@ -1,3 +1,8 @@
+---
+title: "Building software as a hobby"
+date: 2013-07-17T17:07:46Z
+---
+
 I want to make things for everyone.
 
 I haven’t done that in a while. The last big project I did was

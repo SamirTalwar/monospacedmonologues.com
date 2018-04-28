@@ -1,3 +1,8 @@
+---
+title: "Outside your comfort zone"
+date: 2013-10-02T15:21:41Z
+---
+
 I’ve shied away from the word “programmer” for a long time because I
 don’t think it accurately represents what I do. It implies that the most
 important thing about the job is the magic words that come out of our

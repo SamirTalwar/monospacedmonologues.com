@@ -1,3 +1,8 @@
+---
+title: "Docker, Part Sixteen: Logging"
+date: 2016-05-31T07:00:20Z
+---
+
 This post isn't really about Docker, except that it is.
 
 ---

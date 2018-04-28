@@ -1,3 +1,8 @@
+---
+title: "Fairy Godmother"
+date: 2011-11-13T17:49:00Z
+---
+
 In our [last
 installment](http://monospacedmonologues.com/post/12627672433/pinocchio),
 we looked at a piece of code and removed some of the nulls. At the end

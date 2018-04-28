@@ -1,3 +1,8 @@
+---
+title: "Docker, Part Nine: Scripted Deployment"
+date: 2016-03-14T08:01:32Z
+---
+
 We left off [more than a week ago][Docker, Part Eight: Turn Up The Volume] with an introduction to Docker volumes (amended in [part eight and a half][Docker, Part Eight and a Half: docker volume]), which showed how to persist data across container restarts and upgrades. By the end of it, we could start [the bemorerandom.com API service][bemorerandom.com] and its database with just a few commands:
 
     $ docker network create bemorerandom

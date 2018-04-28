@@ -1,3 +1,8 @@
+---
+title: "The Social Networking Kata"
+date: 2013-04-30T10:36:40Z
+---
+
 Last week, [Sandro](https://twitter.com/sandromancuso) and I had a lot
 of fun running [our monthly hands-on
 session](http://www.meetup.com/london-software-craftsmanship/events/115289022/)

@@ -1,3 +1,8 @@
+---
+title: "Cleanliness"
+date: 2016-03-18T08:00:33Z
+---
+
 I've heard this one from Hindus, Jews and Christians alike:
 
 > Cleanliness is next to godliness.

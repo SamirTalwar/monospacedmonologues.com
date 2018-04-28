@@ -1,3 +1,8 @@
+---
+title: "Richard Feynman, TDD Master"
+date: 2013-09-11T20:04:10Z
+---
+
 > For Richard, figuring out these problems was a kind of a game. He
 > always started by asking very basic questions like, “What is the
 > simplest example?” or “How can you tell if the answer is right?” He

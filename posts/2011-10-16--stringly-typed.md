@@ -1,3 +1,8 @@
+---
+title: "Stringly Typed"
+date: 2011-10-16T18:53:00Z
+---
+
 At the first [FP Day](http://www.fpday.net/) on Friday, I attended a
 talk by Don Syme on [F\#
 3.0](http://research.microsoft.com/en-us/um/cambridge/projects/fsharp/).

@@ -1,3 +1,8 @@
+---
+title: "Teach Me BDD"
+date: 2017-10-18T07:00:18Z
+---
+
 > Sensei, teach me BDD.
 
 OK, this whole programmer-fascination-with-Japanese-words thing has gone too far.

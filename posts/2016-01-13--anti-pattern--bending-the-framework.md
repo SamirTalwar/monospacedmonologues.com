@@ -1,3 +1,8 @@
+---
+title: "Anti-Pattern: Bending The Framework"
+date: 2016-01-13T08:00:15Z
+---
+
 [Wolfram Kriesing][@wolframkriesing] and [Jim Suchy][@jsuchy] were talking about frameworks on Twitter. I thought I'd get involved.
 
 [@wolframkriesing]: https://twitter.com/wolframkriesing

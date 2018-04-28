@@ -1,3 +1,8 @@
+---
+title: "Ninja Pairing"
+date: 2016-04-18T07:00:12Z
+---
+
 I'm sure I'm not the first person to do this, but I've never heard anyone else explain it explicitly, so here's my take on it. This was originally part of a discussion on the [Software Craftsmanship Slack organisation][].
 
 [Software Craftsmanship Slack organisation]: http://slack.softwarecraftsmanship.org/

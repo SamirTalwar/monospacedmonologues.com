@@ -1,3 +1,8 @@
+---
+title: "Functional Poker Hands in Java"
+date: 2011-12-02T13:20:00Z
+---
+
 A few weeks ago, I wrote about [a workshop I ran at Skills
 Matter](http://monospacedmonologues.com/post/12118361399/workshop-functional-programming-in-oo-languages)
 and posed the question to you guys. If you haven’t seen it, I encourage

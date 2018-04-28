@@ -1,3 +1,8 @@
+---
+title: "Dysfunctional Programming"
+date: 2013-08-07T14:05:00Z
+---
+
 There’s a problem with learning a new programming paradigm: you often
 have to learn a new language simultaneously. So at [SoCraTes
 2013](http://socrates-conference.de/) in Germany, I decided I’d run a

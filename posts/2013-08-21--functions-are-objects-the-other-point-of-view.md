@@ -1,3 +1,8 @@
+---
+title: "Functions are Objects: the other point of view"
+date: 2013-08-21T16:15:00Z
+---
+
 There’s a feature in Java 8 which nicely embodies one of the differences
 between the class-oriented structure of Java and functional languages.
 It lies in the way you implement lambdas.

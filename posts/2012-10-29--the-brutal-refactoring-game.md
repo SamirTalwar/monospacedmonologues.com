@@ -1,3 +1,8 @@
+---
+title: "The Brutal Refactoring Game"
+date: 2012-10-29T10:08:46Z
+---
+
 Let’s play a game.
 
 The rules are simple: write some code. Oh, and you have to do it right.

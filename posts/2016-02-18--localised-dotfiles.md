@@ -1,3 +1,8 @@
+---
+title: "Localised dotfiles"
+date: 2016-02-18T08:00:26Z
+---
+
 So you followed yesterday's guide to setting up your dotfiles repository. Now it's time to get your shell configuration in there.
 
 If you're using Bash, you're in luck. Just move your `.bash_profile` to `dotfiles/bash_profile` and commit. Done and dusted. If you're using ZSH, well, you have to copy your `.zshrc`, `.zshenv`, `.zlogin`, `.zlogout` and `.zprofile`. That might take a while. It's OK. I'll wait.

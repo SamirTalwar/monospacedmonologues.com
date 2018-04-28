@@ -1,3 +1,8 @@
+---
+title: "Making a calculator with bash and sed"
+date: 2016-03-22T08:00:41Z
+---
+
 Here's an easy way to make a calculator REPL:
 
     #!/usr/bin/env bash

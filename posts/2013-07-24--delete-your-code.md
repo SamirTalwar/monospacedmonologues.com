@@ -1,3 +1,8 @@
+---
+title: "Delete Your Code"
+date: 2013-07-24T16:53:00Z
+---
+
 That was my battle cry at Palantir’s first ever code retreat.
 
 Last weekend, we spent two and a half days out in the beautiful English

@@ -1,3 +1,8 @@
+---
+title: "Conversations About Conversations at SoCraTes UK 2015"
+date: 2015-06-07T18:32:36Z
+---
+
 OK, brain dump time.
 
 ## Using the Right Language

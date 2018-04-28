@@ -1,3 +1,8 @@
+---
+title: "Live Coding at a Conference, and why it is Scary"
+date: 2013-05-27T10:25:00Z
+---
+
 ![I'm speaking at I.T.A.K.E.](http://i.imgur.com/X6MvZiU.png)
 
 In less than a week, I’m giving my first ever professional talk at the

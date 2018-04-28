@@ -1,3 +1,8 @@
+---
+title: "More like Hask-Hell LOL"
+date: 2017-05-31T07:30:13Z
+---
+
 I'm not sure how, but a little while ago I got talking to [John Cinnamond][@jcinnamond] about an experience of mine with Haskell that didn't exactly end well.
 
 As some of you may know, I made a terribly-promoted, mostly-unused (except by me) application called [Over The Finish Line][]. It displays open pull requests on your favourite repositories in a dashboard format. I think it's pretty neat. It doesn't get much love nowadays… but I'm getting ahead of myself.

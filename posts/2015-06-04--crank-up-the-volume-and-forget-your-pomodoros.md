@@ -1,3 +1,8 @@
+---
+title: "Crank Up The Volume And Forget Your Pomodoros"
+date: 2015-06-04T08:09:34Z
+---
+
 Together, [Steve Lydford](https://twitter.com/stevelydford) and I came up with a way to work that we don't think has been put to paper before.
 
 [The Pomodoro technique](http://en.wikipedia.org/wiki/Pomodoro_Technique) is a great way to keep you focused, alone, in a pair, in a mob or in a meeting room. By setting a 25-minute timer and a goal, you can help ensure you're keeping on the right track and taking frequent breaks.

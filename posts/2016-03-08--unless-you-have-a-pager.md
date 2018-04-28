@@ -1,3 +1,8 @@
+---
+title: "Unless You Have A $PAGER"
+date: 2016-03-08T08:00:39Z
+---
+
 I just found a bug in [SDKMAN!][] that you'll probably never see. It only manifested in my machine when I ran the test cases inside a Docker container.
 
 SDKMAN! is a program that manages, well, SDKs. It started off as the Groovy Version Manager, or GVM, but now it can install multiple versions of Scala, Grails, SBT… you name it in the Java world, and it's there. You run it with the `sdk` command in your terminal.

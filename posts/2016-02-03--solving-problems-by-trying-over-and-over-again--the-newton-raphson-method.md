@@ -1,3 +1,8 @@
+---
+title: "Solving Problems By Trying Over And Over Again: the Newton-Raphson Method"
+date: 2016-02-03T08:00:14Z
+---
+
 I was re-reading [Slash Slash Massive Hack][] as I wrote yesterday's blog post, and was reminded of the awesomeness of the Newton-Raphson method. [Wikipedia explains it better than I][Newton's method]:
 
 > In numerical analysis, Newton's method (also known as the Newton–Raphson method), named after Isaac Newton and Joseph Raphson, is a method for finding successively better approximations to the roots (or zeroes) of a real-valued function.

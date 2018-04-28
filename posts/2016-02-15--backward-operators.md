@@ -1,3 +1,8 @@
+---
+title: "Backward Operators"
+date: 2016-02-15T08:00:32Z
+---
+
 I spent a summer a few years ago learning Clojure. Here's a thing that confused the hell out of me for a while. It probably won't affect anyone else who reads this, but I think it's amusing.
 
 I was coming at Clojure from two different angles: I know Java very well, and I am a Haskell hobbyist, though I've never used it for anything too serious. So when I read Clojure, my brain translates the syntax into Haskell, and the execution into Java. Because I've never used Clojure for anything in anger either, I've never got past this and treated it like it's its own language.

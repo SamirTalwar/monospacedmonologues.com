@@ -1,3 +1,8 @@
+---
+title: "Refactoring to Feature"
+date: 2013-07-03T13:26:55Z
+---
+
 *A note, while I’ve got you:* I’ve decided I will be posting a new
 article every Wednesday for the forseeable future. Hopefully I can hold
 this up. Writing one per week is going to be hard, but I think I can

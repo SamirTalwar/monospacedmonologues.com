@@ -1,3 +1,8 @@
+---
+title: "Three Months"
+date: 2016-04-01T07:00:34Z
+---
+
 It's been three months since I started this new phase of my life. Time to take stock.
 
 ## Health

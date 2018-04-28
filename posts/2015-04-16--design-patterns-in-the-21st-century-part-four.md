@@ -1,3 +1,8 @@
+---
+title: "Design Patterns in the 21st Century: The Chain of Responsibility Pattern"
+date: 2015-04-16T17:38:07Z
+---
+
 This is part four of my talk, [Design Patterns in the 21st Century][].
 
 [Design Patterns in the 21st Century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html

@@ -1,3 +1,8 @@
+---
+title: "Simplifying your Design with Higher-Order Functions"
+date: 2013-06-27T15:17:00Z
+---
+
 That was the name of the ~~talk~~ live-coding demonstration I gave at [I
 T.A.K.E.](http://itakeunconf.com/), a conference in Bucharest, Romania.
 

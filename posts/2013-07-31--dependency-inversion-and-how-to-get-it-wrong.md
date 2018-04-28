@@ -1,3 +1,8 @@
+---
+title: "Dependency Inversion, and how to get it wrong"
+date: 2013-07-31T16:04:01Z
+---
+
 I’ve been building a new application in Clojure over the last week or
 so, and it seems to be going quite well. I like the syntax, using a
 functional language has been great, and it’s got enough gold in it that

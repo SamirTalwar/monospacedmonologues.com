@@ -1,3 +1,8 @@
+---
+title: "Docker, Part Four: Repeating Yourself"
+date: 2016-02-25T08:00:40Z
+---
+
 Yesterday we made a Docker image that packages a simple Ruby application. However, recreating that image each time the application changed quickly became tiresome. Today we're going to see how to automate that.
 
 Here's the application, in all its glory.

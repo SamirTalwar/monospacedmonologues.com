@@ -1,3 +1,8 @@
+---
+title: " Mob Programming, and the importance of fun at work"
+date: 2014-07-15T11:50:00Z
+---
+
 It's been a few weeks since SoCraTes UK 2014, and I've had some time to reflect on the event and my learning experiences. Today, I want to talk about the biggest things that stood out for me.
 
 ## Mind. Blown.

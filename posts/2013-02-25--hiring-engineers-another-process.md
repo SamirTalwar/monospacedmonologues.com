@@ -1,3 +1,8 @@
+---
+title: "Hiring Engineers, another Process"
+date: 2013-02-25T16:21:00Z
+---
+
 This post was prompted by [Eran Hammer’s excellent article on
 hiring](http://hueniverse.com/2013/02/hiring-engineers-a-process/) what
 he describes as “non-conforming great talent”. It’s part rebuttal, part

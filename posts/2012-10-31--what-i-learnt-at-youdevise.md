@@ -1,3 +1,8 @@
+---
+title: "What I learnt at youDevise"
+date: 2012-10-31T16:31:00Z
+---
+
 Today is my last day at youDevise (or [TIM Group](http://timgroup.com/),
 as it’s now known). I’ve loved it here, but it’s time to move on and do
 something a little different. With that in mind, I made a list of all

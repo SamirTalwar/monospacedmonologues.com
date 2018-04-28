@@ -1,3 +1,8 @@
+---
+title: "Small Minds"
+date: 2012-04-24T21:45:00Z
+---
+
 I had the opportunity on Sunday to help mentor kids at a one-off
 CoderDojo in Shoreditch. After a head count, we realised we had as many
 mentors as kids, so we got to pair up one-on-one. After drawing straws
