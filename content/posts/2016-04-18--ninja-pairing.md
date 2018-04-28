@@ -15,8 +15,8 @@ Someone rants at you about their code over lunch, so after lunch, you sit with t
 
 After a while, you ask for the keyboard. You mostly navigate, but share the keyboard and mouse a little.
 
-Once you’ve solved the problem, you figure out whether it’s OK to stick around or whether you should go back to your desk.
+Once you've solved the problem, you figure out whether it's OK to stick around or whether you should go back to your desk.
 
-If you stick around, great. You’re pairing now. Start injecting a little testing, a little design, maybe a bit of planning for the rest of the task/story/project.
+If you stick around, great. You're pairing now. Start injecting a little testing, a little design, maybe a bit of planning for the rest of the task/story/project.
 
-If not, wait until it happens again. It’ll be easier next time.
+If not, wait until it happens again. It'll be easier next time.

@@ -5,7 +5,7 @@ date: 2016-02-10T08:00:29Z
 
 The other day, I was reading Eric Lippert's blog—specifically [the second post in his series on implementing a Z-machine in OCaml][North of house]—and something he wrote reminded me of a conversation I had with [Tom Denley][@scarytom] many years ago:
 
-> This declares a variable called word, though “variable” is a bit of a misnomer in OCaml. Variables do not (typically) vary. (There are ways to make variables that vary – they are somewhat akin to “ref” parameters in C# – but I’m not going to use them in this project.) Variables are actually a name associated with a value.
+> This declares a variable called word, though "variable" is a bit of a misnomer in OCaml. Variables do not (typically) vary. (There are ways to make variables that vary – they are somewhat akin to "ref" parameters in C# – but I'm not going to use them in this project.) Variables are actually a name associated with a value.
 
 In that conversation, we were talking about Google's [Guava][] library, and some of its functional interfaces. Here's one, cut down to the bare essentials:
 

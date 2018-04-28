@@ -21,7 +21,7 @@ An hour after hitting the button, things were still downloading. My connection w
 
 An hour and a half has gone by, and I finally have a Play application. It says hello to me. It's got a unit test that ensures it says hello, a functional test that ensures that the HTML is fine, and that check that the browser (using [Selenium][] and [HtmlUnit][]) can see that we're saying hello. This is an excellent starting point, and I remembered the advantages of using a web framework. Until I realised it was using [*specs²*][Specs2], my least favourite test framework. And so I looked into using [ScalaTest][] instead. This was a mistake.
 
-[The thing that upsets me about frameworks][Don’t Call Us. We’ll Call You.] is that everything that interacts with the framework is special. I wanted to use a test framework, but I couldn't just use ScalaTest, I had to use [ScalaTest + Play][], a library that specifically integrates the two. After I got that working, porting the tests was a doddle, but it took ages (including several more minutes of downloading dependencies) before I could get it working.
+[The thing that upsets me about frameworks][Don't Call Us. We'll Call You.] is that everything that interacts with the framework is special. I wanted to use a test framework, but I couldn't just use ScalaTest, I had to use [ScalaTest + Play][], a library that specifically integrates the two. After I got that working, porting the tests was a doddle, but it took ages (including several more minutes of downloading dependencies) before I could get it working.
 
 Great. Now I had a web framework that did what I wanted. I was still using the Activator UI, so I could click a button on a web page to run my application, and another button to run all the tests.
 
@@ -47,7 +47,7 @@ I talked last week about programming being a set of trade-offs. In this, using a
 
 [^1]: I used to work for TIM Group, but left in late 2012, at around the same time Play was introduced. I missed the revolution.
 
-[Don’t Call Us. We’ll Call You.]: http://monospacedmonologues.com/post/46427054295/dont-call-us-well-call-you
+[Don't Call Us. We'll Call You.]: http://monospacedmonologues.com/post/46427054295/dont-call-us-well-call-you
 
 [HtmlUnit]: http://htmlunit.sourceforge.net/
 [NPM]: https://www.npmjs.com/

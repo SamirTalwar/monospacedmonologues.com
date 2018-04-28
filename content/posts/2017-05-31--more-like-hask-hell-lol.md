@@ -33,7 +33,7 @@ What's a monad transformer? I already told you. Literally monads upon monads. Tu
   <figcaption><em>John:</em> I guess that some applications just want to be imperative!</figcaption>
 </figure>
 
-I wouldn't use Haskell for this project. But I would absolutely use it again, just not for anything where there’s more than one layer of I/O. And I'd only use it if there was serious computation going on. Most of this project is side effects: talking to GitHub, talking to the database, loading the configuration from environment variables, serving over HTTP.
+I wouldn't use Haskell for this project. But I would absolutely use it again, just not for anything where there's more than one layer of I/O. And I'd only use it if there was serious computation going on. Most of this project is side effects: talking to GitHub, talking to the database, loading the configuration from environment variables, serving over HTTP.
 
 I don't think I've ever said this before, but I wish I'd just used node.js.
 

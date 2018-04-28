@@ -40,7 +40,7 @@ You can use `Filter` objects to do pretty much anything with a request. Here's o
                 FilterChain chain)
         {
             int hits = getCounter().incCounter();
-            log(“The number of hits is ” + hits);
+            log("The number of hits is " + hits);
             chain.doFilter(request, response);
         }
     }
@@ -55,7 +55,7 @@ We might use an object in the chain to modify the input or output (in this case,
                 ServletResponse response,
                 FilterChain chain)
         {
-            request.setEncoding(“UTF-8”);
+            request.setEncoding("UTF-8");
             chain.doFilter(request, response);
         }
     }

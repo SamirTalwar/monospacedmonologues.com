@@ -20,17 +20,17 @@ to grips with the concept of text that changed the way other text
 worked, but before long we were embedding YouTube videos and linking
 everything together.
 
-There’s a certain class of questions that are only asked by children and
-newbies. They’re pretty valuable. They usually start with “Why”, and
-often follow a “What”. Things like, ‘What does `<a>` mean?’ ‘Er, why is
-it called “anchor”?’ After we’ve been working in the field for more than
+There's a certain class of questions that are only asked by children and
+newbies. They're pretty valuable. They usually start with "Why", and
+often follow a "What". Things like, 'What does `<a>` mean?' 'Er, why is
+it called "anchor"?' After we've been working in the field for more than
 a few months, let alone a few years, we often forget to ask the
-obvious—something I’ll be tackling in my next post.
+obvious—something I'll be tackling in my next post.
 
-It’s a wonderful feeling when you meet a 10 year old who’s really
-interested in *anything*. When they’re interested in the same field as
-you, that’s just a bonus. I was so glad to meet Noah and find out what
-made him tick, and I’m looking forward to seeing him again and
+It's a wonderful feeling when you meet a 10 year old who's really
+interested in *anything*. When they're interested in the same field as
+you, that's just a bonus. I was so glad to meet Noah and find out what
+made him tick, and I'm looking forward to seeing him again and
 discovering how his website has developed in the mean time [at a future
 CoderDojo](http://coderdojo.com/). I really encourage anyone with a
 passion for their craft to sign up and help teach small kids how this

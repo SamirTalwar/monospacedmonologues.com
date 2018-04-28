@@ -15,7 +15,7 @@ crafted it.
 
 Some minutes go by, then hours, then days. But then! Another email, this
 one a question: would it be possible to make an ever-so-small change to
-the product? Aha, I think! This is my chance! Of course it’s possible—I
+the product? Aha, I think! This is my chance! Of course it's possible—I
 myself wrote the very module that enables your desires, and now I shall
 explain them to you! Of course, our dear developer deserves a lot of the
 credit for building such an exquisite masterpiece that I was able to so
@@ -33,9 +33,9 @@ has it gone? Reverted, it says, undone, revoked, cast away as trash for
 the foxes and the rats, and all within hours of review.
 
 My heart starts to pound. I have nowhere else to turn; I send you a
-message. My hands shake as I type the words, “why?”
+message. My hands shake as I type the words, "why?"
 
-Within minutes, you come back to me. “Your change broke the entire app.”
+Within minutes, you come back to me. "Your change broke the entire app."
 I stare, aghast at the message, apologetic and confused, for the changes
 worked well on my machine. And did you not review it? Examine the code
 and ensure it was not foolish, deploy it and ensure it would run as
@@ -45,11 +45,11 @@ consideration of whether it would bring harmony to the code base?
 Confusion gives way to anger as I realise you had no intention of ever
 telling me, had I not asked. The feature deemed unimportant, the code
 deemed unworthy, but how? We have the same end; we are building for the
-same purpose. This is not for my enjoyment, but for the customer’s, both
+same purpose. This is not for my enjoyment, but for the customer's, both
 yours and mine. He has asked and I have given, and you have thrown it
 away as if it were nothing.
 
-I ask you, is the purpose of “owning” the code for your benefit or for
+I ask you, is the purpose of "owning" the code for your benefit or for
 the products? The product is what is important, not your ego or mine. We
 meet the demands placed upon us by our customers, not by you, and we
 build to satisfy them. You are the gatekeeper, but this is not a
@@ -64,7 +64,7 @@ and you are so very far away. Maybe it is just lost communication? But I
 think not. Your tone and abruptness has convinced me otherwise. So I ask
 this of you, dear developer, so that I might help you find the way.
 
-Dear developer, don’t be a dick.
+Dear developer, don't be a dick.
 
 Your faithful colleague,
 

@@ -56,7 +56,7 @@ I think [Peter Hilton][@peterhilton] sums this one up best in his articles, [7 w
 
 In those posts, he argues that:
 
-> The truth about code comments is that if you don’t write any, because they would make your code worse, then there’s a powerful language feature that you don’t know how to use, and questions that your code doesn't answer:
+> The truth about code comments is that if you don't write any, because they would make your code worse, then there's a powerful language feature that you don't know how to use, and questions that your code doesn't answer:
 >
 >   * Why is this code here?
 >   * What is it for?

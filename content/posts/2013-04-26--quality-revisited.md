@@ -5,11 +5,11 @@ date: 2013-04-26T11:41:55Z
 
 Wow, that was a lot of great feedback in a few hours.
 
-So let’s talk about it.
+So let's talk about it.
 
 The first thing I want to talk about is the tone of [the
-piece](http://monospacedmonologues.com/post/48868525510/quality). It’s
-kind of idealistic. Of course, things didn’t always go that smoothly,
+piece](http://monospacedmonologues.com/post/48868525510/quality). It's
+kind of idealistic. Of course, things didn't always go that smoothly,
 but we aspired to meet the standards we set for ourselves. And things
 were definitely improving everywhere you looked. [syl
 commented](http://monospacedmonologues.com/post/48868525510/quality#comment-875718483)
@@ -21,7 +21,7 @@ WebDriver, trying to break your application. You might break the
 application, or you might simply break IE.
 
 This got a lot better when we made the (painful) upgrade from Selenium 1
-to Selenium 2 + WebDriver, by the way. If you’re running anything
+to Selenium 2 + WebDriver, by the way. If you're running anything
 through Selenium, I wholeheartedly recommend you take the hit—your
 browsers will become so much more stable. When I visited TIM Group
 recently, everything was looking nice and green.
@@ -29,10 +29,10 @@ recently, everything was looking nice and green.
 [Andrew Parker
 asked](https://twitter.com/aparker42/status/327611389982162944) what the
 question was that prompted the piece. It was in an email from
-[Ed](https://plus.google.com/111189347667024503360): “Basically I wanted
+[Ed](https://plus.google.com/111189347667024503360): "Basically I wanted
 to know what process (Agile, Kanban, Waterfall???) you follow and what
 tools you may use to help (JIRA, etc)? Any books/resources you can
-recommend too?” I replied with an answer, but I was dissatisfied with
+recommend too?" I replied with an answer, but I was dissatisfied with
 it, so I blew it up by a thousand words or so and made it into a blog
 post.
 
@@ -41,7 +41,7 @@ out](https://twitter.com/activelylazy/status/327657045522276352) that
 the dogma on the cost of fixing bugs has been debunked by [Laurent
 Bossavit](https://twitter.com/Morendil) in his book, [The Leprechauns of
 Software Engineering](https://leanpub.com/leprechauns), along with other
-myths and legends. I’ve added it to my reading list and I’m really
+myths and legends. I've added it to my reading list and I'm really
 looking forward to it.
 
 Thanks so much again to everyone who retweeted, commented and gave

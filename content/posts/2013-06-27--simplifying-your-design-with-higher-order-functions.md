@@ -12,8 +12,8 @@ was on why I was pretty scared of doing this. This one (which is late)
 is going to be talking about what I covered in the talk. A written
 version of it, if you will.
 
-We started with me. In case you were wondering, I’m Samir. In my
-defence, my audience didn’t necessarily know this. So I showed them this
+We started with me. In case you were wondering, I'm Samir. In my
+defence, my audience didn't necessarily know this. So I showed them this
 tweet:
 
 > /\* Temporary hack \*/. Oh really? \`git blame\` says you wrote that
@@ -23,14 +23,14 @@ tweet:
 > 2013](https://twitter.com/SamirTalwar/statuses/330318101176524802)
 
 [Peter Flint](https://twitter.com/drumbux) tells me that sums me up
-pretty well. Hopefully that’s enough to tell people what I do: get angry
+pretty well. Hopefully that's enough to tell people what I do: get angry
 about code. And then hopefully fix things.
 
 The Four Elements of Simple Design
 ----------------------------------
 
 After that brief introduction, I started talking about the four elements
-of simple design. I used [J. B. Rainsberger’s
+of simple design. I used [J. B. Rainsberger's
 definitions](http://www.jbrains.ca/permalink/the-four-elements-of-simple-design),
 which he took from Kent Beck. I quote:
 
@@ -43,21 +43,21 @@ which he took from Kent Beck. I quote:
 > 4.  Has fewer elements
 
 The rules are sort of in order of importance, except that sometimes \#3
-trumps \#2. It’s really a gut feeling. When they contradict each other,
-it’s up to the developer to figure out which is more important.
+trumps \#2. It's really a gut feeling. When they contradict each other,
+it's up to the developer to figure out which is more important.
 
-I didn’t focus much on the first rule, because pretty much every other
+I didn't focus much on the first rule, because pretty much every other
 talk at the conference was on testing. I figured it was covered pretty
 well by people far better at writing tests than me. Instead I looked at
-the other three. I love that these rules are clear by themselves—it’s
+the other three. I love that these rules are clear by themselves—it's
 obvious what they mean just by reading. My goal for the session was to
 refactor some of the [Quacker](https://github.com/SamirTalwar/Quacker)
 code base so it better conformed to those three rules.
 
-Below are three examples. I won’t explain why they conform better to the
-four elements; that’s for you to decide. Obviously, I think they do, but
+Below are three examples. I won't explain why they conform better to the
+four elements; that's for you to decide. Obviously, I think they do, but
 rather than listen to me telling you *why* a piece of code is better, I
-think you’ll get more out of the exercise by reasoning about it.
+think you'll get more out of the exercise by reasoning about it.
 
 Refactoring \#1: Loops
 ----------------------
@@ -91,10 +91,10 @@ And turned it into this:
         };
     }
 
-That’s some really pretty code followed by some butt-ugly code.
+That's some really pretty code followed by some butt-ugly code.
 Fortunately, we can just fold the method up in our IDE or editor and
-pretend it doesn’t exist, or even move it into the TimelineRenderer
-class. It’s static, after all. IntelliJ IDEA even makes it look like
+pretend it doesn't exist, or even move it into the TimelineRenderer
+class. It's static, after all. IntelliJ IDEA even makes it look like
 this when you fold it up:
 
     private static Consumer<Message> renderMessageTo(final TimelineRenderer renderer) {
@@ -130,12 +130,12 @@ The next section of the talk focused on this code:
     }
     return state;
 
-This is fairly readable, but won’t be after I implement the rest of the
+This is fairly readable, but won't be after I implement the rest of the
 features. We only have a couple exposed via the command-line handler
-here, and we’re going to need lots more for a fully-fledged Quacker
+here, and we're going to need lots more for a fully-fledged Quacker
 client.
 
-Here was my first stab. It’s using lambdas for conciseness and
+Here was my first stab. It's using lambdas for conciseness and
 readability, but in the talk I actually used full-sized anonymous
 implementations of the `CommandHandler` interface.
 
@@ -153,7 +153,7 @@ implementations of the `CommandHandler` interface.
     String command = commandLine.read();
     return handlers.get(command.charAt(0)).handle(command.substring(2));
 
-Here’s the interface as well:
+Here's the interface as well:
 
     public static interface CommandHandler {
         State handle(String arguments);
@@ -173,7 +173,7 @@ And called it like this:
     return handlers.get(command.charAt(0)).handle(() -> command.substring(2));
 
 Then the code that wanted it could just call the `get` method on the
-supplier, and the code that didn’t (namely the quit handler) never ended
+supplier, and the code that didn't (namely the quit handler) never ended
 up calling `substring`.
 
 Now, we could leave those as lambdas, but I actually preferred to make
@@ -191,24 +191,24 @@ them full classes in their own right:
 That way we can separate the `handlers` lookup table from the actual
 behaviour of the handler, putting it somewhere else entirely if we like.
 
-What I love about this example of higher-order functions is that it’s
-not just functional; it’s object-oriented. It’s proof that you don’t
+What I love about this example of higher-order functions is that it's
+not just functional; it's object-oriented. It's proof that you don't
 have to pick a side: quite often, you can write code that encompasses
-the best principles of both. What’s more object-oriented than
+the best principles of both. What's more object-oriented than
 polymorphism?
 
 Refactoring \#3: Mutability
 ---------------------------
 
 The last example concerned some horrible code to merge two Quacker
-timelines into a single feed. I’m not going to show the code here,
-because there’s too much. [Head over to
+timelines into a single feed. I'm not going to show the code here,
+because there's too much. [Head over to
 GitHub](https://github.com/SamirTalwar/Quacker/blob/840c527edd8867e3d0bdb5b6d9a300903cc53d76/src/main/java/com/noodlesandwich/quacker/communication/feed/AggregatedProfileFeed.java)
 and take a look.
 
-It’s OK. I’ll wait.
+It's OK. I'll wait.
 
-Right. Now you’ve had a bit of time for your eyes to stop watering, I’ll
+Right. Now you've had a bit of time for your eyes to stop watering, I'll
 explain how I fixed it. I applied just one principle: mutability is bad.
 So I replaced the iterators and the mutable maps with immutable linked
 lists (using the [LazySeq](https://github.com/nurkiewicz/LazySeq)
@@ -216,7 +216,7 @@ library), and instead of appending to a mutable list, I constructed new
 lists through transformations.
 
 About half-way through, I realised what I had on my hands was the
-“merge” step of [merge sort](http://en.wikipedia.org/wiki/Merge_sort).
+"merge" step of [merge sort](http://en.wikipedia.org/wiki/Merge_sort).
 So I pushed in that direction, making things immutable as I went.
 
 [The end result was
@@ -226,4 +226,4 @@ Because the immutable code was clearer by default (as in, you can trace
 through the code and understand what everything is at any given point),
 I was able to write concise code that is still perfectly understandable.
 
-OK, I used `reduce`. But apart from that, isn’t it pretty?
+OK, I used `reduce`. But apart from that, isn't it pretty?

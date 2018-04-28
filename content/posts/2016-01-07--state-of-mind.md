@@ -22,11 +22,11 @@ Failing isn't the problem. Not picking yourself up and trying again is.
 It reminds me of [*object calisthenics*][Object Calisthenics]. I fully recommend clicking the link and reading the entire document, but to summarise, object calisthenics are a set of rules to apply in order to write object-oriented code. They are:
 
   1. One level of indentation per method
-  2. Don’t use the `else` keyword
+  2. Don't use the `else` keyword
   3. Wrap all primitives, including strings
   4. First-class collections
   5. One dot per line
-  6. Don’t abbreviate
+  6. Don't abbreviate
   7. Keep all entities small
   8. No classes with more than two instance variables
   9. No getters/setters/properties

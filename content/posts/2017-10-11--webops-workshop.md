@@ -7,7 +7,7 @@ Over this year, I've been delivering [a talk/live presentation/workshop on "WebO
 
 Here's the premise:
 
-> At lightning speed, this workshop will cover the bits that aren’t code that make up a working web app. These include servers, monitoring, deployment mechanisms, logging, alerting, secret management, recovery mechanisms… you get the idea.
+> At lightning speed, this workshop will cover the bits that aren't code that make up a working web app. These include servers, monitoring, deployment mechanisms, logging, alerting, secret management, recovery mechanisms… you get the idea.
 > 
 > Topics include:
 > 

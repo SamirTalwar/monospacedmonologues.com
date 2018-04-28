@@ -3,15 +3,15 @@ title: "Docker, Part One: Getting Started"
 date: 2016-02-22T08:00:24Z
 ---
 
-I've been using Docker heavily in development, test and production for almost a year now, and more and more, I’m asked how to get started with it and use it. I thought I’d write a quick guide to Making Things Happen™ on your local machine, and perhaps touch on deploying services inside Docker containers in the future.
+I've been using Docker heavily in development, test and production for almost a year now, and more and more, I'm asked how to get started with it and use it. I thought I'd write a quick guide to Making Things Happen™ on your local machine, and perhaps touch on deploying services inside Docker containers in the future.
 
 ## First and foremost, what is Docker?
 
-I’m fairly sure at this point we’re familiar with virtual machines and their impact on software development. Many organisations now run their server applications and services inside virtual machines to keep them contained and ensure that one failing, buggy or out-of-control service doesn’t impact another. We even rent virtual machines from cloud providers such as Amazon, Rackspace, Joyent and many more.
+I'm fairly sure at this point we're familiar with virtual machines and their impact on software development. Many organisations now run their server applications and services inside virtual machines to keep them contained and ensure that one failing, buggy or out-of-control service doesn't impact another. We even rent virtual machines from cloud providers such as Amazon, Rackspace, Joyent and many more.
 
-Docker is based on [control groups (cgroups)][cgroups] and [namespace isolation][] in the Linux kernel, as well as union filesystems such as [aufs][], which together allow it to *contain* processes and directory structures in containers.[^libcontainer update] These containers are often referred to as “lightweight VMs”, so called because they allow you to get VM-like capabilities, including segregated file systems, memory caps and separate networking layers, but without paying the price of having several operating systems running on one computer. This is done by sharing the kernel: each container re-uses the Linux kernel, which means less overhead per container. While I can only run two or three VMs on my laptop before it slows to a crawl, the same machine can often run 20 or 30 containers, especially if each one doesn’t require a lot of CPU time or dedicated memory.
+Docker is based on [control groups (cgroups)][cgroups] and [namespace isolation][] in the Linux kernel, as well as union filesystems such as [aufs][], which together allow it to *contain* processes and directory structures in containers.[^libcontainer update] These containers are often referred to as "lightweight VMs", so called because they allow you to get VM-like capabilities, including segregated file systems, memory caps and separate networking layers, but without paying the price of having several operating systems running on one computer. This is done by sharing the kernel: each container re-uses the Linux kernel, which means less overhead per container. While I can only run two or three VMs on my laptop before it slows to a crawl, the same machine can often run 20 or 30 containers, especially if each one doesn't require a lot of CPU time or dedicated memory.
 
-Of course, all this means you need to be running Linux. Fortunately, it’s easy to spin up a virtual machine specifically for the purpose of running Docker containers.
+Of course, all this means you need to be running Linux. Fortunately, it's easy to spin up a virtual machine specifically for the purpose of running Docker containers.
 
 [^libcontainer update]: Thanks to [Peter Idah][@peteridah] for updating me. I originally wrote that it was based on Linux Containers (LXC), but Docker now uses libcontainer, which is essentially its own implementation.
 
