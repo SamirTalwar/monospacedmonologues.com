@@ -1,5 +1,3 @@
-# Docker, Part Five: Let's Make A Website
-
 OK, the weekend has happened and I can't remember where we left off. So let's recap, as much for my sake as for yours.
 
 We had this program, *google.rb*, that Googled:

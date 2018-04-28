@@ -1,5 +1,3 @@
-# Docker, Part Six: A Slow Build Is Worse Than No Build At All
-
 A 22-line Dockerfile is all you need to create an image that runs a Java application with Maven.
 
     FROM azul/zulu-openjdk:8

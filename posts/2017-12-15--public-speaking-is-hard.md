@@ -1,5 +1,3 @@
-# Public Speaking Is Hard
-
 Last week, I spoke at [Computer Science Noobs][] on the subject of type systems. I'm still in the process of writing up the talk (and make no promises about if and when it will be finished), but I realised something that I wish I'd realised sooner.
 
 It turns out I really don't like talks.

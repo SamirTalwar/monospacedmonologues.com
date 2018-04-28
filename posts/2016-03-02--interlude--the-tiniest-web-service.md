@@ -1,5 +1,3 @@
-# Interlude: The Tiniest Web Service
-
 I don't have Internet now and I'm tethered to my phone, so I can't play with databases and Docker like I wanted to today. So instead, let's talk about a little project I made to demonstrate that you don't always need your favourite programming language to deliver something useful.
 
 `nc`, or *netcat*, is a program that will connect to a **net**work socket and *cat* (just like `cat`) the result. It's on basically any Linux or BSD (including Mac) operating system. Let's try it.

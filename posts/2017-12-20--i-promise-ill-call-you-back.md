@@ -1,5 +1,3 @@
-# I Promise I'll Call You Back
-
 *This post stems from a discussion with Constantina and others on the [Codebar][] Slack team.*
 
 In JavaScript, callbacks can be unpleasant to work with. [Callback Hell][] has a great explanation about how to make them work well, but it doesn't change the fact that a programming style that lends itself to misuse can be problematic, and callbacks are misused all over the place. Even in documentation.

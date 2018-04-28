@@ -1,5 +1,3 @@
-# Docker, Part Sixteen: Logging
-
 This post isn't really about Docker, except that it is.
 
 ---

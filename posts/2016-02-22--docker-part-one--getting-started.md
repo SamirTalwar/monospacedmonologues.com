@@ -1,5 +1,3 @@
-# Docker, Part One: Getting Started
-
 I've been using Docker heavily in development, test and production for almost a year now, and more and more, I’m asked how to get started with it and use it. I thought I’d write a quick guide to Making Things Happen™ on your local machine, and perhaps touch on deploying services inside Docker containers in the future.
 
 ## First and foremost, what is Docker?

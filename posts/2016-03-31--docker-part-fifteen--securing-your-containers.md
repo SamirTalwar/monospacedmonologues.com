@@ -1,5 +1,3 @@
-# Docker, Part Fifteen: Securing Your Containers
-
 Up until now, we've been neglecting security in favour of getting our application working and features delivered. It's time to look back and ensure that there are no holes in our application containers.
 
 ## Docker Itself

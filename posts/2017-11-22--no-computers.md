@@ -1,5 +1,3 @@
-# No Computers
-
 On Saturday, I helped run the Cambridge instance of [Coderetreat][], 2017 edition as part of the [Cambridge Software Crafters][].
 
 It was a really fun day, and I enjoyed it thoroughly. Today, though, I'm not going to talk about the whole day. (If you want to read about what it's like, [I wrote a post about it five years ago][Post: Global Day of Coderetreat].) This time, I want to concentrate on just the first session.

@@ -1,5 +1,3 @@
-# Line Breaks: A Ruby Style Guide
-
 I don't mean "style guide" as in a full guidebook, but rather a guide to styling Ruby with regard to two very specific circumstances: when to use **parentheses** on function and method invocation, and whether to use **braces or `do … end`** for blocks.
 
 This is my personal recommendation and the style I try to follow. I couldn't really care less what you use as long as you're consistent inside a single project.

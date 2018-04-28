@@ -1,5 +1,3 @@
-# Docker, Part Eleven: The Guts Of Docker Compose
-
 Where were we? Ah yes, DNS resolution wasn't working.
 
     org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource

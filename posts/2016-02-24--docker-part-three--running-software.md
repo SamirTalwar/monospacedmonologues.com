@@ -1,5 +1,3 @@
-# Docker, Part Three: Running Software
-
 We've played with "Hello, World!" long enough. Let's do something useful.
 
 Hello, World is a simple example, but containers can wrap any software you like. This becomes especially useful when creating software that requires a lot of runtime dependencies. For example, your average command-line Ruby program probably depends on a bunch of libraries (gems), and shipping them is a pain. We don't just have to ship the application, but the gems and the Ruby interpreter too. The alternative is to just ship the code and the `Gemfile`, and hope the remote location has the correct version of Ruby, Internet access to download all the gems, any required native code (for example, the Nokogiri gem requires a C compiler), and a whole load of prayer.

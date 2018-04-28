@@ -1,5 +1,3 @@
-# Toggling browser elements without JavaScript
-
 I'm having a sleepy weekend, and I feel like the rhythm of one week on Docker, one off is about as much as I can handle. (Those posts take work!) So we're going to have a week of random stuff before I get back to it. Hope you don't mind the wait. :-)
 
 ---

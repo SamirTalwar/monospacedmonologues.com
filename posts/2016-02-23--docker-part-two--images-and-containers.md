@@ -1,5 +1,3 @@
-# Docker, Part Two: Images and Containers
-
 We left off, dear reader, with you running the following:
 
     $ docker run hello-world

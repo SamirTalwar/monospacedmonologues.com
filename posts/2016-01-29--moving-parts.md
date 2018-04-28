@@ -1,5 +1,3 @@
-# Moving Parts
-
 This week, I tried to explain the difference as I see it between object-oriented and functional programming. There are four articles. If you haven't seen them yet, they're linked right here:
 
   1. [Getters, Setters and Properties][]

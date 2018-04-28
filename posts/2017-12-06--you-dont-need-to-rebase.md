@@ -1,5 +1,3 @@
-# You Don't Need To Rebase
-
 *This post is loosely based on a discussion with [Beverley Newing][@WebDevBev] and others on the [Codebar][] Slack team.*
 
 ---

@@ -1,5 +1,3 @@
-# Twenty-Nine
-
 Today, I'm 29.
 
 Here's what I'd like for my birthday.

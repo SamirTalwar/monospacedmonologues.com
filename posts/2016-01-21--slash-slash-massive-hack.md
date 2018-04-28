@@ -1,5 +1,3 @@
-# Slash Slash Massive Hack
-
 I generally dislike code comments. I've heard good arguments for and against, and many, many bad arguments for them. Let me sum them up, and I'll present a slightly different take on them at the end.
 
 ## The Bad Arguments For Code Comments

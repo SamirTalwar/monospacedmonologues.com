@@ -1,5 +1,3 @@
-# Lean, Reactive Event-Sourcing
-
 *a.k.a. ALL OF THE BUZZWORDS.*
 
 ---

@@ -1,5 +1,3 @@
-# Why Couple Data to Behaviour?
-
 Yesterday I posted on avoiding [Getters, Setters and Properties][], and how to bring the behaviour of your system closer to your data. The more functionally astute of you might have realised that this is, of course, a form of coupling. By making state private, and only allowing access via methods, we need to *open* up the class each time we want to modify the behaviour. This makes it look like proper object-oriented programming *must* violate the [open-closed principle][Open-Closed Principle]:
 
 > Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.

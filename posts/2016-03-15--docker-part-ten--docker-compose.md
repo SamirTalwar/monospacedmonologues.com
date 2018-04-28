@@ -1,5 +1,3 @@
-# Docker, Part Ten: Docker Compose
-
 Yesterday, we wrote a script to spin up all the various containers we need to start our application. Today, let's take a look at a better way to do all that without worrying too much about the intricacies of Bash scripting.
 
 [Docker Compose][] is a tool for doing this sort of thing in a declarative fashion. You write a specification for what your application looks like, and Compose handles building and running it.

@@ -1,5 +1,3 @@
-# Isolating Gems With RVM
-
 When working on a Ruby project, it's tempting to just install the gems with `bundle install` and get to work. While Bundler is pretty good at ensuring you only use the gems you specify, and that you get the right versions, you still end up with a ton of gems in one directory with no way to identify which ones you need and which ones exist for projects you don't maintain any more, or are older versions of gems that you've updated.
 
 Fortunately, [RVM][] has your back. You may be using RVM to install multiple versions of Ruby already. If you're using the version that ships with your operating system or package manager, I'd recommend switching to RVM so you can select your Ruby version on a project-by-project basis. It also lets you keep your gems in your own user profile instead of installing them at the system level.

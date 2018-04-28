@@ -1,5 +1,3 @@
-# Amdahl's Corollary, For Teams
-
 The most efficient way to implement a piece of software is to do it all yourself. No time is wasted communicating (or arguing); everything that needs to be done is done by the same person, which increases their ability to maintain the software; and the code is by default way more consistent.
 
 Of course, we don't make large pieces of software this way. We work in teams.

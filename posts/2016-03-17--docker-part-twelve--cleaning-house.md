@@ -1,5 +1,3 @@
-# Docker, Part Twelve: Cleaning House
-
 We've come a long way, but as they say, you can't make an omelette without breaking some eggs.
 
 Lets have a look at the mess I've made in the last couple of days.

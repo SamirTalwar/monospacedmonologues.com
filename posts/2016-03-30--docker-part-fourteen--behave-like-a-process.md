@@ -1,5 +1,3 @@
-# Docker, Part Fourteen: Behave Like A Process
-
 I was going to write a long post on all the different ways in which stopping your container can go wrong, but it turns out Brian DeHamer beat me to it and did a much better job than I could. I'd recommend reading the article, [Gracefully Stopping Docker Containers][].
 
 But for completeness' sake, I'd like to apply the advice in that article to my pet project, [*bemorerandom.com*][bemorerandom.com].

@@ -1,5 +1,3 @@
-## The Decentralised Web is the Client-Driven Web
-
 I'm getting pretty excited about the idea of a completely decentralised World Wide Web.
 
 Last year I went to the [Mozilla Festival][]. I loved it. I could only make one of the two days, but it was enough for me. The highlight was the [Beaker Browser][], a browser that's able to request *and serve* web pages over a secure peer-to-peer networking protocol called [DAT][DAT Project].

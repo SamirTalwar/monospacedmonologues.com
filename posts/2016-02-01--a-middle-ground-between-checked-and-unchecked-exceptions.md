@@ -1,5 +1,3 @@
-# A Middle Ground Between Checked And Unchecked Exceptions
-
 I hear a lot of arguments against Java's checked exceptions. Normally, they run along these lines:
 
 > You have to propagate the exceptions everywhere. Too much noise, not enough signal.

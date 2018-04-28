@@ -1,5 +1,3 @@
-# Working Hours
-
 Everyone on Twitter has their opinion on working hours. Here's my story. There's very little data, but the nice thing about self-experimentation is that you can be fairly sure you've found something that works for you.
 
 The current standard for office work in Europe is eight hours per day, including time for lunch, five days per week. This has been fairly common in many jobs for over a century now, down from 12–14 hours, 6–7 days per week in the worst case.

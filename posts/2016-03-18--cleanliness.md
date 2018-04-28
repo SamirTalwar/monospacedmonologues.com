@@ -1,5 +1,3 @@
-# Cleanliness
-
 I've heard this one from Hindus, Jews and Christians alike:
 
 > Cleanliness is next to godliness.

@@ -1,5 +1,3 @@
-# WebOps Workshop
-
 Over this year, I've been delivering [a talk/live presentation/workshop on "WebOps"][webops-workshop], or DevOps-style operations for the web.
 
 Here's the premise:

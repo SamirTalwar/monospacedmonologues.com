@@ -1,5 +1,3 @@
-# Casting Lambdas in Java
-
 I love Java 8. It's so much better than Java 7. Not as nice as a properly functional language, of course, but beggars can't be choosers, am I right?
 
 It's a bit odd for a language that's trying to be functional, though. [Functions are objects][Functions are Objects: the other point of view], and often a lambda can be one of many types. This is usually fine:

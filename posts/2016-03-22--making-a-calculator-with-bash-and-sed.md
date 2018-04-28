@@ -1,5 +1,3 @@
-# Making a calculator with `bash` and `sed`
-
 Here's an easy way to make a calculator REPL:
 
     #!/usr/bin/env bash

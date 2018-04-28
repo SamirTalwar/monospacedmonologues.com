@@ -1,5 +1,3 @@
-# Docker, Part Seven: Start Talking
-
 When we left off, we had a Scala web service running inside a Docker container. That's all well and good, but we usually need a little more than a stateless machine. How about we bring in a database?
 
 I've added a feature to [*bemorerandom.com*][bemorerandom.com] that'll make use of a PostgreSQL database. Here's how it works:

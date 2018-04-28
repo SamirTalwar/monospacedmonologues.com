@@ -1,5 +1,3 @@
-# Too Much Work In Progress
-
 I'm working on a side project to help with a common problem: doing too much at once. I strongly believe that a productive team tries to focus on one thing at a time, and that juggling several pieces of work is the sign of an overloaded, badly-managed or underperforming team.
 
 To figure out useful proxy metrics for too much "work in progress", I surveyed people on Twitter and the [Software Craftsmanship Slack][] to find out how they measure it. Here's my distilled results.

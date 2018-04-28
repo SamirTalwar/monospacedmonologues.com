@@ -1,5 +1,3 @@
-# Host Everything For Free, Part One
-
 *Or very very cheap, at least.*
 
 ---

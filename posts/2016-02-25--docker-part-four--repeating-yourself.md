@@ -1,5 +1,3 @@
-# Docker, Part Four: Repeating Yourself
-
 Yesterday we made a Docker image that packages a simple Ruby application. However, recreating that image each time the application changed quickly became tiresome. Today we're going to see how to automate that.
 
 Here's the application, in all its glory.

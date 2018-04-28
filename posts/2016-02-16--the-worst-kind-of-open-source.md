@@ -1,5 +1,3 @@
-# The Worst Kind of Open-Source
-
 There's a growing trend among software developers which I absolutely love. More and more, people are checking their *dotfiles* (configuration files, normally starting with "`.`") and other personal scripts into version control and pushing them up to the Internet. It's mostly selfish—just a useful way to make sure we don't lose them, to be honest, and perhaps help us set up another computer quickly.
 
 There's also one massive benefit I've found to pushing [my configuration files and shell scripts][fygm] up to GitHub.

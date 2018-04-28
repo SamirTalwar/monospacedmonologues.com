@@ -1,5 +1,3 @@
-# // what the fuck?
-
 A few days ago, [Peter Hilton][@peterhilton] was talking about the [fast inverse square root][] method on the [Software Craftsmanship Slack][], which he uses in his presentation, [Layout & typography for beautiful code][]. I love that this function exists, and I decided to blog about it.
 
 First, let me explain what it means. The *inverse square root* of a number, $y$, is simply $1 / sqrt(y)$, or $y^(-1/2)$. [Last week, I explained how to use the Newton-Raphson method for finding the square root of a number.][Solving Problems By Trying Over And Over Again: the Newton-Raphson Method] We can use the same method for finding the inverse square root. If you haven't read that article, follow the previous link and read that first.

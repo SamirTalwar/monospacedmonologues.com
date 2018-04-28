@@ -1,5 +1,3 @@
-# Like The Turtle
-
 > Try to be like the turtle—at ease in your own shell.
 >
 > <cite>— Bill Copeland</cite>

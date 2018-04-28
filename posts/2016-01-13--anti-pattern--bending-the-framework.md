@@ -1,5 +1,3 @@
-# Anti-Pattern: Bending The Framework
-
 [Wolfram Kriesing][@wolframkriesing] and [Jim Suchy][@jsuchy] were talking about frameworks on Twitter. I thought I'd get involved.
 
 [@wolframkriesing]: https://twitter.com/wolframkriesing

@@ -1,5 +1,3 @@
-# Automating The World
-
 It's official. I'm going to automate everything.
 
 One bit at a time.
