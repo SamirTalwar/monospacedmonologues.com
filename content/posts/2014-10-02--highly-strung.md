@@ -13,7 +13,7 @@ So this blog post is really just to ask you to check it out if you're interested
 
 Go on, [check it out][Highly Strung]. I want to tell you something else, but afterwards.
 
-[[MORE]]
+<!--more-->
 
 ---
 

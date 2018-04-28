@@ -33,7 +33,7 @@ The originator of the concept (and the term "design pattern") was Christopher Al
 
 Alexander, and the Gang of Four after him, did more than just document solutions to common problems in their respective universes. By naming these patterns and providing a good starting point, they hoped to provide a consistent *language*, as well as providing these tools up front so that even novices might benefit from them.
 
-<!-- more -->
+<!--more-->
 
 ## And now, an aside, on functional programming.
 

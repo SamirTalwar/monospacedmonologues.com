@@ -22,7 +22,7 @@ What this tells us is that they're pretty popular. If they weren't, no one would
 
 So, given that many teams use code reviews as a technique to improve code quality, how can we make them more efficient, more effective, and most of all, more fun?
 
-[[MORE]]
+<!--more-->
 
 ## Setting the scene
 

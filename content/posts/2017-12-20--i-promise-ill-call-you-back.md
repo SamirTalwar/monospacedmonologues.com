@@ -46,7 +46,7 @@ fs.readdir(source)
 
 The error-handling is now in one place, which reduces duplication throughout the code base, keeping it clean and easier to read, but more importantly, making sure we don't forget to handle the error when we add more behaviour or move code around.
 
-[[MORE]]
+<!--more-->
 
 ## Screw Callbacks, Let's Use Promises
 

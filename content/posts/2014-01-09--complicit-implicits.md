@@ -29,7 +29,7 @@ It does one thing and it does it well. (Not the thing it says on the tin, but we
       def newLine()(implicit out: PrintStream) = out.println()
     }
 
-<!-- more -->
+<!--more-->
 
 Together, they make music. Or would, if we made one small change:
 

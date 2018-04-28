@@ -62,7 +62,7 @@ That's nice, right?
 
 Yes. Sort of. We can do better.
 
-<!-- more -->
+<!--more-->
 
 We already have a reference to a `Fire`, so constructing another object just to play with it seems a bit… overkill. And that object implements `Oven`. Which has a *single abstract method*. I'm seeing a trend here.
 

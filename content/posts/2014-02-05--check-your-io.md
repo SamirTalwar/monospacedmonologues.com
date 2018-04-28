@@ -27,7 +27,7 @@ That first line is the *type signature*. It says that `sayHello` has one paramet
 
 It also has `IO` in there. That's why `sayHello` requires the IO monad; without it, it couldn't call `putStrLn`.
 
-<!-- more -->
+<!--more-->
 
 ## Doesn't that make my code look messy?
 

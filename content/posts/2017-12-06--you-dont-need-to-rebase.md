@@ -24,7 +24,7 @@ Here's a common workflow:
 
 Now, most of that is necessary. I could have merged it into `master` myself, given a different kind of team. But there's one part that isn't: rewriting history.
 
-[[MORE]]
+<!--more-->
 
 Instead of running `git rebase master`, I could have just pushed it. Assuming no merge conflicts, it could still have been merged.
 

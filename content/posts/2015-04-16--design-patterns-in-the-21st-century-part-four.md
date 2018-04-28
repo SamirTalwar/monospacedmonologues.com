@@ -83,7 +83,7 @@ In UML, it looks a little like this:
 
 ![Chain of Responsibility pattern UML diagram](http://i.imgur.com/qzzbX7i.png)
 
-<!-- more -->
+<!--more-->
 
 #### This is probably bad practice.
 

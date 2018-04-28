@@ -11,7 +11,7 @@ Turns out "more efficient" doesn't mean "faster". When there are more people wor
 
 When we break work up across a team, in order to optimise for the team, we often have to put *more* work in, individually, to ensure that the work can be efficiently parallelised. This includes explaining concepts, team meetings, code review, pair programming, etc. But by putting that work in, we make the work more parallelisable, speeding up and allowing us to make greater gains in the future.
 
-[[MORE]]
+<!--more-->
 
 ## An Aside: Amdahl's Law
 

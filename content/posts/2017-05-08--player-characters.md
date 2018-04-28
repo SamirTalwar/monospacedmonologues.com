@@ -11,7 +11,7 @@ So we talked about games. And something came up that I've never considered befor
 
 Games, especially video games, provide the opportunity for something special: they allow the player to say and do things they'd never even consider in real life. This is often linked to the violence in many AAA titles, but there are way more interesting examples. In video games, you can talk about things you've never experienced, like coming out to your parents (that example was brought up in one discussion). You can do things you've never done, like throw yourself off a mountain while strapped to a snowboard, or dive through the window of a moving car. You can consider possibilities you never knew existed. We can do these things in games because they're safe: if you don't like the outcome, you can restart, rewind or reload.
 
-[[MORE]]
+<!--more-->
 
 Now, this only works in some games. After exploring the concept in a few different discussions, I started to realise that it's because in most games, you're playing a character. It's because you're role-playing that you can do the things you'd never do. But sometimes the lines are blurry, and you project more of yourself into the character, making the game much more immersive but stopping you from pushing the boundaries. I find myself doing this when I play RPGs: I never explore the hostile or aggressive side of conversation trees, because I worry about the consequences a little too much. In Dreamfall Chapters, I found it very difficult not to project my own moral compass into the characters, and the decisions I made were… predictable.
 
