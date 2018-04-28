@@ -2,4 +2,8 @@ baseURL = "https://monospacedmonologues.com/"
 languageCode = "en-gb"
 title = "Monospaced Monologues"
 theme = "ananke"
+
 pygmentsCodefences = true
+
+[blackfriday]
+extensionsmask = ["noIntraEmphasis"]
