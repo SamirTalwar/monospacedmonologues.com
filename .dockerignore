@@ -1,0 +1,7 @@
+.git
+.gitignore
+.gitmodules
+services
+themes/ananke/.git
+themes/ananke/.gitignore
+public
