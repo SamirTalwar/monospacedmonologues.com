@@ -1,0 +1,12 @@
+{{ $script := .Site.Data.webpack_assets.app }}
+{{ with $script.js }}
+  <script src="{{ absURL (printf "%s%s" "/dist/" .) }}"></script>
+{{ end }}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=AM_HTMLorMML"></script>
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    asciimath2jax: {
+      delimiters: [['$','$']],
+    },
+});
+</script>
