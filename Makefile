@@ -1,23 +1,14 @@
 SHELL := zsh -e -u
 
-TAG = samirtalwar/monospacedmonologues.com
-PORT = 1313
-
 .PHONY: build
 build:
 	docker build --tag=samirtalwar/hugo services/hugo
-	docker build --tag=$(TAG) .
+	docker-compose build
 
 .PHONY: push
 push: build
-	docker push $(TAG)
+	docker-compose push
 
 .PHONY: run
 run: build
-	docker run \
-		--rm \
-		--interactive --tty \
-		--publish=$(PORT):$(PORT) \
-		--env=PORT=$(PORT) \
-		$(TAG) \
-		server --bind=0.0.0.0 --port=$(PORT)
+	docker-compose up
