@@ -6,8 +6,11 @@ services:
     image: samirtalwar/monospacedmonologues.com
     command:
       - 'server'
+      - '--watch=false'
       - '--bind=0.0.0.0'
-      - '--port=80'
+      - '--port=1313'
+      - '--baseURL=//localhost/'
+      - '--appendPort=false'
 
   proxy:
     build: services/proxy
@@ -15,4 +18,4 @@ services:
     ports:
       - 80:80
     environment:
-      SITE: http://site
+      SITE: http://site:1313
