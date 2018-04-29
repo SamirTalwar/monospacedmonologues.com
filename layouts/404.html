@@ -1,0 +1,11 @@
+{{ define "main" }}
+  <article class="cf ph3 ph5-l pv3 pv4-l f4 center measure-wide lh-copy mid-gray">
+    <p>It looks like you're lost.</p>
+    <p>Perhaps you'd like to read my latest article?</p>
+    <div class="bb b--black-10"></div>
+    {{ with (index .Site.RegularPages 0) }}
+      {{ partial "summary-with-image.html" . }}
+    {{ end }}
+    <p>Or maybe you'd just like to head back to the <a href="{{ "/" | relURL }}">home page</a>.</p>
+  </article>
+{{ end }}
