@@ -5,5 +5,8 @@ theme = "ananke"
 
 pygmentsCodefences = true
 
+[permalinks]
+posts = "/:year/:month/:slug/"
+
 [blackfriday]
 extensionsmask = ["noIntraEmphasis"]
