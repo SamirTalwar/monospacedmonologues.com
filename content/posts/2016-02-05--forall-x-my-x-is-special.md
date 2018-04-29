@@ -7,6 +7,8 @@ An ex-colleague of mine, [Pedro Moreira Santos][@pedromsantos], once made an obs
 
 > Every manager says the same thing: "This will never work. My team is special."
 
+<!--more-->
+
 At the time, he was explaining [behaviour-driven development][Behavior-driven development] to a number of managers and team leaders, but the look in his eye told me it wasn't the first time he'd heard people say that. As someone relatively new to the industry, especially in the position of a coach or trainer, this was news. And so I started to listen out for it.
 
 They never quite use those exact words, but often, the words go along these lines:

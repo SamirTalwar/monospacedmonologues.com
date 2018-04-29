@@ -13,14 +13,14 @@ Last week, [Sandro][Codurance Team] and I flew to Bucharest to meet [Alex][Alex 
 
 So it was surprising, but not, when we decided as a group to try and [mob][Mob Programming] on a real project. We started on a website for people to find pair programming partners (which we still plan to launch some time after the Global Day of Coderetreat), with one person driving and the rest <del>yelling at them</del> <ins>navigating</ins>.
 
+<!--more-->
+
 We started off quite well, driving a simple set of static pages to get the flow hammered out, with lots of discussion about the product design, how it would work, what the first real feature would be and how we could launch a [minimum viable product][]. Being an agile team, we had 45-minute iterations, ten minute retrospectives and five-minute breaks, just like a code retreat. Three iterations in, we had lunch, and people were feeling good.
 
 That feeling didn't last. By mid-afternoon, we were lagging, and people were drifting off. The experiment wasn't working as well as we hoped. In our fifth retrospective, we decided to get to a point where it would be sensible to split into pairs and play with the code, so we quickly knocked out the rest of the flow and broke apart to do the things we cared about doing.
 
 [Mob Programming]: http://monospacedmonologues.com/post/91841399505/mob-programming-and-the-importance-of-fun-at-work
 [minimum viable product]: http://en.wikipedia.org/wiki/Minimum_viable_product
-
-<!--more-->
 
 I, personally, was a bit dejected when we split apart. I thought that six skilled people should be able to do anything together. Pairing with Alex cheered me up very quickly, as we worked towards an acceptance test that focused us on what *we* really cared about, while the others did different things. Aki and Peter worked on a new interface for the page handling, extending its capabilities while preserving the functionality at first. Sandro and Adi decided to show each other their styles of unit testing, as they're very different.
 

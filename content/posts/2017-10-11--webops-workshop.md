@@ -21,6 +21,8 @@ Here's the premise:
 > 
 > The workshop is designed to run on Unix-like machine such as Linux or macOS. If you're running on Windows, we can make it work, but it won't be quite so true to real life.
 
+<!--more-->
+
 If you want to try it out, or even run it yourself at work, please give it a shot (and let me know)! All the instructions are [on GitHub][webops-workshop]. This is an open-source workshop. I hope you like the concept.
 
 [Check it out.][webops-workshop]

@@ -16,6 +16,8 @@ What is an interface, anyway?
 As you probably know, I'm a big fan of the mentality driving
 specification by example. So let's think about examples.
 
+<!--more-->
+
 The humble `interface` keyword
 ------------------------------
 

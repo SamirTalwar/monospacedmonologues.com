@@ -28,6 +28,8 @@ A 22-line Dockerfile is all you need to create an image that runs a Java applica
     ENTRYPOINT ["mvn", "--projects=api"]
     CMD ["exec:java"]
 
+<!--more-->
+
 It's not too bad—pretty readable. However, it has a major issue: it's ridiculously slow. It takes about five to ten minutes to run on my machine, as it has to download all the dependencies from scratch every time. It even runs the tests too, which is mostly pointless—I wouldn't be building a new image if I hadn't tested the thing.
 
 Let's see if we can improve it a little.

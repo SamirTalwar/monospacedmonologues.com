@@ -7,6 +7,8 @@ A couple of weeks ago, [I promised to talk about naming][Slash Slash Massive Hac
 
 > If you can name a function really well, it probably does one thing and one thing only. This means you've figured out a decent way to separate your concerns, which means that often, the name is really all you need to know. (Expect more on naming in a future post.)
 
+<!--more-->
+
 I just opened up Stack Overflow and clicked on [the latest question][Stack Overflow Question #35119755][^1] to find this code:
 
     function createList() {

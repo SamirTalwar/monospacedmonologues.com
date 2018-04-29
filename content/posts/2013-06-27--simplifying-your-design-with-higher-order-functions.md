@@ -12,6 +12,8 @@ was on why I was pretty scared of doing this. This one (which is late)
 is going to be talking about what I covered in the talk. A written
 version of it, if you will.
 
+<!--more-->
+
 We started with me. In case you were wondering, I'm Samir. In my
 defence, my audience didn't necessarily know this. So I showed them this
 tweet:

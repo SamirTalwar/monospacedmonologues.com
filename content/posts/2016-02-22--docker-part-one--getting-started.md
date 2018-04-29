@@ -5,6 +5,8 @@ date: 2016-02-22T08:00:24Z
 
 I've been using Docker heavily in development, test and production for almost a year now, and more and more, I'm asked how to get started with it and use it. I thought I'd write a quick guide to Making Things Happen™ on your local machine, and perhaps touch on deploying services inside Docker containers in the future.
 
+<!--more-->
+
 ## First and foremost, what is Docker?
 
 I'm fairly sure at this point we're familiar with virtual machines and their impact on software development. Many organisations now run their server applications and services inside virtual machines to keep them contained and ensure that one failing, buggy or out-of-control service doesn't impact another. We even rent virtual machines from cloud providers such as Amazon, Rackspace, Joyent and many more.

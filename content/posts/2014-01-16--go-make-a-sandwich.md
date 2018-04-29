@@ -5,6 +5,8 @@ date: 2014-01-16T18:26:53Z
 
 I was originally planning on writing something about the Cake pattern here, but after reading a lot more about it, I've decided it's not as bad as I thought. I mistook one variant of it (which involved essentially having all methods of all classes available to you) with something a little more sophisticated. If you want to know about the pattern, I recommend [Real World Scala: Dependency Injection (DI)][] by Jonas Bonér.
 
+<!--more-->
+
 ---
 
 Here's something fluffy that I've wanted to write about for a while. Often, when working on something, we become fixated. We understand that there are other possibilities, but we don't consider them; the solution we have in mind is so good that if we could just *get it working*, everything would be amazing. Unfortunately, people in this position never seem to actually get the work off the ground.

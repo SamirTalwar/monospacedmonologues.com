@@ -15,6 +15,8 @@ It's a bit odd for a language that's trying to be functional, though. [Functions
     // 4
     // 6
 
+<!--more-->
+
 However, sometimes it's not. For example, if I want to create a list (or another generic type) of functions and immediately iterate over them:
 
     Stream.of(x -> x + 2, x -> x - 2, x -> x * 2, x -> x / 2)

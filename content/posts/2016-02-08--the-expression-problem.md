@@ -17,6 +17,8 @@ I found a quote from [Philip Wadler][@PhilipWadler], who knows basically everyth
 
 > The Expression Problem is a new name for an old problem.
 
+<!--more-->
+
 It continues,
 
 > The goal is to define a datatype by cases, where one can add new cases to the datatype and new functions over the datatype, without recompiling existing code, and while retaining static type safety (e.g., no casts).

@@ -9,6 +9,8 @@ Oh, and if you'd rather just read the whole thing in one go, flick through the s
 
 [Design Patterns in the 21st Century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html
 
+<!--more-->
+
 ---
 
 ### What do you want from me?
@@ -32,8 +34,6 @@ The originator of the concept (and the term "design pattern") was Christopher Al
 > The elements of this language are entities called patterns. Each pattern describes a problem that occurs over and over again in our environment, and then describes the core of the solution to that problem, in such a way that you can use this solution a million times over, without ever doing it the same way twice. <cite>— Christopher Alexander</cite>
 
 Alexander, and the Gang of Four after him, did more than just document solutions to common problems in their respective universes. By naming these patterns and providing a good starting point, they hoped to provide a consistent *language*, as well as providing these tools up front so that even novices might benefit from them.
-
-<!--more-->
 
 ## And now, an aside, on functional programming.
 

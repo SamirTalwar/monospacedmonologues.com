@@ -9,6 +9,8 @@ I remember being in an airport a few years ago, siting near the gate, about to e
 
 Viewed from the lens of the airline, this is completely reasonable. It's a domestic flight. All they need is your boarding pass. You're not going abroad. Isn't it obvious?
 
+<!--more-->
+
 Now look at it from the point of view of an aeroplane passenger. I'm at the airport, at the gate for my plane. That means I've been travelling for at least an hour already, I have at least two hours to go (but probably more like five), and I'm tired just thinking about it. I've taken a number of flights before—probably at least one this year. I'm flying from Dallas to San Francisco, but my last flight was coming back home to Dallas from my holiday in Paris, France. It was complicated because I don't speak French, but I waved my passport and my boarding pass in front of the person at the gate desk, just like every other time, and they scanned it and waved me through. So if I do that again, I'll get on the plane.
 
 People are not robots. Even when there's a simple causal relationship between an action (presenting your boarding pass) and an effect (being allowed to board the plane), evaluating that scenario takes more brain power than it's worth. Your lizard brain, which simply pattern-matches the situation to a similar one you've been through before, should be enough.

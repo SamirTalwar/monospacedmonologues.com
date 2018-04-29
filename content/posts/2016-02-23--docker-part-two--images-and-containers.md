@@ -28,6 +28,8 @@ That would have resulted in output similar to this:
 
 Let's break it down.
 
+<!--more-->
+
 ## Client and Server
 
 As we explained before, the `docker` program is actually just a client that connects to a service or daemon, sometimes on the same computer, but often on a different one. If you're using Docker Machine, you're taking advantage of this to talk to a VM (and if you open up your VM manager, probably VirtualBox, you'll see it right there). It uses the `DOCKER_HOST` environment variable to find it. You can check yours by `echo`-ing it.

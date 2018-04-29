@@ -8,6 +8,8 @@ as it's now known). I've loved it here, but it's time to move on and do
 something a little different. With that in mind, I made a list of all
 the things I've learnt in my two years here. Here it is:
 
+<!--more-->
+
 -   How to pair
 -   Ping-pong
 -   Driver/navigator

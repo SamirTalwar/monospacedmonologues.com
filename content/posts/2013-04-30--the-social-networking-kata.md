@@ -17,6 +17,8 @@ The ~~victims~~ lucky people had a choice of solving the problem using
 BDD/ATDD, object calisthenics, or both. Of course, if they opted for
 just the latter, TDD was still mandatory.
 
+<!--more-->
+
 Our original plan was to use the Bank Account kata: Sandro used it in a
 previous session with object calisthenics and it worked well. On the
 day, though, I decided I was bored of it and that we should write a new

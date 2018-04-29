@@ -11,6 +11,8 @@ So I thought, for today, I'd muse about something Carmack once said:
 >
 > <cite>[John Carmack][], speaking to Tom Ham from GameSpy</cite>
 
+<!--more-->
+
 The amazing thing about [Moore's law][] is that the impossible becomes possible, and the difficult becomes trivial, in just a few years.
 
 The awful thing about Moore's law is that programmers take advantage of it to produce software that runs at the same speed as before, despite the fact that processors have double the number of components they had two years ago.

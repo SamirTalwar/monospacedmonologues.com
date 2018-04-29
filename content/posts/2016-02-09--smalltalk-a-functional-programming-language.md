@@ -7,6 +7,8 @@ I was watching [Sandi Metz][@sandimetz]'s talk, [Nothing is Something][], recomm
 
 In the talk, Sandi compares booleans in Ruby (and other "object-oriented" programming languages) to booleans in Smalltalk. She points out that Smalltalk has six keywords, and `if` isn't one of them. So how do you branch, without an `if` keyword?
 
+<!--more-->
+
 It's very simple, truth be told. In Smalltalk, just like Ruby, `true` and `false` are objects—in Ruby, instances of `TrueClass` and `FalseClass` respectively. You could, if you prefer static languages, pretend these classes implement a fictional `Boolean` interface. However, unlike Ruby, Smalltalk provides two extra messages (methods) that solve our riddle.
 
 Here's the first. Apologies if I'm off with the syntax; I'm not actually a Smalltalk developer, just a fan.

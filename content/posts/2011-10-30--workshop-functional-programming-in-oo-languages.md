@@ -26,6 +26,8 @@ most important: it simply means that because there are no side effects,
 the function is easier to understand and reason about. Understandable
 code leads to happy coders.
 
+<!--more-->
+
 So here's the challenge. I have a poker hand—seven cards that look like
 this:
 

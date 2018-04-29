@@ -22,6 +22,8 @@ work pretty differently when they're immutable. I ended up just
 implementing it in terms of a list, which is slow but easy. Next time I
 think I'll try for a proper O(1) lookup table.
 
+<!--more-->
+
 Here's the thing I'm most proud of: figuring out whether a hand
 contained a straight. It involved predicates, set combinations and an
 interesting attempt at equality.

@@ -7,6 +7,8 @@ I know I said I wouldn't be writing about Docker this week but I wanted to corre
 
 [@_lwis]: https://twitter.com/_lwis
 
+<!--more-->
+
 So let's revisit our PostgreSQL container from last week, but this time using a Docker volume.
 
 First off, we need to create one.

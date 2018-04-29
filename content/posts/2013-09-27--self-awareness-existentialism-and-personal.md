@@ -14,6 +14,8 @@ go through when we make a mistake, and he gave me two words that had
 been missing from my software development vocabulary: **personal
 responsibility**.
 
+<!--more-->
+
 The whole conference, I was searching for the answer to the question:
 *what is my responsibility*? We talked about refactoring, legacy code,
 architecture and all the other practices that we take for granted are

@@ -9,6 +9,8 @@ Together, [Steve Lydford](https://twitter.com/stevelydford) and I came up with a
 
 It works pretty effectively, but it's not as fun as we'd like. Our substitute doesn't work in a pair, but when you're on your own, try this:
 
+<!--more-->
+
 1. Put your headphones on.
 2. Pick an album. A full-length one.
 3. Find your favourite song on that album. Remember it.

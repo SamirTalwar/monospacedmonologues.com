@@ -13,6 +13,8 @@ date: 2016-01-13T08:00:15Z
 
 Specifically, they were talking about what happens when you come up against the walls of the framework. Because of the nature of frameworks, implementing certain pieces of behaviour is often unreasonably difficult, usually because the framework itself was not designed with capabilities for that particular functionality.
 
+<!--more-->
+
 They discussed the relative merits of working around the framework, bending it to their will or just abandoning it for that functionality, but pretty quickly, Jim decided that the latter made much more sense.
 
 <blockquote class="twitter-tweet" lang="en"><p lang="en" dir="ltr"><a href="https://twitter.com/wolframkriesing">@wolframkriesing</a> coming to the opinion that bending a framework is an anti pattern. Use it to gain efficiencies, or don't.</p>&mdash; Jim Suchy (@jsuchy) <a href="https://twitter.com/jsuchy/status/685585160931258368">January 8, 2016</a></blockquote>

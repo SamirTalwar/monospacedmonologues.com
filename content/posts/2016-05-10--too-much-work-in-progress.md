@@ -7,6 +7,8 @@ I'm working on a side project to help with a common problem: doing too much at o
 
 To figure out useful proxy metrics for too much "work in progress", I surveyed people on Twitter and the [Software Craftsmanship Slack][] to find out how they measure it. Here's my distilled results.
 
+<!--more-->
+
   * Too many branches, including local, non-pushed branches.
   * Too many open pull requests.
   * No movement on work in review (which may be pull requests).

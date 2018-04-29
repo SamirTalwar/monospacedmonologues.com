@@ -13,6 +13,8 @@ You know, it's been so long I forgot how my blog works. Time to remedy that.
 
 I gave a talk last month at DevOps Linz entitled "Staying lean with application logs". On the day, I came up with the far more click-baity one above.
 
+<!--more-->
+
 Long story short, it's about working with microservices in a lean fashion—specifically, how to avoid a database for as long as possible. My team at Your Golf Travel ([who are hiring][Palatinate Group Careers]), including [@sleepyfox][] and me, came up with a fairly simple way of publishing events which we turned into a node.js library.
 
 You can check it out [over on GitHub][ygt/microservice-logging].

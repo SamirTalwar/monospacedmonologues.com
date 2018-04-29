@@ -19,6 +19,8 @@ It's quite pretty, and means there's a separation between the lazy
 functional stuff and the normal collections interfaces. But have you
 wondered at all what the signature of `Stream::map` is?
 
+<!--more-->
+
 Turns out it takes an object, like every other method in Java.
 
     <R> Stream<R> map(Function<? super T, ? extends R> mapper);

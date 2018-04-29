@@ -36,6 +36,8 @@ something like this.
 
     // returns "Dennis Ritchie was known for ALGOL, B, BCPL, C, Multics, Unix"
 
+<!--more-->
+
 Each of those objects I'm accessing is statically typed. If I misspell
 the article name, I don't get an error at runtime. My application fails
 to compile. How cool is that?

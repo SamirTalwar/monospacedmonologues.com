@@ -9,6 +9,8 @@ Yesterday, we created a container for PostgreSQL, my database of choice in a pin
 
 Once the PostgreSQL container starts, it checks for a database in its own */var/lib/postgresql/data*. If there is no database there, it creates one (and we can tell it how using environment variables which this container is specifically designed to observe). If there is a database there, it uses it.
 
+<!--more-->
+
 When we run containers, we can tell Docker to mount a *volume*. This takes the form of a path in the host, mounted as a path in the container. Here's a simple example. Imagine we have a script called *increment*:
 
     #!/bin/sh

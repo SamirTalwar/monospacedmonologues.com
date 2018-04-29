@@ -20,6 +20,8 @@ them are hitting a test web server with Internet Explorer 6 and
 WebDriver, trying to break your application. You might break the
 application, or you might simply break IE.
 
+<!--more-->
+
 This got a lot better when we made the (painful) upgrade from Selenium 1
 to Selenium 2 + WebDriver, by the way. If you're running anything
 through Selenium, I wholeheartedly recommend you take the hit—your

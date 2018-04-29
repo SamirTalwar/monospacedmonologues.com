@@ -7,6 +7,8 @@ In programming, duplication is the enemy.
 
 We see it everywhere. Code, copied and pasted because "we have no time". Entire pieces of infrastructure lifted from one project to the next, rather than extracted and shared. Domain objects scattered through applications, every one slightly different. API connection layers written again and again, each one in a different style, doing the same, exact thing with new and interesting bugs.
 
+<!--more-->
+
 ## Meanwhile, in Javaland…
 
 These are all serious problems, but Java has one more. We can't get away from it. No language really helps with duplication of behaviour, but in Java, we also duplicate concepts. It looks something like this:
@@ -98,8 +100,6 @@ Ugh. So much code for so little behaviour. And not just once. *EVERYWHERE.* Can 
 Fuck yes.
 
 [Java Persistence API]: http://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049.html
-
-<!--more-->
 
 ## Rekord to the Rescue
 

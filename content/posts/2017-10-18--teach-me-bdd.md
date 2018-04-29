@@ -13,6 +13,8 @@ Behaviour Driven Development, or BDD, is the idea that you write user stories th
 
 You've probably heard of Cucumber, or Gherkin. Gherkin is a format for doing just this. Cucumber runs the scenarios and tells you if they fail.
 
+<!--more-->
+
 > OK, with you so far.
 
 Take this one:

@@ -18,6 +18,8 @@ Once we have a container, we can run it on a server.
 
 Of course, we need to get the container images there first. This is where continuous integration comes in.
 
+<!--more-->
+
 ## The Continous Delivery Pipeline
 
 Imagine we're using a continuous integration server such as [Jenkins][] or [Travis CI][]. We need to define a pipeline. It won't just *integrate*; it'll *deliver* as well.

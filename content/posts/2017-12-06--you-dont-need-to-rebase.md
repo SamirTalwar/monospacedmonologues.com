@@ -11,6 +11,8 @@ You don't need to rebase.
 
 I think branch-based development is now the most common workflow when using Git: everyone develops on a branch that belongs to them (for some definition of "belongs", depending on the team), then when they're done, they merge the branch into a shared branch (often called `master`, `latest` or `develop`), from which they release.
 
+<!--more-->
+
 Here's a common workflow:
 
 1. I pull a new feature from the board. It's written on a sticky note, which I move into the correct column. (If you use JIRA, I seriously recommend trying sticky notes instead. They're way more flexible.)
@@ -23,8 +25,6 @@ Here's a common workflow:
 8. Someone else reviews it and merges it into `master`.
 
 Now, most of that is necessary. I could have merged it into `master` myself, given a different kind of team. But there's one part that isn't: rewriting history.
-
-<!--more-->
 
 Instead of running `git rebase master`, I could have just pushed it. Assuming no merge conflicts, it could still have been merged.
 

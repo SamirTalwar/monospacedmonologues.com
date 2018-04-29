@@ -11,6 +11,8 @@ This one was new to me, but [Amelie][@AmelieCornelis] and [Alastair][@alastairs]
 
 Pen and paper. No computers.
 
+<!--more-->
+
 This initially stumped a lot of people. It was really interesting to see people struggle with the idea of writing a test using paper, not a computer. After all, it's just a manual test at that point, right? It's not like you can automate it.
 
 So how do you get around this? Well, you make your tests very easy to implement and run.

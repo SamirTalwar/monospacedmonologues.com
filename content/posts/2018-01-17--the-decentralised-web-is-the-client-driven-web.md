@@ -9,6 +9,8 @@ Last year I went to the [Mozilla Festival][]. I loved it. I could only make one 
 
 Over the holidays, I decided to serve [my website][Noodle Sandwich] over DAT using the Beaker Browser, just to see how it goes. And I discovered something really interesting.
 
+<!--more-->
+
 I'd forgotten that despite that website being pretty much static, it still had a server attached. The server mostly served HTML (rendered from [Pug][] templates), but there was one thing that was dynamic: the list of upcoming talks and workshops. It used today's date to figure out whether the event was "upcoming" or "previous", in order to render them in the correct section.
 
 My first thought was, "Oh, this won't work then. It needs to know today's date before rendering."

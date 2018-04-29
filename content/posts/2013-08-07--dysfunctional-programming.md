@@ -13,6 +13,8 @@ lap). The first time, it was a simple two-hour workshop, and the second
 time, it was part of the code retreat, in which people applied the
 concepts to implementing the Game of Life.
 
+<!--more-->
+
 In the past, I ran a workshop on functional programming in
 object-oriented languages. This time, I reworded it a little bit, and
 entitled the session "functional programming in your favourite

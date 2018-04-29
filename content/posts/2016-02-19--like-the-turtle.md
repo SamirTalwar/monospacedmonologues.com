@@ -11,6 +11,8 @@ I've been re-learning tmux these last two weeks, living happily in my shell, wit
 
 ![tmux](http://assets.monospacedmonologues.com/2016-02-19+-+tmux.png)
 
+<!--more-->
+
 To be fair, if I could get good refactoring support for JavaScript, I'd switch back in a second. But I'm pretty sure that's impossible, so I'm not too worried about anyone calling me on it. (PureScript, anyone?)
 
 I've always been a bit of a shell nut. It makes me faster at getting stuff down on the page, which means the gaps between the important stuff—thinking and talking—are much smaller. Helps me stay focused.

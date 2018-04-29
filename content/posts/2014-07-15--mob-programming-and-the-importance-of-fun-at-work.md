@@ -5,6 +5,8 @@ date: 2014-07-15T11:50:00Z
 
 It's been a few weeks since SoCraTes UK 2014, and I've had some time to reflect on the event and my learning experiences. Today, I want to talk about the biggest things that stood out for me.
 
+<!--more-->
+
 ## Mind. Blown.
 
 The session that really blew my mind was [Gianfranco Alongi][@gfalongi]'s explanation of [Mob Programming][]. It takes pair programming to the next level. Its tagline is *"All the brilliant people working at the same time, in the same space, at the same computer, on the same thing"*, and that's exactly what it is. A whole team, a keyboard, a mouse and a projector. One driver, and a few navigators, with a decent amount of rotation. I won't go into too much detail; the website linked above has much more information. This wasn't why this session blew my mind, though it was a really cool idea.

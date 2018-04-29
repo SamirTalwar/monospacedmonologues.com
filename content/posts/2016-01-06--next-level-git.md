@@ -9,6 +9,8 @@ It is, however, somewhat of a secret that all of these are [hosted on GitHub][FY
 
 Some of them, I use every week or so, like [`up`][up], which updates basically everything on my machine using Homebrew, `apt-get`, RVM, NPM… you name it. Some, I've completely forgotten about, like [`whitespace`][whitespace], which *I'm pretty sure* converts tabs to spaces… I don't even remember why I wrote it. Today, though, I'd like to talk about [a set of scripts][git scripts] I use to save time and hassle when working on a project in a team with either manual or automated code reviews.
 
+<!--more-->
+
 [FYGM]: https://github.com/SamirTalwar/fygm
 [git scripts]: https://github.com/SamirTalwar/fygm/tree/master/bin/git
 [up]: https://github.com/SamirTalwar/fygm/blob/master/bin/unix/up

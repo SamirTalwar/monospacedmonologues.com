@@ -7,6 +7,8 @@ When pairing with [@sleepyfox][] on a kata, we decided to write the code in a sh
 
 Smoke is a little different from other test frameworks. It was designed to test code written in any language, so you don't write the tests in code. You simply specify the input to be provided to the program via command-line arguments and STDIN, and the expected STDOUT, STDERR and exit statuses. To do this, you just create five text files (though you can leave some out) with the `.args`, `.in`, `.out`, `.err` and `.status` file extensions.
 
+<!--more-->
+
 One advantage of this is that it constrains you to test the command-line interface of your program. While not helpful for lower-level testing, it really forces you to think about the output of your command-line application and how it should behave in various edge cases.
 
 Another interesting feature is that if you switch programming languages, your tests can stay the same. We switched languages twice in an hour, from Bash to awk to Python. During the rewrites, our tests stayed exactly the same.

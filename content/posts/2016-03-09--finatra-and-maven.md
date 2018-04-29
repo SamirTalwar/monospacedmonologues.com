@@ -5,6 +5,8 @@ date: 2016-03-09T08:00:40Z
 
 I was ranting about Finatra's Maven dependencies last week, and today I figured out why they're broken.
 
+<!--more-->
+
 After looking more closely into things, it appears that the dependency trees for the Finatra production JARs are perfectly valid. `finatra-http` depends on `finatra-jackson`, which depends on `finatra-utils`, which depends on `inject-utils`… you get the idea. I asked Maven to generate the tree for me.
 
     $ mvn dependency:resolve -Dverbose

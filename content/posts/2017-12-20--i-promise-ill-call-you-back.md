@@ -9,6 +9,8 @@ In JavaScript, callbacks can be unpleasant to work with. [Callback Hell][] has a
 
 One of the big problems with callbacks is remembering to handle the error. This is the `if (err) { … }` pattern you see a lot. If you find yourself copying and pasting error-handling code all over the place, you might want to use *promises* instead.
 
+<!--more-->
+
 Promises can chain error-handling. So instead of:
 
 ```javascript
@@ -45,8 +47,6 @@ fs.readdir(source)
 ```
 
 The error-handling is now in one place, which reduces duplication throughout the code base, keeping it clean and easier to read, but more importantly, making sure we don't forget to handle the error when we add more behaviour or move code around.
-
-<!--more-->
 
 ## Screw Callbacks, Let's Use Promises
 

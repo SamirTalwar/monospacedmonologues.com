@@ -9,6 +9,8 @@ Docker makes some of the twelve factors easier, and some of them harder. I want 
 
 [The Twelve-Factor App]: http://12factor.net/
 
+<!--more-->
+
 ### I. Codebase
 
 > One codebase tracked in revision control, many deploys

@@ -16,6 +16,8 @@ Yesterday, in our `Account` class, we had a `Transaction` type, one of the imple
 
 Now, that's not very useful in our object-oriented world, as it has no behaviour—it's just a holder of some data. One useful behaviour of withdrawals might be to be treated as a transformation on a balance—that is, they might apply themselves to a balance to create a balance that had the amount deducted.
 
+<!--more-->
+
     interface Transaction {
         Money apply(Money balance);
     }

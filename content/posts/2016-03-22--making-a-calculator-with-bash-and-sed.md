@@ -11,6 +11,8 @@ Here's an easy way to make a calculator REPL:
         echo $(($line))
     done
 
+<!--more-->
+
 In Bash (and other shells), `$((…))` is the syntax for an *arithmetic expansion*. Anything inside the parentheses is evaluated as most programming languages would, for integer maths (no floating-point magic here). So you can do simple maths:
 
     $ echo $((2 + 2))

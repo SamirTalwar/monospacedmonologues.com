@@ -23,6 +23,8 @@ The real answer is a bit more complex. I'm getting to that.
 The first thing I want to talk about is a design pattern called *Null
 Objects*.
 
+<!--more-->
+
 Null Objects
 ------------
 

@@ -8,3 +8,5 @@ date: 2016-03-23T08:00:38Z
 2. A project manager must further the desires of the business except where such desires would conflict with the First Law.
 
 3. A project manager must further their own goals as long as such goals do not conflict with the First or Second Law.
+
+<!--more-->

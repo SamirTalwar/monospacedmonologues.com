@@ -10,6 +10,8 @@ architecture too.
 
 Here's how.
 
+<!--more-->
+
 Single Responsibility Principle
 -------------------------------
 

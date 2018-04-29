@@ -7,6 +7,8 @@ A couple days ago, I demonstrated how to use a bookmarklet to automate the time-
 
 I once wrote a JIRA plugin to reformat the Agile board (how I hate that it's called "Agile"… it's nothing of the sort) to something more useful for a project manager. It reformatted it so that every box was very small and colour-coded by discipline (front-end, back-end, infrastructure, design, etc.), making it easy to see where the bottlenecks were in a sprint. I didn't use JIRA's plugin architecture though—it's a nightmare. Instead I just wrote some JavaScript to do the work. With a website with sane markup, which fortunately JIRA has, it's often far more trivial and maintainable to write something to manipulate the client than it is to write server-side code.
 
+<!--more-->
+
 Now, I hate JIRA with a passion, so we're not going to use that as an example. Instead, let's mess around with [Trello][], a tool that lets you organise things using lists of lists. In my opinion, it's still not great for project planning, in my mind, but is at least fairly simple and used by many organisations for exactly that purpose.
 
 The simplest form of modification is removing content, so I'm going to focus on that. Adding or changing content follows similar principles. Here's an example Trello board—in fact, the Welcome Board that shows up when you sign up.

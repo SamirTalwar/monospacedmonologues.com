@@ -9,6 +9,8 @@ Yesterday I posted on avoiding [Getters, Setters and Properties][], and how to b
 >
 > <cite>Bertrand Meyer, in <em><a href="http://www.amazon.co.uk/gp/product/0136291554/ref=as_li_tl?ie=UTF8&camp=1634&creative=19450&creativeASIN=0136291554&linkCode=as2&tag=monospamonolo-21">Object-Oriented Software Construction</a></em>, 1988.</cite>
 
+<!--more-->
+
 Let's take the example from yesterday:
 
     public class Account {

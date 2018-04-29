@@ -18,6 +18,8 @@ I was interested, so I tweeted back. As part of the deal, though, I
 asked Lewie if I could open source both the code and the data using
 [ScraperWiki](https://scraperwiki.com/). He was all for it.
 
+<!--more-->
+
 Let me tell you a bit about ScraperWiki. It's a simple idea: you write a
 script that scrapes something (usually a web site), and they run it
 every day for you. You then have a database you can query using SQL, as

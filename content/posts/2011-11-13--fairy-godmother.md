@@ -26,6 +26,8 @@ of it, it looked like this:
 There are still two null checks in there. In this episode, I'm going to
 explain how to get rid of the first one: `if (books == null)`.
 
+<!--more-->
+
 The problem is that `null` can mean many things. When we used it last
 time, it signified there was no cache: it meant, essentially, "this is
 not a thing". In this instance, however, it tells us that we couldn't

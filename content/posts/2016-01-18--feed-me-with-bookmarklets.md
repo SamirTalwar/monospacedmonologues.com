@@ -7,6 +7,8 @@ If you've been reading this blog since the start of the year, you may have notic
 
 I use Tumblr as my blogging engine, which lets me schedule posts. I then use [IFTTT][] to push a link to Twitter, which it does within minutes. If you follow me, you'll see them. However, I know a lot of people, especially techies, prefer to use a feed reader. Personally, I use [Feedly][], mostly because when Google Reader shut down, Feedly allowed me to import my feeds very easily.
 
+<!--more-->
+
 I subscribe to developer blogs all the time, but Feedly isn't really geared for trivially adding feeds. I have to find the RSS or Atom feed URL, paste it into the search box, then click the *+feedly* button to subscribe. The first bit, finding the feed URL on the page, is usually quite difficult, as there isn't a standard place to put it. Fortunately, the DOM is another story.
 
 Take a look at the DOM structure of this website. Specifically, the `<head>`. Open up your developer tools (usually with *Ctrl+Shift+I* or *Cmd+Shift+I*), and then the *Inspector* tab:

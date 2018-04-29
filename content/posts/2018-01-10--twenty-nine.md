@@ -13,6 +13,8 @@ And then I'd like you to post that online somewhere public (even if it's bloody 
 
 That'd be the best present I could ask for.
 
+<!--more-->
+
 I'll be doing the same, and I'll be posting it up here when I'm ready.
 
 I don't expect this to be easy. I expect it to take a while. Maybe a week, or a month.

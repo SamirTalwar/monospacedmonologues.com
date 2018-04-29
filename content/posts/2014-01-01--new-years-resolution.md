@@ -20,6 +20,8 @@ he'd chosen was composition vs. inheritance, mostly out of spite towards
 a particular piece of code he'd been refactoring all day. I agreed. It
 sounded like lots of fun.
 
+<!--more-->
+
 The next week, I thought about the workshop a lot, but I didn't have
 time to actually put anything together. Work kept getting in the way.
 Finally, the day before the workshop, I managed to find a few hours to

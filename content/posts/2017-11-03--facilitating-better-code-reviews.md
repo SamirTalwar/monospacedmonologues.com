@@ -9,6 +9,8 @@ I have an agenda. [We're working on a product that intends to take the pain out 
 
 The data in my survey is biased towards the sort of people that read this blog. So take it with a grain of salt, and if it doesn't resonate with you, comment! I'd love to hear from you.
 
+<!--more-->
+
 ## Why code review?
 
 Code reviews are a pretty charged topic for many developers. Some argue they don't work. Many prefer to pair-program instead. Of those that use them frequently, there are umpteen different styles—over-the-shoulder, pull/merge requests, meetings, etc. There are teams that pick out every spelling mistake and teams that just look for massive security flaws or bugs that will cause downtime.
@@ -21,8 +23,6 @@ What this tells us is that they're pretty popular. If they weren't, no one would
 </figure>
 
 So, given that many teams use code reviews as a technique to improve code quality, how can we make them more efficient, more effective, and most of all, more fun?
-
-<!--more-->
 
 ## Setting the scene
 

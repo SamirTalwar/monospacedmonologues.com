@@ -7,6 +7,8 @@ I've heard this one from Hindus, Jews and Christians alike:
 
 > Cleanliness is next to godliness.
 
+<!--more-->
+
 It popped into my mind after reading yesterday's post, and I was curious, so I Googled a bit and found that the phrase doesn't mean what I thought it meant. It turns out that that particular phrase originates from John Wesley, [who preached it in a sermon in 1791][Question: "Is cleanliness next to godliness?"]:
 
 > Slovenliness is no part of religion. Cleanliness is indeed next to Godliness.

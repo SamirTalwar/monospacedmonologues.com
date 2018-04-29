@@ -9,6 +9,8 @@ Continuing in the theme of fresh beginnings, I wanted to talk about a famous quo
 >
 > <cite>— John Gall ([Systemantics: How Systems Work & Especially How They Fail][], 1975)</cite>
 
+<!--more-->
+
 This is [Gall's law][], written by John Gall, a paediatrician and systems theorist. It's not specific to software, but it's pretty pertinent in our field. In his text, *Systemantics*, he encourages system designers to start simple and validate that the system really works before evolving it. In my mind, validation doesn't just mean, "does it do the thing right?", but also, "does it do the right thing?", which means talking to the consumer of your product constantly to ensure you're on the right track. As such, Agile software development and related practices have a very similar thinking to Gall's work behind them.
 
 So why is it that technology companies often wait months before releasing their product?

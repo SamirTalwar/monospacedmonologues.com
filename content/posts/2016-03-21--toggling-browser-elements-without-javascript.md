@@ -5,6 +5,8 @@ date: 2016-03-21T08:00:29Z
 
 I'm having a sleepy weekend, and I feel like the rhythm of one week on Docker, one off is about as much as I can handle. (Those posts take work!) So we're going to have a week of random stuff before I get back to it. Hope you don't mind the wait. :-)
 
+<!--more-->
+
 ---
 
 Last week, I was working on a website at work, and I used a useful trick that I came up with a few years ago. I'm sure I'm not the first person to figure this one out, but I think it's cool and not everyone had heard of it before, so I thought I'd write about it.

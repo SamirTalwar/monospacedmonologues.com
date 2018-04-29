@@ -7,6 +7,8 @@ I just found a bug in [SDKMAN!][] that you'll probably never see. It only manife
 
 SDKMAN! is a program that manages, well, SDKs. It started off as the Groovy Version Manager, or GVM, but now it can install multiple versions of Scala, Grails, SBT… you name it in the Java world, and it's there. You run it with the `sdk` command in your terminal.
 
+<!--more-->
+
 Anyway, `sdk list` is a command that lists all available "candidates" it can install. It's a bit more complicated than this, but it essentially boils down to:
 
     __sdkman_list_candidates {

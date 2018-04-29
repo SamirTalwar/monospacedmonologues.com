@@ -7,6 +7,8 @@ So you followed yesterday's guide to setting up your dotfiles repository. Now it
 
 If you're using Bash, you're in luck. Just move your `.bash_profile` to `dotfiles/bash_profile` and commit. Done and dusted. If you're using ZSH, well, you have to copy your `.zshrc`, `.zshenv`, `.zlogin`, `.zlogout` and `.zprofile`. That might take a while. It's OK. I'll wait.
 
+<!--more-->
+
 Or you could `cd` into your dotfiles directory, then copy and paste this:
 
     for file in zshrc zshenv zlogin zlogout zprofile; do

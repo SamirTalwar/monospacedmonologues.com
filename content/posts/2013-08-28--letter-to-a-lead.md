@@ -13,6 +13,8 @@ your most noble of pursuits, to be treated as a brother to the code you
 wrote with your own hand, to be respected as though you yourself had
 crafted it.
 
+<!--more-->
+
 Some minutes go by, then hours, then days. But then! Another email, this
 one a question: would it be possible to make an ever-so-small change to
 the product? Aha, I think! This is my chance! Of course it's possible—I

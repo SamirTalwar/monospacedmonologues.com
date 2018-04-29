@@ -9,6 +9,8 @@ Someone who considers the means as well as the ends. Alternatively, one who real
 
 Someone who does not build unnecessary things.
 
+<!--more-->
+
 Someone who does not dismiss things as unnecessary because they are not core to the experience from their perspective, or distant from their areas of expertise.
 
 Someone who understands that every system has several different workflows, and does not optimise for one at the expense of the others without fully comprehending the costs and benefits.

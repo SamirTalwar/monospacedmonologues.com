@@ -23,6 +23,8 @@ well.
 
 That's not what I want to talk about.
 
+<!--more-->
+
 This is a great way to deliver more "value" (if, for once, I'm
 interpreting "value" correctly—I can never tell). Bonus points if you
 enjoy it. My last post was about having fun, though, and I want to

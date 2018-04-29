@@ -15,6 +15,8 @@ Thanks so much to [Adrian Bolboaca](https://twitter.com/adibolb) for
 helping plan the first two days of this event, and to my colleagues Huw,
 Joe and Michael for organising the event and the venue.
 
+<!--more-->
+
 Level 1: TDD
 ------------
 

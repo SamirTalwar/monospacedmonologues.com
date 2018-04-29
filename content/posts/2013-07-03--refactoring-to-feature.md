@@ -23,6 +23,8 @@ Because procrastination is always healthy.
 I'm going to assume you don't often go down that route, because you're
 reading this and therefore care somewhat about the quality of your work.
 
+<!--more-->
+
 The second, and also the second most common, is the "ad hoc" method.
 This is when you refactor whenever something really bothers you *and*
 when you have time. This is a manifestation of the boy scout rule

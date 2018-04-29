@@ -19,6 +19,8 @@ I'm now writing an installer. The project is made up of several modules
 written in either Java or Scala, and I've enjoyed writing the Scala
 projects much more.
 
+<!--more-->
+
 This is new to me. I disliked Scala when I first used it, and dealing
 with legacy code in the language helped me develop those feelings until
 I didn't even want to see it. I found myself gravitating back when I

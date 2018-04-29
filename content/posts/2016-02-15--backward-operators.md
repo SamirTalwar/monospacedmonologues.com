@@ -7,6 +7,8 @@ I spent a summer a few years ago learning Clojure. Here's a thing that confused 
 
 I was coming at Clojure from two different angles: I know Java very well, and I am a Haskell hobbyist, though I've never used it for anything too serious. So when I read Clojure, my brain translates the syntax into Haskell, and the execution into Java. Because I've never used Clojure for anything in anger either, I've never got past this and treated it like it's its own language.
 
+<!--more-->
+
 I was teaching myself Clojure by going through [Structure and Interpretation of Computer Programs][], and on one problem, I had to bang my head against the implementation for a while. It just wasn't working.
 
 Here's the exercise, from [Section 1.2.2: Tree Recursion][]:

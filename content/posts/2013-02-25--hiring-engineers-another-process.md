@@ -10,6 +10,8 @@ agreement. It's not about how [Palantir](http://palantir.com/) or [TIM
 Group](http://timgroup.com/) hire—they both diverge from this on a
 number of things, but simply my thoughts on the interview process.
 
+<!--more-->
+
 "If you don't have time to read this, we are not a good fit."
 -------------------------------------------------------------
 

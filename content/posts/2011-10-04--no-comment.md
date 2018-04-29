@@ -13,6 +13,8 @@ one though. Half the people that read that will think I'm an idiot. The
 other half will shrug and say, "We taught *you* this, boy." (The latter
 don't need to keep reading.)
 
+<!--more-->
+
 Why this insane proposal? It's my opinion that there's always[^1] a
 better way. Let's take a fairly simple example:
 

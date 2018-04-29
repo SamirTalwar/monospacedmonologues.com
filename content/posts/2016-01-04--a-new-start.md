@@ -5,6 +5,8 @@ date: 2016-01-04T15:00:42Z
 
 Until a week ago, I was sunning myself in New Zealand, enjoying a December barbecue, wandering up and down volcanoes, and pretending I was a hobbit. It was a great way to forget about things for a while and reset. Now I'm back from holiday, caught up with sleep, 2016 is here, and January is traditionally the time to decide what to do with the rest of your life. So here I go.
 
+<!--more-->
+
 ## I Will Blog Every (Week)day
 Every single one. I will probably write articles in advance rather than trying to find an hour every day to blog, and they'll probably be short. The only thing I promise is that they will be interesting.[^1]
 

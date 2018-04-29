@@ -10,6 +10,8 @@ But for completeness' sake, I'd like to apply the advice in that article to my p
 [Gracefully Stopping Docker Containers]: https://www.ctl.io/developers/blog/post/gracefully-stopping-docker-containers/
 [bemorerandom.com]: https://github.com/SamirTalwar/bemorerandom.com
 
+<!--more-->
+
 ---
 
 Here's what happens when I terminate the *bemorerandom.com* API service:

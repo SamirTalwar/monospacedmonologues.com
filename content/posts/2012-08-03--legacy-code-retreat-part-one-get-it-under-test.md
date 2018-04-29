@@ -17,6 +17,8 @@ and clean it up.
 
 Cleaning, of course, starts with testing.
 
+<!--more-->
+
 **Session one**: understand the code. Just read it. Don't change it.
 Don't start refactoring. *Please* don't start fixing it. Just find out
 what it does.

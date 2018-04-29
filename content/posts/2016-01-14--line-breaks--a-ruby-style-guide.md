@@ -7,6 +7,8 @@ I don't mean "style guide" as in a full guidebook, but rather a guide to styling
 
 This is my personal recommendation and the style I try to follow. I couldn't really care less what you use as long as you're consistent inside a single project.
 
+<!--more-->
+
 ## Blocks
 
 When passing a block to a method that returns a new value, with no side effects, use braces. This allows for easy chaining.

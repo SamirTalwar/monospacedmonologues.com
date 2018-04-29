@@ -15,6 +15,8 @@ A few years ago, [Kevlin Henney][@KevlinHenney] spoke on the topic of *The Progr
 >
 > If source code is a software design, then actually building software is done by compilers and linkers.
 
+<!--more-->
+
 We often use the word "build" to refer to the act of creating software, but that word demotes us to people following a set of instructions. We write the instructions.
 
 The dangers of micro-management in software development are real, because we allow ourselves to be seen as doing a job that will progress faster with more control. The opposite is usually true. While I don't want to suggest that there should be no boundaries—I think boundaries and constraints drive creativity far more than the lack of them—those boundaries should be an artifact of the problem we're trying to solve, not an artificial imposition by a misguided senior.

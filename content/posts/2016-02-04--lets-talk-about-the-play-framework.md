@@ -5,6 +5,8 @@ date: 2016-02-04T08:00:15Z
 
 A couple of weeks ago, I was experimenting with writing a simple web app in Scala. I'd heard that the [Play Framework][] had got a lot better since v1 a number of years ago, and there's lots of benefits to sticking to first-party libraries (of which Play is one), so I thought I'd give it a try.
 
+<!--more-->
+
 Step one was to wander over to the web page and figure out how to use it. It recommended that I use the [Typesafe Activator][], which is a wrapper around [SBT][] to help you spin up a sample application. Sounds reasonable, so I installed it (`brew install typesafe-activator`) and typed the magic words.
 
     activator ui

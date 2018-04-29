@@ -9,6 +9,8 @@ functional language has been great, and it's got enough gold in it that
 I can ignore the small pockets of
 ["wat"](https://www.destroyallsoftware.com/talks/wat).
 
+<!--more-->
+
 I started with `clojure.test`, the test framework packaged with Clojure
 itself, but quickly decided I didn't like the style, or the lack of more
 advanced testing functionality such as matchers and test doubles (i.e.

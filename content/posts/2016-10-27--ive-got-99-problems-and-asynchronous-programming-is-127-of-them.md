@@ -7,6 +7,8 @@ On Monday, I gave a talk at Codemotion Berlin entitled… well, it's a long titl
 
 Anyway, [I thought you might be interested in reading it.][Talk] Yes, reading it. My talks are essays first.
 
+<!--more-->
+
 It's got lots of lovely buttons in it that you can click. Like this one:
 
 <p data-height="600" data-theme-id="26053" data-slug-hash="PGVpgQ" data-default-tab="js,result" data-user="SamirTalwar" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/SamirTalwar/pen/PGVpgQ/">99 bottles, take 5</a> by Samir Talwar (<a href="http://codepen.io/SamirTalwar">@SamirTalwar</a>) on <a href="http://codepen.io">CodePen</a>.</p>

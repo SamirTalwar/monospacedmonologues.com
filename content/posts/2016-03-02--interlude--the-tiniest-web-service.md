@@ -9,6 +9,8 @@ I don't have Internet now and I'm tethered to my phone, so I can't play with dat
 
     $ nc google.com 80
 
+<!--more-->
+
 You get… nothing. The prompt sits there waiting for you. You see, you've connected over port 80, which is HTTP. In order to get a response, you must first make a HTTP request.
 
 Let's request the root path, `/`. Type this:

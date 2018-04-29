@@ -12,6 +12,8 @@ date: 2013-09-11T20:04:10Z
 – [Richard Feynman and the Connection
 Machine](http://longnow.org/essays/richard-feynman-connection-machine/)
 
+<!--more-->
+
 In case you were wondering, test-driven "development" doesn't just apply
 to development. It's an approach to solving problems that keeps us
 striving for elegance, simplicity and importance.

@@ -9,6 +9,8 @@ Hello, World is a simple example, but containers can wrap any software you like.
 
 So let's package one up. How about a Ruby application that Googles from the command line?
 
+<!--more-->
+
 ## Make A Thing
 
 We're going to need the library I mentioned earlier, Nokogiri, for this one. Nokogiri is a very fast XML parser that allows you to search it using XPath and CSS queries, which makes life very easy when scraping the web.

@@ -16,6 +16,8 @@ the number of times I've implemented anything even slightly complex
 without using a list on the fingers of one hand. Today, I want to
 explain why we use them wrongly.
 
+<!--more-->
+
 First, let's identify the most common operations we perform on lists. We
 loop over them, inspecting and using each element of the list. We add
 items to them, and remove others. We don't often retrieve arbitrary

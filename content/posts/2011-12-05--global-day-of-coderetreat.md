@@ -26,6 +26,8 @@ your end asks him how the first iteration went. Of course, it's an hour
 later over there. They seem to have enjoyed it—lots of grinning. It's a
 bit awkward, what with no one knowing each other, but quite fun.
 
+<!--more-->
+
 So you find another coder who likes C\# and get to work. His name's, oh,
 I don't know, Fred. Fred's a good name. The room's buzzing as people
 natter about the closed tube station, the food, the weather and, most

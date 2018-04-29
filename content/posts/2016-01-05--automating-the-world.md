@@ -13,6 +13,8 @@ I'm currently available for work in London or remotely, automating everything an
 
 (Or, if you're impatient, [get in touch immediately](mailto:samir@noodlesandwich.com).)
 
+<!--more-->
+
 ## Automating Data Transformation
 
 Getting data into and out of systems is hard work. People are expensive, software is buggy and the data is usually incomplete and corrupted in some way. Software engineers hate broken data.

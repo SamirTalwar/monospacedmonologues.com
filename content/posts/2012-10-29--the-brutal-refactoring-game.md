@@ -36,6 +36,8 @@ to stop and fix it immediately. You can't wait.
 
 There's a reason Adi calls this game "brutal".
 
+<!--more-->
+
 I have to apologise for taking so long to write this post. We ran this
 session at the
 [LSCC](http://www.meetup.com/london-software-craftsmanship/) almost a

@@ -9,6 +9,8 @@ People came to beautiful Wotton House, the new venue for [SoCraTes UK][], from a
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">The <a href="https://twitter.com/SoCraTes_UK">@socrates_uk</a> venue is beautiful. Lot&#39;s of interesting discussion for the first night, time to sleep <a href="https://twitter.com/hashtag/socratesuk?src=hash">#socratesuk</a> <a href="https://t.co/FW6aAEGoec">pic.twitter.com/FW6aAEGoec</a></p>&mdash; Emilien Pecoul (@Ouarzy) <a href="https://twitter.com/Ouarzy/status/738494721530732544">June 2, 2016</a></blockquote>
 
+<!--more-->
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Thanks a lot <a href="https://twitter.com/codurance">@codurance</a> for this awesome day <a href="https://twitter.com/SoCraTes_UK">@SoCraTes_UK</a> I had a great time! <a href="https://twitter.com/hashtag/socratesuk?src=hash">#socratesuk</a> <a href="https://t.co/uTnz7fteKn">pic.twitter.com/uTnz7fteKn</a></p>&mdash; Ana (@titacelli) <a href="https://twitter.com/titacelli/status/738880536446435328">June 3, 2016</a></blockquote>
 
 There were many software people.

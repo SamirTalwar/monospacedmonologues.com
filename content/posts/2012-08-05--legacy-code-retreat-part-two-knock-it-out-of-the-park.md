@@ -14,6 +14,8 @@ extracting classes in **session four**. It's something we do all the
 time, but I think it's very important to formalise the method so we
 understand when we're doing something slightly different.
 
+<!--more-->
+
 I asked people to try it in a very specific way in this session:
 
 1.  Identify an area which breaks the [single responsibility

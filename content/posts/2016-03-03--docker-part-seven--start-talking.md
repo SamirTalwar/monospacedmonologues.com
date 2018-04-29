@@ -7,6 +7,8 @@ When we left off, we had a Scala web service running inside a Docker container. 
 
 I've added a feature to [*bemorerandom.com*][bemorerandom.com] that'll make use of a PostgreSQL database. Here's how it works:
 
+<!--more-->
+
     $ http :8080/dnd/npc/female/halfling
     HTTP/1.1 200 OK
     Content-Encoding: gzip

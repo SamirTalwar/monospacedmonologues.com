@@ -7,6 +7,8 @@ date: 2016-01-22T08:00:21Z
 >
 > <cite>[by Robert C. Martin][The Boy Scout Rule]</cite>
 
+<!--more-->
+
 Yesterday, I wrote about code comments. It's my opinion that most code comments suck. They're misleading, wrong, and most importantly a side effect of laziness. Comments like this:
 
     x += 7.5 // number of hours in a working day

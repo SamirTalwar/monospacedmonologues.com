@@ -5,6 +5,8 @@ date: 2016-01-29T08:00:19Z
 
 This week, I tried to explain the difference as I see it between object-oriented and functional programming. There are four articles. If you haven't seen them yet, they're linked right here:
 
+<!--more-->
+
   1. [Getters, Setters and Properties][]
   2. [Why Couple Data to Behaviour?][]
   3. [The Other Trade-off: Separating Data and Behaviour][]

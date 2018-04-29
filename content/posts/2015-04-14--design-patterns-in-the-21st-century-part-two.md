@@ -16,6 +16,8 @@ This pattern is used *everywhere* in Java code, especially in more "enterprisey"
         Cake bakeCake();
     }
 
+<!--more-->
+
 And the implementation:
 
     public class DanishBakery implements Bakery {
@@ -31,8 +33,6 @@ And the implementation:
 More generally, the Abstract Factory pattern is usually implemented according to this structure.
 
 ![Abstract Factory pattern UML diagram](http://i.imgur.com/JAaSWIH.png)
-
-<!--more-->
 
 In this example, `Pastry` and `Cake` are "abstract products", and `Bakery` is an "abstract factory". Their implementations are the concrete variants.
 

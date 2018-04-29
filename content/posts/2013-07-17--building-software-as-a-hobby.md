@@ -14,6 +14,8 @@ bunch of stuff appearing on [my GitHub
 account](https://github.com/SamirTalwar), but hardly any of it is for
 the general public. Most of it is just me dicking about.
 
+<!--more-->
+
 Having a day job is great, but generally, you have customers, who might
 be the most lovely people you've ever met, but they're not your friends
 or family or even the people you follow on Facebook and Twitter. I want

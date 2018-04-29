@@ -15,6 +15,8 @@ company and product.
 
 It's because it dictates the terms of agreement. You don't.
 
+<!--more-->
+
 When you create a new Rails application (and you have to use their
 command-line tool to do so), it comes with a folder structure, from
 which you really shouldn't be deviating. You must use ActiveSupport,

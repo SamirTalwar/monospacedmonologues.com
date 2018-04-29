@@ -30,6 +30,8 @@ with the `java.util.List` interface.
         }
     }
 
+<!--more-->
+
 `map` takes a function that transforms an object, and applies it to
 every element of a list. So if that function takes an object of type `T`
 and gives us an object of type `U`, the resulting list will be

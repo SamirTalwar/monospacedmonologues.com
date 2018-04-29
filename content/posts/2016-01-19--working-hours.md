@@ -11,6 +11,8 @@ Many people would say that the current status quo is fine, but increasingly ther
 
 Well, I tried it. And I loved it.
 
+<!--more-->
+
 To be fair, I did four hours, not three, over six days, not seven, but I figure it was close enough. It wasn't intentional. I started a timer, worked until I felt like a break, then stopped the timer. 15 minutes later, I repeated it, and it came to approximately four hours.
 
 I then repeated myself for six days straight, usually in the morning, from about 09:00 to 13:00, waking up around 08:00. I felt far more productive than I ever have during an eight-hour workday. Partially, it was because the work was solo, and I was tracking my time to the second, and so I never had the desire to get up and have a long conversation with a colleague. But to be honest, those conversations are often very fruitful. It's the planned meetings that are usually completely pointless.

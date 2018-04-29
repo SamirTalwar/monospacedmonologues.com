@@ -7,6 +7,8 @@ The other day, I was reading Eric Lippert's blog—specifically [the second post
 
 > This declares a variable called word, though "variable" is a bit of a misnomer in OCaml. Variables do not (typically) vary. (There are ways to make variables that vary – they are somewhat akin to "ref" parameters in C# – but I'm not going to use them in this project.) Variables are actually a name associated with a value.
 
+<!--more-->
+
 In that conversation, we were talking about Google's [Guava][] library, and some of its functional interfaces. Here's one, cut down to the bare essentials:
 
     package com.google.common.base;

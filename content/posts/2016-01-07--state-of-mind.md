@@ -13,6 +13,8 @@ The plan is as follows:
   4. Exercise a little bit every day.
   5. Run, climb or cycle a couple of times a week.
 
+<!--more-->
+
 Simple, right? I'm using [The Johnson & Johnson Official 7 Minute Workout][] app to give me an 8–10 minute workout in the mornings, and next week I'm gonna start on step #5, as this one, for family reasons, is pretty packed and I'm not spending much time at home.
 
 The reason it's a little different is because I don't mind failing. I had a sandwich for lunch on Sunday, I've had fish a few times and I'm sure I'll cave and eat a chocolate bar at some point soon. Plus, it's my birthday in a few days and if you think I'm going to step away from cake, you're joking.

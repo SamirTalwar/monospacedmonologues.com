@@ -11,6 +11,8 @@ This is part five of my talk, [Design Patterns in the 21st Century][].
 
 Over the past week, we've seen three examples of design patterns that can be drastically improved by approaching them with a functional mindset. Together, these three span the spectrum.
 
+<!--more-->
+
   * The Abstract Factory pattern is an example of a **creational** pattern, which increases flexibility during the application wiring process
   * The Adapter pattern, a **structural** pattern, is a huge aid in object composition
   * The Chain of Responsibility pattern is a good demonstration of a **behavioural** *anti-pattern* that actually makes the communication between objects *more* rigid

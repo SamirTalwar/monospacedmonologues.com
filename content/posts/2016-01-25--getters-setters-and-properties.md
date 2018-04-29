@@ -15,6 +15,8 @@ In our discussion, something came up. Some people will tell you that current wis
 [eXtreme Tuesday Club]: http://www.meetup.com/eXtreme-Tuesday-Club-XTC/
 [Extreme all the Tuesdays!]: https://twitter.com/extremetuesday/status/689467737698099200
 
+<!--more-->
+
 ## First off… what are those things?
 
 OK, terminology. If you know what these things are, skip ahead to the next bit.

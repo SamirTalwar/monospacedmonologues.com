@@ -7,6 +7,8 @@ Yesterday, we wrote a script to spin up all the various containers we need to st
 
 [Docker Compose][] is a tool for doing this sort of thing in a declarative fashion. You write a specification for what your application looks like, and Compose handles building and running it.
 
+<!--more-->
+
 ## Installation
 
 First of all, check whether you've already installed Docker Compose. If you installed the Docker Toolbox, you should already have it. Try typing `docker-compose` on the command line. If you have it, you should see a handy usage guide. If not, time to install it. If you're using Docker Toolbox, [update to the latest version][Docker Toolbox]. On Mac OS with Homebrew, `brew install docker-compose` should cover you. And on Linux, [follow the installation guide][Install Docker Compose].

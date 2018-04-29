@@ -11,6 +11,8 @@ This is part three of my talk, [Design Patterns in the 21st Century][].
 
 The Adapter pattern bridges worlds. In one world, we have an interface for a concept; in another world, we have a different interface. These two interfaces serve different purposes, but sometimes we need to transfer things across. In a well-written universe, we can use *adapters* to make objects following one protocol adhere to the other.
 
+<!--more-->
+
 There are two kinds of Adapter pattern. We're not going to talk about this one:
 
     interface Fire {
@@ -61,8 +63,6 @@ The pattern generally follows this simple structure:
 That's nice, right?
 
 Yes. Sort of. We can do better.
-
-<!--more-->
 
 We already have a reference to a `Fire`, so constructing another object just to play with it seems a bit… overkill. And that object implements `Oven`. Which has a *single abstract method*. I'm seeing a trend here.
 

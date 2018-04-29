@@ -29,6 +29,8 @@ Here's a thing you might not see a lot.
 
 It might look odd, but the idea is fairly common. For example, the Java Servlets framework uses the concept of a `FilterChain` to model a sequence of filters upon a request.
 
+<!--more-->
+
 You can use `Filter` objects to do pretty much anything with a request. Here's one that tracks how many hits there have been to a site. Notice that it passes the `request` and `response` objects onto the next filter in the chain when it's done.
 
     public final class HitCounterFilter implements Filter {
@@ -82,8 +84,6 @@ Basically, once you hit an element in the chain, it has full control.
 In UML, it looks a little like this:
 
 ![Chain of Responsibility pattern UML diagram](http://i.imgur.com/qzzbX7i.png)
-
-<!--more-->
 
 #### This is probably bad practice.
 

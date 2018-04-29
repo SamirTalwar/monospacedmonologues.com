@@ -10,6 +10,8 @@ to find out who was going to help the eight-year-old boy with deploying
 a PHP and MySQL webapp—not one of us could remember how on earth PHP
 worked—we sat down and got cracking.
 
+<!--more-->
+
 This was the first time Noah, my assigned mentee, had done anything that
 required hacking out text—he was more used to a Microsoft drag-and-drop
 game designer called Kodu. I thought that after playing with graphical

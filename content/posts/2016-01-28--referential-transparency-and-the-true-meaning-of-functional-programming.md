@@ -13,6 +13,8 @@ Before you carry on, I suggest you read the last three articles:
 
 The previous three articles in this series focus on different trade-offs we can make, comparing object-oriented and functional code. I'd like to tie these two together. But first, I'd like to talk about referential transparency.
 
+<!--more-->
+
 ## Referential Transparency
 
 From [the Haskell wiki][Referential transparency]:

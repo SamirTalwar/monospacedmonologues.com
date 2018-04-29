@@ -5,6 +5,8 @@ date: 2016-03-31T07:00:35Z
 
 Up until now, we've been neglecting security in favour of getting our application working and features delivered. It's time to look back and ensure that there are no holes in our application containers.
 
+<!--more-->
+
 ## Docker Itself
 
 First and foremost, having Docker access is having root access. If you're in the `docker` group on your operating system, you might as well grant access to the root user. It's the same thing. Because any Docker container can be run as *root*, and the only thing keeping the user inside the container is, essentially, a chroot, you can easily just mount `/` as `/host` and do whatever you like inside the container as the root user.

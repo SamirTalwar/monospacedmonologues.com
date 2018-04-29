@@ -7,6 +7,8 @@ There's a growing trend among software developers which I absolutely love. More 
 
 There's also one massive benefit I've found to pushing [my configuration files and shell scripts][fygm] up to GitHub.
 
+<!--more-->
+
 When pairing, we might notice that someone else's machine is not configured optimally. In that situation, we can just point them towards the relevant line of one of our own dotfiles, and then get on with the task at hand, knowing that if they're interested, they'll take a look later. The alternative is to start shaving the yak. It takes a while to get your computer working just the way you like it, and it's very easy to start hacking together configuration files instead of getting work done. By simply pointing someone to a file, we can avoid getting distracted for more than a few seconds. It also means that if they're not actually that interested, it doesn't waste more than a few seconds of their time.
 
 In other words, sharing is caring. Just, y'know, go easy on the sharing.

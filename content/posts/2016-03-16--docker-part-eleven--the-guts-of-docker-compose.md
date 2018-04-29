@@ -8,6 +8,8 @@ Where were we? Ah yes, DNS resolution wasn't working.
     org.flywaydb.core.api.FlywayException: Unable to obtain Jdbc connection from DataSource
     (jdbc:postgresql://database:5432/bemorerandom) for user 'bemorerandom': The connection attempt failed.
 
+<!--more-->
+
 We dug a little and found out that something's up in the Ubuntu configuration:
 
     root@c61890596067:/# getent hosts database
@@ -43,7 +45,7 @@ Volumes work similarly.
     DRIVER              VOLUME NAME
     local               bemorerandomcom_postgresql
 
-And, of course, networks are named in the same way. If you don't create an explicit netwokr, one named *default* is created for you.
+And, of course, networks are named in the same way. If you don't create an explicit network, one named *default* is created for you.
 
     $ docker network ls
     NETWORK ID          NAME                      DRIVER

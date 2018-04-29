@@ -5,6 +5,8 @@ date: 2016-01-21T08:00:39Z
 
 I generally dislike code comments. I've heard good arguments for and against, and many, many bad arguments for them. Let me sum them up, and I'll present a slightly different take on them at the end.
 
+<!--more-->
+
 ## The Bad Arguments For Code Comments
 
 Comments suck at keeping track of things:

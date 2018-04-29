@@ -9,6 +9,8 @@ I hear a lot of arguments against Java's checked exceptions. Normally, they run 
 
 And they're right. It can be very noisy. Personally, I think the noise is worth it so that exceptions are adequately handled, but it's a bit ridiculous.
 
+<!--more-->
+
 If you want to write your code so that exceptions are only surfaced at run-time, go for it. I won't stop you. However, I take issue with this when it comes to *interfaces*. If your interfaces aren't able to throw exceptions, even in environments where that would be reasonable, it can be really unpleasant for your implementors.
 
 Let's take `java.lang.Runnable` as an example. Here's the full source code, without the comments:

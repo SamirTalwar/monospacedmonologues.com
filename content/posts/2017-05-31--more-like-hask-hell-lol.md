@@ -9,6 +9,8 @@ As some of you may know, I made a terribly-promoted, mostly-unused (except by me
 
 ![Screenshot of Over The Finish Line](http://assets.monospacedmonologues.com/2017-05-31+-+Over+The+Finish+Line.png)
 
+<!--more-->
+
 Being a statically-typed functional programming purist, and this being the middle of 2016, I went for the new shiny client-side compile-to-JavaScript programming language: [Elm][]. Elm checked all the boxes: it's type-safe, uses spaces to provide function arguments, is pure FP and generally shits rainbows. Basically, it looked like Haskell.
 
 And, of course, I picked Haskell as the server-side language, because of course. I'd never used it for a web application before, but I figured I could handle it. I grok monads. I eat higher-kinded types for breakfast. (They're great with yoghurt and blueberries.)

@@ -20,6 +20,8 @@ You see, I don't like giving talks. I like showing people code and
 letting them experiment by themselves. Usually I learn way more this way
 round, and what's the point of teaching if you can't learn from it?
 
+<!--more-->
+
 Unfortunately, you can't do that at a conference where you've been asked
 to speak. Doesn't sit well with the attendees, who have paid good monies
 to learn from you. (By the way, that fact right there is why I'm

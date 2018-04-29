@@ -11,6 +11,8 @@ It's generally considered good practice to log everything in your application th
 
 The first thing to remember is that if it's important, log it. Treat your log as an event stream. Ideally, you'll be able to reconstruct your database just by replaying your logs.
 
+<!--more-->
+
 The next most important thing is that if it might fail, log it. Events of this type include:
 
   * long-running computations,

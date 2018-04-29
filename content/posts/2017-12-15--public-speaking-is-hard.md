@@ -7,6 +7,8 @@ Last week, I spoke at [Computer Science Noobs][] on the subject of type systems.
 
 It turns out I really don't like talks.
 
+<!--more-->
+
 I mean, I knew I didn't like *attending* or watching talks (at least, those that take longer than five minutes—lightning talks are, in general, great). But 30 to 60 minutes of someone drivelling on as they wander around a stage? Count me out. Even if I'm sitting in the front row, I'll be fiddling with my phone within about 3 minutes. On a good day. On a bad day it'll be 3 seconds. (Yes, I do this in lightning talks too, but that's really, really bad of me. I promise to stop.)
 
 But what surprised me this year is that I really don't like the other side of talks either: the talking.

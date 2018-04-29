@@ -9,6 +9,8 @@ OK, brain dump time.
 
 What do we prioritise? What do we sacrifice? Every single product ever released has had trade-offs baked in, from the set of features to the implementation of the networking code. There were many independent discussions on and around this, all asking different questions, but arriving at similar answers: there is no right answer. Instead of trying to find one, we should respect the fact that there will be trade-offs, and spend our energy gathering as much knowledge as we can in order to make the right ones.
 
+<!--more-->
+
 Often, we can't gather this knowledge in a vacuum. We have to speak to the people who understand the customers, the cash flow, the product goals and the situation of the organisation. In order to do so, we have to meet them half-way. Saying things like, "This approach will incur technical debt," is meaningless; the phrase "technical debt" is itself an incredibly technical term, despite being an analogy. Instead, we should make an effort to speak some of the language of the people we're talking to, explaining things in ways that matter. Instead of talking about "technical debt", talk about cost, benefits and risk in the same way we often estimate work. And if we can't give numbers (and we usually can't), we can speak relative to other pieces of work. In the same way that story points eventually become meaningful to everyone involved, so too will relative estimates of future cost.
 
 ## Start Caring About Your Operations
