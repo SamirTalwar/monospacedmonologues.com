@@ -5,6 +5,8 @@ theme = "ananke"
 
 pygmentsCodefences = true
 
+disqusShortname = "monospacedmonologues"
+
 [permalinks]
 posts = "/:year/:month/:slug/"
 
