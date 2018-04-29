@@ -10,5 +10,8 @@ disqusShortname = "monospacedmonologues"
 [permalinks]
 posts = "/:year/:month/:slug/"
 
+[params]
+custom_css = ["css/site.css"]
+
 [blackfriday]
 extensionsmask = ["noIntraEmphasis"]

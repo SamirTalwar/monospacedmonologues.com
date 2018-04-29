@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css?family=PT+Mono");
+
+.ma0 h1,
+.ma0 h2,
+.ma0 h3,
+.ma0 h4,
+.ma0 h5,
+.ma0 h6,
+header,
+footer {
+  font-family: "PT Mono", monospace;
+}
