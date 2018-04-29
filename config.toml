@@ -11,6 +11,10 @@ disqusShortname = "monospacedmonologues"
 posts = "/:year/:month/:slug/"
 
 [params]
+description = "by Samir Talwar"
+twitter = "https://twitter.com/SamirTalwar"
+featured_image = false
+background_color_class = "bg-near-black"
 custom_css = ["css/site.css"]
 
 [blackfriday]
