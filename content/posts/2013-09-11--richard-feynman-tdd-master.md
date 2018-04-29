@@ -1,5 +1,6 @@
 ---
 title: "Richard Feynman, TDD Master"
+slug: richard-feynman-tdd-master
 date: 2013-09-11T20:04:10Z
 ---
 

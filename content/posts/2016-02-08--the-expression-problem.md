@@ -1,5 +1,6 @@
 ---
 title: "The Expression Problem"
+slug: the-expression-problem
 date: 2016-02-08T08:00:32Z
 ---
 

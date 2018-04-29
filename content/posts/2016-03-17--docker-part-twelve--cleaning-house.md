@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Twelve: Cleaning House"
+slug: docker-part-twelve--cleaning-house
 date: 2016-03-17T08:00:23Z
 ---
 

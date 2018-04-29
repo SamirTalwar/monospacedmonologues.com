@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Six: A Slow Build Is Worse Than No Build At All"
+slug: docker-part-six--a-slow-build-is-worse-than-no-build-at-all
 date: 2016-03-01T08:00:40Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "City Planning"
+slug: city-planning
 date: 2018-01-03T08:00:28Z
 ---
 

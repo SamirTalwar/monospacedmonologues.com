@@ -1,5 +1,6 @@
 ---
 title: "Casting Lambdas in Java"
+slug: casting-lambdas-in-java
 date: 2016-01-11T08:00:21Z
 ---
 

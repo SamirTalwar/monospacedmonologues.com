@@ -1,5 +1,6 @@
 ---
 title: "No Computers"
+slug: no-computers
 date: 2017-11-22T08:00:28Z
 ---
 

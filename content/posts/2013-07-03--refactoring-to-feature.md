@@ -1,5 +1,6 @@
 ---
 title: "Refactoring to Feature"
+slug: refactoring-to-feature
 date: 2013-07-03T13:26:55Z
 ---
 

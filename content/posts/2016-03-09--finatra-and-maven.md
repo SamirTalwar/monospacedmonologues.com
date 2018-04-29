@@ -1,5 +1,6 @@
 ---
 title: "Finatra and Maven"
+slug: finatra-and-maven
 date: 2016-03-09T08:00:40Z
 ---
 

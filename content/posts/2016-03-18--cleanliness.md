@@ -1,5 +1,6 @@
 ---
 title: "Cleanliness"
+slug: cleanliness
 date: 2016-03-18T08:00:33Z
 ---
 

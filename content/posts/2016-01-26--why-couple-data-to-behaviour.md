@@ -1,5 +1,6 @@
 ---
 title: "Why Couple Data to Behaviour?"
+slug: why-couple-data-to-behaviour
 date: 2016-01-26T08:30:16Z
 ---
 

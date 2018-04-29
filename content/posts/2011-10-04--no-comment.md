@@ -1,5 +1,6 @@
 ---
 title: "No Comment"
+slug: no-comment
 date: 2011-10-04T19:37:00Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Functional Poker Hands in Java"
+slug: functional-poker-hands-in-java
 date: 2011-12-02T13:20:00Z
 ---
 

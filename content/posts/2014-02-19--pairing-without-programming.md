@@ -1,5 +1,6 @@
 ---
 title: "Pairing without programming"
+slug: pairing-without-programming
 date: 2014-02-19T17:00:05Z
 ---
 

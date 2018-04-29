@@ -1,5 +1,6 @@
 ---
 title: "I actually did it."
+slug: i-actually-did-it
 date: 2011-10-03T22:42:45Z
 ---
 

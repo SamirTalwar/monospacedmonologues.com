@@ -1,5 +1,6 @@
 ---
 title: "Referential Transparency, And The True Meaning Of Functional Programming"
+slug: referential-transparency-and-the-true-meaning-of-functional-programming
 date: 2016-01-28T08:00:12Z
 ---
 

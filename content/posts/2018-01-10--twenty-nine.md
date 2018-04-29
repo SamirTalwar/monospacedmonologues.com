@@ -1,5 +1,6 @@
 ---
 title: "Twenty-Nine"
+slug: twenty-nine
 date: 2018-01-10T08:00:05Z
 ---
 

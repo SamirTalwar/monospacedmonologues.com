@@ -1,5 +1,6 @@
 ---
 title: "The Boy Scout Rule"
+slug: the-boy-scout-rule
 date: 2016-01-22T08:00:21Z
 ---
 

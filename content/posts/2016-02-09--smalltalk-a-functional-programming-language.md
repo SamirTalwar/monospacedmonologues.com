@@ -1,5 +1,6 @@
 ---
 title: "Smalltalk, A Functional Programming Language"
+slug: smalltalk-a-functional-programming-language
 date: 2016-02-09T08:00:17Z
 ---
 

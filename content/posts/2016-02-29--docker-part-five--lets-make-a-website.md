@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Five: Let's Make A Website"
+slug: docker-part-five--lets-make-a-website
 date: 2016-02-29T08:00:32Z
 ---
 

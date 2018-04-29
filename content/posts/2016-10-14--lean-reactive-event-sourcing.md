@@ -1,5 +1,6 @@
 ---
 title: "Lean, Reactive Event-Sourcing"
+slug: lean-reactive-event-sourcing
 date: 2016-10-14T07:00:26Z
 ---
 

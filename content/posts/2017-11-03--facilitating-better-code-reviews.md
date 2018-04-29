@@ -1,5 +1,6 @@
 ---
 title: "Facilitating Better Code Reviews"
+slug: facilitating-better-code-reviews
 date: 2017-11-03T08:00:12Z
 ---
 

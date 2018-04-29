@@ -1,5 +1,6 @@
 ---
 title: "Toggling browser elements without JavaScript"
+slug: toggling-browser-elements-without-javascript
 date: 2016-03-21T08:00:29Z
 ---
 

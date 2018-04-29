@@ -1,5 +1,6 @@
 ---
 title: "Quality, Revisited"
+slug: quality-revisited
 date: 2013-04-26T11:41:55Z
 ---
 

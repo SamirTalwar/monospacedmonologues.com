@@ -1,5 +1,6 @@
 ---
 title: "Teach Me BDD"
+slug: teach-me-bdd
 date: 2017-10-18T07:00:18Z
 ---
 

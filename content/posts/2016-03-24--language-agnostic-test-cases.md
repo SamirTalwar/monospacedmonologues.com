@@ -1,5 +1,6 @@
 ---
 title: "Language-Agnostic Test Cases"
+slug: language-agnostic-test-cases
 date: 2016-03-24T08:00:22Z
 ---
 

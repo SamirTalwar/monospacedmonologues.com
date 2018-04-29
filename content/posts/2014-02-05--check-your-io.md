@@ -1,5 +1,6 @@
 ---
 title: "Check your I/O"
+slug: check-your-io
 date: 2014-02-05T17:30:00Z
 ---
 

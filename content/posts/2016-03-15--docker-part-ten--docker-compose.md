@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Ten: Docker Compose"
+slug: docker-part-ten--docker-compose
 date: 2016-03-15T08:00:41Z
 ---
 

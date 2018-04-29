@@ -1,5 +1,6 @@
 ---
 title: "What Is A No-Argument Function?"
+slug: what-is-a-no-argument-function
 date: 2016-02-10T08:00:29Z
 ---
 

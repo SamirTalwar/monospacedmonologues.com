@@ -1,5 +1,6 @@
 ---
 title: "Skillful Sailing"
+slug: skillful-sailing
 date: 2016-02-26T08:00:25Z
 ---
 

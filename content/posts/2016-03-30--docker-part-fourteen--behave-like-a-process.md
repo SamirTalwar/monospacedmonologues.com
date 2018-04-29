@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Fourteen: Behave Like A Process"
+slug: docker-part-fourteen--behave-like-a-process
 date: 2016-03-30T07:00:32Z
 ---
 

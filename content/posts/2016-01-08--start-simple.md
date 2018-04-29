@@ -1,5 +1,6 @@
 ---
 title: "Start Simple"
+slug: start-simple
 date: 2016-01-08T08:30:16Z
 ---
 

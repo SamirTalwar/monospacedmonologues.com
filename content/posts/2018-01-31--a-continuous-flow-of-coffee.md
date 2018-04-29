@@ -1,5 +1,6 @@
 ---
 title: "A Continuous Flow Of Coffee"
+slug: a-continuous-flow-of-coffee
 date: 2018-01-31T08:00:21Z
 ---
 

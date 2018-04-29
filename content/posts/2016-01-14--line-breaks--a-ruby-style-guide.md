@@ -1,5 +1,6 @@
 ---
 title: "Line Breaks: A Ruby Style Guide"
+slug: line-breaks--a-ruby-style-guide
 date: 2016-01-14T08:00:37Z
 ---
 

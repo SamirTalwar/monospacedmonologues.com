@@ -1,5 +1,6 @@
 ---
 title: "Ninja Pairing"
+slug: ninja-pairing
 date: 2016-04-18T07:00:12Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "You Don't Need To Rebase"
+slug: you-dont-need-to-rebase
 date: 2017-12-06T08:00:30Z
 ---
 

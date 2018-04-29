@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Thirteen: The Twelve-Factor App"
+slug: docker-part-thirteen--the-twelve-factor-app
 date: 2016-03-29T07:00:33Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Feed Me With Bookmarklets"
+slug: feed-me-with-bookmarklets
 date: 2016-01-18T08:00:18Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Player Characters"
+slug: player-characters
 date: 2017-05-08T07:30:30Z
 ---
 

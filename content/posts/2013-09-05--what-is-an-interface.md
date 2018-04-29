@@ -1,5 +1,6 @@
 ---
 title: "What is an interface?"
+slug: what-is-an-interface
 date: 2013-09-04T23:06:00Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Nine: Scripted Deployment"
+slug: docker-part-nine--scripted-deployment
 date: 2016-03-14T08:01:32Z
 ---
 

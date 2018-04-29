@@ -1,5 +1,6 @@
 ---
 title: "Public Speaking Is Hard"
+slug: public-speaking-is-hard
 date: 2017-12-15T08:00:18Z
 ---
 

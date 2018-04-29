@@ -1,5 +1,6 @@
 ---
 title: "Complicit Implicits"
+slug: complicit-implicits
 date: 2014-01-09T14:41:34Z
 ---
 

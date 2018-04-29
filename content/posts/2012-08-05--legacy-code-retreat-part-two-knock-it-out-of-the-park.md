@@ -1,5 +1,6 @@
 ---
 title: "Legacy Code Retreat part two: knock it out of the park"
+slug: legacy-code-retreat-part-two-knock-it-out-of-the-park
 date: 2012-08-05T06:41:00Z
 ---
 

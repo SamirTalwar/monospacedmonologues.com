@@ -1,5 +1,6 @@
 ---
 title: "Querying the web with ScraperWiki"
+slug: querying-the-web-with-scraperwiki
 date: 2012-11-26T22:31:52Z
 ---
 

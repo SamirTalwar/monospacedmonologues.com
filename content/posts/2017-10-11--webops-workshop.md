@@ -1,5 +1,6 @@
 ---
 title: "WebOps Workshop"
+slug: webops-workshop
 date: 2017-10-11T07:00:18Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Solving Problems By Trying Over And Over Again: the Newton-Raphson Method"
+slug: solving-problems-by-trying-over-and-over-again--the-newton-raphson-method
 date: 2016-02-03T08:00:14Z
 ---
 

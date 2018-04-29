@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Seven: Start Talking"
+slug: docker-part-seven--start-talking
 date: 2016-03-03T08:00:21Z
 ---
 

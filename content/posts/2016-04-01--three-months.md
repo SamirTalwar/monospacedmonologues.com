@@ -1,5 +1,6 @@
 ---
 title: "Three Months"
+slug: three-months
 date: 2016-04-01T07:00:34Z
 ---
 

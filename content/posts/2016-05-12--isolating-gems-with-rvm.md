@@ -1,5 +1,6 @@
 ---
 title: "Isolating Gems With RVM"
+slug: isolating-gems-with-rvm
 date: 2016-05-12T07:00:32Z
 ---
 

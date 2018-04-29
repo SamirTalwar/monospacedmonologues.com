@@ -1,5 +1,6 @@
 ---
 title: "Too Many Cooks"
+slug: too-many-cooks
 date: 2014-11-09T10:51:00Z
 ---
 

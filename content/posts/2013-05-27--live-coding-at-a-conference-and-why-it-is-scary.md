@@ -1,5 +1,6 @@
 ---
 title: "Live Coding at a Conference, and why it is Scary"
+slug: live-coding-at-a-conference-and-why-it-is-scary
 date: 2013-05-27T10:25:00Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Naming Things"
+slug: naming-things
 date: 2016-02-02T08:00:27Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "// what the fuck?"
+slug: slash-slash-what-the-fuck
 date: 2016-02-11T08:00:19Z
 ---
 

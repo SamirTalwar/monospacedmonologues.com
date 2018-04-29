@@ -1,5 +1,6 @@
 ---
 title: " Mob Programming, and the importance of fun at work"
+slug: mob-programming-and-the-importance-of-fun-at-work
 date: 2014-07-15T11:50:00Z
 ---
 

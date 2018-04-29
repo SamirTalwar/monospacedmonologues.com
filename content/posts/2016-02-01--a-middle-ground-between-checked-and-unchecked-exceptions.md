@@ -1,5 +1,6 @@
 ---
 title: "A Middle Ground Between Checked And Unchecked Exceptions"
+slug: a-middle-ground-between-checked-and-unchecked-exceptions
 date: 2016-02-01T08:00:54Z
 ---
 

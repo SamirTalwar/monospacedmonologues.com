@@ -1,5 +1,6 @@
 ---
 title: "The Social Networking Kata"
+slug: the-social-networking-kata
 date: 2013-04-30T10:36:40Z
 ---
 

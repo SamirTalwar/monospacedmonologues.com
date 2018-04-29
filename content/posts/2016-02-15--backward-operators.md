@@ -1,5 +1,6 @@
 ---
 title: "Backward Operators"
+slug: backward-operators
 date: 2016-02-15T08:00:32Z
 ---
 

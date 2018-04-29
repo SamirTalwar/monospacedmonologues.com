@@ -1,5 +1,6 @@
 ---
 title: "Go make a sandwich"
+slug: go-make-a-sandwich
 date: 2014-01-16T18:26:53Z
 ---
 

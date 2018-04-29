@@ -1,5 +1,6 @@
 ---
 title: "A New Start"
+slug: a-new-start
 date: 2016-01-04T15:00:42Z
 ---
 

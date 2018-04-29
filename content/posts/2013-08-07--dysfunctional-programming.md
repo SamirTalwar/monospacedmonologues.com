@@ -1,5 +1,6 @@
 ---
 title: "Dysfunctional Programming"
+slug: dysfunctional-programming
 date: 2013-08-07T14:05:00Z
 ---
 

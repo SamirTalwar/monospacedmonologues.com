@@ -1,5 +1,6 @@
 ---
 title: "Interlude: The Tiniest Web Service"
+slug: interlude--the-tiniest-web-service
 date: 2016-03-02T08:00:12Z
 ---
 

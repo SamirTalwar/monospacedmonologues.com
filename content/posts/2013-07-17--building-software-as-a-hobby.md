@@ -1,5 +1,6 @@
 ---
 title: "Building software as a hobby"
+slug: building-software-as-a-hobby
 date: 2013-07-17T17:07:46Z
 ---
 

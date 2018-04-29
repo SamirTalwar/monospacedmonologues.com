@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Four: Repeating Yourself"
+slug: docker-part-four--repeating-yourself
 date: 2016-02-25T08:00:40Z
 ---
 

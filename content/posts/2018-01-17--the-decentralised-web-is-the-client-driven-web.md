@@ -1,5 +1,6 @@
 ---
 title: "The Decentralised Web is the Client-Driven Web"
+slug: the-decentralised-web-is-the-client-driven-web
 date: 2018-01-17T08:00:15Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Outside your comfort zone"
+slug: outside-your-comfort-zone
 date: 2013-10-02T15:21:41Z
 ---
 

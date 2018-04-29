@@ -1,5 +1,6 @@
 ---
 title: "Self-awareness, existentialism and personal responsibility."
+slug: self-awareness-existentialism-and-personal
 date: 2013-09-27T18:18:00Z
 ---
 

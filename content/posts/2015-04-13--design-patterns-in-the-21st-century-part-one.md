@@ -1,5 +1,6 @@
 ---
 title: "Design Patterns in the 21st Century, Part One"
+slug: design-patterns-in-the-21st-century-part-one
 date: 2015-04-13T11:23:36Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Slash Slash Massive Hack"
+slug: slash-slash-massive-hack
 date: 2016-01-21T08:00:39Z
 ---
 

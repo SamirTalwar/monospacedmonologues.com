@@ -1,5 +1,6 @@
 ---
 title: "The Brutal Refactoring Game"
+slug: the-brutal-refactoring-game
 date: 2012-10-29T10:08:46Z
 ---
 

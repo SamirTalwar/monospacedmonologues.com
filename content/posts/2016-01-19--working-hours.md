@@ -1,5 +1,6 @@
 ---
 title: "Working Hours"
+slug: working-hours
 date: 2016-01-19T08:00:29Z
 ---
 

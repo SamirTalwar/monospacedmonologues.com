@@ -1,5 +1,6 @@
 ---
 title: "#SoCraTesUK, Buzzfeed Edition"
+slug: socratesuk-buzzfeed-edition
 date: 2016-06-07T07:00:25Z
 ---
 

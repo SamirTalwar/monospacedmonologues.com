@@ -1,5 +1,6 @@
 ---
 title: "Localised dotfiles"
+slug: localised-dotfiles
 date: 2016-02-18T08:00:26Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Design Patterns in the 21st Century: The Abstract Factory Pattern"
+slug: design-patterns-in-the-21st-century-part-two
 date: 2015-04-14T08:51:27Z
 ---
 

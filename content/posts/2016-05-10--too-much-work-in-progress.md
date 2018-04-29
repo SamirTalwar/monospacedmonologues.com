@@ -1,5 +1,6 @@
 ---
 title: "Too Much Work In Progress"
+slug: too-much-work-in-progress
 date: 2016-05-10T07:00:13Z
 ---
 

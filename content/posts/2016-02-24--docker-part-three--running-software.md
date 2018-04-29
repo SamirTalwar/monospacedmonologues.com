@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Three: Running Software"
+slug: docker-part-three--running-software
 date: 2016-02-24T08:00:28Z
 ---
 

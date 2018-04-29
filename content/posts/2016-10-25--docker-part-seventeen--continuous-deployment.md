@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Seventeen: Continuous Deployment"
+slug: docker-part-seventeen--continuous-deployment
 date: 2016-10-25T07:00:30Z
 ---
 

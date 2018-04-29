@@ -1,5 +1,6 @@
 ---
 title: "Global Day of Coderetreat"
+slug: global-day-of-coderetreat
 date: 2011-12-05T22:15:34Z
 ---
 

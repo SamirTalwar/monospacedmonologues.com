@@ -1,5 +1,6 @@
 ---
 title: "Dependency Inversion, and how to get it wrong"
+slug: dependency-inversion-and-how-to-get-it-wrong
 date: 2013-07-31T16:04:01Z
 ---
 

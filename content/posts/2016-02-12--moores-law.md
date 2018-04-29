@@ -1,5 +1,6 @@
 ---
 title: "Moore's Law"
+slug: moores-law
 date: 2016-02-12T08:00:29Z
 ---
 

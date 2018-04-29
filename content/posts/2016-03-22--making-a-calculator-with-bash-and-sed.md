@@ -1,5 +1,6 @@
 ---
 title: "Making a calculator with bash and sed"
+slug: making-a-calculator-with-bash-and-sed
 date: 2016-03-22T08:00:41Z
 ---
 

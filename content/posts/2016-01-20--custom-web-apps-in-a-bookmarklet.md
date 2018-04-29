@@ -1,5 +1,6 @@
 ---
 title: "Custom Web Apps… In A Bookmarklet"
+slug: custom-web-apps-in-a-bookmarklet
 date: 2016-01-20T08:00:23Z
 ---
 

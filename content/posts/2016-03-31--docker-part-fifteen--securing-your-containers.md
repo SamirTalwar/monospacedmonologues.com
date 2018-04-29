@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Fifteen: Securing Your Containers"
+slug: docker-part-fifteen--securing-your-containers
 date: 2016-03-31T07:00:35Z
 ---
 

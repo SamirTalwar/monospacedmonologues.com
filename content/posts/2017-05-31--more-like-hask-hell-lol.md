@@ -1,5 +1,6 @@
 ---
 title: "More like Hask-Hell LOL"
+slug: more-like-hask-hell-lol
 date: 2017-05-31T07:30:13Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Design Patterns in the 21st Century: The Adapter Pattern"
+slug: design-patterns-in-the-21st-century-part-three
 date: 2015-04-15T09:28:48Z
 ---
 

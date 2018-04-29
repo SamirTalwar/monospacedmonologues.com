@@ -1,5 +1,6 @@
 ---
 title: "Delete Your Code"
+slug: delete-your-code
 date: 2013-07-24T16:53:00Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Functions are Objects: the other point of view"
+slug: functions-are-objects-the-other-point-of-view
 date: 2013-08-21T16:15:00Z
 ---
 

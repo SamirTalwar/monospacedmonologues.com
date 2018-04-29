@@ -1,5 +1,6 @@
 ---
 title: "Don't Call Us. We'll Call You."
+slug: dont-call-us-well-call-you
 date: 2013-03-27T16:18:39Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Building Is The Job Of The Compiler"
+slug: building-is-the-job-of-the-compiler
 date: 2016-03-11T08:00:23Z
 ---
 

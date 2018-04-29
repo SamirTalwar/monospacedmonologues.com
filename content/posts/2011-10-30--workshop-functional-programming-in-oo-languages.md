@@ -1,5 +1,6 @@
 ---
 title: "Workshop: Functional programming in OO languages"
+slug: workshop-functional-programming-in-oo-languages
 date: 2011-10-30T15:56:00Z
 ---
 

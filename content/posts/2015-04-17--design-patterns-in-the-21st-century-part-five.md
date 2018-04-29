@@ -1,5 +1,6 @@
 ---
 title: "Design Patterns in the 21st Century: Conclusion"
+slug: design-patterns-in-the-21st-century-part-five
 date: 2015-04-17T16:39:27Z
 ---
 

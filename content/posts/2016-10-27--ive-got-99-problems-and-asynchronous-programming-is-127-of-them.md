@@ -1,5 +1,6 @@
 ---
 title: "I've Got 99 Problems And Asynchronous Programming Is 127 Of Them"
+slug: ive-got-99-problems-and-asynchronous-programming-is-127-of-them
 date: 2016-10-27T07:00:34Z
 ---
 

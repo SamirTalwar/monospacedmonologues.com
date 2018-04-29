@@ -1,5 +1,6 @@
 ---
 title: "Crank Up The Volume And Forget Your Pomodoros"
+slug: crank-up-the-volume-and-forget-your-pomodoros
 date: 2015-06-04T08:09:34Z
 ---
 

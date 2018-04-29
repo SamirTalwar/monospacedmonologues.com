@@ -1,5 +1,6 @@
 ---
 title: "Design Patterns in the 21st Century: The Chain of Responsibility Pattern"
+slug: design-patterns-in-the-21st-century-part-four
 date: 2015-04-16T17:38:07Z
 ---
 

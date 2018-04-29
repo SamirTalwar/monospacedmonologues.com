@@ -1,5 +1,6 @@
 ---
 title: "Comprehending Lists"
+slug: comprehending-lists
 date: 2011-10-26T23:50:00Z
 ---
 

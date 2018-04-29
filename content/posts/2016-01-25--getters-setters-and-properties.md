@@ -1,5 +1,6 @@
 ---
 title: "Getters, Setters and Properties"
+slug: getters-setters-and-properties
 date: 2016-01-25T08:30:21Z
 ---
 

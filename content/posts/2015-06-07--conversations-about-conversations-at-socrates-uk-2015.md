@@ -1,5 +1,6 @@
 ---
 title: "Conversations About Conversations at SoCraTes UK 2015"
+slug: conversations-about-conversations-at-socrates-uk-2015
 date: 2015-06-07T18:32:36Z
 ---
 

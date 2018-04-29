@@ -1,5 +1,6 @@
 ---
 title: "Next Level Git"
+slug: next-level-git
 date: 2016-01-06T08:30:19Z
 ---
 

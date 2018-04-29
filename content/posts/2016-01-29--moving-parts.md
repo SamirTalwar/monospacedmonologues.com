@@ -1,5 +1,6 @@
 ---
 title: "Moving Parts"
+slug: moving-parts
 date: 2016-01-29T08:00:19Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "The Worst Kind of Open-Source"
+slug: the-worst-kind-of-open-source
 date: 2016-02-16T08:00:34Z
 ---
 

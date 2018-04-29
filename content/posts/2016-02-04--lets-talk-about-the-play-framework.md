@@ -1,5 +1,6 @@
 ---
 title: "Let's Talk About The Play Framework"
+slug: lets-talk-about-the-play-framework
 date: 2016-02-04T08:00:15Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "State of Mind"
+slug: state-of-mind
 date: 2016-01-07T08:30:23Z
 ---
 

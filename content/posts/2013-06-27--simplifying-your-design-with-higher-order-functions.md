@@ -1,5 +1,6 @@
 ---
 title: "Simplifying your Design with Higher-Order Functions"
+slug: simplifying-your-design-with-higher-order-functions
 date: 2013-06-27T15:17:00Z
 ---
 

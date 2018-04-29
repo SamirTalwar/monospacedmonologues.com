@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Sixteen: Logging"
+slug: docker-part-sixteen--logging
 date: 2016-05-31T07:00:20Z
 ---
 

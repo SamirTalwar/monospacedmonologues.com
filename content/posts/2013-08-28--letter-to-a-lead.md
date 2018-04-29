@@ -1,5 +1,6 @@
 ---
 title: "Letter to a Lead"
+slug: letter-to-a-lead
 date: 2013-08-28T11:26:21Z
 ---
 

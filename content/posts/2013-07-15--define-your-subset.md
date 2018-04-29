@@ -1,5 +1,6 @@
 ---
 title: "Define your Subset"
+slug: define-your-subset
 date: 2013-07-15T17:18:01Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Fairy Godmother"
+slug: fairy-godmother
 date: 2011-11-13T17:49:00Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Small Minds"
+slug: small-minds
 date: 2012-04-24T21:45:00Z
 ---
 

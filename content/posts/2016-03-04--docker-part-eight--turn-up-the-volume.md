@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Eight: Turn Up The Volume"
+slug: docker-part-eight--turn-up-the-volume
 date: 2016-03-04T08:00:39Z
 ---
 

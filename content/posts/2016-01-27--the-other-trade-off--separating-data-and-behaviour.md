@@ -1,5 +1,6 @@
 ---
 title: "The Other Trade-off: Separating Data and Behaviour"
+slug: the-other-trade-off--separating-data-and-behaviour
 date: 2016-01-27T08:00:26Z
 ---
 

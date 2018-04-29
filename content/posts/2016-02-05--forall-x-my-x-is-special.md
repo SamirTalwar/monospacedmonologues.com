@@ -1,5 +1,6 @@
 ---
 title: "$∀x :$ My $x$ Is Special"
+slug: forall-x-my-x-is-special
 date: 2016-02-05T08:00:19Z
 ---
 

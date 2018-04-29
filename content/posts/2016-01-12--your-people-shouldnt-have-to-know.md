@@ -1,5 +1,6 @@
 ---
 title: "Your People Shouldn't Have To Know"
+slug: your-people-shouldnt-have-to-know
 date: 2016-01-12T08:00:34Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Solidifying your Design"
+slug: solidifying-your-design
 date: 2012-10-01T14:02:17Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part One: Getting Started"
+slug: docker-part-one--getting-started
 date: 2016-02-22T08:00:24Z
 ---
 

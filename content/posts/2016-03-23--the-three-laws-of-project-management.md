@@ -1,5 +1,6 @@
 ---
 title: "The Three Laws of Project Management"
+slug: the-three-laws-of-project-management
 date: 2016-03-23T08:00:38Z
 ---
 

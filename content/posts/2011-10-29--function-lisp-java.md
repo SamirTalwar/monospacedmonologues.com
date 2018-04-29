@@ -1,5 +1,6 @@
 ---
 title: "Function<Lisp, Java>"
+slug: function-lisp-java
 date: 2011-10-29T00:02:00Z
 ---
 

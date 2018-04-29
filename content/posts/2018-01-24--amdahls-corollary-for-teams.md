@@ -1,5 +1,6 @@
 ---
 title: "Amdahl's Corollary, For Teams"
+slug: amdahls-corollary-for-teams
 date: 2018-01-24T08:00:27Z
 ---
 

@@ -1,5 +1,6 @@
 ---
 title: "Time for change"
+slug: time-for-change
 date: 2014-01-24T13:36:32Z
 ---
 

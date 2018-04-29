@@ -1,5 +1,6 @@
 ---
 title: "Anti-Pattern: Bending The Framework"
+slug: anti-pattern--bending-the-framework
 date: 2016-01-13T08:00:15Z
 ---
 

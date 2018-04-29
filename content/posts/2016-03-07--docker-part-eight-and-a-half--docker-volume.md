@@ -1,5 +1,6 @@
 ---
 title: "Docker, Part Eight and a Half: docker volume"
+slug: docker-part-eight-and-a-half--docker-volume
 date: 2016-03-07T08:00:37Z
 ---
 

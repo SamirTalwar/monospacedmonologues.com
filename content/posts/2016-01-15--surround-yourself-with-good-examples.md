@@ -1,5 +1,6 @@
 ---
 title: "Surround Yourself With Good Examples"
+slug: surround-yourself-with-good-examples
 date: 2016-01-15T08:00:36Z
 ---
 

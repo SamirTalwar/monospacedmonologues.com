@@ -1,5 +1,6 @@
 ---
 title: "Pinocchio"
+slug: pinocchio
 date: 2011-11-11T04:08:25Z
 ---
 

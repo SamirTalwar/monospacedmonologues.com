@@ -1,5 +1,6 @@
 ---
 title: "Unless You Have A $PAGER"
+slug: unless-you-have-a-pager
 date: 2016-03-08T08:00:39Z
 ---
 
