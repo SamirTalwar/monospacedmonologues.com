@@ -1,3 +1,8 @@
+---
+title: "Host Everything For Free, Part Two"
+draft: true
+---
+
 Last time, we figured out how to host static web pages for free on GitHub pages. However, if you tried to host images or other large assets in the same fashion, you may have noticed that it's pretty slow. GitHub Pages was never designed to handle large files. In this article, we'll explore a much faster, yet extremely cost-effective solution for dealing with non-text data.
 
 ---
