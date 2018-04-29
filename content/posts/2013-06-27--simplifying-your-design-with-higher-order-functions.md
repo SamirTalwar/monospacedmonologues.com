@@ -2,6 +2,8 @@
 title: "Simplifying your Design with Higher-Order Functions"
 slug: simplifying-your-design-with-higher-order-functions
 date: 2013-06-27T15:17:00Z
+aliases:
+  - /post/54018347100/simplifying-your-design-with-higher-order
 ---
 
 That was the name of the ~~talk~~ live-coding demonstration I gave at [I

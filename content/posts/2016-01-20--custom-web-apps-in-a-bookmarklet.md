@@ -2,6 +2,8 @@
 title: "Custom Web Apps… In A Bookmarklet"
 slug: custom-web-apps-in-a-bookmarklet
 date: 2016-01-20T08:00:23Z
+aliases:
+  - /post/137674672680/custom-web-apps-in-a-bookmarklet
 ---
 
 A couple days ago, I demonstrated how to use a bookmarklet to automate the time-consuming process of discovering a link to an RSS or Atom feed and subscribe to it. Today I want to do something a bit weirder.

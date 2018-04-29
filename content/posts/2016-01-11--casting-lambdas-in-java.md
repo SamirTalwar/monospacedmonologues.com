@@ -2,6 +2,8 @@
 title: "Casting Lambdas in Java"
 slug: casting-lambdas-in-java
 date: 2016-01-11T08:00:21Z
+aliases:
+  - /post/137076953303/casting-lambdas-in-java
 ---
 
 I love Java 8. It's so much better than Java 7. Not as nice as a properly functional language, of course, but beggars can't be choosers, am I right?

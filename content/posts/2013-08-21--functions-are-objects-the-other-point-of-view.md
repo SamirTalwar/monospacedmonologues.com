@@ -2,6 +2,8 @@
 title: "Functions are Objects: the other point of view"
 slug: functions-are-objects-the-other-point-of-view
 date: 2013-08-21T16:15:00Z
+aliases:
+  - /post/58923319303/functions-are-objects-the-other-point-of-view
 ---
 
 There's a feature in Java 8 which nicely embodies one of the differences

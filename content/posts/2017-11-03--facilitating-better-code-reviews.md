@@ -2,6 +2,8 @@
 title: "Facilitating Better Code Reviews"
 slug: facilitating-better-code-reviews
 date: 2017-11-03T08:00:12Z
+aliases:
+  - /post/167078677169/facilitating-better-code-reviews
 ---
 
 Over the weekend, I asked a lot of people a few questions about code reviews.

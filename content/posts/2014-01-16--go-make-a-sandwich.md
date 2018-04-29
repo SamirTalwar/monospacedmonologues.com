@@ -2,6 +2,8 @@
 title: "Go make a sandwich"
 slug: go-make-a-sandwich
 date: 2014-01-16T18:26:53Z
+aliases:
+  - /post/73528388911/go-make-a-sandwich
 ---
 
 I was originally planning on writing something about the Cake pattern here, but after reading a lot more about it, I've decided it's not as bad as I thought. I mistook one variant of it (which involved essentially having all methods of all classes available to you) with something a little more sophisticated. If you want to know about the pattern, I recommend [Real World Scala: Dependency Injection (DI)][] by Jonas Bonér.

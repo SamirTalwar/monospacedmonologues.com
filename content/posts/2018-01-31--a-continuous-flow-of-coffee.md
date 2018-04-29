@@ -2,6 +2,8 @@
 title: "A Continuous Flow Of Coffee"
 slug: a-continuous-flow-of-coffee
 date: 2018-01-31T08:00:21Z
+aliases:
+  - /post/170336041638/a-continuous-flow-of-coffee
 ---
 
 I've watched software developers (in the broadest sense—programmers, designers, testers, managers, coaches, etc.) struggle with the idea of "one-piece continuous flow" for a long time.

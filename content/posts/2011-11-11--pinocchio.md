@@ -2,6 +2,8 @@
 title: "Pinocchio"
 slug: pinocchio
 date: 2011-11-11T04:08:25Z
+aliases:
+  - /post/12627672433/pinocchio
 ---
 
 Continuing in the vein of forbidding things because they are BAD, here's

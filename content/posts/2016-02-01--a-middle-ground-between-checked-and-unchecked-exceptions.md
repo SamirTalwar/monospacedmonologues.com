@@ -2,6 +2,8 @@
 title: "A Middle Ground Between Checked And Unchecked Exceptions"
 slug: a-middle-ground-between-checked-and-unchecked-exceptions
 date: 2016-02-01T08:00:54Z
+aliases:
+  - /post/138468059887/a-middle-ground-between-checked-and-unchecked
 ---
 
 I hear a lot of arguments against Java's checked exceptions. Normally, they run along these lines:

@@ -2,6 +2,8 @@
 title: "The Three Laws of Project Management"
 slug: the-three-laws-of-project-management
 date: 2016-03-23T08:00:38Z
+aliases:
+  - /post/141535985414/the-three-laws-of-project-management
 ---
 
 1. A project manager may not impede a worker, or through inaction, allow a worker to be impeded.

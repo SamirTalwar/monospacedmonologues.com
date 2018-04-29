@@ -2,6 +2,8 @@
 title: "Pairing without programming"
 slug: pairing-without-programming
 date: 2014-02-19T17:00:05Z
+aliases:
+  - /post/77184255303/pairing-without-programming
 ---
 
 Pairing is often associated with programming. There's a Wikipedia article about pair programming, but nothing on pairing in general. And yet, it's a fantastic technique for getting anything done well, especially when neither of you really know exactly how to approach a problem.

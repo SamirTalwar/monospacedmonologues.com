@@ -2,6 +2,8 @@
 title: "Finatra and Maven"
 slug: finatra-and-maven
 date: 2016-03-09T08:00:40Z
+aliases:
+  - /post/140734125040/finatra-and-maven
 ---
 
 I was ranting about Finatra's Maven dependencies last week, and today I figured out why they're broken.

@@ -2,6 +2,8 @@
 title: "Interlude: The Tiniest Web Service"
 slug: interlude--the-tiniest-web-service
 date: 2016-03-02T08:00:12Z
+aliases:
+  - /post/140321759565/interlude-the-tiniest-web-service
 ---
 
 I don't have Internet now and I'm tethered to my phone, so I can't play with databases and Docker like I wanted to today. So instead, let's talk about a little project I made to demonstrate that you don't always need your favourite programming language to deliver something useful.

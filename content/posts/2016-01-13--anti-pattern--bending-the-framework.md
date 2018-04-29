@@ -2,6 +2,8 @@
 title: "Anti-Pattern: Bending The Framework"
 slug: anti-pattern--bending-the-framework
 date: 2016-01-13T08:00:15Z
+aliases:
+  - /post/137209155001/anti-pattern-bending-the-framework
 ---
 
 [Wolfram Kriesing][@wolframkriesing] and [Jim Suchy][@jsuchy] were talking about frameworks on Twitter. I thought I'd get involved.

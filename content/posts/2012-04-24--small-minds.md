@@ -2,6 +2,8 @@
 title: "Small Minds"
 slug: small-minds
 date: 2012-04-24T21:45:00Z
+aliases:
+  - /post/21736971253/small-minds
 ---
 
 I had the opportunity on Sunday to help mentor kids at a one-off

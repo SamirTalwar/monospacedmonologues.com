@@ -2,6 +2,8 @@
 title: "Docker, Part Twelve: Cleaning House"
 slug: docker-part-twelve--cleaning-house
 date: 2016-03-17T08:00:23Z
+aliases:
+  - /post/141191801233/docker-part-twelve-cleaning-house
 ---
 
 We've come a long way, but as they say, you can't make an omelette without breaking some eggs.

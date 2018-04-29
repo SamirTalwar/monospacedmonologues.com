@@ -2,6 +2,8 @@
 title: "I've Got 99 Problems And Asynchronous Programming Is 127 Of Them"
 slug: ive-got-99-problems-and-asynchronous-programming-is-127-of-them
 date: 2016-10-27T07:00:34Z
+aliases:
+  - /post/152371138437/ive-got-99-problems-and-asynchronous-programming
 ---
 
 On Monday, I gave a talk at Codemotion Berlin entitled… well, it's a long title. I don't need to say it twice.

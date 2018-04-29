@@ -2,6 +2,8 @@
 title: "Slash Slash Massive Hack"
 slug: slash-slash-massive-hack
 date: 2016-01-21T08:00:39Z
+aliases:
+  - /post/137738860257/slash-slash-massive-hack
 ---
 
 I generally dislike code comments. I've heard good arguments for and against, and many, many bad arguments for them. Let me sum them up, and I'll present a slightly different take on them at the end.

@@ -2,6 +2,8 @@
 title: "Automating The World"
 slug: automating-the-world
 date: 2016-01-05T08:30:22Z
+aliases:
+  - /post/136667358499/automating-the-world
 ---
 
 It's official. I'm going to automate everything.

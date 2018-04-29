@@ -2,6 +2,8 @@
 title: "Querying the web with ScraperWiki"
 slug: querying-the-web-with-scraperwiki
 date: 2012-11-26T22:31:52Z
+aliases:
+  - /post/36617913577/querying-the-web-with-scraperwiki
 ---
 
 A few weeks ago, a friend of mine, [Michael

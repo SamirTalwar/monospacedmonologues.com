@@ -2,6 +2,8 @@
 title: "Lean, Reactive Event-Sourcing"
 slug: lean-reactive-event-sourcing
 date: 2016-10-14T07:00:26Z
+aliases:
+  - /post/151785281146/lean-reactive-event-sourcing
 ---
 
 *a.k.a. ALL OF THE BUZZWORDS.*

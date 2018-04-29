@@ -2,6 +2,8 @@
 title: "Design Patterns in the 21st Century: The Abstract Factory Pattern"
 slug: design-patterns-in-the-21st-century-part-two
 date: 2015-04-14T08:51:27Z
+aliases:
+  - /post/116370706560/design-patterns-in-the-21st-century-the-abstract
 ---
 
 This is part two of my talk, [Design Patterns in the 21st Century][].

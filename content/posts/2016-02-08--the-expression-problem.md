@@ -2,6 +2,8 @@
 title: "The Expression Problem"
 slug: the-expression-problem
 date: 2016-02-08T08:00:32Z
+aliases:
+  - /post/138914396674/the-expression-problem
 ---
 
 The week before last, I wrote about functional programming and how it relates to object-oriented programming. I asked [Ganesh Sittampalam][@eleganesh] to take a look and he told me that I was mostly right, and to Google "the expression problem".

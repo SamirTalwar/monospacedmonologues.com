@@ -2,6 +2,8 @@
 title: "Backward Operators"
 slug: backward-operators
 date: 2016-02-15T08:00:32Z
+aliases:
+  - /post/139346121461/backward-operators
 ---
 
 I spent a summer a few years ago learning Clojure. Here's a thing that confused the hell out of me for a while. It probably won't affect anyone else who reads this, but I think it's amusing.

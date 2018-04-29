@@ -2,6 +2,8 @@
 title: "Highly Strung"
 slug: highly-strung
 date: 2014-09-26T15:37:00Z
+aliases:
+  - /post/98472746240/highly-strung
 ---
 
 This blog post is way overdue.

@@ -2,6 +2,8 @@
 title: "Quality, Revisited"
 slug: quality-revisited
 date: 2013-04-26T11:41:55Z
+aliases:
+  - /post/48923454095/quality-revisited
 ---
 
 Wow, that was a lot of great feedback in a few hours.

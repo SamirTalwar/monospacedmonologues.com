@@ -2,6 +2,8 @@
 title: "No Comment"
 slug: no-comment
 date: 2011-10-04T19:37:00Z
+aliases:
+  - /post/11029147396/no-comment
 ---
 
 **Unless you have a damn good reason, don't write comments.**

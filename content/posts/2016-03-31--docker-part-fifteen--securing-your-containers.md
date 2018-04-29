@@ -2,6 +2,8 @@
 title: "Docker, Part Fifteen: Securing Your Containers"
 slug: docker-part-fifteen--securing-your-containers
 date: 2016-03-31T07:00:35Z
+aliases:
+  - /post/142001567513/docker-part-fifteen-securing-your-containers
 ---
 
 Up until now, we've been neglecting security in favour of getting our application working and features delivered. It's time to look back and ensure that there are no holes in our application containers.

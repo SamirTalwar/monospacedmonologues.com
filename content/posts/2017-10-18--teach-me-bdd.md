@@ -2,6 +2,8 @@
 title: "Teach Me BDD"
 slug: teach-me-bdd
 date: 2017-10-18T07:00:18Z
+aliases:
+  - /post/166528291341/teach-me-bdd
 ---
 
 > Sensei, teach me BDD.

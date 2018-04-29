@@ -2,6 +2,8 @@
 title: "The Brutal Refactoring Game"
 slug: the-brutal-refactoring-game
 date: 2012-10-29T10:08:46Z
+aliases:
+  - /post/34556960603/the-brutal-refactoring-game
 ---
 
 Let's play a game.

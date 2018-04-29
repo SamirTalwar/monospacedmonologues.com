@@ -2,6 +2,8 @@
 title: "Docker, Part Six: A Slow Build Is Worse Than No Build At All"
 slug: docker-part-six--a-slow-build-is-worse-than-no-build-at-all
 date: 2016-03-01T08:00:40Z
+aliases:
+  - /post/140263289899/docker-part-six-a-slow-build-is-worse-than-no
 ---
 
 A 22-line Dockerfile is all you need to create an image that runs a Java application with Maven.

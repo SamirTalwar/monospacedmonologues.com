@@ -2,6 +2,8 @@
 title: "Solidifying your Design"
 slug: solidifying-your-design
 date: 2012-10-01T14:02:17Z
+aliases:
+  - /post/32667495742/solidifying-your-design
 ---
 
 When someone asks me how to design and build a system full of

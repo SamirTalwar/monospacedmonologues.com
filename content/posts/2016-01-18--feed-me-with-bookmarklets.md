@@ -2,6 +2,8 @@
 title: "Feed Me With Bookmarklets"
 slug: feed-me-with-bookmarklets
 date: 2016-01-18T08:00:18Z
+aliases:
+  - /post/137539729401/feed-me-with-bookmarklets
 ---
 
 If you've been reading this blog since the start of the year, you may have noticed that posts go up at 08:00 UTC (…ish) every weekday. This is intentional, and I hope to keep it going all year.

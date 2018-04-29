@@ -2,6 +2,8 @@
 title: "Language-Agnostic Test Cases"
 slug: language-agnostic-test-cases
 date: 2016-03-24T08:00:22Z
+aliases:
+  - /post/141593543350/language-agnostic-test-cases
 ---
 
 When pairing with [@sleepyfox][] on a kata, we decided to write the code in a shell script. Someone snarkily asked how we were going to test-drive our solution. So, after a second of thought, I remembered my test framework, [Smoke][].

@@ -2,6 +2,8 @@
 title: "WebOps Workshop"
 slug: webops-workshop
 date: 2017-10-11T07:00:18Z
+aliases:
+  - /post/166281553427/webops-workshop
 ---
 
 Over this year, I've been delivering [a talk/live presentation/workshop on "WebOps"][webops-workshop], or DevOps-style operations for the web.

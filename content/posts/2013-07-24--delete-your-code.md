@@ -2,6 +2,8 @@
 title: "Delete Your Code"
 slug: delete-your-code
 date: 2013-07-24T16:53:00Z
+aliases:
+  - /post/56342912170/delete-your-code
 ---
 
 That was my battle cry at Palantir's first ever code retreat.

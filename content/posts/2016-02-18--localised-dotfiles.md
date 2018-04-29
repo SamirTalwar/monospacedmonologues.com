@@ -2,6 +2,8 @@
 title: "Localised dotfiles"
 slug: localised-dotfiles
 date: 2016-02-18T08:00:26Z
+aliases:
+  - /post/139532402881/localised-dotfiles
 ---
 
 So you followed yesterday's guide to setting up your dotfiles repository. Now it's time to get your shell configuration in there.

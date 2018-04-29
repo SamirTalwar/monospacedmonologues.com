@@ -2,6 +2,8 @@
 title: "Making a calculator with bash and sed"
 slug: making-a-calculator-with-bash-and-sed
 date: 2016-03-22T08:00:41Z
+aliases:
+  - /post/141478252802/making-a-calculator-with-bash-and-sed
 ---
 
 Here's an easy way to make a calculator REPL:

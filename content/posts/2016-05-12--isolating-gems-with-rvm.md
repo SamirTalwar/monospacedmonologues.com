@@ -2,6 +2,8 @@
 title: "Isolating Gems With RVM"
 slug: isolating-gems-with-rvm
 date: 2016-05-12T07:00:32Z
+aliases:
+  - /post/144238805415/isolating-gems-with-rvm
 ---
 
 When working on a Ruby project, it's tempting to just install the gems with `bundle install` and get to work. While Bundler is pretty good at ensuring you only use the gems you specify, and that you get the right versions, you still end up with a ton of gems in one directory with no way to identify which ones you need and which ones exist for projects you don't maintain any more, or are older versions of gems that you've updated.

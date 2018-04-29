@@ -2,6 +2,8 @@
 title: "Docker, Part Fourteen: Behave Like A Process"
 slug: docker-part-fourteen--behave-like-a-process
 date: 2016-03-30T07:00:32Z
+aliases:
+  - /post/141944452529/docker-part-fourteen-behave-like-a-process
 ---
 
 I was going to write a long post on all the different ways in which stopping your container can go wrong, but it turns out Brian DeHamer beat me to it and did a much better job than I could. I'd recommend reading the article, [Gracefully Stopping Docker Containers][].

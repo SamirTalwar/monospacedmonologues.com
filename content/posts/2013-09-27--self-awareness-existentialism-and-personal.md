@@ -2,6 +2,8 @@
 title: "Self-awareness, existentialism and personal responsibility."
 slug: self-awareness-existentialism-and-personal
 date: 2013-09-27T18:18:00Z
+aliases:
+  - /post/62433306888/self-awareness-existentialism-and-personal
 ---
 
 We kicked off [SoCraTes UK 2013](http://socratesuk.org/) with lightning

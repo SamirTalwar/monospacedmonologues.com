@@ -2,6 +2,8 @@
 title: "The Social Networking Kata"
 slug: the-social-networking-kata
 date: 2013-04-30T10:36:40Z
+aliases:
+  - /post/49250842364/the-social-networking-kata
 ---
 
 Last week, [Sandro](https://twitter.com/sandromancuso) and I had a lot

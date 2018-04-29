@@ -2,6 +2,8 @@
 title: "A software craftsman is"
 slug: a-software-craftsman-is
 date: 2014-05-14T13:29:40Z
+aliases:
+  - /post/85719270870/a-software-craftsman-is
 ---
 
 Someone who aspires to quality.

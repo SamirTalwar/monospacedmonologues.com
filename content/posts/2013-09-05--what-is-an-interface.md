@@ -2,6 +2,8 @@
 title: "What is an interface?"
 slug: what-is-an-interface
 date: 2013-09-04T23:06:00Z
+aliases:
+  - /post/60306730432/what-is-an-interface
 ---
 
 Interfaces are my favourite part of programming. They're the part that

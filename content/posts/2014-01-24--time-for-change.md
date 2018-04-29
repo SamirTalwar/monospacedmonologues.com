@@ -2,6 +2,8 @@
 title: "Time for change"
 slug: time-for-change
 date: 2014-01-24T13:36:32Z
+aliases:
+  - /post/74380757436/time-for-change
 ---
 
 On the 31st of January, 2014, I will be leaving Palantir Technologies and a job I love. I'll be leaving some of the best people I've ever met, a really cool set of products, some awesome customers and (not least) an absolutely beautiful working environment. I'll be leaving a job that's taught me about client relations, server administration, requirements gathering, large-scale data management, integration and sanitisation, but also how to work with people on different continents and how to deliver outcomes, not services or products.

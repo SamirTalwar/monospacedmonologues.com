@@ -2,6 +2,8 @@
 title: "Docker, Part Ten: Docker Compose"
 slug: docker-part-ten--docker-compose
 date: 2016-03-15T08:00:41Z
+aliases:
+  - /post/141079525786/docker-part-ten-docker-compose
 ---
 
 Yesterday, we wrote a script to spin up all the various containers we need to start our application. Today, let's take a look at a better way to do all that without worrying too much about the intricacies of Bash scripting.

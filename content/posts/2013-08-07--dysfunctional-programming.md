@@ -2,6 +2,8 @@
 title: "Dysfunctional Programming"
 slug: dysfunctional-programming
 date: 2013-08-07T14:05:00Z
+aliases:
+  - /post/57611810234/dysfunctional-programming
 ---
 
 There's a problem with learning a new programming paradigm: you often

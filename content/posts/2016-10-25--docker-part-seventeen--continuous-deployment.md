@@ -2,6 +2,8 @@
 title: "Docker, Part Seventeen: Continuous Deployment"
 slug: docker-part-seventeen--continuous-deployment
 date: 2016-10-25T07:00:30Z
+aliases:
+  - /post/152284505852/docker-part-seventeen-continuous-deployment
 ---
 
 *Apologies folks. I wrote this ages ago and apparently never published it. Well, late is better than never, so here it is!*

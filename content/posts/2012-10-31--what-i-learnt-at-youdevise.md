@@ -2,6 +2,8 @@
 title: "What I learnt at youDevise"
 slug: what-i-learnt-at-youdevise
 date: 2012-10-31T16:31:00Z
+aliases:
+  - /post/34706515722/what-i-learnt-at-youdevise
 ---
 
 Today is my last day at youDevise (or [TIM Group](http://timgroup.com/),

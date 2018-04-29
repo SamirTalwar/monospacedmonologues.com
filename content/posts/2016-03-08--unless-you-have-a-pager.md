@@ -2,6 +2,8 @@
 title: "Unless You Have A $PAGER"
 slug: unless-you-have-a-pager
 date: 2016-03-08T08:00:39Z
+aliases:
+  - /post/140677425108/unless-you-have-a-pager
 ---
 
 I just found a bug in [SDKMAN!][] that you'll probably never see. It only manifested in my machine when I ran the test cases inside a Docker container.

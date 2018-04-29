@@ -2,6 +2,8 @@
 title: "The Other Trade-off: Separating Data and Behaviour"
 slug: the-other-trade-off--separating-data-and-behaviour
 date: 2016-01-27T08:00:26Z
+aliases:
+  - /post/138140507048/the-other-trade-off-separating-data-and-behaviour
 ---
 
 True object-oriented programming brings with it a set of trade-offs: while you [couple data to behaviour][Why Couple Data to Behaviour?], you get a large number of advantages as well. Now let's look at it from the other side.

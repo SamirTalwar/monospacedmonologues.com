@@ -2,6 +2,8 @@
 title: "#SoCraTesUK, Buzzfeed Edition"
 slug: socratesuk-buzzfeed-edition
 date: 2016-06-07T07:00:25Z
+aliases:
+  - /post/145548117767/socratesuk-buzzfeed-edition
 ---
 
 People came to beautiful Wotton House, the new venue for [SoCraTes UK][], from all over Europe.

@@ -2,6 +2,8 @@
 title: "Hiring Engineers, another Process"
 slug: hiring-engineers-another-process
 date: 2013-02-25T16:21:00Z
+aliases:
+  - /post/43988020379/hiring-engineers-another-process
 ---
 
 This post was prompted by [Eran Hammer's excellent article on

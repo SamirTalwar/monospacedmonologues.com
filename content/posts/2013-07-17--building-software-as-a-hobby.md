@@ -2,6 +2,8 @@
 title: "Building software as a hobby"
 slug: building-software-as-a-hobby
 date: 2013-07-17T17:07:46Z
+aliases:
+  - /post/55701966135/building-software-as-a-hobby
 ---
 
 I want to make things for everyone.

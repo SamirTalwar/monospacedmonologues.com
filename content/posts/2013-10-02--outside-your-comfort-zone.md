@@ -2,6 +2,8 @@
 title: "Outside your comfort zone"
 slug: outside-your-comfort-zone
 date: 2013-10-02T15:21:41Z
+aliases:
+  - /post/62904891588/outside-your-comfort-zone
 ---
 
 I've shied away from the word "programmer" for a long time because I

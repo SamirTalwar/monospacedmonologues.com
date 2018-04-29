@@ -2,6 +2,8 @@
 title: "Getters, Setters and Properties"
 slug: getters-setters-and-properties
 date: 2016-01-25T08:30:21Z
+aliases:
+  - /post/138009972532/getters-setters-and-properties
 ---
 
 The last rule of [Object Calisthenics][] is:

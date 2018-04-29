@@ -2,6 +2,8 @@
 title: "The Decentralised Web is the Client-Driven Web"
 slug: the-decentralised-web-is-the-client-driven-web
 date: 2018-01-17T08:00:15Z
+aliases:
+  - /post/169804118816/the-decentralised-web-is-the-client-driven-web
 ---
 
 I'm getting pretty excited about the idea of a completely decentralised World Wide Web.

@@ -2,6 +2,8 @@
 title: "Smalltalk, A Functional Programming Language"
 slug: smalltalk-a-functional-programming-language
 date: 2016-02-09T08:00:17Z
+aliases:
+  - /post/138978728947/smalltalk-a-functional-programming-language
 ---
 
 I was watching [Sandi Metz][@sandimetz]'s talk, [Nothing is Something][], recommended to me by [Pawel Duda][@pawelduda] in the comments of my post, [Why Couple Data to Behaviour?][]. In the talk, she said something that I've always found fascinating.

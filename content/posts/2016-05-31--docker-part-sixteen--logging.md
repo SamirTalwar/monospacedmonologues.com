@@ -2,6 +2,8 @@
 title: "Docker, Part Sixteen: Logging"
 slug: docker-part-sixteen--logging
 date: 2016-05-31T07:00:20Z
+aliases:
+  - /post/145195626992/docker-part-sixteen-logging
 ---
 
 This post isn't really about Docker, except that it is.

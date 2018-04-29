@@ -2,6 +2,8 @@
 title: "Functional Poker Hands in Java"
 slug: functional-poker-hands-in-java
 date: 2011-12-02T13:20:00Z
+aliases:
+  - /post/13632594873/functional-poker-hands-in-java
 ---
 
 A few weeks ago, I wrote about [a workshop I ran at Skills

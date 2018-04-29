@@ -2,6 +2,8 @@
 title: "Live Coding at a Conference, and why it is Scary"
 slug: live-coding-at-a-conference-and-why-it-is-scary
 date: 2013-05-27T10:25:00Z
+aliases:
+  - /post/51465038762/live-coding-at-a-conference-and-why-it-is-scary
 ---
 
 ![I'm speaking at I.T.A.K.E.](http://i.imgur.com/X6MvZiU.png)

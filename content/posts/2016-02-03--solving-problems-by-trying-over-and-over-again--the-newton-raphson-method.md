@@ -2,6 +2,8 @@
 title: "Solving Problems By Trying Over And Over Again: the Newton-Raphson Method"
 slug: solving-problems-by-trying-over-and-over-again--the-newton-raphson-method
 date: 2016-02-03T08:00:14Z
+aliases:
+  - /post/138595611508/solving-problems-by-trying-over-and-over-again
 ---
 
 I was re-reading [Slash Slash Massive Hack][] as I wrote yesterday's blog post, and was reminded of the awesomeness of the Newton-Raphson method. [Wikipedia explains it better than I][Newton's method]:

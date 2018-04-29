@@ -2,6 +2,8 @@
 title: "Legacy Code Retreat part one: get it under test"
 slug: legacy-code-retreat-part-one-get-it-under-test
 date: 2012-08-03T13:11:00Z
+aliases:
+  - /post/28626062275/legacy-code-retreat-part-one-get-it-under-test
 ---
 
 It's been a while, but people have convinced me that I need to crank

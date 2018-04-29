@@ -2,6 +2,8 @@
 title: "Building Is The Job Of The Compiler"
 slug: building-is-the-job-of-the-compiler
 date: 2016-03-11T08:00:23Z
+aliases:
+  - /post/140845860287/building-is-the-job-of-the-compiler
 ---
 
 A few years ago, [Kevlin Henney][@KevlinHenney] spoke on the topic of *The Programmer* at [Devoxx UK][]. In his talk, he mentioned an article by Jack Reeves, [What Is Software Design?][] It's a long piece, written in 1992, musing on design, building and the job of the programmer. In the article, the author wrote something very striking.[^Thanks to @tomwhoscontrary]

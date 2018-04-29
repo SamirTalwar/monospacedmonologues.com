@@ -2,6 +2,8 @@
 title: "You Don't Need To Rebase"
 slug: you-dont-need-to-rebase
 date: 2017-12-06T08:00:30Z
+aliases:
+  - /post/168248933254/you-dont-need-to-rebase
 ---
 
 *This post is loosely based on a discussion with [Beverley Newing][@WebDevBev] and others on the [Codebar][] Slack team.*

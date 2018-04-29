@@ -2,6 +2,8 @@
 title: "Don't Call Us. We'll Call You."
 slug: dont-call-us-well-call-you
 date: 2013-03-27T16:18:39Z
+aliases:
+  - /post/46427054295/dont-call-us-well-call-you
 ---
 
 I've been thinking about why I dislike Ruby on Rails for over a year

@@ -2,6 +2,8 @@
 title: "$∀x :$ My $x$ Is Special"
 slug: forall-x-my-x-is-special
 date: 2016-02-05T08:00:19Z
+aliases:
+  - /post/138718845276/x-my-x-is-special
 ---
 
 An ex-colleague of mine, [Pedro Moreira Santos][@pedromsantos], once made an observation to me that I thought was incredibly insightful. Paraphrasing him:

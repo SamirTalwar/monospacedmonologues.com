@@ -2,6 +2,8 @@
 title: "Let's Talk About The Play Framework"
 slug: lets-talk-about-the-play-framework
 date: 2016-02-04T08:00:15Z
+aliases:
+  - /post/138657707970/lets-talk-about-the-play-framework
 ---
 
 A couple of weeks ago, I was experimenting with writing a simple web app in Scala. I'd heard that the [Play Framework][] had got a lot better since v1 a number of years ago, and there's lots of benefits to sticking to first-party libraries (of which Play is one), so I thought I'd give it a try.

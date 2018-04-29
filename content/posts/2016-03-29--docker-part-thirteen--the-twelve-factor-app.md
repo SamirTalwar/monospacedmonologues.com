@@ -2,6 +2,8 @@
 title: "Docker, Part Thirteen: The Twelve-Factor App"
 slug: docker-part-thirteen--the-twelve-factor-app
 date: 2016-03-29T07:00:33Z
+aliases:
+  - /post/141886562802/docker-part-thirteen-the-twelve-factor-app
 ---
 
 A lot of the principles and practices I've tried to embody in my previous posts on Docker come straight from [The Twelve-Factor App][], a document spawned from, among many sources, Heroku's engineering practices. The Twelve-Factor App explains the principles behind creating robust, scalable software that behaves the same in development as it does in production.

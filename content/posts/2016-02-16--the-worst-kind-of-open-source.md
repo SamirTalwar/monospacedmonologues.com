@@ -2,6 +2,8 @@
 title: "The Worst Kind of Open-Source"
 slug: the-worst-kind-of-open-source
 date: 2016-02-16T08:00:34Z
+aliases:
+  - /post/139411961508/the-worst-kind-of-open-source
 ---
 
 There's a growing trend among software developers which I absolutely love. More and more, people are checking their *dotfiles* (configuration files, normally starting with "`.`") and other personal scripts into version control and pushing them up to the Internet. It's mostly selfish—just a useful way to make sure we don't lose them, to be honest, and perhaps help us set up another computer quickly.

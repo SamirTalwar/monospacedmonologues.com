@@ -2,6 +2,8 @@
 title: "Like The Turtle"
 slug: like-the-turtle
 date: 2016-02-19T08:00:11Z
+aliases:
+  - /post/139590610118/like-the-turtle
 ---
 
 > Try to be like the turtle—at ease in your own shell.

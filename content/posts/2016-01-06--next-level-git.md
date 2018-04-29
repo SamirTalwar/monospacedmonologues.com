@@ -2,6 +2,8 @@
 title: "Next Level Git"
 slug: next-level-git
 date: 2016-01-06T08:30:19Z
+aliases:
+  - /post/136735678892/next-level-git
 ---
 
 It's no secret to anyone I've ever worked with that I essentially run my working life with an ever-growing, ever-changing set of shell scripts.

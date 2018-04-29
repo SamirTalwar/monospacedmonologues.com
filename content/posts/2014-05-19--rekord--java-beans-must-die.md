@@ -2,6 +2,8 @@
 title: "Rekord: Java Beans must die"
 slug: rekord--java-beans-must-die
 date: 2014-05-19T16:52:00Z
+aliases:
+  - /post/86221882520/rekord-java-beans-must-die
 ---
 
 In programming, duplication is the enemy.

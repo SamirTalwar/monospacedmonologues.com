@@ -2,6 +2,8 @@
 title: "Docker, Part Two: Images and Containers"
 slug: docker-part-two--images-and-containers
 date: 2016-02-23T08:00:15Z
+aliases:
+  - /post/139839775584/docker-part-two-images-and-containers
 ---
 
 We left off, dear reader, with you running the following:

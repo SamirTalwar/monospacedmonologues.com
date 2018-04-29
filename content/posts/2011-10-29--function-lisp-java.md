@@ -2,6 +2,8 @@
 title: "Function<Lisp, Java>"
 slug: function-lisp-java
 date: 2011-10-29T00:02:00Z
+aliases:
+  - /post/12051343792/function-lisp-java
 ---
 
 If you read the last blog post through the eyes of a Java developer, you

@@ -2,6 +2,8 @@
 title: "Design Patterns in the 21st Century: The Chain of Responsibility Pattern"
 slug: design-patterns-in-the-21st-century-part-four
 date: 2015-04-16T17:38:07Z
+aliases:
+  - /post/116569171260/design-patterns-in-the-21st-century-the-chain-of
 ---
 
 This is part four of my talk, [Design Patterns in the 21st Century][].

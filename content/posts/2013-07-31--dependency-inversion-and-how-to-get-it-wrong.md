@@ -2,6 +2,8 @@
 title: "Dependency Inversion, and how to get it wrong"
 slug: dependency-inversion-and-how-to-get-it-wrong
 date: 2013-07-31T16:04:01Z
+aliases:
+  - /post/56975511684/dependency-inversion-and-how-to-get-it-wrong
 ---
 
 I've been building a new application in Clojure over the last week or

@@ -2,6 +2,8 @@
 title: "The Boy Scout Rule"
 slug: the-boy-scout-rule
 date: 2016-01-22T08:00:21Z
+aliases:
+  - /post/137802498751/the-boy-scout-rule
 ---
 
 > The Boy Scouts have a rule: "Always leave the campground cleaner than you found it." If you find a mess on the ground, you clean it up regardless of who might have made the mess. You intentionally improve the environment for the next group of campers. Actually the original form of that rule, written by Robert Stephenson Smyth Baden-Powell, the father of scouting, was "Try and leave this world a little better than you found it."

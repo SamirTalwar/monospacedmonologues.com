@@ -2,6 +2,8 @@
 title: "A New Start"
 slug: a-new-start
 date: 2016-01-04T15:00:42Z
+aliases:
+  - /post/136609215632/a-new-start
 ---
 
 Until a week ago, I was sunning myself in New Zealand, enjoying a December barbecue, wandering up and down volcanoes, and pretending I was a hobbit. It was a great way to forget about things for a while and reset. Now I'm back from holiday, caught up with sleep, 2016 is here, and January is traditionally the time to decide what to do with the rest of your life. So here I go.

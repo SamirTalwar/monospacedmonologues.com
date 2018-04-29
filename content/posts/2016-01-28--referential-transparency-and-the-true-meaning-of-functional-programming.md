@@ -2,6 +2,8 @@
 title: "Referential Transparency, And The True Meaning Of Functional Programming"
 slug: referential-transparency-and-the-true-meaning-of-functional-programming
 date: 2016-01-28T08:00:12Z
+aliases:
+  - /post/138204666541/referential-transparency-and-the-true-meaning-of
 ---
 
 Programming is compromise. No matter how you design your system, you will be compromising something, whether it's flexibility in one axis for flexibility in another, or simplicity for the ability to create new features. All designs are "wrong", for some definition of wrong. The important thing is whether they're right enough for your purposes.

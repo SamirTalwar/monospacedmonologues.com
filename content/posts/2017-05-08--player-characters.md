@@ -2,6 +2,8 @@
 title: "Player Characters"
 slug: player-characters
 date: 2017-05-08T07:30:30Z
+aliases:
+  - /post/160435670878/player-characters
 ---
 
 I was at [GameCamp][] this weekend, learning more about how to design games.

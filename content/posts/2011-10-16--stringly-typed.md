@@ -2,6 +2,8 @@
 title: "Stringly Typed"
 slug: stringly-typed
 date: 2011-10-16T18:53:00Z
+aliases:
+  - /post/11534596516/stringly-typed
 ---
 
 At the first [FP Day](http://www.fpday.net/) on Friday, I attended a

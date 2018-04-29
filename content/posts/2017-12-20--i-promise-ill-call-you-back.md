@@ -2,6 +2,8 @@
 title: "I Promise I'll Call You Back"
 slug: i-promise-ill-call-you-back
 date: 2017-12-20T08:00:27Z
+aliases:
+  - /post/168744731486/i-promise-ill-call-you-back
 ---
 
 *This post stems from a discussion with Constantina and others on the [Codebar][] Slack team.*

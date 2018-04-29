@@ -2,6 +2,8 @@
 title: "Docker, Part Eleven: The Guts Of Docker Compose"
 slug: docker-part-eleven--the-guts-of-docker-compose
 date: 2016-03-16T08:00:16Z
+aliases:
+  - /post/141136358098/docker-part-eleven-the-guts-of-docker-compose
 ---
 
 Where were we? Ah yes, DNS resolution wasn't working.

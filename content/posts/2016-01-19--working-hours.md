@@ -2,6 +2,8 @@
 title: "Working Hours"
 slug: working-hours
 date: 2016-01-19T08:00:29Z
+aliases:
+  - /post/137609446562/working-hours
 ---
 
 Everyone on Twitter has their opinion on working hours. Here's my story. There's very little data, but the nice thing about self-experimentation is that you can be fairly sure you've found something that works for you.

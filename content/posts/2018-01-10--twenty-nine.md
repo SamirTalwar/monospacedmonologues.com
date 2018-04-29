@@ -2,6 +2,8 @@
 title: "Twenty-Nine"
 slug: twenty-nine
 date: 2018-01-10T08:00:05Z
+aliases:
+  - /post/169534901299/twenty-nine
 ---
 
 Today, I'm 29.

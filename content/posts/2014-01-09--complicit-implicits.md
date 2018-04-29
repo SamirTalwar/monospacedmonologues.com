@@ -2,6 +2,8 @@
 title: "Complicit Implicits"
 slug: complicit-implicits
 date: 2014-01-09T14:41:34Z
+aliases:
+  - /post/72767422233/complicit-implicits
 ---
 
 Imagine we have a calculator, written in Scala.

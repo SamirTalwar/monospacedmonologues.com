@@ -2,6 +2,8 @@
 title: "Docker, Part Seven: Start Talking"
 slug: docker-part-seven--start-talking
 date: 2016-03-03T08:00:21Z
+aliases:
+  - /post/140379415297/docker-part-seven-start-talking
 ---
 
 When we left off, we had a Scala web service running inside a Docker container. That's all well and good, but we usually need a little more than a stateless machine. How about we bring in a database?

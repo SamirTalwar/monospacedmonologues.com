@@ -2,6 +2,8 @@
 title: "Your People Shouldn't Have To Know"
 slug: your-people-shouldnt-have-to-know
 date: 2016-01-12T08:00:34Z
+aliases:
+  - /post/137144241156/your-people-shouldnt-have-to-know
 ---
 
 I remember being in an airport a few years ago, siting near the gate, about to embark on a domestic flight across the USA. I was watching people file through the neighbouring gate. When the last one was through, one of the staff turned to the other and said something I found amusing.

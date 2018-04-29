@@ -2,6 +2,8 @@
 title: "Define your Subset"
 slug: define-your-subset
 date: 2013-07-15T17:18:01Z
+aliases:
+  - /post/55093170643/define-your-subset
 ---
 
 Every tool you use will be inadequate. Every design you create will be

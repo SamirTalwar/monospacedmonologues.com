@@ -2,6 +2,8 @@
 title: "Surround Yourself With Good Examples"
 slug: surround-yourself-with-good-examples
 date: 2016-01-15T08:00:36Z
+aliases:
+  - /post/137336303723/surround-yourself-with-good-examples
 ---
 
 > It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration.

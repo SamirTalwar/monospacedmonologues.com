@@ -2,6 +2,8 @@
 title: "Docker, Part Five: Let's Make A Website"
 slug: docker-part-five--lets-make-a-website
 date: 2016-02-29T08:00:32Z
+aliases:
+  - /post/140202783219/docker-part-five-lets-make-a-website
 ---
 
 OK, the weekend has happened and I can't remember where we left off. So let's recap, as much for my sake as for yours.

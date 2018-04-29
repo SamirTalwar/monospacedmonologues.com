@@ -2,6 +2,8 @@
 title: "Design Patterns in the 21st Century, Part One"
 slug: design-patterns-in-the-21st-century-part-one
 date: 2015-04-13T11:23:36Z
+aliases:
+  - /post/116288992550/design-patterns-in-the-21st-century-part-one
 ---
 
 I've been having a bit of trouble blogging recently. In an effort to get back into it, I thought I'd take [a talk that I presented at JAX London last year][Design Patterns in the 21st Century], split it up into blog-sized posts as it's pretty long, and post them all week. If you haven't read it before or seen the talk, I hope you enjoy it.

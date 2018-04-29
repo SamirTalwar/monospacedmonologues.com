@@ -2,6 +2,8 @@
 title: "Crank Up The Volume And Forget Your Pomodoros"
 slug: crank-up-the-volume-and-forget-your-pomodoros
 date: 2015-06-04T08:09:34Z
+aliases:
+  - /post/120680636325/crank-up-the-volume-and-forget-your-pomodoros
 ---
 
 Together, [Steve Lydford](https://twitter.com/stevelydford) and I came up with a way to work that we don't think has been put to paper before.

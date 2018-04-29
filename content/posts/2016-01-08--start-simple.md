@@ -2,6 +2,8 @@
 title: "Start Simple"
 slug: start-simple
 date: 2016-01-08T08:30:16Z
+aliases:
+  - /post/136869919805/start-simple
 ---
 
 Continuing in the theme of fresh beginnings, I wanted to talk about a famous quote:

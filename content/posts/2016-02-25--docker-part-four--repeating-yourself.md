@@ -2,6 +2,8 @@
 title: "Docker, Part Four: Repeating Yourself"
 slug: docker-part-four--repeating-yourself
 date: 2016-02-25T08:00:40Z
+aliases:
+  - /post/139959758017/docker-part-four-repeating-yourself
 ---
 
 Yesterday we made a Docker image that packages a simple Ruby application. However, recreating that image each time the application changed quickly became tiresome. Today we're going to see how to automate that.

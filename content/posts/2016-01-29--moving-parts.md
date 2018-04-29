@@ -2,6 +2,8 @@
 title: "Moving Parts"
 slug: moving-parts
 date: 2016-01-29T08:00:19Z
+aliases:
+  - /post/138268503035/moving-parts
 ---
 
 This week, I tried to explain the difference as I see it between object-oriented and functional programming. There are four articles. If you haven't seen them yet, they're linked right here:

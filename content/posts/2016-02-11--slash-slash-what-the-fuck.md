@@ -2,6 +2,8 @@
 title: "// what the fuck?"
 slug: slash-slash-what-the-fuck
 date: 2016-02-11T08:00:19Z
+aliases:
+  - /post/139101638700/what-the-fuck
 ---
 
 A few days ago, [Peter Hilton][@peterhilton] was talking about the [fast inverse square root][] method on the [Software Craftsmanship Slack][], which he uses in his presentation, [Layout & typography for beautiful code][]. I love that this function exists, and I decided to blog about it.

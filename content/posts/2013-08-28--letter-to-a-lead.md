@@ -2,6 +2,8 @@
 title: "Letter to a Lead"
 slug: letter-to-a-lead
 date: 2013-08-28T11:26:21Z
+aliases:
+  - /post/59578714256/letter-to-a-lead
 ---
 
 Dear Developer,

@@ -2,6 +2,8 @@
 title: "Three Months"
 slug: three-months
 date: 2016-04-01T07:00:34Z
+aliases:
+  - /post/142057554908/three-months
 ---
 
 It's been three months since I started this new phase of my life. Time to take stock.

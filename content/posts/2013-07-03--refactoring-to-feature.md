@@ -2,6 +2,8 @@
 title: "Refactoring to Feature"
 slug: refactoring-to-feature
 date: 2013-07-03T13:26:55Z
+aliases:
+  - /post/54510150313/refactoring-to-feature
 ---
 
 *A note, while I've got you:* I've decided I will be posting a new

@@ -2,6 +2,8 @@
 title: "Docker, Part Eight: Turn Up The Volume"
 slug: docker-part-eight--turn-up-the-volume
 date: 2016-03-04T08:00:39Z
+aliases:
+  - /post/140436373509/docker-part-eight-turn-up-the-volume
 ---
 
 (Can you tell I'm enjoying these awful puns?)

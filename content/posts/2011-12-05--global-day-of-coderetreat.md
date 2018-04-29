@@ -2,6 +2,8 @@
 title: "Global Day of Coderetreat"
 slug: global-day-of-coderetreat
 date: 2011-12-05T22:15:34Z
+aliases:
+  - /post/13794728271/global-day-of-coderetreat
 ---
 
 Here's what you do. On Saturday morning, at ridiculous o'clock (i.e.

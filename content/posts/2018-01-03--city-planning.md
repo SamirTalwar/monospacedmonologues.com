@@ -2,6 +2,8 @@
 title: "City Planning"
 slug: city-planning
 date: 2018-01-03T08:00:28Z
+aliases:
+  - /post/169258337161/city-planning
 ---
 
 I believe, like all jobs, programming will be fully automated. The question isn't "if", but "when". I believe in specialised AI for this role, not general-purpose AI, because most software problems are caused by incomplete understanding, and only a machine that can fully understand the technical landscape of a given piece of software will be able to meaningfully improve it.

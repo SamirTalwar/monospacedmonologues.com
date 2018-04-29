@@ -2,6 +2,8 @@
 title: "Richard Feynman, TDD Master"
 slug: richard-feynman-tdd-master
 date: 2013-09-11T20:04:10Z
+aliases:
+  - /post/60955782220/richard-feynman-tdd-master
 ---
 
 > For Richard, figuring out these problems was a kind of a game. He

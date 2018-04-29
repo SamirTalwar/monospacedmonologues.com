@@ -2,6 +2,8 @@
 title: "Skillful Sailing"
 slug: skillful-sailing
 date: 2016-02-26T08:00:25Z
+aliases:
+  - /post/140018485911/skillful-sailing
 ---
 
 > It is not the ship so much as the skillful sailing that assures the prosperous voyage.

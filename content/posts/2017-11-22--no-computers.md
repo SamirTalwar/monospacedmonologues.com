@@ -2,6 +2,8 @@
 title: "No Computers"
 slug: no-computers
 date: 2017-11-22T08:00:28Z
+aliases:
+  - /post/167762050339/no-computers
 ---
 
 On Saturday, I helped run the Cambridge instance of [Coderetreat][], 2017 edition as part of the [Cambridge Software Crafters][].

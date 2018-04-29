@@ -2,6 +2,8 @@
 title: "Comprehending Lists"
 slug: comprehending-lists
 date: 2011-10-26T23:50:00Z
+aliases:
+  - /post/11969111291/comprehending-lists
 ---
 
 Today I ran a workshop on functional programming in object-oriented

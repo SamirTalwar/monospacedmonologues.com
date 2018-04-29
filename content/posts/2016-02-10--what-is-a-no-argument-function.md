@@ -2,6 +2,8 @@
 title: "What Is A No-Argument Function?"
 slug: what-is-a-no-argument-function
 date: 2016-02-10T08:00:29Z
+aliases:
+  - /post/139040922549/what-is-a-no-argument-function
 ---
 
 The other day, I was reading Eric Lippert's blog—specifically [the second post in his series on implementing a Z-machine in OCaml][North of house]—and something he wrote reminded me of a conversation I had with [Tom Denley][@scarytom] many years ago:

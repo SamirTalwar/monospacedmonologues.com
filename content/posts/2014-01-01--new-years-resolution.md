@@ -2,6 +2,8 @@
 title: "New Year's Resolution"
 slug: new-years-resolution
 date: 2014-01-01T12:41:01Z
+aliases:
+  - /post/71841647264/new-years-resolution
 ---
 
 At work, we run monthly coding workshops to give people an opportunity

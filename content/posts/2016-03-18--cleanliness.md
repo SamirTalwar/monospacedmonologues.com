@@ -2,6 +2,8 @@
 title: "Cleanliness"
 slug: cleanliness
 date: 2016-03-18T08:00:33Z
+aliases:
+  - /post/141245620728/cleanliness
 ---
 
 I've heard this one from Hindus, Jews and Christians alike:
