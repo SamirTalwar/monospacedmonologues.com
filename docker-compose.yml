@@ -7,11 +7,7 @@ services:
     command:
       - 'server'
       - '--bind=0.0.0.0'
-      - '--port=1313'
-    environment:
-      PORT: 1313
-    ports:
-      - 1313:1313
+      - '--port=80'
 
   proxy:
     build: services/proxy
