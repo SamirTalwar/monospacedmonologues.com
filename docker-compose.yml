@@ -4,18 +4,9 @@ services:
   site:
     build: .
     image: samirtalwar/monospacedmonologues.com
-    command:
-      - 'server'
-      - '--watch=false'
-      - '--bind=0.0.0.0'
-      - '--port=1313'
-      - '--baseURL=//localhost/'
-      - '--appendPort=false'
-
-  proxy:
-    build: services/proxy
-    image: samirtalwar/monospacedmonologues.com-proxy
     ports:
       - 80:80
     environment:
-      SITE: http://site:1313
+      BASE_URL: '//localhost/'
+    volumes:
+      - .:/src
