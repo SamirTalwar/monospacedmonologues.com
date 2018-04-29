@@ -14,3 +14,5 @@ services:
     image: samirtalwar/monospacedmonologues.com-proxy
     ports:
       - 80:80
+    environment:
+      SITE: http://site
