@@ -12,3 +12,9 @@ services:
       PORT: 1313
     ports:
       - 1313:1313
+
+  proxy:
+    build: services/proxy
+    image: samirtalwar/monospacedmonologues.com-proxy
+    ports:
+      - 80:80
