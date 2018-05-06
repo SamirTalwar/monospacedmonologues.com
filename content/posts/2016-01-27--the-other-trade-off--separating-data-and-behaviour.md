@@ -43,7 +43,7 @@ Wait. Are there more transaction types?
 
 So far, there are `Deposit` and `Withdrawal` objects. We could also name them `Debit` and `Credit`. Are there any others? I can't think of any in this circumstance. When I try to think of extended functionality related to transactions, I think of new *behaviours*. For example, what if we wanted to view all transactions for a given date, or a given month? Perhaps we might like to see only withdrawals, so we can get a feel for how much spending there is? Maybe we want to tie together a withdrawal in a customer's current account with a deposit in their savings account so we can understand how they're saving money?
 
-Lots of potential behaviours, but the types of data are few. This means that adding a new feature probably requires requires changing three different files, which [breaks the open-closed principle][Why Couple Data to Behaviour?]… not exactly great.
+Lots of potential behaviours, but the types of data are few. This means that adding a new feature probably requires changing three different files, which [breaks the open-closed principle][Why Couple Data to Behaviour?]… not exactly great.
 
 Now let's look at an alternative implementation. I'll be using Scala for these examples, but I will try and explain them for people who are not so familiar with the language or functional concepts.
 
