@@ -16,3 +16,18 @@ footer {
     display: none;
   }
 }
+
+blockquote {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 1em;
+  font-style: italic;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+blockquote *:first-child {
+  margin-top: 0;
+}
+
+blockquote *:last-child {
+  margin-bottom: 0;
+}
