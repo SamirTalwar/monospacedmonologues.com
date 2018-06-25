@@ -1,7 +1,7 @@
 ---
 title: "Chet Hendrickson, on the craft of software development"
 slug: chet-hendrickson-on-the-craft-of-software-development
-date: 2018-06-15T16:00:00Z
+date: 2018-06-25T16:00:00Z
 ---
 
 I was listening to [Ron Jeffries and Chet Hendrickson on the Cucumber podcast][cucumber podcast - ron jeffries and chet hendrickson], and I heard something that helped me reframe agility and craft in a way that was very meaningful to me.
