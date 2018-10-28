@@ -16,7 +16,7 @@ I subscribe to developer blogs all the time, but Feedly isn't really geared for 
 
 Take a look at the DOM structure of this website. Specifically, the `<head>`. Open up your developer tools (usually with *Ctrl+Shift+I* or *Cmd+Shift+I*), and then the *Inspector* tab:
 
-![monospacedmonologues.com DOM head structure](http://assets.monospacedmonologues.com/2016-01-18+-+monospacedmonologues.com+DOM+head+structure.png)
+{{% asset "monospacedmonologues.com DOM head structure" "2016-01-18+-+monospacedmonologues.com+DOM+head+structure.png" %}}
 
 Right before the variables start, there's a line that looks like this:
 

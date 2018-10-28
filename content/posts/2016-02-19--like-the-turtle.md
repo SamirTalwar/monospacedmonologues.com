@@ -12,7 +12,7 @@ aliases:
 
 I've been re-learning tmux these last two weeks, living happily in my shell, with vim in a pane among a shell or three. It's been wonderful. I never want to go back to using an IDE.
 
-![tmux](http://assets.monospacedmonologues.com/2016-02-19+-+tmux.png)
+{{% asset "tmux" "2016-02-19+-+tmux.png" %}}
 
 <!--more-->
 

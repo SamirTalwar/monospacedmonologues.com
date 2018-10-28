@@ -20,6 +20,7 @@ twitter = "https://twitter.com/SamirTalwar"
 featured_image = false
 background_color_class = "bg-near-black"
 custom_css = ["css/site.css"]
+assets_prefix = "https://d1ilac42nshdfi.cloudfront.net"
 
 [blackfriday]
 extensionsmask = ["noIntraEmphasis"]
