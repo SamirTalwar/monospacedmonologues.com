@@ -1,6 +1,7 @@
 .git
 .gitignore
 .gitmodules
+assets
 public
 themes/ananke/.git
 themes/ananke/.gitignore
