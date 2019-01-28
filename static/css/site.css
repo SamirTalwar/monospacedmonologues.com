@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=PT+Mono");
 
+main[role="main"] {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .ma0 h1,
 .ma0 h2,
 .ma0 h3,
