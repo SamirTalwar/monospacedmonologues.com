@@ -2,6 +2,7 @@
 {{ with $script.js }}
   <script src="{{ absURL (printf "%s%s" "/dist/" .) }}"></script>
 {{ end }}
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=AM_HTMLorMML"></script>
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({
@@ -10,3 +11,5 @@ MathJax.Hub.Config({
     },
 });
 </script>
+
+<script async type="text/javascript" src="https://plausible.io/js/analytics.js"></script>
