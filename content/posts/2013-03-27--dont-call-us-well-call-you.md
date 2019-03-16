@@ -23,7 +23,7 @@ It's because it dictates the terms of agreement. You don't.
 When you create a new Rails application (and you have to use their
 command-line tool to do so), it comes with a folder structure, from
 which you really shouldn't be deviating. You must use ActiveSupport,
-which monkey-patches *everything.* ActiveRecord is pervasive, and comes
+which monkey-patches _everything._ ActiveRecord is pervasive, and comes
 with some pain: once you use it, nothing is testable in isolation. I'm
 told that that's OK—integration tests will take care of everything—but
 that's not the way I operate and not the way I think. It also forces me
@@ -72,7 +72,7 @@ restrictions are, eventually you're going to want to smash through them.
 Our hardware and operating systems already put too many constraints on
 our software. Why add more?
 
-*Thanks to the people at [Devoxx
+_Thanks to the people at [Devoxx
 UK](http://devoxx.com/display/UK13/Home) for giving me the cannon fodder
 I needed to finally write this blog post, after months of thinking about
-it.*
+it._

@@ -8,7 +8,7 @@ aliases:
 
 I love Java 8. It's so much better than Java 7. Not as nice as a properly functional language, of course, but beggars can't be choosers, am I right?
 
-It's a bit odd for a language that's trying to be functional, though. [Functions are objects][Functions are Objects: the other point of view], and often a lambda can be one of many types. This is usually fine:
+It's a bit odd for a language that's trying to be functional, though. [Functions are objects][functions are objects: the other point of view], and often a lambda can be one of many types. This is usually fine:
 
     Stream.of(1, 2, 3)
         .map(x -> x * 2)
@@ -60,7 +60,6 @@ The lambda is pushed to the next line because I don't even have space. Brilliant
 
 Fortunately, there's a trick we can use. In the [Guava][] library, there are lots of static methods similar to the following:
 
-
     public static <E> ArrayList<E> newArrayList() {
         return new ArrayList<E>();
     }
@@ -88,5 +87,5 @@ I can use it to force the lambda to the type of `Supplier` with far less noise t
 
 I can be fairly confident here that the JVM will take care of any performance impact in the long run, and the compiler is happy. Not only that, my eyes can stop hurting now.
 
-[Functions are Objects: the other point of view]: http://monospacedmonologues.com/post/58923319303/functions-are-objects-the-other-point-of-view
-[Guava]: https://github.com/google/guava
+[functions are objects: the other point of view]: http://monospacedmonologues.com/post/58923319303/functions-are-objects-the-other-point-of-view
+[guava]: https://github.com/google/guava

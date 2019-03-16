@@ -8,16 +8,16 @@ aliases:
 
 I was going to write a long post on all the different ways in which stopping your container can go wrong, but it turns out Brian DeHamer beat me to it and did a much better job than I could. I'd recommend reading the article, [Gracefully Stopping Docker Containers][].
 
-But for completeness' sake, I'd like to apply the advice in that article to my pet project, [*bemorerandom.com*][bemorerandom.com].
+But for completeness' sake, I'd like to apply the advice in that article to my pet project, [_bemorerandom.com_][bemorerandom.com].
 
-[Gracefully Stopping Docker Containers]: https://www.ctl.io/developers/blog/post/gracefully-stopping-docker-containers/
+[gracefully stopping docker containers]: https://www.ctl.io/developers/blog/post/gracefully-stopping-docker-containers/
 [bemorerandom.com]: https://github.com/SamirTalwar/bemorerandom.com
 
 <!--more-->
 
 ---
 
-Here's what happens when I terminate the *bemorerandom.com* API service:
+Here's what happens when I terminate the _bemorerandom.com_ API service:
 
     $ docker stop bemorerandomcom_api_1
     <tick>
@@ -54,9 +54,9 @@ If I really needed the shell for something, I could instead instruct it to repla
 
 In my case, I don't really need the shell anyway, so I'm opting for the former solution.
 
-Containers are a little weird—they're not exactly completely compartmentalised. If your process spawns other processes, it better clean up after itself, otherwise you might find that you have a bunch of orphan processes running around in containers that don't really exist any more. Not exactly ideal. If your program *doesn't* clean up errant processes and isn't able to keep track of them, that's OK—this is exactly why we have *init*. [init][] is your typical first process in Unix—it starts all other processes and cleans them up when it's time to log off or shut down the system.
+Containers are a little weird—they're not exactly completely compartmentalised. If your process spawns other processes, it better clean up after itself, otherwise you might find that you have a bunch of orphan processes running around in containers that don't really exist any more. Not exactly ideal. If your program _doesn't_ clean up errant processes and isn't able to keep track of them, that's OK—this is exactly why we have _init_. [init][] is your typical first process in Unix—it starts all other processes and cleans them up when it's time to log off or shut down the system.
 
-if you do decide to go down the *init* road, I recommend [tini][], which is a very small init-compatible binary that does the same thing, and is designed specifically for Docker containers.
+if you do decide to go down the _init_ road, I recommend [tini][], which is a very small init-compatible binary that does the same thing, and is designed specifically for Docker containers.
 
     ENTRYPOINT ["/tini", "--"]
     CMD ["java", "-cp", "api/target/app.jar:api/target/dependency/*", "com.bemorerandom.api.ApiServerMain"]
@@ -68,4 +68,4 @@ if you do decide to go down the *init* road, I recommend [tini][], which is a ve
 
 Avoiding Docker's shell-style `CMD` is a useful tip, but there's a broader lesson here. Your containers should behave just like processes do. Linux has a set of conventions that governs how processes should behave, and if you're not careful to abide by them, things are going to get confusing at the worst possible moment.
 
-Keep an eye out for red flags like *having* to kill containers, rather than stopping them gracefully. Your users will be upset when you terminate their connection half-way through, but they won't be the only ones crying when things go pear-shaped and you can't figure out why. Comply to the Unix/Linux standards, and your life will become a lot easier in the long run.
+Keep an eye out for red flags like _having_ to kill containers, rather than stopping them gracefully. Your users will be upset when you terminate their connection half-way through, but they won't be the only ones crying when things go pear-shaped and you can't figure out why. Comply to the Unix/Linux standards, and your life will become a lot easier in the long run.

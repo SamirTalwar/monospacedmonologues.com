@@ -28,9 +28,9 @@ So I fixed it. Instead of `less`, I defaulted `$PAGER` to `$(which less)`. `whic
 
     /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
-This means that `which less` will look for a program called `less` in each of those six directories in order, then output the full path of the first one it finds. If it doesn't find one, it'll print nothing and exit with a non-zero status code (in *bash*), or sometimes print an error message as well (in *zsh*).
+This means that `which less` will look for a program called `less` in each of those six directories in order, then output the full path of the first one it finds. If it doesn't find one, it'll print nothing and exit with a non-zero status code (in _bash_), or sometimes print an error message as well (in _zsh_).
 
-So if we don't have a `$PAGER` but we do have `less` in */usr/bin*, we can ask our shell to default to the latter.
+So if we don't have a `$PAGER` but we do have `less` in _/usr/bin_, we can ask our shell to default to the latter.
 
     $ echo "${PAGER-$(which less)}"
     /usr/bin/less
@@ -70,4 +70,4 @@ Here, we've written a function that checks whether we have a pager. If it finds 
 
 Because when you're shipping software to run on Mac OS, Linux and BSD OSes all over the world, you really can't trust that anything is as it seems.
 
-[SDKMAN!]: http://www.sdkman.io/
+[sdkman!]: http://www.sdkman.io/

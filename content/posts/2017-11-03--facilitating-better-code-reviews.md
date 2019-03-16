@@ -8,7 +8,7 @@ aliases:
 
 Over the weekend, I asked a lot of people a few questions about code reviews.
 
-I have an agenda. [We're working on a product that intends to take the pain out of code review.][Prodo.AI] We want to make the best product possible, and that starts with understanding where the pain is.
+I have an agenda. [We're working on a product that intends to take the pain out of code review.][prodo.ai] We want to make the best product possible, and that starts with understanding where the pain is.
 
 The data in my survey is biased towards the sort of people that read this blog. So take it with a grain of salt, and if it doesn't resonate with you, comment! I'd love to hear from you.
 
@@ -45,12 +45,12 @@ We wanted to understand what it is that's stopping people from jumping into code
 
 So if people are making large sets of changes, what can we do to make this manageable for reviewers? A number of ideas come to mind for a code review assistant:
 
-  * breaking apart the changeset into cohesive parts, and getting a review for each one;
-  * allowing the reviewer to look at high-level changes before low-level ones;
-  * drawing the reviewer's attention to code that diverges from the norm;
-  * making the code interactive, letting the reviewer mess with it to see how it behaves;
-  * admonishing the programmer for doing too much at once;
-  * and so on.
+- breaking apart the changeset into cohesive parts, and getting a review for each one;
+- allowing the reviewer to look at high-level changes before low-level ones;
+- drawing the reviewer's attention to code that diverges from the norm;
+- making the code interactive, letting the reviewer mess with it to see how it behaves;
+- admonishing the programmer for doing too much at once;
+- and so on.
 
 It turns out that past the common tooling in code review software (i.e. reading a diff and commenting on it), there's a lot that's missing on the social side. Our tools and processes encourage certain practices inherent in the way they're designed, and often these practices are emergent—that is, we never intended them, but they came about as a result of establishing the process. If the tool is slow to load, people will review less often, which will make programmers more likely to submit large changesets so they can spend less time blocked. More subtly, if changesets are large, people are more likely to skim the changeset or skip parts entirely, resulting in poorer code quality.
 
@@ -68,12 +68,12 @@ This really helped us clarify what people (or, at least, my bubble of people) ar
 
 After understanding the changes made, we can ensure that they check both boxes:
 
-  * design a solution that targets the problem at hand
-  * implement the solution to a sufficient standard of quality
+- design a solution that targets the problem at hand
+- implement the solution to a sufficient standard of quality
 
 Paraphrasing [Steve Freeman][@sf105], you need to solve the problem right, but you also need to solve the right problem.
 
-For many of us, code review is the last reasonable port of call for verifying these. While we can always fix them later, the cost goes up by orders of magnitude, especially if we realise the solution is wrong only after customer feedback. It's incredibly important that the whole team agrees with the solution (or [disagrees and commits][Disagree and commit]), and understands it to the degree that they can maintain it if and when something goes horribly wrong.
+For many of us, code review is the last reasonable port of call for verifying these. While we can always fix them later, the cost goes up by orders of magnitude, especially if we realise the solution is wrong only after customer feedback. It's incredibly important that the whole team agrees with the solution (or [disagrees and commits][disagree and commit]), and understands it to the degree that they can maintain it if and when something goes horribly wrong.
 
 Code is hard, but people are harder.
 
@@ -101,12 +101,12 @@ Of course, I have an agenda.
 
 And we'd love to work with you. [Get in touch.][samir@prodo.ai]
 
-[Prodo.AI]: https://prodo.ai/
-[SmartBear]: https://smartbear.com/
-[The Best-Kept Secrets of Peer Code Review]: https://smartbear.com/SmartBear/media/pdfs/best-kept-secrets-of-peer-code-review.pdf
-[The State of Code Review]: https://smartbear.com/resources/ebooks/the-state-of-code-review-2017/
+[prodo.ai]: https://prodo.ai/
+[smartbear]: https://smartbear.com/
+[the best-kept secrets of peer code review]: https://smartbear.com/SmartBear/media/pdfs/best-kept-secrets-of-peer-code-review.pdf
+[the state of code review]: https://smartbear.com/resources/ebooks/the-state-of-code-review-2017/
 [@sf105]: https://twitter.com/sf105
-[Disagree and commit]: https://en.wikipedia.org/wiki/Disagree_and_commit
+[disagree and commit]: https://en.wikipedia.org/wiki/Disagree_and_commit
 [samir@prodo.ai]: mailto:samir@prodo.ai
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -39,7 +39,7 @@ Let's see if we can improve it a little.
 
 ## Structure the Dockerfile
 
-The first thing we can do is force Maven to download all dependencies before we copy the source files over. Just like we did with *google.rb*, by running `bundle install` beforehand copying the source file over, we can run `mvn dependency:resolve`:
+The first thing we can do is force Maven to download all dependencies before we copy the source files over. Just like we did with _google.rb_, by running `bundle install` beforehand copying the source file over, we can run `mvn dependency:resolve`:
 
     WORKDIR /app
     COPY pom.xml /app/pom.xml
@@ -63,24 +63,24 @@ As long as we stick to changing the stuff inside `src`, this should be grand. Ho
 
 Unfortunately, this is where things get complicated. We can't easily inject extra information, such as a local Maven cache, into the `docker build` process—it's not as flexible as just running containers. We could disassemble it back into running a container and then `docker commit`-ing it as an image, but that'd be one complicated shell script, and I'm enjoying the simplicity of a build file.
 
-One way to solve this problem is to run your own caching proxy on your local network. This could be a caching reverse proxy such as [Varnish][] or [Squid][], or you could run your own Maven repository (replace "Maven" with "RubyGems", "NPM", etc. as necessary) that proxies the central repository. The Maven website even considers this a "best practice", and [recommends a few repository managers that'll do the job][Maven - Repository Management]—at the time of writing, [Apache Archiva][], [JFrog Artifactory][] and [Sonatype Nexus][].
+One way to solve this problem is to run your own caching proxy on your local network. This could be a caching reverse proxy such as [Varnish][] or [Squid][], or you could run your own Maven repository (replace "Maven" with "RubyGems", "NPM", etc. as necessary) that proxies the central repository. The Maven website even considers this a "best practice", and [recommends a few repository managers that'll do the job][maven - repository management]—at the time of writing, [Apache Archiva][], [JFrog Artifactory][] and [Sonatype Nexus][].
 
-[Squid]: http://www.squid-cache.org/
-[Varnish]: https://www.varnish-cache.org/
-[Maven - Repository Management]: https://maven.apache.org/repository-management.html
-[Apache Archiva]: https://archiva.apache.org/
-[JFrog Artifactory]: https://www.jfrog.com/open-source/
-[Sonatype Nexus]: http://www.sonatype.org/nexus/go/
+[squid]: http://www.squid-cache.org/
+[varnish]: https://www.varnish-cache.org/
+[maven - repository management]: https://maven.apache.org/repository-management.html
+[apache archiva]: https://archiva.apache.org/
+[jfrog artifactory]: https://www.jfrog.com/open-source/
+[sonatype nexus]: http://www.sonatype.org/nexus/go/
 
 So, let's configure one of those. We can run it as a Docker container if we like, but we need to do it properly, with a hostname that is fixed for the local network at the least—otherwise there's no chance of the build container finding it.
 
-I decided to go with Artifactory because I've used it before (and because I spent half an hour trying and failing to make Sonatype Nexus work). I tend to float around London a lot, so the only local network I have is are the virtual networks I create on my own laptop. So I found a [first-party Docker image][Artifactory: Running with Docker] and followed the instructions. About two minutes later, I had it running on my machine.
+I decided to go with Artifactory because I've used it before (and because I spent half an hour trying and failing to make Sonatype Nexus work). I tend to float around London a lot, so the only local network I have is are the virtual networks I create on my own laptop. So I found a [first-party Docker image][artifactory: running with docker] and followed the instructions. About two minutes later, I had it running on my machine.
 
-[Artifactory: Running with Docker]: https://www.jfrog.com/confluence/display/RTF/Running+with+Docker
+[artifactory: running with docker]: https://www.jfrog.com/confluence/display/RTF/Running+with+Docker
 
-Next, I configured Maven to treat it as a repository, using the *~/.m2/settings.xml* file. It was running on port 8081 with the same port forwarded to the host, so I used my Docker Machine IP address to do this. However, for the build, I copied a *settings.xml* file that used the special IP address *172.17.0.1*. This IP address is always the Docker host, as far as the containers are concerned. The host sets up its own subnet to communicate with containers and allow them to communicate easily with each other (which we'll talk about soon), with IP adresses in the 172.17.0.0/16 range. As of Docker 1.9, the IP address of the host is the first one in that range. (It used to be 172.17.42.1 for some reason—when they changed it, they broke *everything* at my last client.)
+Next, I configured Maven to treat it as a repository, using the _~/.m2/settings.xml_ file. It was running on port 8081 with the same port forwarded to the host, so I used my Docker Machine IP address to do this. However, for the build, I copied a _settings.xml_ file that used the special IP address _172.17.0.1_. This IP address is always the Docker host, as far as the containers are concerned. The host sets up its own subnet to communicate with containers and allow them to communicate easily with each other (which we'll talk about soon), with IP adresses in the 172.17.0.0/16 range. As of Docker 1.9, the IP address of the host is the first one in that range. (It used to be 172.17.42.1 for some reason—when they changed it, they broke _everything_ at my last client.)
 
-Next, I configured Artifactory to proxy both Maven Central and Twitter's own Maven repository, with Twitter's ranking first. Twitter have some of their stuff on both, and only their own works. */me grumbles a lot*
+Next, I configured Artifactory to proxy both Maven Central and Twitter's own Maven repository, with Twitter's ranking first. Twitter have some of their stuff on both, and only their own works. _/me grumbles a lot_
 
 The first time I ran the build after this, it was even slower. You can imagine that a proxy server discovering the remote repositories for the first time would be. The second time, though, it was super-fast.
 

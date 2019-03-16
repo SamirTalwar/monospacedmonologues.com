@@ -24,5 +24,5 @@ I remember Microsoft Word in the 1990s. Word 95 was roughly as fast on my 100 MH
 
 Just because you have the power, doesn't mean you have to use it. Less is more.
 
-[John Carmack]: https://en.wikiquote.org/wiki/John_D._Carmack
-[Moore's law]: https://en.wikipedia.org/wiki/Moore's_law
+[john carmack]: https://en.wikiquote.org/wiki/John_D._Carmack
+[moore's law]: https://en.wikipedia.org/wiki/Moore's_law

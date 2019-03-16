@@ -88,7 +88,7 @@ Until next year, folks.
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Morning walk <a href="https://twitter.com/hashtag/socratesuk?src=hash">#socratesuk</a> <a href="https://t.co/7doQi8lo17">pic.twitter.com/7doQi8lo17</a></p>&mdash; French Riviera SCC (@rivieraswcraft) <a href="https://twitter.com/rivieraswcraft/status/738642087902642176">June 3, 2016</a></blockquote>
 
-[SoCraTes UK]: http://socratesuk.org/
+[socrates uk]: http://socratesuk.org/
 
 <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 

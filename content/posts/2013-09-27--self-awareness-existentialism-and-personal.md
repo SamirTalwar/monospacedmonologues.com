@@ -20,7 +20,7 @@ responsibility**.
 <!--more-->
 
 The whole conference, I was searching for the answer to the question:
-*what is my responsibility*? We talked about refactoring, legacy code,
+_what is my responsibility_? We talked about refactoring, legacy code,
 architecture and all the other practices that we take for granted are
 good. Sure, they're nice. For me though, it wasn't enough. I'd
 established early on that I thought our real collective values began
@@ -28,9 +28,9 @@ with a single word: **think**. It's a beautiful idea, but I had a
 problem: I didn't know where to go from there. How do I define
 "thinking", and how do I explain it to the unenlightened software
 developer standing next to me at the pub? These questions started to
-expand when I thought a little about pragmatism: *How do we know when
+expand when I thought a little about pragmatism: _How do we know when
 we've tested too much? Do we need to do this elegantly? Will refactoring
-this benefit me in the future? How much time do we have?*
+this benefit me in the future? How much time do we have?_
 
 My internal monologues kept bothering me up until a discussion after the
 end of the conference with ~~a chap from the Midlands~~
@@ -50,7 +50,7 @@ is at all. Finding meaning in your work only carries you so far.
 
 It was at that moment that I realised something: I didn't care. I was
 asking the wrong question. It's pointless wondering what your
-responsibility is if you don't know *who your responsibility is to*. The
+responsibility is if you don't know _who your responsibility is to_. The
 answer to that question was easy: it's me. I'm responsible, first and
 foremost, for making myself happy. All I want to do is build things, and
 it's not so important if they're not used, never heard of or completely
@@ -60,5 +60,5 @@ washed away by the sea, they go back and do it again. It's why I love
 katas and code retreats: nothing is better than throwing away your work
 so you can do it better next time.
 
-It's important to deliver *value* to your customers (whatever value is;
+It's important to deliver _value_ to your customers (whatever value is;
 I'm still not sure), but it's also important to have fun along the way.

@@ -6,7 +6,7 @@ aliases:
   - /post/138140507048/the-other-trade-off-separating-data-and-behaviour
 ---
 
-True object-oriented programming brings with it a set of trade-offs: while you [couple data to behaviour][Why Couple Data to Behaviour?], you get a large number of advantages as well. Now let's look at it from the other side.
+True object-oriented programming brings with it a set of trade-offs: while you [couple data to behaviour][why couple data to behaviour?], you get a large number of advantages as well. Now let's look at it from the other side.
 
 Yesterday, in our `Account` class, we had a `Transaction` type, one of the implementations being `Withdrawal`. Let's take a look at that in broader detail.
 
@@ -37,13 +37,13 @@ Now, that's not very useful in our object-oriented world, as it has no behaviour
         }
     }
 
-Of course, the `Deposit` class would look pretty similar. Great, job done. No [exposed getters][Getters, Setters and Properties], and it does the right thing. And we can add more transaction types trivially, just by implementing the `apply` method!
+Of course, the `Deposit` class would look pretty similar. Great, job done. No [exposed getters][getters, setters and properties], and it does the right thing. And we can add more transaction types trivially, just by implementing the `apply` method!
 
 Wait. Are there more transaction types?
 
-So far, there are `Deposit` and `Withdrawal` objects. We could also name them `Debit` and `Credit`. Are there any others? I can't think of any in this circumstance. When I try to think of extended functionality related to transactions, I think of new *behaviours*. For example, what if we wanted to view all transactions for a given date, or a given month? Perhaps we might like to see only withdrawals, so we can get a feel for how much spending there is? Maybe we want to tie together a withdrawal in a customer's current account with a deposit in their savings account so we can understand how they're saving money?
+So far, there are `Deposit` and `Withdrawal` objects. We could also name them `Debit` and `Credit`. Are there any others? I can't think of any in this circumstance. When I try to think of extended functionality related to transactions, I think of new _behaviours_. For example, what if we wanted to view all transactions for a given date, or a given month? Perhaps we might like to see only withdrawals, so we can get a feel for how much spending there is? Maybe we want to tie together a withdrawal in a customer's current account with a deposit in their savings account so we can understand how they're saving money?
 
-Lots of potential behaviours, but the types of data are few. This means that adding a new feature probably requires changing three different files, which [breaks the open-closed principle][Why Couple Data to Behaviour?]… not exactly great.
+Lots of potential behaviours, but the types of data are few. This means that adding a new feature probably requires changing three different files, which [breaks the open-closed principle][why couple data to behaviour?]… not exactly great.
 
 Now let's look at an alternative implementation. I'll be using Scala for these examples, but I will try and explain them for people who are not so familiar with the language or functional concepts.
 
@@ -111,9 +111,9 @@ Or maybe we'd like to know about just the amount being spent:
 
 This function filters for withdrawals, extracts the amounts from the withdrawals, and then sums them to get the total amount withdrawn.
 
-Notice that these functions are independent of any `Transaction` object. They generally operate on sequences of transactions, and so it makes sense that they exist on the `Transactions` class. Each cares about a different facet of the two implementations of `Transaction`. What's more, it was easy to add each one: we just had to add more code, not change existing code and potentially break existing functionality. This is something that an object-oriented design would have made *harder*. By contrast, adding a new implementation of `Transaction` would be quite difficult, as every function would need to be changed to add a new case to the pattern-match.
+Notice that these functions are independent of any `Transaction` object. They generally operate on sequences of transactions, and so it makes sense that they exist on the `Transactions` class. Each cares about a different facet of the two implementations of `Transaction`. What's more, it was easy to add each one: we just had to add more code, not change existing code and potentially break existing functionality. This is something that an object-oriented design would have made _harder_. By contrast, adding a new implementation of `Transaction` would be quite difficult, as every function would need to be changed to add a new case to the pattern-match.
 
 Just like object-oriented programming, structured (and therefore imperative or functional) programming has a set of trade-offs. Structured programming allows us to quickly add behaviour to fixed data representations, but adding new data representations is much trickier. Often, this is what we need, and it would be a misuse of object-oriented design to push the behaviour too deep into classes. Good software development includes designing for maintainability, and this means we need to make predictions about what might change in the future, then design accordingly.
 
-[Why Couple Data to Behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
-[Getters, Setters and Properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
+[why couple data to behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
+[getters, setters and properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties

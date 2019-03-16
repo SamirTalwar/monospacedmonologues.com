@@ -26,7 +26,7 @@ Fuck your unit tests, fuck your sprints, fuck your retrospectives, and most of a
 
 ## Bargaining
 
-> Do we have to change *everything*? Our quarterly releases were fine for us. Let's do the scrum thing but release once a quarter, OK?
+> Do we have to change _everything_? Our quarterly releases were fine for us. Let's do the scrum thing but release once a quarter, OK?
 
 The third stage of an agile transformation is an attempt to cling to safety. OK, you introduced a Kanban board with work-in-progress limits, and it's helping manage the work. But it's changing too fast and we don't like it. This is good, but let's stop here, OK? No need to rock the boat too much.
 
@@ -74,5 +74,5 @@ The upside is that unlike the other way, it actually works.
 
 Thanks to everyone in the "Self-Organising Teams" session at [CITCON][] 2018 for inspiring this post, and especially [Edward Wong][] for taking notes of the entire session.
 
-[CITCON]: http://citconf.com/
-[Edward Wong]: https://twitter.com/arkangelofkaos
+[citcon]: http://citconf.com/
+[edward wong]: https://twitter.com/arkangelofkaos

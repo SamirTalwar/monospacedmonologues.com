@@ -6,12 +6,12 @@ aliases:
   - /post/152284505852/docker-part-seventeen-continuous-deployment
 ---
 
-*Apologies folks. I wrote this ages ago and apparently never published it. Well, late is better than never, so here it is!*
+_Apologies folks. I wrote this ages ago and apparently never published it. Well, late is better than never, so here it is!_
 
-*You may want to remind yourself of [Docker Compose][Docker, Part Ten: Docker Compose] and [The Guts Of Docker Compose][Docker, Part Eleven: The Guts Of Docker Compose] first.*
+_You may want to remind yourself of [Docker Compose][docker, part ten: docker compose] and [The Guts Of Docker Compose][docker, part eleven: the guts of docker compose] first._
 
-[Docker, Part Ten: Docker Compose]: http://monospacedmonologues.com/post/141079525786/docker-part-ten-docker-compose
-[Docker, Part Eleven: The Guts Of Docker Compose]: http://monospacedmonologues.com/post/141136358098/docker-part-eleven-the-guts-of-docker-compose
+[docker, part ten: docker compose]: http://monospacedmonologues.com/post/141079525786/docker-part-ten-docker-compose
+[docker, part eleven: the guts of docker compose]: http://monospacedmonologues.com/post/141136358098/docker-part-eleven-the-guts-of-docker-compose
 
 ---
 
@@ -25,7 +25,7 @@ Of course, we need to get the container images there first. This is where contin
 
 ## The Continous Delivery Pipeline
 
-Imagine we're using a continuous integration server such as [Jenkins][] or [Travis CI][]. We need to define a pipeline. It won't just *integrate*; it'll *deliver* as well.
+Imagine we're using a continuous integration server such as [Jenkins][] or [Travis CI][]. We need to define a pipeline. It won't just _integrate_; it'll _deliver_ as well.
 
 ### Step One: Build The Image
 
@@ -45,7 +45,7 @@ Some of my tests require a database, so [I've created a docker-compose YAML file
 
 ### Step Three: Publish the Images
 
-After building the images, we need to push them to our registry. You might be using Docker Hub for this or your own. We'll specify the specific image name in the *docker-compose.yml* file so that we can push to registry.
+After building the images, we need to push them to our registry. You might be using Docker Hub for this or your own. We'll specify the specific image name in the _docker-compose.yml_ file so that we can push to registry.
 
     services:
       api:
@@ -56,7 +56,7 @@ After building the images, we need to push them to our registry. You might be us
 
       ...
 
-Ideally, as well as pushing a new `latest` image, we'd be versioning our images and pushing them with the version numbers as the tags. As that's different for every project, you'll probably want to figure out how to do that yourself on a per-project basis rather than letting me tell you how. (I *would* recommend avoiding a scheme that requires manually incrementing a number. I like to use the Git commit hash as the version.)
+Ideally, as well as pushing a new `latest` image, we'd be versioning our images and pushing them with the version numbers as the tags. As that's different for every project, you'll probably want to figure out how to do that yourself on a per-project basis rather than letting me tell you how. (I _would_ recommend avoiding a scheme that requires manually incrementing a number. I like to use the Git commit hash as the version.)
 
 Next, we just need a simple script to push the images.
 
@@ -83,7 +83,7 @@ Once we have a simple way to run our tests, we can define a build pipeline. This
         sh './push-to-registry'
     }
 
-Or in a *.travis.yml* file:
+Or in a _.travis.yml_ file:
 
     script:
       - docker-compose build --pull
@@ -106,7 +106,7 @@ Now here's the cool part. We can instruct the CI server to log in to our server,
         docker-compose up -d
     '
 
-The script above copies the *docker-compose.yml* file over to a server named *production-server*, then tells `docker-compose` to do its work. After a few seconds, you should be able to navigate to your server's domain and see your application running.
+The script above copies the _docker-compose.yml_ file over to a server named _production-server_, then tells `docker-compose` to do its work. After a few seconds, you should be able to navigate to your server's domain and see your application running.
 
 ## What's Next?
 
@@ -116,12 +116,10 @@ In this scenario, we're also running the database on the same server as the appl
 
 [bemorerandom.com]: https://github.com/SamirTalwar/bemorerandom.com
 [docker-compose.test.yml]: https://github.com/SamirTalwar/bemorerandom.com/blob/master/docker-compose.test.yml
-[test script]:  https://github.com/SamirTalwar/bemorerandom.com/blob/master/test
-
-[Jenkins]: https://jenkins.io/
-[Jenkins 2.0]: https://jenkins.io/2.0/
-[Travis CI]: https://travis-ci.org/
-
-[Docker Swarm]: https://www.docker.com/products/docker-swarm
-[Kubernetes]: http://kubernetes.io/
-[Marathon]: https://mesosphere.github.io/marathon/
+[test script]: https://github.com/SamirTalwar/bemorerandom.com/blob/master/test
+[jenkins]: https://jenkins.io/
+[jenkins 2.0]: https://jenkins.io/2.0/
+[travis ci]: https://travis-ci.org/
+[docker swarm]: https://www.docker.com/products/docker-swarm
+[kubernetes]: http://kubernetes.io/
+[marathon]: https://mesosphere.github.io/marathon/

@@ -30,19 +30,19 @@ Here's the application, in all its glory.
 
 You'll recall that yesterday we performed the following steps:
 
-  1. We created a container from the `ruby` base image.
-  2. We then installed the `nokogiri` gem.
-  3. We created a directory called `/app`.
-  4. We changed the working directory to `/app`.
-  5. We copied the *google.rb* file into the container.
-  6. We made *google.rb* executable.
-  7. We committed the container, setting the entry point to `./google.rb`.
+1. We created a container from the `ruby` base image.
+2. We then installed the `nokogiri` gem.
+3. We created a directory called `/app`.
+4. We changed the working directory to `/app`.
+5. We copied the _google.rb_ file into the container.
+6. We made _google.rb_ executable.
+7. We committed the container, setting the entry point to `./google.rb`.
 
-Conveniently, Docker allows us to script all that using something called a *Dockerfile*.
+Conveniently, Docker allows us to script all that using something called a _Dockerfile_.
 
 ## Script Your Image
 
-Create a new file called *Dockerfile* in the same directory as your *google.rb* file. All we're going to do is transcribe the above steps into a specific language:
+Create a new file called _Dockerfile_ in the same directory as your _google.rb_ file. All we're going to do is transcribe the above steps into a specific language:
 
     FROM ruby
     RUN gem install nokogiri
@@ -108,7 +108,7 @@ Let's decompose one of those steps in more detail. Here's step 2 again:
 
 `RUN` simply passes the command as a string to the user's default shell. We can see here that a container, `67330cbab921`, is created for this operation. Nokogiri is built and installed, which results in a new image, `d782b5f00147`. Finally, the container is removed, leaving us with an image, and the next step proceeds by creating a container from that image.
 
-You may remember from yesterday that we created containers from images by running commands, and then *committed* those containers as images after modifying the file system. `docker build` simply automates that process, committing after every directive and spawning a new container for the next one.
+You may remember from yesterday that we created containers from images by running commands, and then _committed_ those containers as images after modifying the file system. `docker build` simply automates that process, committing after every directive and spawning a new container for the next one.
 
 ## Change Fast
 
@@ -159,13 +159,13 @@ So, let's run it.
 
 ## Generalise
 
-It's good practice in the Ruby world to provide a *Gemfile* with a list of dependencies. This is used by a tool called *bundler* to install dependencies and ensure everyone is running the same version. We won't worry about dependency versions for now, but it's still good practice. Let's make one.
+It's good practice in the Ruby world to provide a _Gemfile_ with a list of dependencies. This is used by a tool called _bundler_ to install dependencies and ensure everyone is running the same version. We won't worry about dependency versions for now, but it's still good practice. Let's make one.
 
     source 'https://rubygems.org'
 
     gem 'nokogiri'
 
-Simple, isn't it? Save that in a file called *Gemfile* in the same directory as everything else.
+Simple, isn't it? Save that in a file called _Gemfile_ in the same directory as everything else.
 
 Now we need to use that file in our Docker build process. Change the Dockerfile to the following:
 
@@ -183,7 +183,7 @@ Now we need to use that file in our Docker build process. Change the Dockerfile 
 
 Notice I've spaced it out a bit. That's not necessary, but it does make it readable. You can also add comments by using the `#` character if you like.
 
-This is more general. We copy the Gemfile over to the container, then run `bundle install` to install all dependencies. The first time we run this, we won't be able to make use of the cache, so it'll take a little while to install Nokogiri again. However, the second time we run it, things will be the same as before. As long as *Gemfile* doesn't change, Docker will recognise that and ensure that the cache is reused. By copying *google.rb* to the container *after* running `bundle install`, we ensure that changing the application file doesn't break the cache. Structuring Dockerfiles can often become a black art, and it's worth experimenting to find the right combination to save yourself time in the long run.
+This is more general. We copy the Gemfile over to the container, then run `bundle install` to install all dependencies. The first time we run this, we won't be able to make use of the cache, so it'll take a little while to install Nokogiri again. However, the second time we run it, things will be the same as before. As long as _Gemfile_ doesn't change, Docker will recognise that and ensure that the cache is reused. By copying _google.rb_ to the container _after_ running `bundle install`, we ensure that changing the application file doesn't break the cache. Structuring Dockerfiles can often become a black art, and it's worth experimenting to find the right combination to save yourself time in the long run.
 
 ## Don't Stop Now
 
@@ -204,4 +204,4 @@ If you don't provide a command to run after the image name in your `docker run` 
 
 Often, we set this to the command to be run in the container by default—like `irb` for the `ruby` image. However, if we set an entry point, the two are concatenated, just as when providing a command to `docker run`. In these cases, we usually set the command to `--help` or something useful so that starting a container with no arguments prints some useful output. This time, though, I just felt like providing a default, and what better than Docker itself?
 
-[Dockerfile reference]: https://docs.docker.com/engine/reference/builder/
+[dockerfile reference]: https://docs.docker.com/engine/reference/builder/

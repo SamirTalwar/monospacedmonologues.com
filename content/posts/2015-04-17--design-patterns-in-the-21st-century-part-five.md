@@ -8,7 +8,7 @@ aliases:
 
 This is part five of my talk, [Design Patterns in the 21st Century][].
 
-[Design Patterns in the 21st Century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html
+[design patterns in the 21st century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html
 
 ---
 
@@ -16,9 +16,9 @@ Over the past week, we've seen three examples of design patterns that can be dra
 
 <!--more-->
 
-  * The Abstract Factory pattern is an example of a **creational** pattern, which increases flexibility during the application wiring process
-  * The Adapter pattern, a **structural** pattern, is a huge aid in object composition
-  * The Chain of Responsibility pattern is a good demonstration of a **behavioural** *anti-pattern* that actually makes the communication between objects *more* rigid
+- The Abstract Factory pattern is an example of a **creational** pattern, which increases flexibility during the application wiring process
+- The Adapter pattern, a **structural** pattern, is a huge aid in object composition
+- The Chain of Responsibility pattern is a good demonstration of a **behavioural** _anti-pattern_ that actually makes the communication between objects _more_ rigid
 
 We took these three patterns, made them a lot smaller, removed a lot of boilerplate, and knocked out a bunch of extra classes we didn't need in the process.
 

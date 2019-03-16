@@ -28,10 +28,10 @@ We got a lot of great feedback during and after the session, and I can't wait to
 
 ## Diversity is a Goal
 
-The crowd at SoCraTes is traditionally quite diverse *for a tech conference*. I'd like to be able to eliminate those last four words. There were a number of dicussions on diversity and how to improve the situation. We have a long way to go, but it was great to hear even people who have railed against taking explicit action beforehand listening, learning and discussing the issue in the open.
+The crowd at SoCraTes is traditionally quite diverse _for a tech conference_. I'd like to be able to eliminate those last four words. There were a number of dicussions on diversity and how to improve the situation. We have a long way to go, but it was great to hear even people who have railed against taking explicit action beforehand listening, learning and discussing the issue in the open.
 
 ## Self-Selection as a Feature
 
-At SoCraTes, in the UK and elsewhere, the people are amazing. They're incredibly open-minded and up for discussing anything and everything in the hope that they'll learn a little bit more. I had a great chat with [Tom Westmacott](https://twitter.com/twestmacott) about why that is, and he pointed out that the open space format almost requires it: in order for someone to come, can't be looking for a specific thing, as they don't even know what the topics are. Rather, they must be people who are enthused (often enough to pay for it and take holiday) about *learning* itself.
+At SoCraTes, in the UK and elsewhere, the people are amazing. They're incredibly open-minded and up for discussing anything and everything in the hope that they'll learn a little bit more. I had a great chat with [Tom Westmacott](https://twitter.com/twestmacott) about why that is, and he pointed out that the open space format almost requires it: in order for someone to come, can't be looking for a specific thing, as they don't even know what the topics are. Rather, they must be people who are enthused (often enough to pay for it and take holiday) about _learning_ itself.
 
 It's with those people that I want to spend my time.

@@ -4,7 +4,7 @@ slug: functional-reactive-serverless-architecture
 date: 2018-07-17T19:00:00Z
 ---
 
-[*Originally posted as a Twitter thread.*](https://twitter.com/SamirTalwar/status/1019260400108531712)
+[_Originally posted as a Twitter thread._](https://twitter.com/SamirTalwar/status/1019260400108531712)
 
 I've been thinking a lot about serverless architecture and I've realised what bugs me about it.
 
@@ -26,7 +26,7 @@ Suddenly, our high-level infrastructure is decoupled and neatly structured, but 
 
 So we've gained a way to structure our application, but lost our code structure. We might be able to regain some of it by factoring out infrastructure libraries, but then we're tied to one language again. We've lost value.
 
-Jumping sideways a bit: Elm is a beautiful language. (I hope it survives.) One thing it showed us is that with a *very* minimal framework, our code could be completely pure. No side effects, just input and output. Message comes in, messages go out.
+Jumping sideways a bit: Elm is a beautiful language. (I hope it survives.) One thing it showed us is that with a _very_ minimal framework, our code could be completely pure. No side effects, just input and output. Message comes in, messages go out.
 
 Call it Functional Reactive Programming or whatever you like, Elm demonstrates a programming style that is flexible, decoupled, extensible, type-safe and robust. My Elm projects don't break. Ever.
 
@@ -36,7 +36,7 @@ I believe the next step after serverless architecture is a simple translation la
 
 Other functions do the same. They're just like you. You deal with user-level HTTP (or other endpoint infrastructure) with system messages. How they're sent is an implementation detail. Probably intra-app HTTP.
 
-What does this buy us? Stability. Even if the code's wrong and you mishandle a message, you *know* you did. Why? Because you have an event log. An immutable record of everything that happened.
+What does this buy us? Stability. Even if the code's wrong and you mishandle a message, you _know_ you did. Why? Because you have an event log. An immutable record of everything that happened.
 
 So what do we get for free, aside from the benefits of FP? A log of all events. Replayability. Reproducibility. A time-travelling debugger. Full information on everything of importance that's happened in your system. Event sourcing for free.
 

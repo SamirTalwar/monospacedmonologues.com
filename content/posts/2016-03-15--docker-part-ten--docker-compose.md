@@ -14,11 +14,11 @@ Yesterday, we wrote a script to spin up all the various containers we need to st
 
 ## Installation
 
-First of all, check whether you've already installed Docker Compose. If you installed the Docker Toolbox, you should already have it. Try typing `docker-compose` on the command line. If you have it, you should see a handy usage guide. If not, time to install it. If you're using Docker Toolbox, [update to the latest version][Docker Toolbox]. On Mac OS with Homebrew, `brew install docker-compose` should cover you. And on Linux, [follow the installation guide][Install Docker Compose].
+First of all, check whether you've already installed Docker Compose. If you installed the Docker Toolbox, you should already have it. Try typing `docker-compose` on the command line. If you have it, you should see a handy usage guide. If not, time to install it. If you're using Docker Toolbox, [update to the latest version][docker toolbox]. On Mac OS with Homebrew, `brew install docker-compose` should cover you. And on Linux, [follow the installation guide][install docker compose].
 
-[Docker Compose]: https://docs.docker.com/compose/overview/
-[Docker Toolbox]: https://www.docker.com/products/docker-toolbox
-[Install Docker Compose]: https://docs.docker.com/compose/install/
+[docker compose]: https://docs.docker.com/compose/overview/
+[docker toolbox]: https://www.docker.com/products/docker-toolbox
+[install docker compose]: https://docs.docker.com/compose/install/
 
 ## Converting to Docker Compose
 
@@ -73,7 +73,7 @@ Once you're confident it's installed, let's convert our script. Here it is again
         -e DB_PASSWORD=<password> \
         samirtalwar/bemorerandom.com-api
 
-As everything else depends on our database, we can convert that one first. Let's create a file named *docker-compose.yml* in the root directory of our project, with one *service*, our database:
+As everything else depends on our database, we can convert that one first. Let's create a file named _docker-compose.yml_ in the root directory of our project, with one _service_, our database:
 
     version: '2'
 
@@ -107,7 +107,7 @@ That's enough to start up a database. Let's try it:
     database_1 | LOG:  database system is ready to accept connections
     database_1 | LOG:  autovacuum launcher started
 
-We have a database! Press *Ctrl+C* to stop it.
+We have a database! Press _Ctrl+C_ to stop it.
 
 Now, of course, we want to store that data in a named volume so that we don't lose it. Let's add that to the service:
 
@@ -122,7 +122,7 @@ Now, of course, we want to store that data in a named volume so that we don't lo
 
 Here, we're specifying we're creating a volume named `postgresql`. We don't need to give it any special parameters, so we can define an empty object as its value. (YAML is a superset of JSON, so any JSON syntax will work.) We then assign that volume as normal.
 
-Here we can start to see how Docker Compose allows us to *declare* the structure of our application, rather than executing instructions sequentially. Bring up the application again, and we'll get slightly different output right at the top:
+Here we can start to see how Docker Compose allows us to _declare_ the structure of our application, rather than executing instructions sequentially. Bring up the application again, and we'll get slightly different output right at the top:
 
     Creating volume "bemorerandomcom_postgresql" with default driver
 
@@ -151,7 +151,7 @@ Let's take that a piece at a time.
           context: .
           dockerfile: api.Dockerfile
 
-Unlike the database, we need to build our own image here. To do this, instead of specifying an `image` property, we specify the directory to build and location of the Dockerfile. (If the Dockerfile were simply named *Dockerfile*, as is conventional, we could just write `build: .`.)
+Unlike the database, we need to build our own image here. To do this, instead of specifying an `image` property, we specify the directory to build and location of the Dockerfile. (If the Dockerfile were simply named _Dockerfile_, as is conventional, we could just write `build: .`.)
 
         ports:
           - 8080:8080
@@ -164,12 +164,12 @@ Next, we expose port `8080` externally, using the same port on the host. This is
           - DB_USER=bemorerandom
           - DB_PASSWORD
 
-We specify four arguments here: the database host, name, username and password. The first three are fixed, and the last is taken from the running environment. The `DB_HOST` is simply *database*, which is the name of the database service. Docker Compose creates a Docker network (named `default` with a prefix) for the application, which means that we can simply refer to other services by name and they'll be resolved.
+We specify four arguments here: the database host, name, username and password. The first three are fixed, and the last is taken from the running environment. The `DB_HOST` is simply _database_, which is the name of the database service. Docker Compose creates a Docker network (named `default` with a prefix) for the application, which means that we can simply refer to other services by name and they'll be resolved.
 
         depends_on:
           - database
 
-This service depends on the database, so this block tells Docker Compose that it should never be started without it. This means that `docker-compose up api` will bring up both the API service *and* the database.
+This service depends on the database, so this block tells Docker Compose that it should never be started without it. This means that `docker-compose up api` will bring up both the API service _and_ the database.
 
 Let's run it:
 
@@ -228,4 +228,4 @@ Unfortunately, due to something that looks like a bug in the Ubuntu image (thoug
     172.18.0.2      DGRAM
     172.18.0.2      RAW
 
-When we query `ahosts`, we get nothing, and that, unfortunately, uses the same *libc* call as Java's `InetAddress.getByName` function. To get further into this, we're going to have to take a detour and talk about naming. Tune in tomorrow, same time, same place, for the details.
+When we query `ahosts`, we get nothing, and that, unfortunately, uses the same _libc_ call as Java's `InetAddress.getByName` function. To get further into this, we're going to have to take a detour and talk about naming. Tune in tomorrow, same time, same place, for the details.

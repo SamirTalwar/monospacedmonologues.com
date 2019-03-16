@@ -13,20 +13,18 @@ code.
 
 Before we get into what is about though, I want to define "interface".
 
-What is an interface, anyway?
------------------------------
+## What is an interface, anyway?
 
 As you probably know, I'm a big fan of the mentality driving
 specification by example. So let's think about examples.
 
 <!--more-->
 
-The humble `interface` keyword
-------------------------------
+## The humble `interface` keyword
 
 Java or C\#'s `interface` is probably the one you had in mind when you
 read the title of this post. We use it to define the exposed methods on
-an implementing class. That's what it does. But what's it *for*?
+an implementing class. That's what it does. But what's it _for_?
 
 We usually use interfaces (Nat Pryce and Steve Freeman aside) when we're
 creating code that a consumer sees, whether it's ourselves in another
@@ -48,12 +46,11 @@ implement it" approach loved by Rubists.
 This is getting somewhere, but before we start forming any conclusions,
 let's look at a related type of interface.
 
-The Application Programming Interface
--------------------------------------
+## The Application Programming Interface
 
 APIs are great. I wish all applications had one or more. Whether it's
 RESTful, uses RPC, works over HTTP, sockets or is purely in memory, all
-programs should be able to talk to each other *somehow*. Though it's not
+programs should be able to talk to each other _somehow_. Though it's not
 often explained in these terms, this is also the Unix programming model:
 small programs that can invoke each other and have a common data
 interchange format—plain text.
@@ -75,8 +72,7 @@ requirements.
 We mentioned Unix tools, so this is probably a good time to talk about
 their particular brand of interface:
 
-The Command Line Interface
---------------------------
+## The Command Line Interface
 
 This one scares a lot of people, including many developers. The CLI is
 an intimidating place when you start, but as any `vim` lover will tell
@@ -102,8 +98,7 @@ ability, `sed` will.
 
 But sometimes we do care about shiny things. For that, we have:
 
-The Graphical User Interface
-----------------------------
+## The Graphical User Interface
 
 The reason I own a Mac, ladies and gentlemen. It has a terminal when I
 need it, but mostly it's just a very, very pretty rectangle that shows
@@ -133,8 +128,7 @@ The behaviour of the application should reflect the needs of the user; a
 good GUI is one that is instantly obvious. This doesn't happen by
 accident.
 
-So what does all this mean?
----------------------------
+## So what does all this mean?
 
 Interfaces crop up everywhere in software development, from the very low
 level to the very high. The reason they interest and challenge me is
@@ -144,4 +138,4 @@ requires you to step out of your personal universe and into someone
 else's, and attempt to understand how it is they want the computer to
 operate. It requires creating for the benefit of someone else.
 
-In short, interfaces are about *design*.
+In short, interfaces are about _design_.

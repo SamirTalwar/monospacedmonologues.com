@@ -94,15 +94,15 @@ Oh, and we like tests. Especially clear, readable tests. So let's make a matcher
         }
     }
 
-OK, now we can use our `Person` type. It's beautiful, right? It just needs some annotations to serialize to JSON, then some [JPA][Java Persistence API] annotations for persistence to the database, and…
+OK, now we can use our `Person` type. It's beautiful, right? It just needs some annotations to serialize to JSON, then some [JPA][java persistence api] annotations for persistence to the database, and…
 
 **WRONG. SO WRONG.**
 
-Ugh. So much code for so little behaviour. And not just once. *EVERYWHERE.* Can we stop this?
+Ugh. So much code for so little behaviour. And not just once. _EVERYWHERE._ Can we stop this?
 
 Fuck yes.
 
-[Java Persistence API]: http://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049.html
+[java persistence api]: http://www.oracle.com/technetwork/java/javaee/tech/persistence-jsp-140049.html
 
 ## Rekord to the Rescue
 
@@ -122,7 +122,7 @@ On Thursday, I released v0.2 of [Rekord][]. With it, the above suddenly becomes 
 
 ## Umm, what?
 
-That `Rekord<Person>` object is a *rekord builder*. You can construct new people with it.[^1] Like so:
+That `Rekord<Person>` object is a _rekord builder_. You can construct new people with it.[^1] Like so:
 
     Rekord<Person> woz = Person.rekord
         .with(Person.firstName, "Steve")
@@ -169,7 +169,7 @@ The value has to match the type specified by the key. The next line won't work e
 
 The key's of the wrong type, y'see.
 
-If you do need to use keys of another type, for example when dealing with *is-a* relationships, you can use interface inheritance to handle that.
+If you do need to use keys of another type, for example when dealing with _is-a_ relationships, you can use interface inheritance to handle that.
 
     interface Employee extends Person {
         Key<Employee, FixedRekord<Employee>> manager = RekordKey.named("manager");
@@ -203,17 +203,17 @@ Now, when we construct our `Person`, we can't just `get` values out. We need to 
         .with(Person.firstName, "Larry")
         .fix(); // throws InvalidRekordException
 
-`InvalidRekordException` is a checked exception, because you should handle it at the validation layer and not let it proceed any further. If you're skeptical, pause for a moment, and go and read [my post on `IOException`][Check your I/O] which explains more about why checked exceptions are a good thing.
+`InvalidRekordException` is a checked exception, because you should handle it at the validation layer and not let it proceed any further. If you're skeptical, pause for a moment, and go and read [my post on `IOException`][check your i/o] which explains more about why checked exceptions are a good thing.
 
 `ValidatingRekord` takes a Hamcrest matcher, which means you can use all of the built-in functionality of Hamcrest, plus and custom matchers you may have already made. And because our keys are objects in their own right, the `hasProperty` matcher (in the `RekordMatchers` class) is completely type-safe.
 
-[Check your I/O]: http://monospacedmonologues.com/post/75704273387/check-your-i-o
+[check your i/o]: http://monospacedmonologues.com/post/75704273387/check-your-i-o
 
 ## And data goes out
 
 We don't just pump information into software; sometimes, we spit it out as well. While your friend `get` is useful here, sometimes we need something more special.
 
-So, of course, rekords are serializable. Not Java `Serializable` (with a capital *S*), but something a bit more controllable. Because we expose the keys of a rekord, no reflection is required to transform one straight into a form of your choosing.
+So, of course, rekords are serializable. Not Java `Serializable` (with a capital _S_), but something a bit more controllable. Because we expose the keys of a rekord, no reflection is required to transform one straight into a form of your choosing.
 
 So, `woz.serialize(JacksonSerializer.writingToString())` returns this:
 
@@ -239,9 +239,9 @@ I've got a few more things I want to build before I declare this library finishe
 
 Coming up:
 
-  * lenses over keys, so we can stick them together, and ask a `Person` for their `city` directly
-  * views of rekords (or rekord transformers), allowing us to keep our domain separate from the data structures used at integration points
-  * deserialization, for obvious reasons
+- lenses over keys, so we can stick them together, and ask a `Person` for their `city` directly
+- views of rekords (or rekord transformers), allowing us to keep our domain separate from the data structures used at integration points
+- deserialization, for obvious reasons
 
 Expect the first two in v0.3, and deserialization in v0.4.
 
@@ -249,13 +249,13 @@ Expect the first two in v0.3, and deserialization in v0.4.
 
 There are a few things, aside from the missing features listed above, that might stop you from using Rekord.
 
-  * You value insane levels of performance. Rekords are backed by persistent, immutable maps, which are fast enough for 99% of use cases, but there are certain developers who need that extra *oomph*. If Ruby was ever an option for your project, you shouldn't be worried.
-  * You don't like the syntax. Can't really help you there, unfortunately. It's a bit nuts, and not very Java-like. I would recommend giving it a try, though.
-  * You prefer [Octarine][]. I can't fault you for that. It's a great library. Dominic (the author, and a friend of mine) wrote [a very interesting comparison][Octarine vs Rekord: Design Comparison] which plan on responding to soon.
-  * You need stability. I plan on changing Rekord a lot in the coming weeks and months. Your code will not necessarily work with new versions. Come v1.0, I promise to keep a stable API (well, until v2.0), but while we're in the zero-dots, all bets are off.
+- You value insane levels of performance. Rekords are backed by persistent, immutable maps, which are fast enough for 99% of use cases, but there are certain developers who need that extra _oomph_. If Ruby was ever an option for your project, you shouldn't be worried.
+- You don't like the syntax. Can't really help you there, unfortunately. It's a bit nuts, and not very Java-like. I would recommend giving it a try, though.
+- You prefer [Octarine][]. I can't fault you for that. It's a great library. Dominic (the author, and a friend of mine) wrote [a very interesting comparison][octarine vs rekord: design comparison] which plan on responding to soon.
+- You need stability. I plan on changing Rekord a lot in the coming weeks and months. Your code will not necessarily work with new versions. Come v1.0, I promise to keep a stable API (well, until v2.0), but while we're in the zero-dots, all bets are off.
 
-[Octarine]: https://github.com/poetix/octarine
-[Octarine vs Rekord: Design Comparison]: http://www.codepoetics.com/blog/2014/05/18/octarine-vs-rekord-design-comparison/
+[octarine]: https://github.com/poetix/octarine
+[octarine vs rekord: design comparison]: http://www.codepoetics.com/blog/2014/05/18/octarine-vs-rekord-design-comparison/
 
 ## So get to it
 
@@ -267,11 +267,11 @@ You can download [Rekord][] from GitHub. It's also on Maven Central, so throw th
         <version>0.2</version>
     </dependency>
 
-If you do use it, please [drop me an email][email] and tell me how. I'd be very interested. If you find any issues, [let me know][Issues], or even better, raise a [pull request][Pull Requests]. Contributions are very welcome.
+If you do use it, please [drop me an email][email] and tell me how. I'd be very interested. If you find any issues, [let me know][issues], or even better, raise a [pull request][pull requests]. Contributions are very welcome.
 
 I hope you like it.
 
-[Rekord]: https://github.com/SamirTalwar/Rekord
-[Issues]: https://github.com/SamirTalwar/Rekord/issues
-[Pull Requests]: https://github.com/SamirTalwar/Rekord/pulls
+[rekord]: https://github.com/SamirTalwar/Rekord
+[issues]: https://github.com/SamirTalwar/Rekord/issues
+[pull requests]: https://github.com/SamirTalwar/Rekord/pulls
 [email]: mailto:samir@noodlesandwich.com

@@ -51,7 +51,7 @@ paraphrasing): if you would hard-code a string, you should instead use
 type providers. This got me wondering a little. I've always thought of
 strings in my application as simply hard-coded text. But it turns out
 there's different kinds of text. There's the stuff we represent to the
-user: API documentation, button text—anything you *see*—and there's the
+user: API documentation, button text—anything you _see_—and there's the
 the stuff we use internally but never show anyone. These latter strings
 all fall into a category I'm going to call, for lack of a better term,
 data accessors. They're things like API URLs, file paths, Windows
@@ -71,7 +71,7 @@ Twitter looks like:
     let newTweet = "status/update"
     Http.Request(twitterUrl).Post newTweet, credentials, tweetText
 
-But here's how it *should* look:
+But here's how it _should_ look:
 
     let twitter = Twitter(credentials)
     twitter.Status.Update tweetText

@@ -15,8 +15,7 @@ Here's how.
 
 <!--more-->
 
-Single Responsibility Principle
--------------------------------
+## Single Responsibility Principle
 
 The SRP isn't just a guide to code. It explains a lot about life. It's
 the reason [your favourite coffee house](http://www.taylor-st.com/)
@@ -30,14 +29,13 @@ Let's put it this way: at all levels of your application, components
 should be expressive and easily named. They should do one thing and tell
 you what it is. For example, you might have a method called
 `renderProduct` in a view named `ProductView`, on a web page called
-*Products*, on a site named *Buy My Freakin' Stuff*. It's a bit
+_Products_, on a site named _Buy My Freakin' Stuff_. It's a bit
 contrived, but you can see how at each level, we're solving a single
 problem. This extends well into a service-oriented architecture too,
 where each service has a single responsibility, albeit larger than the
 modules inside it.
 
-Open-Closed Principle
----------------------
+## Open-Closed Principle
 
 I've started rephrasing the OCP as "don't change, replace". When
 changing the behaviour of existing interfaces, wrap them, don't modify
@@ -52,8 +50,7 @@ change them all back and finally remove the wrapper. Even better, make
 versioning explicit, and let clients access either version, removing the
 need for a temporary endpoint. Simples, right?
 
-Liskov Substitution Principle
------------------------------
+## Liskov Substitution Principle
 
 This one's fairly easy: if you change the implementation of an endpoint,
 keep the behaviour. Just as I should be able to swap out an array list
@@ -66,11 +63,10 @@ made as a result of technical changes, but should be judged on their own
 merits. This might, of course, provoke a technical modification as part
 of the work.
 
-Interface Segregation Principle
--------------------------------
+## Interface Segregation Principle
 
 Quite often, and especially in business-focused applications, software
-is built for many different *kinds* of customers. In the financial
+is built for many different _kinds_ of customers. In the financial
 domain in which I currently work, we have the "buy side" and the "sell
 side", as well as our in-house support team, who administer the product.
 And yet the software is delivered as a single web site with different
@@ -82,8 +78,7 @@ side, the sell side, administration, a login page and maybe even some
 kind of API which the different applications can use as a common meeting
 point.
 
-Dependency Inversion Principle
-------------------------------
+## Dependency Inversion Principle
 
 When applied to applications or components, DI simply means defining and
 exposing a public interface (like an API), and then using specifically
@@ -95,8 +90,7 @@ extension, sharing a data store at all is a terrible idea, as it creates
 a high degree of coupling between two things, going against the entire
 concept of modularisation.
 
-That's all, folks.
-------------------
+## That's all, folks.
 
 That's all five. There's obviously more that plays into building a
 maintainable architecture, but hopefully this will be helpful. The

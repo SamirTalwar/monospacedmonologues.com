@@ -20,7 +20,7 @@ The simplest form of modification is removing content, so I'm going to focus on 
 
 When using Trello as a kind of [kanban board][], we often want to focus on just a few columns. For example, we might not be interested in the first or last column, as they describe things that have been done ages ago or won't be started for a while.
 
-Because most websites of any size use jQuery or a compatible library for their own JavaScript, it's almost always available by default. This means we can use [jQuery][] to select the list elements. They're elements with the class `list` inside an element with an ID of `board`, which makes it pretty easy. Type the following into the developer console, which you can usually access by hitting *Ctrl+Shift+I* or *Cmd+Shift+I* and clicking the *Console* tab:
+Because most websites of any size use jQuery or a compatible library for their own JavaScript, it's almost always available by default. This means we can use [jQuery][] to select the list elements. They're elements with the class `list` inside an element with an ID of `board`, which makes it pretty easy. Type the following into the developer console, which you can usually access by hitting _Ctrl+Shift+I_ or _Cmd+Shift+I_ and clicking the _Console_ tab:
 
     $('#board .list')
 
@@ -36,7 +36,7 @@ It should result in an object with properties similar to this one. If you hover 
         selector: "#board .list"
     }
 
-We only want to remove certain columns, so we can filter that selection to check the text. First of all, as we're working in the REPL, we can explore the API a bit and see if we can grab the text by mapping over the elements. (If you're not familiar with `map`, [Wikipedia has a good explanation][Map (higher-order function)].)
+We only want to remove certain columns, so we can filter that selection to check the text. First of all, as we're working in the REPL, we can explore the API a bit and see if we can grab the text by mapping over the elements. (If you're not familiar with `map`, [Wikipedia has a good explanation][map (higher-order function)].)
 
     $('#board .list').map((i, element) => $(element).find('[attr=name] h2').text())
 
@@ -51,7 +51,7 @@ jQuery's `map` function is a bit different to a standard array map function, as 
         context: HTMLDocument → welcome-board
     }
 
-OK, great. We've used `map` to explore (this is why I love REPLs), but it's not actually where we want to go. Instead `filter` that down so we just get the *Basics* column in my example. (Again, [Wikipedia covers `filter`][Filter (higher-order function)].)
+OK, great. We've used `map` to explore (this is why I love REPLs), but it's not actually where we want to go. Instead `filter` that down so we just get the _Basics_ column in my example. (Again, [Wikipedia covers `filter`][filter (higher-order function)].)
 
     var listsToHide = $('#board .list')
             .filter((i, element) => $(element).find('[attr=name] h2').text() == 'Basics');
@@ -84,12 +84,12 @@ Fantastic. If we want to show it again, we can just call `show()`. Now all we ne
         listsToHide.parent().hide();
     })();
 
-Make your own, shove it in a bookmark and make your tools work the way *you* need them to.
+Make your own, shove it in a bookmark and make your tools work the way _you_ need them to.
 
 JavaScript. Because you're worth it.
 
-[Trello]: https://trello.com/
+[trello]: https://trello.com/
 [kanban board]: http://leankit.com/learn/kanban/kanban-board/
-[jQuery]: https://jquery.com/
-[Map (higher-order function)]: https://en.wikipedia.org/wiki/Map_%28higher-order_function%29
-[Filter (higher-order function)]: https://en.wikipedia.org/wiki/Filter_%28higher-order_function%29
+[jquery]: https://jquery.com/
+[map (higher-order function)]: https://en.wikipedia.org/wiki/Map_%28higher-order_function%29
+[filter (higher-order function)]: https://en.wikipedia.org/wiki/Filter_%28higher-order_function%29

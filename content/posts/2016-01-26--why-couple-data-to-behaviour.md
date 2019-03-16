@@ -6,7 +6,7 @@ aliases:
   - /post/138076164433/why-couple-data-to-behaviour
 ---
 
-Yesterday I posted on avoiding [Getters, Setters and Properties][], and how to bring the behaviour of your system closer to your data. The more functionally astute of you might have realised that this is, of course, a form of coupling. By making state private, and only allowing access via methods, we need to *open* up the class each time we want to modify the behaviour. This makes it look like proper object-oriented programming *must* violate the [open-closed principle][Open-Closed Principle]:
+Yesterday I posted on avoiding [Getters, Setters and Properties][], and how to bring the behaviour of your system closer to your data. The more functionally astute of you might have realised that this is, of course, a form of coupling. By making state private, and only allowing access via methods, we need to _open_ up the class each time we want to modify the behaviour. This makes it look like proper object-oriented programming _must_ violate the [open-closed principle][open-closed principle]:
 
 > Software entities (classes, modules, functions, etc.) should be open for extension, but closed for modification.
 >
@@ -35,7 +35,7 @@ Let's take the example from yesterday:
         }
     }
 
-We would consider this [a partially anaemic domain model][Anemic Domain Model], as one of the core concepts of the domain, the `Account`, is a simple data structure with no understanding of how it should behave. Refactoring brings the data and the behaviour together, but it doesn't allow us to change behaviour easily without modifying the `Account` class.
+We would consider this [a partially anaemic domain model][anemic domain model], as one of the core concepts of the domain, the `Account`, is a simple data structure with no understanding of how it should behave. Refactoring brings the data and the behaviour together, but it doesn't allow us to change behaviour easily without modifying the `Account` class.
 
     public class Account {
         ...
@@ -46,7 +46,7 @@ We would consider this [a partially anaemic domain model][Anemic Domain Model], 
         }
     }
 
-So, let's imagine that our fictional bank has just started supporting overdrafts. Most people won't have one, as it's opt-in, but we expect more and more to do so as time goes on. So we add a `Money overdraftLimit` field and default it to £0, then add the logic to handle the overdraft. This is a small change from the point of view of the account, but expand it out a little to support daily caps on cash withdrawals, warning SMS messages when you're nearing your limit, flexible overdrafts that charge you a fee after 24 hours rather than enforcing a hard limit, and much more, no matter the approach, our `withdrawal` method is going to get *huge*.
+So, let's imagine that our fictional bank has just started supporting overdrafts. Most people won't have one, as it's opt-in, but we expect more and more to do so as time goes on. So we add a `Money overdraftLimit` field and default it to £0, then add the logic to handle the overdraft. This is a small change from the point of view of the account, but expand it out a little to support daily caps on cash withdrawals, warning SMS messages when you're nearing your limit, flexible overdrafts that charge you a fee after 24 hours rather than enforcing a hard limit, and much more, no matter the approach, our `withdrawal` method is going to get _huge_.
 
 Fortunately, we don't just have classes. We also have interfaces. Let's try pulling one out:
 
@@ -132,15 +132,15 @@ Wonderful. Except for the duplication between the two classes. I can personally 
 
 Now we can just use an `Account` with the rule `ANYTHING_GOES` instead of a `SimpleAccount`, and one with a rule that's an instance of `OverdraftLimit` if we need an overdraft. If we need to handle multiple rules, we can turn it into a list or create a composite type.
 
-It turns out the account probably didn't need the interface, but we've managed to close it for modification by opening it for extension in the form of *account rules*, which are more than flexible enough for now.
+It turns out the account probably didn't need the interface, but we've managed to close it for modification by opening it for extension in the form of _account rules_, which are more than flexible enough for now.
 
 ## This Has A Name
 
-We call this behaviour [*subtype polymorphism*][Subtyping]. In this example, the account rule is not a single thing, but one of many possibilities, all of which conform to the contract set out by the interface or supertype. This style of flexibility relies on the standard object-oriented practice of coupling the behaviour to the data—we couldn't have done it without doing so. If we'd tried and implemented this kind of behaviour directly on the `ATM` class, we'd end up reimplementing half of Java's object system before we were done.
+We call this behaviour [_subtype polymorphism_][subtyping]. In this example, the account rule is not a single thing, but one of many possibilities, all of which conform to the contract set out by the interface or supertype. This style of flexibility relies on the standard object-oriented practice of coupling the behaviour to the data—we couldn't have done it without doing so. If we'd tried and implemented this kind of behaviour directly on the `ATM` class, we'd end up reimplementing half of Java's object system before we were done.
 
 Increasing coupling in one area allows us to reduce coupling in another. Programming is really a set of trade-offs in this regard, and by being aware of the ramifications of your choices, you can make the right trade-off for your software.
 
-[Getters, Setters and Properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
-[Open-Closed Principle]: http://c2.com/cgi/wiki?OpenClosedPrinciple
-[Anemic Domain Model]: http://www.martinfowler.com/bliki/AnemicDomainModel.html
-[Subtyping]: https://en.wikipedia.org/wiki/Subtyping
+[getters, setters and properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
+[open-closed principle]: http://c2.com/cgi/wiki?OpenClosedPrinciple
+[anemic domain model]: http://www.martinfowler.com/bliki/AnemicDomainModel.html
+[subtyping]: https://en.wikipedia.org/wiki/Subtyping

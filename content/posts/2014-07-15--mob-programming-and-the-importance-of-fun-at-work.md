@@ -12,7 +12,7 @@ It's been a few weeks since SoCraTes UK 2014, and I've had some time to reflect 
 
 ## Mind. Blown.
 
-The session that really blew my mind was [Gianfranco Alongi][@gfalongi]'s explanation of [Mob Programming][]. It takes pair programming to the next level. Its tagline is *"All the brilliant people working at the same time, in the same space, at the same computer, on the same thing"*, and that's exactly what it is. A whole team, a keyboard, a mouse and a projector. One driver, and a few navigators, with a decent amount of rotation. I won't go into too much detail; the website linked above has much more information. This wasn't why this session blew my mind, though it was a really cool idea.
+The session that really blew my mind was [Gianfranco Alongi][@gfalongi]'s explanation of [Mob Programming][]. It takes pair programming to the next level. Its tagline is _"All the brilliant people working at the same time, in the same space, at the same computer, on the same thing"_, and that's exactly what it is. A whole team, a keyboard, a mouse and a projector. One driver, and a few navigators, with a decent amount of rotation. I won't go into too much detail; the website linked above has much more information. This wasn't why this session blew my mind, though it was a really cool idea.
 
 What really struck me about this session is that Gianfranco and his team have become fast friends. They care about each other, they know about each others' lives and they all respect and value each others' company.
 
@@ -22,13 +22,13 @@ This talk set the tone for the rest of the conference for me. I started to talk 
 
 ## A Brief Digression
 
-I've recently read [Drive, by Daniel Pink][] and thoroughly enjoyed it. The central theme of the book is that financial remuneration is not the most important thing to a creative worker (and a software developer is most definitely creative). The three central drives of someone who works in a creative fashion are *autonomy*, *mastery* and *purpose*. What this means is that the people who derive the most fulfilment from their jobs, and therefore are enjoying themselves the most, are those who have a lot of autonomy over what they do and how they do it, can use their job to help them in the pursuit of mastery, and find a lot of purpose in what they do.
+I've recently read [Drive, by Daniel Pink][] and thoroughly enjoyed it. The central theme of the book is that financial remuneration is not the most important thing to a creative worker (and a software developer is most definitely creative). The three central drives of someone who works in a creative fashion are _autonomy_, _mastery_ and _purpose_. What this means is that the people who derive the most fulfilment from their jobs, and therefore are enjoying themselves the most, are those who have a lot of autonomy over what they do and how they do it, can use their job to help them in the pursuit of mastery, and find a lot of purpose in what they do.
 
 Obviously, there's a lot more to it, and the book references a large number of case studies and psychological experiments, but the introduction lays the point of the book out plain and simple, and it was obvious to me from the moment I read it that it was true. I and many of the software developers I know derive pleasure and enjoyment from our work, not because we get paid massive amounts, but because of the above three principles. We have control over our work and we do it because we find meaning in it.
 
 ## And back, full circle
 
-On the evening of the second day, [Paweł Duda][@pawelduda] and I decided to work on my [task list kata][Task List]. I'd run a session around it earlier that day and he wanted to pair on it with me to see how it would go.
+On the evening of the second day, [Paweł Duda][@pawelduda] and I decided to work on my [task list kata][task list]. I'd run a session around it earlier that day and he wanted to pair on it with me to see how it would go.
 
 It got a bit popular, so we decided to mob, rather than pair. Six of us sat down in front of a projector, a little drunk, way after midnight, and commenced the exercise.
 
@@ -52,8 +52,8 @@ Instead, give people some control back. Give them 20% time. If they won't take i
 
 People are amazing at making things fun, just as long as you let them.
 
-[Mob Programming]: http://mobprogramming.org/
-[Task List]: https://github.com/codurance/task-list
-[Drive, by Daniel Pink]: http://www.amazon.co.uk/gp/product/184767769X/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=184767769X&linkCode=as2&tag=monospamonolo-21
+[mob programming]: http://mobprogramming.org/
+[task list]: https://github.com/codurance/task-list
+[drive, by daniel pink]: http://www.amazon.co.uk/gp/product/184767769X/ref=as_li_qf_sp_asin_tl?ie=UTF8&camp=1634&creative=6738&creativeASIN=184767769X&linkCode=as2&tag=monospamonolo-21
 [@gfalongi]: https://twitter.com/gfalongi
 [@pawelduda]: https://twitter.com/pawelduda

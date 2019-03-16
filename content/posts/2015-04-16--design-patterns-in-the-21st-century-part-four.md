@@ -8,7 +8,7 @@ aliases:
 
 This is part four of my talk, [Design Patterns in the 21st Century][].
 
-[Design Patterns in the 21st Century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html
+[design patterns in the 21st century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html
 
 ---
 
@@ -121,22 +121,23 @@ Not all Chain of Responsibility implementations involve mutation, but for those 
 
 There are three cases of mutation here.
 
-1. Each member of staff has the "next" member set later, and the patrons themselves are mutated. Instead of setting the next member of staff later, we'll construct each one with the next.
-2. Though you can't see it, Alice, the `PieChef`, sets a flag on the `Pie` to mark it as `cooked` for Bob, the `DollopDistributor`. Instead of changing the object, we'll have her accept an `UncookedPie` and pass a `CookedPie` to Bob. We then adapt Bob to accept a `CookedPie`. This ensures we can't get the order wrong, as `Bob` will never receive an uncooked pie.
-3. And as for the patron, we'll start off with a `HungryPatron` and have them return a new instance of themselves upon feeding.
+1.  Each member of staff has the "next" member set later, and the patrons themselves are mutated. Instead of setting the next member of staff later, we'll construct each one with the next.
+2.  Though you can't see it, Alice, the `PieChef`, sets a flag on the `Pie` to mark it as `cooked` for Bob, the `DollopDistributor`. Instead of changing the object, we'll have her accept an `UncookedPie` and pass a `CookedPie` to Bob. We then adapt Bob to accept a `CookedPie`. This ensures we can't get the order wrong, as `Bob` will never receive an uncooked pie.
+3.  And as for the patron, we'll start off with a `HungryPatron` and have them return a new instance of themselves upon feeding.
 
-    @Test public void
-    hungryHungryPatrons() {
-        KitchenStaff dan = new Server();
-        KitchenStaff carol = new CutleryAdder(dan);
-        KitchenStaff bob = new DollopDistributor(carol);
-        KitchenStaff alice = new PieChef(bob);
+        @Test public void
+        hungryHungryPatrons() {
+            KitchenStaff dan = new Server();
+            KitchenStaff carol = new CutleryAdder(dan);
+            KitchenStaff bob = new DollopDistributor(carol);
+            KitchenStaff alice = new PieChef(bob);
 
-        Patron hungryPatron = new HungryPatron();
-        Patron happyPatron = alice.prepare(new UncookedPie()).forPatron(hungryPatron);
+            Patron hungryPatron = new HungryPatron();
+            Patron happyPatron = alice.prepare(new UncookedPie()).forPatron(hungryPatron);
 
-        assertThat(happyPatron, hasPie());
-    }
+            assertThat(happyPatron, hasPie());
+
+        }
 
 This hasn't changed much, unfortunately. It's still very confusing why we giving the pie to Alice results in the patron receiving it, and we could still get things in the wrong order or ask the wrong person to do something.
 
@@ -199,7 +200,7 @@ In this situation, `then` doesn't modify the object directly, but instead return
         }
     }
 
-To do this, we also have to return a value rather than operating purely on side effects, ensuring that we *always* pass on the value. In situations where we may not want to continue, we can return an `Optional<T>` value, which can contain either something (`Optional.of(value)`) or nothing (`Optional.empty()`).
+To do this, we also have to return a value rather than operating purely on side effects, ensuring that we _always_ pass on the value. In situations where we may not want to continue, we can return an `Optional<T>` value, which can contain either something (`Optional.of(value)`) or nothing (`Optional.empty()`).
 
 #### Step 4: Split the domain from the infrastructure.
 

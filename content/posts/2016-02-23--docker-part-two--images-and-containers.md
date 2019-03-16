@@ -40,11 +40,11 @@ As we explained before, the `docker` program is actually just a client that conn
     $ echo $DOCKER_HOST
     tcp://192.168.99.100:2376
 
-If it's blank, you'll be connecting to your local machine through a Unix socket, probably located at */var/run/docker.sock*. Of course, as Docker rides on the back of Linux containers, this can only work on Linux, as the daemon must be running on Linux.
+If it's blank, you'll be connecting to your local machine through a Unix socket, probably located at _/var/run/docker.sock_. Of course, as Docker rides on the back of Linux containers, this can only work on Linux, as the daemon must be running on Linux.
 
 ## Pulling an Image
 
-Before we can run a container, we need an image to base it on. In this case, we're looking for an image tagged *hello-world*. You can explicitly pull an image by using `docker pull <image tag>`, but if you just try to run one, `docker run` will automatically pull the image, assuming you haven't done so already.
+Before we can run a container, we need an image to base it on. In this case, we're looking for an image tagged _hello-world_. You can explicitly pull an image by using `docker pull <image tag>`, but if you just try to run one, `docker run` will automatically pull the image, assuming you haven't done so already.
 
 In doing so, you'll see a few progress bars that look like this:
 
@@ -54,7 +54,7 @@ In doing so, you'll see a few progress bars that look like this:
     Digest: sha256:8be990ef2aeb16dbcb9271ddfe2610fa6658d13f6dfb8bc72074cc1ca36966a7
     Status: Downloaded newer image for hello-world:latest
 
-Docker will automatically download the image you need, but in order to run it, it also needs a few more. Images are *hierarchical*, in that each image is based on a previous image. These images sometimes have "tags" ("hello-world", in our case), but they always have IDs. These IDs are unique and immutable, just like Git commit hashes; if you change the image, you change the ID. However, the tags are not; *hello-world* might point to another image in the future.
+Docker will automatically download the image you need, but in order to run it, it also needs a few more. Images are _hierarchical_, in that each image is based on a previous image. These images sometimes have "tags" ("hello-world", in our case), but they always have IDs. These IDs are unique and immutable, just like Git commit hashes; if you change the image, you change the ID. However, the tags are not; _hello-world_ might point to another image in the future.
 
 Type the following into your terminal:
 
@@ -71,7 +71,7 @@ This particular image is tiny, as you'd expect; it's only 960 bytes. But it's no
     hello-world                                       latest                  af340544ed62        9 weeks ago         960 B
     <none>                                            <none>                  535020c3e8ad        9 weeks ago         960 B
 
-You have two images on your system. One is tagged *hello-world*, but the other has no tag at all, just an ID. It's there because just like Git commits, each Docker image depends on a previous image until you reach the root. The *virtual size* is the size of the image plus all its parents; the actual image may be much smaller. For example, the *hello-world* image itself (ID *af340544ed62* on my computer) takes no space at all; it's purely there to invoke the correct command.
+You have two images on your system. One is tagged _hello-world_, but the other has no tag at all, just an ID. It's there because just like Git commits, each Docker image depends on a previous image until you reach the root. The _virtual size_ is the size of the image plus all its parents; the actual image may be much smaller. For example, the _hello-world_ image itself (ID _af340544ed62_ on my computer) takes no space at all; it's purely there to invoke the correct command.
 
 ## What's In An Image?
 
@@ -128,13 +128,13 @@ Two things are different about this. First of all, this image has no parent—it
 
 This command copies a file from the host to the container. You'll have to trust me when I say it's the `hello` script that's being invoked in the child image.
 
-Now, this has already been run. One interesting thing about the way Docker works is that containers are created from images, but images are created by *committing* a container, which takes a running container and saves its disk as an image. We'll see how to do this ourselves soon. Each of the two images that make up `hello-world` are constructed like this.
+Now, this has already been run. One interesting thing about the way Docker works is that containers are created from images, but images are created by _committing_ a container, which takes a running container and saves its disk as an image. We'll see how to do this ourselves soon. Each of the two images that make up `hello-world` are constructed like this.
 
 In short, we asked for an image, and we got two.
 
 ## Creating a Container from an Image
 
-By using Docker's `run` command, you asked it to run the *hello-world* image as a container. You can see that container now, by running the following command:
+By using Docker's `run` command, you asked it to run the _hello-world_ image as a container. You can see that container now, by running the following command:
 
     $ docker ps --all
 
@@ -143,7 +143,7 @@ The `--all` (or `-a`) flag tells it to show stopped containers as well as runnin
     CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS                     PORTS               NAMES
     eb1a963dc91f        hello-world         "/hello"            6 seconds ago       Exited (0) 3 seconds ago                       sharp_wozniak
 
-Yours will look somewhat different, but parts will be the same. It has an ID and a name; you can specify the name when running with the `--name` flag when running, but the ID is always unique and automatically generated. We can see that the container was created from the *hello-world* image (more on that later). The `/hello` command was run as the container started, and it exited with a status code of 0, so it's no longer running.
+Yours will look somewhat different, but parts will be the same. It has an ID and a name; you can specify the name when running with the `--name` flag when running, but the ID is always unique and automatically generated. We can see that the container was created from the _hello-world_ image (more on that later). The `/hello` command was run as the container started, and it exited with a status code of 0, so it's no longer running.
 
 Often, we'll create containers that continue to run for a long time, for example when running a web server or other service. In that case, we'll see a status that looks something like "Up 17 minutes", to tell us that the container is running and will continue to run. We'll see an example of this in the next article.
 
@@ -153,11 +153,11 @@ Stopped containers will stick around forever, or at least until you actively rem
 
 When we run a container, any output to STDOUT or STDERR is sent directly back to the client. This is very useful for short-lived tasks, but if we want to run a web server, we don't necessarily want to leave a terminal window open to capture the output. Fortunately, Docker also captures the output in a log file, which we can query using the `docker log` command.
 
-Try it. I'm using the name of my container, *sharp_wozniak*, here, but you should substitute it for your own.
+Try it. I'm using the name of my container, <em>sharp_wozniak</em>, here, but you should substitute it for your own.
 
     $ docker logs sharp_wozniak
 
-You should see exactly the same output as you saw before. This becomes more useful when running a container in *detached mode* using the `--detach` or `-d` flag:
+You should see exactly the same output as you saw before. This becomes more useful when running a container in _detached mode_ using the `--detach` or `-d` flag:
 
     $ docker run -d hello-world
 

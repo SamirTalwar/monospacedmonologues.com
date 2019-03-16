@@ -39,13 +39,13 @@ Extract it out:
 
     x = squareRoot.step(x)
 
-Sure, I'll still have to Google ["Newton-Raphson"][Newton's method], but at least when I do, it'll be obvious what's going on as soon as I understand the principle at work.
+Sure, I'll still have to Google ["Newton-Raphson"][newton's method], but at least when I do, it'll be obvious what's going on as soon as I understand the principle at work.
 
 And this hasn't been funny since 1996:
 
     stop() // Hammertime!
 
-[Newton's method]: https://en.wikipedia.org/wiki/Newton's_method
+[newton's method]: https://en.wikipedia.org/wiki/Newton's_method
 
 ## The Good Argument Against Code Comments
 
@@ -63,18 +63,18 @@ In those posts, he argues that:
 
 > The truth about code comments is that if you don't write any, because they would make your code worse, then there's a powerful language feature that you don't know how to use, and questions that your code doesn't answer:
 >
->   * Why is this code here?
->   * What is it for?
->   * Why is the functionality implemented this way?
->   * Why is that the functionality?
->   * When shouldn't you use this code?
+> - Why is this code here?
+> - What is it for?
+> - Why is the functionality implemented this way?
+> - Why is that the functionality?
+> - When shouldn't you use this code?
 
-Comments can answer lots of questions about your code aside from *what* it does, and we shouldn't throw away a tool just because it *can* be misused. If we took that attitude to everything, there wouldn't be a single programming language we could actually use.
+Comments can answer lots of questions about your code aside from _what_ it does, and we shouldn't throw away a tool just because it _can_ be misused. If we took that attitude to everything, there wouldn't be a single programming language we could actually use.
 
 [@peterhilton]: https://twitter.com/peterhilton
 [7 ways to write bad comments]: http://hilton.org.uk/blog/7-ways-to-write-bad-comments
 [3 kinds of good comments]: http://hilton.org.uk/blog/3-kinds-of-good-comments
-[How to comment code]: http://hilton.org.uk/blog/how-to-comment-code
+[how to comment code]: http://hilton.org.uk/blog/how-to-comment-code
 
 ## The Better Argument Against Code Comments
 
@@ -113,19 +113,19 @@ And now, the reason I find myself writing comments once in a while.
 
 Every so often, I start what should be a simple task. Four hours later, I'm swearing at my computer. After a long break, I come back and realise that my code is correct, but (at least) one of the following is true:
 
-  * something else is modifying my state out from under me
-  * the framework is "helping"
-  * I've written JavaScript and Microsoft hates me, so IE/Edge has decided not to bother
-  * it turns out the definition of `class` is different for this framework
-  * these two libraries really don't mesh well with each other
-  * I seem to have two different versions of the same library
-  * my `PATH` or JVM classpath is completely different from what I expected
-  * the programming language VM works differently on this operating system
-  * I work for the devil, and so I write Linux software on Windows XP, with no admin rights
+- something else is modifying my state out from under me
+- the framework is "helping"
+- I've written JavaScript and Microsoft hates me, so IE/Edge has decided not to bother
+- it turns out the definition of `class` is different for this framework
+- these two libraries really don't mesh well with each other
+- I seem to have two different versions of the same library
+- my `PATH` or JVM classpath is completely different from what I expected
+- the programming language VM works differently on this operating system
+- I work for the devil, and so I write Linux software on Windows XP, with no admin rights
 
-These things all have one thing in common: I'm relying on third-party software, usually a framework, virtual machine or operating system, which does not behave as expected in some subtle way that is not obvious even to someone who understands the system in question fairly well. If it were in my own code, I would fix *that*. That is what refactoring is for.
+These things all have one thing in common: I'm relying on third-party software, usually a framework, virtual machine or operating system, which does not behave as expected in some subtle way that is not obvious even to someone who understands the system in question fairly well. If it were in my own code, I would fix _that_. That is what refactoring is for.
 
-Assuming this is the case, at this point, I can probably solve the problem with a hack around the offending integration point. However, my solution to the problem will *look* non-optimal, and so another developer working on the same project would be quite right to change it back to something that looks simpler but is broken. Sometimes you can write a test case for this—for example, if my code only fails in IE 9, I could use [WebDriver][] to verify that the functionality works in all browsers. However, this can be problematic—maybe I can't run test cases on the environment causing the problem, or maybe the particular scenario is really difficult to automate. This is an artifact of a bigger problem, but it might not be one I can solve right now.
+Assuming this is the case, at this point, I can probably solve the problem with a hack around the offending integration point. However, my solution to the problem will _look_ non-optimal, and so another developer working on the same project would be quite right to change it back to something that looks simpler but is broken. Sometimes you can write a test case for this—for example, if my code only fails in IE 9, I could use [WebDriver][] to verify that the functionality works in all browsers. However, this can be problematic—maybe I can't run test cases on the environment causing the problem, or maybe the particular scenario is really difficult to automate. This is an artifact of a bigger problem, but it might not be one I can solve right now.
 
 In these cases, I write a comment right above the travesty I've had to conjure to beat the environment or framework.
 
@@ -143,4 +143,4 @@ In these cases, I write a comment right above the travesty I've had to conjure t
     // Apologies, and Godspeed.
     // — @samirtalwar, 2016-01-21.
 
-[WebDriver]: http://www.seleniumhq.org/projects/webdriver/
+[webdriver]: http://www.seleniumhq.org/projects/webdriver/

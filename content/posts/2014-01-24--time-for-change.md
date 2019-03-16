@@ -18,4 +18,4 @@ What this means is that I'm available for hire. If you need someone to help your
 
 [@sandromancuso]: https://twitter.com/sandromancuso
 [@mashooq]: https://twitter.com/mashooq
-[Codurance]: http://codurance.com/
+[codurance]: http://codurance.com/

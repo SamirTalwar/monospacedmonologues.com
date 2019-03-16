@@ -14,7 +14,7 @@ days, but as I'm currently physically incapable of sleeping, I thought
 I'd take some time and talk to you about lists.
 
 Lists are one of the most powerful and versatile constructs we have in
-our day-to-day toolkits. We use them *everywhere*. I can probably count
+our day-to-day toolkits. We use them _everywhere_. I can probably count
 the number of times I've implemented anything even slightly complex
 without using a list on the fingers of one hand. Today, I want to
 explain why we use them wrongly.
@@ -65,7 +65,7 @@ from 0.
 
     numbers_from_zero = 0 : numbers
 
-That colon (`:`) is the *cons* operator. Odd name, I know, but it's a
+That colon (`:`) is the _cons_ operator. Odd name, I know, but it's a
 simple enough concept. It takes an object on the left and a list on the
 right, and returns a new list which is the old one prefixed with the
 object on the left. The lovely thing about this is that I can keep the
@@ -97,7 +97,7 @@ that.
 We've introduced a new operation here. As well as pulling the head and
 tail out of the list, we need to be able to test it to see whether it's
 empty or not. The `isEmpty` function here does exactly that. We then
-return *nil*, the empty list, if it is. This means that when we finally
+return _nil_, the empty list, if it is. This means that when we finally
 get to the end of the list, we stop.
 
 Let's expand this one.

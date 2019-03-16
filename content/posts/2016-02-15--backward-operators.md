@@ -53,7 +53,7 @@ This is a specialisation of a more general case, however. `(<)` is really anothe
 
 That is, a function which takes two arguments, `a` and `b`, and invokes `a < b`. Many Haskellers prefer the former style, `(<)`, for its terseness.
 
-We can also just supply one of the arguments using a form of [currying][Currying] for operators. `(5 <)` is the same as writing `\b -> 5 < b`, and `(< 3)` is the same as writing `\a -> a < 3`.
+We can also just supply one of the arguments using a form of [currying][currying] for operators. `(5 <)` is the same as writing `\b -> 5 < b`, and `(< 3)` is the same as writing `\a -> a < 3`.
 
 That last one is what was confusing me. In the Lisp code above, it says `(< 3 n)`, but I was reading it as `(< 3) n`. Expanded out:
 
@@ -65,8 +65,8 @@ And substituted back in:
 
 So in my head, it was absolutely correct. Even though it's obviously wrong.
 
-*/me headdesks*
+_/me headdesks_
 
-[Structure and Interpretation of Computer Programs]: http://mitpress.mit.edu/sicp/
-[Section 1.2.2: Tree Recursion]: https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html#%_toc_%_sec_1.2.2
-[Currying]: https://en.wikipedia.org/wiki/Currying
+[structure and interpretation of computer programs]: http://mitpress.mit.edu/sicp/
+[section 1.2.2: tree recursion]: https://mitpress.mit.edu/sicp/full-text/book/book-Z-H-4.html#%_toc_%_sec_1.2.2
+[currying]: https://en.wikipedia.org/wiki/Currying

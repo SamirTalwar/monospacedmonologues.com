@@ -25,7 +25,7 @@ or family or even the people you follow on Facebook and Twitter. I want
 to make software for those people. I want to build things for fun and
 then watch people smile as I show them what they do. Deadlines are
 pretty motivational, but I'd rather the work I do to be reward enough
-that I can't *wait* to get home and get the next feature out.
+that I can't _wait_ to get home and get the next feature out.
 
 And you know, the only thing stopping me is, well, me.
 

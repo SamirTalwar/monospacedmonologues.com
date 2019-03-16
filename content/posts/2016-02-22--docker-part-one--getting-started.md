@@ -14,7 +14,7 @@ I've been using Docker heavily in development, test and production for almost a 
 
 I'm fairly sure at this point we're familiar with virtual machines and their impact on software development. Many organisations now run their server applications and services inside virtual machines to keep them contained and ensure that one failing, buggy or out-of-control service doesn't impact another. We even rent virtual machines from cloud providers such as Amazon, Rackspace, Joyent and many more.
 
-Docker is based on [control groups (cgroups)][cgroups] and [namespace isolation][] in the Linux kernel, as well as union filesystems such as [aufs][], which together allow it to *contain* processes and directory structures in containers.[^libcontainer update] These containers are often referred to as "lightweight VMs", so called because they allow you to get VM-like capabilities, including segregated file systems, memory caps and separate networking layers, but without paying the price of having several operating systems running on one computer. This is done by sharing the kernel: each container re-uses the Linux kernel, which means less overhead per container. While I can only run two or three VMs on my laptop before it slows to a crawl, the same machine can often run 20 or 30 containers, especially if each one doesn't require a lot of CPU time or dedicated memory.
+Docker is based on [control groups (cgroups)][cgroups] and [namespace isolation][] in the Linux kernel, as well as union filesystems such as [aufs][], which together allow it to _contain_ processes and directory structures in containers.[^libcontainer update] These containers are often referred to as "lightweight VMs", so called because they allow you to get VM-like capabilities, including segregated file systems, memory caps and separate networking layers, but without paying the price of having several operating systems running on one computer. This is done by sharing the kernel: each container re-uses the Linux kernel, which means less overhead per container. While I can only run two or three VMs on my laptop before it slows to a crawl, the same machine can often run 20 or 30 containers, especially if each one doesn't require a lot of CPU time or dedicated memory.
 
 Of course, all this means you need to be running Linux. Fortunately, it's easy to spin up a virtual machine specifically for the purpose of running Docker containers.
 
@@ -36,15 +36,15 @@ On Windows, Docker Toolbox is your best choice—just download and run the insta
     $ brew install docker docker-machine docker-compose
     $ brew cask install virtualbox
 
-[Docker Toolbox]: https://www.docker.com/toolbox
-[Docker Compose]: https://docs.docker.com/compose/
-[VirtualBox]: https://www.virtualbox.org/
-[Homebrew]: http://brew.sh/
-[Caskroom]: http://caskroom.io/
+[docker toolbox]: https://www.docker.com/toolbox
+[docker compose]: https://docs.docker.com/compose/
+[virtualbox]: https://www.virtualbox.org/
+[homebrew]: http://brew.sh/
+[caskroom]: http://caskroom.io/
 
 ### Creating a VM
 
-If you installed Docker Toolbox, all you need to do is run the *Docker Quickstart* shortcut that should have been installed for you. On Windows, this runs in Cygwin, a Unix terminal in Windows which makes life way more consistent.
+If you installed Docker Toolbox, all you need to do is run the _Docker Quickstart_ shortcut that should have been installed for you. On Windows, this runs in Cygwin, a Unix terminal in Windows which makes life way more consistent.
 
 If you're going the manual route, once you have installed Docker and Docker Machine, you can create a new VM on VirtualBox:
 
@@ -83,7 +83,7 @@ With all that, you should be able to get started.
 
 ## Running Docker on Linux
 
-If you're already using Linux, congratulations! No virtual machines for you (though if you'd prefer that, scroll to the bottom of this section). You just need to run [an installation script][Installation on Ubuntu]. This guide is written for Ubuntu users, but there are lots more in the navigation menu.
+If you're already using Linux, congratulations! No virtual machines for you (though if you'd prefer that, scroll to the bottom of this section). You just need to run [an installation script][installation on ubuntu]. This guide is written for Ubuntu users, but there are lots more in the navigation menu.
 
 On Ubuntu and some other distros, `wget` isn't available, so you'll need to install it. You can check by running `which wget`; if the terminal shows the path to a binary, you're good to go. Otherwise:
 
@@ -95,7 +95,7 @@ Then follow the instructions in the page linked above. At the time of writing, t
     $ wget -qO- https://get.docker.com/gpg | sudo apt-key add -
     $ wget -qO- https://get.docker.com/ | sh
 
-It will instruct you to add yourself to the *docker* group if you'd like to use Docker without `sudo`. You can do this with the command provided:
+It will instruct you to add yourself to the _docker_ group if you'd like to use Docker without `sudo`. You can do this with the command provided:
 
     $ sudo usermod -aG docker $USER
 
@@ -103,10 +103,10 @@ Then just start it up:
 
     $ sudo service docker start
 
-As the Docker server is running locally, it will launch Docker processes alongside everything else on your system. This can be problematic, as Docker is not yet entirely stable, and it's sometimes necessary to restart your computer to flush errant processes. If you would like a little more containment than Docker can provide, it might be worth creating a virtual machine *anyway*. If you'd prefer this, you can just [install Docker Machine][Install Docker Machine] and follow the Mac instructions above.
+As the Docker server is running locally, it will launch Docker processes alongside everything else on your system. This can be problematic, as Docker is not yet entirely stable, and it's sometimes necessary to restart your computer to flush errant processes. If you would like a little more containment than Docker can provide, it might be worth creating a virtual machine _anyway_. If you'd prefer this, you can just [install Docker Machine][install docker machine] and follow the Mac instructions above.
 
-[Installation on Ubuntu]: https://docs.docker.com/installation/ubuntulinux/
-[Install Docker Machine]: https://docs.docker.com/machine/install-machine/
+[installation on ubuntu]: https://docs.docker.com/installation/ubuntulinux/
+[install docker machine]: https://docs.docker.com/machine/install-machine/
 
 ## Running Your First Application
 
@@ -140,7 +140,7 @@ This message shows that your installation appears to be working correctly.
 
 If it didn't work, and the output doesn't look much like that at all, then read on. Otherwise, if you see that or something quite like it, you're good to go! The next article will cover using Docker for something useful. You can skip the rest of this article and move straight on to the next one.
 
-[Docker Hub]: https://hub.docker.com/
+[docker hub]: https://hub.docker.com/
 
 ### But it broke!
 
@@ -170,13 +170,13 @@ If you still get no connection, try SSHing into the box:
 
     $ docker-machine ssh default
 
-Once there, you can view the Docker logs by checking */var/log/docker.log*. Look for any errors and start Googling.
+Once there, you can view the Docker logs by checking _/var/log/docker.log_. Look for any errors and start Googling.
 
 If you can't connect at all, it might be worth removing the machine entirely with `docker-machine rm` and starting from scratch.
 
 #### Linux without Docker Machine
 
-As you're running Docker natively, there's far fewer things that can go wrong, though when they do, they can cause serious problems. As above, it's worth checking */var/log/docker.log* for errors and Googling them. You can also restart the service; on Ubuntu, it goes like this:
+As you're running Docker natively, there's far fewer things that can go wrong, though when they do, they can cause serious problems. As above, it's worth checking _/var/log/docker.log_ for errors and Googling them. You can also restart the service; on Ubuntu, it goes like this:
 
     $ sudo service docker restart
 

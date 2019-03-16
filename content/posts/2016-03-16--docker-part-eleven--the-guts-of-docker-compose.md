@@ -29,7 +29,7 @@ We dug a little and found out that something's up in the Ubuntu configuration:
 
 ## Naming
 
-Docker Compose names all the various components of your application prefixed with the name of the directory, stripped of any special characters. As I'm working in a directory named *bemorerandom.com*, that becomes my prefix. It's true of the images and containers too:
+Docker Compose names all the various components of your application prefixed with the name of the directory, stripped of any special characters. As I'm working in a directory named _bemorerandom.com_, that becomes my prefix. It's true of the images and containers too:
 
     $ docker images
     REPOSITORY                  TAG         IMAGE ID            CREATED             SIZE
@@ -48,7 +48,7 @@ Volumes work similarly.
     DRIVER              VOLUME NAME
     local               bemorerandomcom_postgresql
 
-And, of course, networks are named in the same way. If you don't create an explicit network, one named *default* is created for you.
+And, of course, networks are named in the same way. If you don't create an explicit network, one named _default_ is created for you.
 
     $ docker network ls
     NETWORK ID          NAME                      DRIVER
@@ -57,9 +57,11 @@ And, of course, networks are named in the same way. If you don't create an expli
     8dd7c2e2a1b3        none                      null
     c5a22fe8becc        host                      host
 
-I have four networks. Three come out of the box—the default *bridge* network, the *host* network, which allows a container to share the host networking stack, and a null network named *none* which isolates a container from its peers. The fourth was created by Docker Compose, and is named *bemorerandomcom_default*. It's also a bridge network.
+<!-- prettier-ignore -->
+I have four networks. Three come out of the box—the default _bridge_ network, the _host_ network, which allows a container to share the host networking stack, and a null network named _none_ which isolates a container from its peers. The fourth was created by Docker Compose, and is named <em>bemorerandomcom\_default</em>. It's also a bridge network.
 
-DNS resolution on a Docker bridge network allows you to use the container name for lookup, and Docker Compose creates a network alias that maps, for example, *database* to *bemorerandomcom_database_1*. These are simply abbreviations for a longer DNS name of the form `<container>.<network>`. And so we can look up our database in that form, which seems to work:
+<!-- prettier-ignore -->
+DNS resolution on a Docker bridge network allows you to use the container name for lookup, and Docker Compose creates a network alias that maps, for example, _database_ to <em>bemorerandomcom\_database\_1</em>. These are simply abbreviations for a longer DNS name of the form `<container>.<network>`. And so we can look up our database in that form, which seems to work:
 
     $ docker run --rm -it --net=bemorerandomcom_default ubuntu bash
     root@f97a267c62ca:/# getent hosts database.bemorerandomcom_default
@@ -69,7 +71,7 @@ DNS resolution on a Docker bridge network allows you to use the container name f
     172.18.0.2      DGRAM
     172.18.0.2      RAW
 
-This time round, the *ahosts* lookup works. It's not ideal, as we're encoding the project name into the Docker Compose file, but we can use that:
+This time round, the _ahosts_ lookup works. It's not ideal, as we're encoding the project name into the Docker Compose file, but we can use that:
 
     services:
       api:
@@ -104,7 +106,7 @@ Now let's start it up.
 
 Oh, wonderful. We forgot to port the database initialisation. It turns out we can't get rid of that script completely. In order to have Docker Compose spin it up with everything else, we'll need to put it into a container, just like everything else.
 
-Let's give it its own directory, *init-db*, and create a Dockerfile:
+Let's give it its own directory, _init-db_, and create a Dockerfile:
 
     FROM postgres
     WORKDIR /app
@@ -176,8 +178,8 @@ And we're up! Sweet. Let's test it.
         }
     }
 
-Excellent. By using Docker Compose to manage our containers, we can worry less about *how* to start them and more about *what* they are. If we start it in daemon mode with `docker-compose up -d`, they'll run in the background, and we can simply rebuild and recreate them as necessary:
+Excellent. By using Docker Compose to manage our containers, we can worry less about _how_ to start them and more about _what_ they are. If we start it in daemon mode with `docker-compose up -d`, they'll run in the background, and we can simply rebuild and recreate them as necessary:
 
     $ docker-compose build && docker-compose up -d
 
-If we add new containers or change the way things need to be built, that'll still work. It just goes into the *docker-compose.yml* file, versioned with everything else. I love my shell scripts, but I'd still much rather that things worked well without them.
+If we add new containers or change the way things need to be built, that'll still work. It just goes into the _docker-compose.yml_ file, versioned with everything else. I love my shell scripts, but I'd still much rather that things worked well without them.

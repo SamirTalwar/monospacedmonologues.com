@@ -14,7 +14,7 @@ And they're right. It can be very noisy. Personally, I think the noise is worth 
 
 <!--more-->
 
-If you want to write your code so that exceptions are only surfaced at run-time, go for it. I won't stop you. However, I take issue with this when it comes to *interfaces*. If your interfaces aren't able to throw exceptions, even in environments where that would be reasonable, it can be really unpleasant for your implementors.
+If you want to write your code so that exceptions are only surfaced at run-time, go for it. I won't stop you. However, I take issue with this when it comes to _interfaces_. If your interfaces aren't able to throw exceptions, even in environments where that would be reasonable, it can be really unpleasant for your implementors.
 
 Let's take `java.lang.Runnable` as an example. Here's the full source code, without the comments:
 
@@ -35,7 +35,7 @@ My issue there is that `run` doesn't allow for any checked exceptions. However, 
         }
     });
 
-The Sun/Oracle folks fixed this somewhat by allowing us to use `Callable<V>` instead. The `call` method *does* allow for exceptions, and so makes our lives easier.
+The Sun/Oracle folks fixed this somewhat by allowing us to use `Callable<V>` instead. The `call` method _does_ allow for exceptions, and so makes our lives easier.
 
     package java.util.concurrent;
 
@@ -44,11 +44,11 @@ The Sun/Oracle folks fixed this somewhat by allowing us to use `Callable<V>` ins
         V call() throws Exception;
     }
 
-As the `ExecutorService` returns a `Future<V>` which will throw an `ExecutionException` on `get` if anything did go wrong, this is moot anyway. You have to handle that one, and that *is* checked.
+As the `ExecutorService` returns a `Future<V>` which will throw an `ExecutionException` on `get` if anything did go wrong, this is moot anyway. You have to handle that one, and that _is_ checked.
 
 When designing our own interfaces, we have a third option. Rather than throwing a checked or an unchecked exception, we can let the implementor decide.
 
-Take a look at my [`Serializer`][com.noodlesandwich.rekord.serialization.Serializer] interface from my [*Rekord*][Rekord] library.
+Take a look at my [`Serializer`][com.noodlesandwich.rekord.serialization.serializer] interface from my [_Rekord_][rekord] library.
 
     public interface Serializer<R, E extends Exception> {
         <T> R serialize(String name, FixedRekord<T> rekord) throws E;
@@ -56,7 +56,7 @@ Take a look at my [`Serializer`][com.noodlesandwich.rekord.serialization.Seriali
 
 This takes a `FixedRekord` and serializes it to an `R`. `R` can be an XML document, a JSON document, or maybe just a `java.util.Map` or a string. Now, serializing to JSON can cause exceptions, but converting a `Rekord` into a `Map` definitely won't throw an exception. If I had declared `serialize` as throwing `Exception`, you'd have to handle an exception in both cases, even when I could guarantee that one wouldn't be thrown in the latter case. Conversely, if I'd declared it without an exception, the JSON serialiser would have to wrap its exceptions in `RuntimeException`, which would mean the caller would be unaware of potential failure. Neither scenario is great.
 
-Here's the [JSON serializer][com.noodlesandwich.rekord.serialization.JacksonSerializer], which uses Jackson:
+Here's the [JSON serializer][com.noodlesandwich.rekord.serialization.jacksonserializer], which uses Jackson:
 
     public final class JacksonSerializer implements Serializer<Void, IOException> {
         private final Writer writer;
@@ -75,7 +75,7 @@ Here's the [JSON serializer][com.noodlesandwich.rekord.serialization.JacksonSeri
 
 `JacksonSerializer` will throw an `IOException` on failure, and the caller will have to make sure they can handle this, either by propagating it or doing something about it.
 
-Now let's look at my [`MapSerializer`][com.noodlesandwich.rekord.serialization.MapSerializer]:
+Now let's look at my [`MapSerializer`][com.noodlesandwich.rekord.serialization.mapserializer]:
 
     public final class MapSerializer implements SafeSerializer<Map<String, Object>> {
         @Override
@@ -86,7 +86,7 @@ Now let's look at my [`MapSerializer`][com.noodlesandwich.rekord.serialization.M
         ...
     }
 
-No exception. But that's a different interface, right? Of *course* the [`SafeSerializer`][com.noodlesandwich.rekord.serialization.SafeSerializer] wouldn't throw an exception. Well, here it is:
+No exception. But that's a different interface, right? Of _course_ the [`SafeSerializer`][com.noodlesandwich.rekord.serialization.safeserializer] wouldn't throw an exception. Well, here it is:
 
     public interface SafeSerializer<R> extends Serializer<R, ImpossibleException> {
         @Override
@@ -97,12 +97,12 @@ No exception. But that's a different interface, right? Of *course* the [`SafeSer
         private ImpossibleException() { }
     }
 
-The `SafeSerializer` *is* a `Serializer`, but parameterised with an exception that's impossible to construct, and so can never be thrown. That exception is a form of `RuntimeException`, and so isn't checked, and doesn't need to be handled by the caller. This means that when you invoke the `serialize` method on the `MapSerializer`, the compiler knows you don't need to handle the exception and won't force you to.
+The `SafeSerializer` _is_ a `Serializer`, but parameterised with an exception that's impossible to construct, and so can never be thrown. That exception is a form of `RuntimeException`, and so isn't checked, and doesn't need to be handled by the caller. This means that when you invoke the `serialize` method on the `MapSerializer`, the compiler knows you don't need to handle the exception and won't force you to.
 
 So there we have it. By parameterising the exception type, we can define an interface that is flexible enough to declare exceptional behaviour when it's present, but not force you to handle it when it's absent. The best of both worlds.
 
-[Rekord]: https://github.com/SamirTalwar/Rekord
-[com.noodlesandwich.rekord.serialization.Serializer]: https://github.com/SamirTalwar/Rekord/blob/master/core/src/main/java/com/noodlesandwich/rekord/serialization/Serializer.java
-[com.noodlesandwich.rekord.serialization.SafeSerializer]: https://github.com/SamirTalwar/Rekord/blob/master/core/src/main/java/com/noodlesandwich/rekord/serialization/SafeSerializer.java
-[com.noodlesandwich.rekord.serialization.JacksonSerializer]: https://github.com/SamirTalwar/Rekord/blob/master/jackson/src/main/java/com/noodlesandwich/rekord/serialization/JacksonSerializer.java
-[com.noodlesandwich.rekord.serialization.MapSerializer]: https://github.com/SamirTalwar/Rekord/blob/master/core/src/main/java/com/noodlesandwich/rekord/serialization/MapSerializer.java
+[rekord]: https://github.com/SamirTalwar/Rekord
+[com.noodlesandwich.rekord.serialization.serializer]: https://github.com/SamirTalwar/Rekord/blob/master/core/src/main/java/com/noodlesandwich/rekord/serialization/Serializer.java
+[com.noodlesandwich.rekord.serialization.safeserializer]: https://github.com/SamirTalwar/Rekord/blob/master/core/src/main/java/com/noodlesandwich/rekord/serialization/SafeSerializer.java
+[com.noodlesandwich.rekord.serialization.jacksonserializer]: https://github.com/SamirTalwar/Rekord/blob/master/jackson/src/main/java/com/noodlesandwich/rekord/serialization/JacksonSerializer.java
+[com.noodlesandwich.rekord.serialization.mapserializer]: https://github.com/SamirTalwar/Rekord/blob/master/core/src/main/java/com/noodlesandwich/rekord/serialization/MapSerializer.java

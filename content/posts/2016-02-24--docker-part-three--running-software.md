@@ -76,7 +76,7 @@ Great. That took a while though. We don't want to do that again. Let's save it a
 
 Mine's called `serene_aryabhata`, but you should use the name of your own.
 
-We're going to *commit* this container as an image. This saves the file system as an image. I'm going to call this image `google_gems`, as it's got the gem dependencies for my `google` program.
+We're going to _commit_ this container as an image. This saves the file system as an image. I'm going to call this image `google_gems`, as it's got the gem dependencies for my `google` program.
 
     $ docker commit serene_aryabhata google_gems
 
@@ -127,7 +127,7 @@ Now we can copy the contents of `google.rb`.
 
     $ cat > google.rb
 
-You may have noticed that nothing happened. This is because `cat` is waiting for your input. Paste the contents of the file. Make sure you end with a new line, then press *Ctrl+D* to send the end-of-file marker and signify to `cat` we're done. You can verify that you did it correctly by typing `cat google.rb` to print the contents again.
+You may have noticed that nothing happened. This is because `cat` is waiting for your input. Paste the contents of the file. Make sure you end with a new line, then press _Ctrl+D_ to send the end-of-file marker and signify to `cat` we're done. You can verify that you did it correctly by typing `cat google.rb` to print the contents again.
 
 Next, let's make it executable.
 
@@ -137,7 +137,7 @@ Brilliant. We have everything we need to create our final image. Let's commit it
 
     $ docker commit --change='ENTRYPOINT ["./google.rb"]' serene_aryabhata google
 
-See that? We didn't just commit, but we instructed Docker to make a change to the image as it committed. In this case, we instructed it to set the *entry point* of the Docker image to be our script, `./google.rb`. This means that any extra arguments passed to the `run` command will actually be passed to that entry point. Unlike the `ruby` image, which allowed us to override it and specify `bash` as our starting program, our `google` image won't.
+See that? We didn't just commit, but we instructed Docker to make a change to the image as it committed. In this case, we instructed it to set the _entry point_ of the Docker image to be our script, `./google.rb`. This means that any extra arguments passed to the `run` command will actually be passed to that entry point. Unlike the `ruby` image, which allowed us to override it and specify `bash` as our starting program, our `google` image won't.
 
 ## Run The Thing
 
@@ -175,4 +175,4 @@ So when you finally figure out how to extract the links from Google, you can cha
 
 ## Repeat The Thing
 
-You'll find that even though you have a decent process for copying files into the container and committing them, it's not exactly designed to be repeatable. After all, anything repeatable should be automatable, and this is definitely not that. Fortunately, the Docker folk have solved this one with *Dockerfiles*, which we'll be talking about tomorrow.
+You'll find that even though you have a decent process for copying files into the container and committing them, it's not exactly designed to be repeatable. After all, anything repeatable should be automatable, and this is definitely not that. Fortunately, the Docker folk have solved this one with _Dockerfiles_, which we'll be talking about tomorrow.

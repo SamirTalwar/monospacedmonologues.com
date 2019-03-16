@@ -6,19 +6,19 @@ aliases:
   - /post/54510150313/refactoring-to-feature
 ---
 
-*A note, while I've got you:* I've decided I will be posting a new
+_A note, while I've got you:_ I've decided I will be posting a new
 article every Wednesday for the forseeable future. Hopefully I can hold
 this up. Writing one per week is going to be hard, but I think I can
 handle it.
 
 Now, onto the meat.
 
-* * * * *
+---
 
 I've observed four main ways that people refactor.
 
 The first, and most common, is not at all. This is usually because
-there's a new feature that they just have to get done *now*, or is so
+there's a new feature that they just have to get done _now_, or is so
 complicated that refactoring "wouldn't help". It's also often scheduled
 to be done "later", where later is always some way off in the future.
 Because procrastination is always healthy.
@@ -29,7 +29,7 @@ reading this and therefore care somewhat about the quality of your work.
 <!--more-->
 
 The second, and also the second most common, is the "ad hoc" method.
-This is when you refactor whenever something really bothers you *and*
+This is when you refactor whenever something really bothers you _and_
 when you have time. This is a manifestation of the boy scout rule
 ("leave the camp site, or code, in a better state than when you found
 it"), and usually works pretty well. The code that angers you is

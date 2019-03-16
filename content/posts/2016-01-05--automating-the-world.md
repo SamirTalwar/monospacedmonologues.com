@@ -52,12 +52,12 @@ Boring, repetitive work isn't for humans, it's for computers. Let's automate it 
 
 ## Automating Performance Analysis
 
-Everything does its job… kinda. Your customers are complaining. Web pages take ten seconds or more to load. The nightly jobs aren't done by the morning. Hitting the *Generate Report* button makes the browser wait for minutes before it's ready.
+Everything does its job… kinda. Your customers are complaining. Web pages take ten seconds or more to load. The nightly jobs aren't done by the morning. Hitting the _Generate Report_ button makes the browser wait for minutes before it's ready.
 
 You can guess where the problems are, or you can measure it and solve it for good. I can help.
 
 ---
 
-If you need something automated, or your team needs help learning how to do it for themselves, let me know. You can email me at [samir@noodlesandwich.com](mailto:samir@noodlesandwich.com), or check out [my website][Noodle Sandwich] for more details.
+If you need something automated, or your team needs help learning how to do it for themselves, let me know. You can email me at [samir@noodlesandwich.com](mailto:samir@noodlesandwich.com), or check out [my website][noodle sandwich] for more details.
 
-[Noodle Sandwich]: http://noodlesandwich.com/
+[noodle sandwich]: http://noodlesandwich.com/

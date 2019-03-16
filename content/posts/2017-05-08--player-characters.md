@@ -26,11 +26,11 @@ What if that's not totally true?
 
 I'm not very good at playing characters. Some of my friends are. They change completely from game to game as they allow the people on screen to get into their heads. They change the way they think to accommodate their new shape, size and brain. It's why I can only play two or three characters in Street Fighter, but some people I know can flip to any single one and win.
 
-I want to know if there are people out there who play a character at work, not to hide anything, but because it allows them to do *better*. Playing a character might let you throw off the shackles of "I don't know how to do this" or "I wouldn't do it this way" and let you be someone else who can.
+I want to know if there are people out there who play a character at work, not to hide anything, but because it allows them to do _better_. Playing a character might let you throw off the shackles of "I don't know how to do this" or "I wouldn't do it this way" and let you be someone else who can.
 
 I want to work with those people too. I bet they're way better than me at pair programming.
 
-And just so you know, [I'm hiring][Prodo.AI Jobs].
+And just so you know, [I'm hiring][prodo.ai jobs].
 
-[GameCamp]: https://gamecamp.org.uk/
-[Prodo.AI Jobs]: https://prodo.ai/jobs
+[gamecamp]: https://gamecamp.org.uk/
+[prodo.ai jobs]: https://prodo.ai/jobs

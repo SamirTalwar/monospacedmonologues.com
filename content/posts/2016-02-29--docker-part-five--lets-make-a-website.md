@@ -10,7 +10,7 @@ OK, the weekend has happened and I can't remember where we left off. So let's re
 
 <!--more-->
 
-We had this program, *google.rb*, that Googled:
+We had this program, _google.rb_, that Googled:
 
     #!/usr/bin/env ruby
 
@@ -28,13 +28,13 @@ We had this program, *google.rb*, that Googled:
       puts header.text if header
     end
 
-A *Gemfile* that specified its dependencies:
+A _Gemfile_ that specified its dependencies:
 
     source 'https://rubygems.org'
 
     gem 'nokogiri'
 
-and a *Dockerfile* that told Docker how to build an image that held it all together:
+and a _Dockerfile_ that told Docker how to build an image that held it all together:
 
     FROM ruby
 
@@ -70,7 +70,7 @@ Once we have these three files, we can build a Docker image and run it:
 
 Simples. Of course, not many of us are shipping command-line applications to users, and even if we were, we can't always expect those users to have Docker installed and running. Where containerisation shines is when we have control of the computers we deploy to—for example, when we're creating a website.
 
-So let's write one. I just bought the domain, [*bemorerandom.com*][bemorerandom.com], and I want to spin up a web service that speaks JSON. This time round, I'm going to use Scala, not Ruby.
+So let's write one. I just bought the domain, [_bemorerandom.com_][bemorerandom.com], and I want to spin up a web service that speaks JSON. This time round, I'm going to use Scala, not Ruby.
 
 [bemorerandom.com]: https://bemorerandom.com/
 
@@ -78,9 +78,9 @@ So let's write one. I just bought the domain, [*bemorerandom.com*][bemorerandom.
 
 OK, it's a few hours later. I've figured how to make [Finatra][] work[^Finatra and Maven] and created a very simple web service. It's not hosted yet, but [it's real][bemorerandom.com repository] and I can run it locally. It generates random numbers.
 
-[^Finatra and Maven]: This was ridiculous. It turns out Finatra lives on its own Maven repository which has somewhat *relaxed* rules… in that the dependency chains are broken, so you need to express dependencies yourself. This is documented exactly nowhere. Remind me to write a post on how to do this.
+[^finatra and maven]: This was ridiculous. It turns out Finatra lives on its own Maven repository which has somewhat _relaxed_ rules… in that the dependency chains are broken, so you need to express dependencies yourself. This is documented exactly nowhere. Remind me to write a post on how to do this.
 
-[Finatra]: https://twitter.github.io/finatra/
+[finatra]: https://twitter.github.io/finatra/
 [bemorerandom.com repository]: https://github.com/SamirTalwar/bemorerandom.com
 
 Currently, it has one endpoint. When I run it locally and hit `http://localhost:8080/xkcd`, it returns this:
@@ -99,9 +99,9 @@ Truly, a better random number generator has never been seen.
 So. We have a web service. Let's package it up. As this is a Scala application, I'm going to choose OpenJDK 8 as my base. Azul Systems provide [a Docker image][azul/zulu-openjdk] with their own, certified version of OpenJDK, [Zulu][], which is a little more stable than Docker's official Java image, so I'm going to use that.
 
 [azul/zulu-openjdk]: https://hub.docker.com/r/azul/zulu-openjdk/
-[Zulu]: https://www.azul.com/products/zulu/
+[zulu]: https://www.azul.com/products/zulu/
 
-So, I got to writing a Dockerfile (named *api.Dockerfile*, because it's specific to my *api* subproject). Here's what I ended up with:
+So, I got to writing a Dockerfile (named _api.Dockerfile_, because it's specific to my _api_ subproject). Here's what I ended up with:
 
     FROM azul/zulu-openjdk:8
 
@@ -128,15 +128,15 @@ So, I got to writing a Dockerfile (named *api.Dockerfile*, because it's specific
 
 A lot of that is boilerplate. Let's go through it. In turn, we:
 
-  1. "Expose" port 8080 to the outside world. This is a way of instructing an image to *declare* that a port is exposed, which means we can ask it to map all its ports. More on this in a bit.
-  2. Install Maven. We need `curl` to download that, so the second line does that. The next batch downloads Maven (version 3.3.9, currently) and untars it to */opt/maven*.
-  3. Copy the relevant files over—specifically, the *pom.xml* files, which instruct Maven on how to build my application, and the source code of the application itself.
-  4. Build the application using `mvn package`.
-  5. Finally, set up the image to run the following command on start, which instructs the "api" subproject to run itself as a Java application:
+1.  "Expose" port 8080 to the outside world. This is a way of instructing an image to _declare_ that a port is exposed, which means we can ask it to map all its ports. More on this in a bit.
+2.  Install Maven. We need `curl` to download that, so the second line does that. The next batch downloads Maven (version 3.3.9, currently) and untars it to _/opt/maven_.
+3.  Copy the relevant files over—specifically, the _pom.xml_ files, which instruct Maven on how to build my application, and the source code of the application itself.
+4.  Build the application using `mvn package`.
+5.  Finally, set up the image to run the following command on start, which instructs the "api" subproject to run itself as a Java application:
 
         mvn --projects=api exec:java
 
-     We split the command into an entry point, Maven itself, tied to a subproject, which shouldn't change, and the command to be passed to Maven, which might well change. This means that we could, for example, use the same image to run the tests.
+    We split the command into an entry point, Maven itself, tied to a subproject, which shouldn't change, and the command to be passed to Maven, which might well change. This means that we could, for example, use the same image to run the tests.
 
 Right, time to build it:
 
@@ -148,7 +148,7 @@ Once it's done, we can run it:
 
     docker run -P --rm -it --name=bemorerandom.com-api samirtalwar/bemorerandom.com-api
 
-And we have a web server! (Eventually, after Maven downloads the *exec* plugin, which wasn't needed until just now.) That `-P` tells Docker to forward all exposed ports to the Docker host, and we can ask Docker itself which port it was forwarded to:
+And we have a web server! (Eventually, after Maven downloads the _exec_ plugin, which wasn't needed until just now.) That `-P` tells Docker to forward all exposed ports to the Docker host, and we can ask Docker itself which port it was forwarded to:
 
     $ docker port bemorerandom.com-api
     8080/tcp -> 0.0.0.0:32781

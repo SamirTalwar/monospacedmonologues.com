@@ -10,11 +10,11 @@ aliases:
 
 Yesterday, we created a container for PostgreSQL, my database of choice in a pinch. This was fairly simple, but had a problem you don't see with stateless applications: the data on disk needs to be preserved across restarts and even replacements of the container.
 
-Once the PostgreSQL container starts, it checks for a database in its own */var/lib/postgresql/data*. If there is no database there, it creates one (and we can tell it how using environment variables which this container is specifically designed to observe). If there is a database there, it uses it.
+Once the PostgreSQL container starts, it checks for a database in its own _/var/lib/postgresql/data_. If there is no database there, it creates one (and we can tell it how using environment variables which this container is specifically designed to observe). If there is a database there, it uses it.
 
 <!--more-->
 
-When we run containers, we can tell Docker to mount a *volume*. This takes the form of a path in the host, mounted as a path in the container. Here's a simple example. Imagine we have a script called *increment*:
+When we run containers, we can tell Docker to mount a _volume_. This takes the form of a path in the host, mounted as a path in the container. Here's a simple example. Imagine we have a script called _increment_:
 
     #!/bin/sh
 
@@ -32,12 +32,12 @@ When we run containers, we can tell Docker to mount a *volume*. This takes the f
 
 (The reason we write to a temporary file is in case the calculation fails for some reason; it won't overwrite the original file with nothing.)
 
-In case you were wondering, `dc` is a reverse-Polish notation calculator I learnt how to use about two minutes ago. If the */data/counter* file contains "7", we'll run `dc '7 1 + p'`, which means:
+In case you were wondering, `dc` is a reverse-Polish notation calculator I learnt how to use about two minutes ago. If the _/data/counter_ file contains "7", we'll run `dc '7 1 + p'`, which means:
 
-  1. Push `7` onto the stack.
-  2. Push `1` onto the stack.
-  3. Run the `+` operation, which pops the first two numbers off the stack and pushes their sum.
-  4. Run the `p` command, which peeks at the first value on the stack (but does not pop it) and prints it.
+1. Push `7` onto the stack.
+2. Push `1` onto the stack.
+3. Run the `+` operation, which pops the first two numbers off the stack and pushes their sum.
+4. Run the `p` command, which peeks at the first value on the stack (but does not pop it) and prints it.
 
 Basically, it outputs `8`.
 
@@ -60,7 +60,7 @@ Let's run it.
 
 It's… as we expected. The container creates a new file, increments it and prints it.
 
-However, if we *mount a volume* in the container, things are a bit different.
+However, if we _mount a volume_ in the container, things are a bit different.
 
     $ docker run --rm -it -v ~/Projects/increment/data:/data increment
     1
@@ -69,9 +69,9 @@ However, if we *mount a volume* in the container, things are a bit different.
     $ docker run --rm -it -v ~/Projects/increment/data:/data increment
     3
 
-Here, I've mounted a new directory (which was created for me), *data* in my current directory, to */data* on the host. This means that when my container writes to */data/counter*, it's actually writing to *~/Projects/increment/data/counter*, which, unlike my container, is persistent.
+Here, I've mounted a new directory (which was created for me), _data_ in my current directory, to _/data_ on the host. This means that when my container writes to _/data/counter_, it's actually writing to _~/Projects/increment/data/counter_, which, unlike my container, is persistent.
 
-(By the by, the reason this works when using Docker Machine is because the */Users* directory (on Mac OS) is a shared directory between the host and the VM. Docker uses standard Linux filesystem mounts, so it can't mount directories across networks.)
+(By the by, the reason this works when using Docker Machine is because the _/Users_ directory (on Mac OS) is a shared directory between the host and the VM. Docker uses standard Linux filesystem mounts, so it can't mount directories across networks.)
 
 So where does this leave us? If we want to preserve our database data, we can use the same tools. Stop and remove the PostgreSQL container, then restart it as follows:
 
@@ -86,7 +86,7 @@ Now, if I inspect the logs, I might see it won't start. Something like this:
 
     postgres cannot access the server configuration file "/var/lib/postgresql/data/postgresql.conf": Permission denied
 
-This is because the files don't have the correct permissions. There are two courses of action to take, depending on whether you're mounting files from the *actual* host or if you're sharing directories between your computer and the Docker host in a VM.
+This is because the files don't have the correct permissions. There are two courses of action to take, depending on whether you're mounting files from the _actual_ host or if you're sharing directories between your computer and the Docker host in a VM.
 
 If you're running containers directly on your operating system, you need to change the ownership of the directory you want to mount so it's owned by the `postgres` user. As you don't have that user on your machine, you need to find out what its ID is instead.
 
@@ -95,7 +95,7 @@ If you're running containers directly on your operating system, you need to chan
     total 4
     drwx------ 19 postgres root 4096 Mar  4 01:11 data
 
-We can see here that the */var/lib/postgresql/data* directory is owned by the `postgres` user, as we stated. We can now check for its user ID:
+We can see here that the _/var/lib/postgresql/data_ directory is owned by the `postgres` user, as we stated. We can now check for its user ID:
 
     # fgrep postgres /etc/passwd
     postgres:x:999:999::/home/postgres:/bin/sh
@@ -104,7 +104,7 @@ It has a user ID of `999`, which is also its own group ID. So we should change o
 
     $ chown -R 999:999 postgresql
 
-Now, if you're using a Docker Machine shared directory, things are a little different. The directories are *always* owned by the same user. Just SSH in and find out.
+Now, if you're using a Docker Machine shared directory, things are a little different. The directories are _always_ owned by the same user. Just SSH in and find out.
 
     $ docker-machine ssh
 
@@ -135,7 +135,7 @@ The first is mounting a volume without specifying a host directory. You can do t
 
     $ docker run -d -v /var/lib/postgresql/data postgres
 
-The second is a *data container*, which is a container which hosts the volumes.
+The second is a _data container_, which is a container which hosts the volumes.
 
     $ docker run --name=postgresql-data -d -v /var/lib/postgresql/data postgres true
 
@@ -143,7 +143,7 @@ We can then run our real container with volumes mounted from the data container:
 
     $ docker run -d --volumes-from=postgresql-data postgres
 
-Both of these create volume mounts, but hide them away in */var/lib/docker* with the rest of the container information. While we can use `docker inspect` to find out the volume path, it's still not very helpful, as it's very easy to destroy with `docker rm` and can't be easily shared across containers. For these reasons, I recommend you always mount data outside Docker, rather than relying on Docker to maintain your data.
+Both of these create volume mounts, but hide them away in _/var/lib/docker_ with the rest of the container information. While we can use `docker inspect` to find out the volume path, it's still not very helpful, as it's very easy to destroy with `docker rm` and can't be easily shared across containers. For these reasons, I recommend you always mount data outside Docker, rather than relying on Docker to maintain your data.
 
 ---
 

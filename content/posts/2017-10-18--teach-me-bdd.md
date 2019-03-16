@@ -47,7 +47,7 @@ The test case doesn't pass until you implement the feature.
 
 (BTW, a lot of people use "BDD" to mean "we have user stories" or "we have acceptance test cases", not necessarily the combination of the two. This is incorrect but common.)
 
-> Oh, I figured. My customer wants to write the acceptance criteria using GWT. You know, the front-end framework in Java.
+> Oh, I figured. My customer wants to write the acceptance criteria using GWT. You know, the front-end framework in Java.
 
 Bad idea.
 
@@ -118,7 +118,7 @@ Maybe they get complimentary prawn crackers. Of course, then you need another st
 
 Turns out BDD is pretty useful for exploring your edge cases!
 
-Now, remember, these are examples. In fact, some people refer to this technique as [Specification By Example][], because, well, you're writing a specification by aggregating examples. You don't need to cover every single possible outcome, but you do want to cover every *class* of outcomes.
+Now, remember, these are examples. In fact, some people refer to this technique as [Specification By Example][], because, well, you're writing a specification by aggregating examples. You don't need to cover every single possible outcome, but you do want to cover every _class_ of outcomes.
 
 > So I don't need to worry about every dish, but I do need to worry about what happens when the restaurant opens, when it closes, when a customer runs out, when something inevitably catches fire…
 >
@@ -161,7 +161,7 @@ Because you write them with the customer, then go to the programmer and they say
 
 This doesn't stop when you nail down the story. Sometimes a developer will be half-way through implementation and discover it just can't work that way, or that an edge case no one considered makes it infeasible. Hopefully, if they're smart, they'll talk to you, you'll talk to the customer, and you'll figure out a solution together.
 
-It's an expensive way to figure out requirements. However, it's still several orders of magnitude cheaper than *not* figuring out your requirements. And it turns out that Actually Talking To People is still the only solution that works.
+It's an expensive way to figure out requirements. However, it's still several orders of magnitude cheaper than _not_ figuring out your requirements. And it turns out that Actually Talking To People is still the only solution that works.
 
 This assumes your programmers are not drones. If they are, you're going to have problems.
 
@@ -179,7 +179,7 @@ So, further reading. Go read [The Cucumber Book][].
 
 This was inspired by a conversation [Azfarul Islam][] and I had many, many moons ago. It's not the actual content, but it's not far off. (Finally, a use for chat logs.) We hope you enjoyed it.
 
-[Ubiquitous Language]: https://martinfowler.com/bliki/UbiquitousLanguage.html
-[Specification By Example]: https://blog.red-badger.com/blog/2012/07/31/what-is-specification-by-example
-[The Cucumber Book]: https://pragprog.com/book/hwcuc2/the-cucumber-book-second-edition
-[Azfarul Islam]: https://www.linkedin.com/in/azfarulislam/
+[ubiquitous language]: https://martinfowler.com/bliki/UbiquitousLanguage.html
+[specification by example]: https://blog.red-badger.com/blog/2012/07/31/what-is-specification-by-example
+[the cucumber book]: https://pragprog.com/book/hwcuc2/the-cucumber-book-second-edition
+[azfarul islam]: https://www.linkedin.com/in/azfarulislam/

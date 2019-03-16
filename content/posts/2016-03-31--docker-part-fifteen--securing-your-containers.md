@@ -12,13 +12,13 @@ Up until now, we've been neglecting security in favour of getting our applicatio
 
 ## Docker Itself
 
-First and foremost, having Docker access is having root access. If you're in the `docker` group on your operating system, you might as well grant access to the root user. It's the same thing. Because any Docker container can be run as *root*, and the only thing keeping the user inside the container is, essentially, a chroot, you can easily just mount `/` as `/host` and do whatever you like inside the container as the root user.
+First and foremost, having Docker access is having root access. If you're in the `docker` group on your operating system, you might as well grant access to the root user. It's the same thing. Because any Docker container can be run as _root_, and the only thing keeping the user inside the container is, essentially, a chroot, you can easily just mount `/` as `/host` and do whatever you like inside the container as the root user.
 
-For the same reason, only mount the Docker socket (*/var/run/docker.sock*) when you absolutely trust the container in which it's mounted. Anything with access to that socket can simply start a new container with the host filesystem mounted and cause all sorts of damage if left unchecked.
+For the same reason, only mount the Docker socket (_/var/run/docker.sock_) when you absolutely trust the container in which it's mounted. Anything with access to that socket can simply start a new container with the host filesystem mounted and cause all sorts of damage if left unchecked.
 
 ## Attack Surface
 
-One of the beautiful things about containers is that they're *small*. My go-to for one-off pieces of work, [busybox][], is 1.1 MB right now. Granted, that's a Linux distro designed to be absolutely miniscule, but it's still pretty amazing.
+One of the beautiful things about containers is that they're _small_. My go-to for one-off pieces of work, [busybox][], is 1.1 MB right now. Granted, that's a Linux distro designed to be absolutely miniscule, but it's still pretty amazing.
 
 When creating an image, the fewer things, the less likely that an attacker that finds a hole will be able to exploit anything. OpenSSL is a great piece of software, but has had a few security vulnerabilities over the years. If you don't need it, don't install it.
 
@@ -34,20 +34,20 @@ Containers also provide the capability to limit CPU and memory access. For examp
 
 ## User Access
 
-Containers default to the root user unless you specify otherwise, either in the *Dockerfile* or by passing it the `--user` switch. Unfortunately, there are documented exploits that aren't too hard to run through which allow a root user to break out of the container and onto the host, at which point they'll have the run of the place.
+Containers default to the root user unless you specify otherwise, either in the _Dockerfile_ or by passing it the `--user` switch. Unfortunately, there are documented exploits that aren't too hard to run through which allow a root user to break out of the container and onto the host, at which point they'll have the run of the place.
 
-It's best to create a user on the container that's independent of anything on the host. There's usually a *nobody* user on the host which has no access to anything private, and which you can map to inside the container. On my Docker Machine VM, the *nobody* user has a user ID and group ID of `65534`, so if I were to create a user and group with those IDs inside the image and run as those, I'd definitely be unable to access anything outside even if I were to find a way to access the host. If you do need data on the local filesystem, you can create a user specifically for the purpose with a UID/GID that's unused on the host instead.
+It's best to create a user on the container that's independent of anything on the host. There's usually a _nobody_ user on the host which has no access to anything private, and which you can map to inside the container. On my Docker Machine VM, the _nobody_ user has a user ID and group ID of `65534`, so if I were to create a user and group with those IDs inside the image and run as those, I'd definitely be unable to access anything outside even if I were to find a way to access the host. If you do need data on the local filesystem, you can create a user specifically for the purpose with a UID/GID that's unused on the host instead.
 
-Unfortunately, when you *do* add files to the image, you'll find you need to `chown` them to your new user, as the `COPY` directive in your Dockerfile [always copies files as the root user][Docker #6119]. This is no fun at all, and it's why I'm lazy and stick to *root* in my images despite advice to the contrary.
+Unfortunately, when you _do_ add files to the image, you'll find you need to `chown` them to your new user, as the `COPY` directive in your Dockerfile [always copies files as the root user][docker #6119]. This is no fun at all, and it's why I'm lazy and stick to _root_ in my images despite advice to the contrary.
 
-[Docker #6119]: https://github.com/docker/docker/issues/6119
+[docker #6119]: https://github.com/docker/docker/issues/6119
 
 ## Kernel Security
 
-[Docker's own page on security][Docker Security] goes into detail on how to secure the host system, so I won't delve too much. Suffice it to say that because containers share the kernel with the host system, safety measures such as AppArmor or SELinux apply to containers as well. Lock down the host, and your containers will be safer as a result.
+[Docker's own page on security][docker security] goes into detail on how to secure the host system, so I won't delve too much. Suffice it to say that because containers share the kernel with the host system, safety measures such as AppArmor or SELinux apply to containers as well. Lock down the host, and your containers will be safer as a result.
 
-[Docker Security]: https://docs.docker.com/engine/security/security/
+[docker security]: https://docs.docker.com/engine/security/security/
 
 ## And More
 
-This is just the tip of the iceberg. Containers aren't virtual machines, they're wrappers around processes. If you don't want it running on your computer, containers may not help you. Be careful, and treat them just like you would any other piece of code: if you found it on the Internet, read it first, understand the ramifications of running it, and definitely do not just hit the *Go* button without knowing what you're doing.
+This is just the tip of the iceberg. Containers aren't virtual machines, they're wrappers around processes. If you don't want it running on your computer, containers may not help you. Be careful, and treat them just like you would any other piece of code: if you found it on the Internet, read it first, understand the ramifications of running it, and definitely do not just hit the _Go_ button without knowing what you're doing.

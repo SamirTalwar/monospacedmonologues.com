@@ -62,7 +62,7 @@ Someone who can keep focused on the topic or work at hand, but does not dismiss 
 
 ---
 
-This list was created without order, though many of these qualities are related. Together, I believe they embody wisdom, open-mindedness, humility, drive, and many other traits I believe are crucial for good software development. Critically, unlike those traits, they are *actionable*: one can strive to achieve these things in a way that you cannot for something fuzzier, such as "open-mindedness". From the other point of view, hiring or contracting a software a developer, one can (ideally) look for these traits irrespective of a person's background, race, gender or any other discriminating factors.
+This list was created without order, though many of these qualities are related. Together, I believe they embody wisdom, open-mindedness, humility, drive, and many other traits I believe are crucial for good software development. Critically, unlike those traits, they are _actionable_: one can strive to achieve these things in a way that you cannot for something fuzzier, such as "open-mindedness". From the other point of view, hiring or contracting a software a developer, one can (ideally) look for these traits irrespective of a person's background, race, gender or any other discriminating factors.
 
 When working in a team, I hope to see these qualities in my colleagues and co-workers.
 
@@ -70,4 +70,4 @@ Whenever I'm working on software, I hope to see these qualities in myself.
 
 ---
 
-*Thanks to [Ben Summers](https://twitter.com/bensummers) for provoking this blog post, as well as providing very useful feedback.*
+_Thanks to [Ben Summers](https://twitter.com/bensummers) for provoking this blog post, as well as providing very useful feedback._

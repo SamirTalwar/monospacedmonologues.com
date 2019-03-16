@@ -62,8 +62,7 @@ objects like (almost) everything else in Java. Functions aren't special;
 classes and objects are the building blocks of the programming language,
 and the functional aspects of it are designed with that in mind.
 
-Naming
-------
+## Naming
 
 Naming is important. There's a new interface in Java 8 called
 `java.util.function.Supplier`, which has one method:
@@ -108,8 +107,7 @@ And thanks to method references, we can even short-circuit that:
 
 (Ask me about method references some time.)
 
-And as a bonus
---------------
+## And as a bonus
 
 Funnily enough, Guava's `Function` type is a functional interface too.
 
@@ -126,7 +124,7 @@ Backwards-compatibility is a lovely thing when it's done right. Lambdas
 in Java have been a long time coming, but now they're just around the
 corner and I'm really looking forward to them.
 
-*If you want to experiment with lambdas, download the [early access
+_If you want to experiment with lambdas, download the [early access
 release](http://jdk8.java.net/lambda/). The latest versions of [IntelliJ
 IDEA](http://www.jetbrains.com/idea/) have great support for Java 8 with
-lambdas.*
+lambdas._

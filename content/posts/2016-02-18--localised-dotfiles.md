@@ -61,10 +61,10 @@ Then move everything that you don't want to push up to the Interwebs into that f
 
 That first line uses a home-grown script, [`javav`][javav], to add Java 8 to my `PATH`. The next four set up a connection to my Docker VM (using [Docker Machine][]). These are things that might not make any sense on another computer. I might, for example, not be using Docker, or using Linux, where that `javav` script doesn't work.
 
-That last block is a function that sets up a working environment for one of my clients, *Awesome Client, PLC*. It moves to the right directory, sets up node.js and Ruby with the correct versions, and starts a Docker instance specifically for that project. This makes no sense on any machine but this one, and so here it goes.
+That last block is a function that sets up a working environment for one of my clients, _Awesome Client, PLC_. It moves to the right directory, sets up node.js and Ruby with the correct versions, and starts a Docker instance specifically for that project. This makes no sense on any machine but this one, and so here it goes.
 
 I try to make an effort to keep this file as small as possible. `$PATH` manipulation that used to be in my `.zshenv.local` file is now in my [`.zshenv`][.zshenv] file, surrounded by `if` blocks when necessary. It's nice to have a split between private and public, though, and while this isn't the fanciest of tricks, simple works.
 
 [javav]: https://github.com/SamirTalwar/fygm/blob/master/bin/mac/javav
 [.zshenv]: https://github.com/SamirTalwar/fygm/blob/master/dotfiles/zshenv
-[Docker Machine]: https://docs.docker.com/machine/overview/
+[docker machine]: https://docs.docker.com/machine/overview/

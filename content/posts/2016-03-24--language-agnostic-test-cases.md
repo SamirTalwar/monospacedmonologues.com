@@ -18,7 +18,7 @@ Another interesting feature is that if you switch programming languages, your te
 
 {{% asset "Smoke output" "2016-03-24+-+smoke.png" %}}
 
-This got me thinking a lot. For high-level integration tests, *should* we be using test frameworks that are coupled to the programming language? Wouldn't it be better to use frameworks that are coupled to the interface? One that pops to mind is [Aspec][], an HTTP API test framework that, sadly, looks pretty defunct. Its tests look like this (taken straight from the linked article):
+This got me thinking a lot. For high-level integration tests, _should_ we be using test frameworks that are coupled to the programming language? Wouldn't it be better to use frameworks that are coupled to the interface? One that pops to mind is [Aspec][], an HTTP API test framework that, sadly, looks pretty defunct. Its tests look like this (taken straight from the linked article):
 
     # create and retrieve artist trackings
     POST /users/7/artists/1    204
@@ -28,5 +28,5 @@ This got me thinking a lot. For high-level integration tests, *should* we be usi
 Just musin'. Muse with me. Check out [Smoke][] and tell me if it's useful (and why it's not). Speculate wildly on separating your interface integration tests from your code some more. And let me know in the comments what you think.
 
 [@sleepyfox]: https://twitter.com/sleepyfox
-[Smoke]: https://github.com/SamirTalwar/Smoke
-[Aspec]: http://devblog.songkick.com/2012/12/06/introducing-aspec-a-black-box-api-testing-dsl/
+[smoke]: https://github.com/SamirTalwar/Smoke
+[aspec]: http://devblog.songkick.com/2012/12/06/introducing-aspec-a-black-box-api-testing-dsl/

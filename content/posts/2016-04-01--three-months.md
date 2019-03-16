@@ -12,11 +12,11 @@ It's been three months since I started this new phase of my life. Time to take s
 
 Here were my goals for the year, health-wise, from my post, [State of Mind][].
 
-  1. No sweets or processed sugar.
-  2. No bread or pasta.
-  3. No meat.
-  4. Exercise a little bit every day.
-  5. Run, climb or cycle a couple of times a week.
+1. No sweets or processed sugar.
+2. No bread or pasta.
+3. No meat.
+4. Exercise a little bit every day.
+5. Run, climb or cycle a couple of times a week.
 
 <!--more-->
 
@@ -30,9 +30,9 @@ I have managed to avoid pasta with only a few lapses. Bread was easy until I sta
 
 In January, I had very little meat. In February, I had a lot. Now I'm back to a fairly small amount—a couple of days per week have meat in them—and I'm loving it. I feel healthier.
 
-I'm exercising, but not every day. I managed every single day in January, but starting full-time work near the beginning of February put a stop to that. I'm currently averaging a couple times per week. I've found that mornings really aren't my thing, no matter how much I *really want* to exercise then, so I'm going to start looking into lunchtime or after-work gym classes instead.
+I'm exercising, but not every day. I managed every single day in January, but starting full-time work near the beginning of February put a stop to that. I'm currently averaging a couple times per week. I've found that mornings really aren't my thing, no matter how much I _really want_ to exercise then, so I'm going to start looking into lunchtime or after-work gym classes instead.
 
-[State of Mind]: http://monospacedmonologues.com/post/136803119487/state-of-mind
+[state of mind]: http://monospacedmonologues.com/post/136803119487/state-of-mind
 
 ## Consulting
 
@@ -44,8 +44,8 @@ I expect I'll be at this client for a while longer, if they'll have me, but I'd 
 
 I worked on two personal open-source projects in the last few months:
 
-  * [Smoke][], an integration test framework for console applications.
-  * [safe-promises][], a library that forces you to handle errors in JavaScript promises.
+- [Smoke][], an integration test framework for console applications.
+- [safe-promises][], a library that forces you to handle errors in JavaScript promises.
 
 I rewrote the [Haplo Safe View Templates][] build system so that Maven handles all the things, rather than a collection of scripts and checked-in dependencies.
 
@@ -53,10 +53,10 @@ I also contributed a tiny amount to [SDKMAN!][], an installation manager for JVM
 
 I'm pretty awful at contributing to open-source software most of the time. I like to write my own code and put it online, but I don't really add to stuff that's already out there. This is something I want to improve upon. GitHub makes it so easy to fork some software, make some changes and raise a pull request that it's almost a crime not to.
 
-[Smoke]: https://github.com/SamirTalwar/Smoke
+[smoke]: https://github.com/SamirTalwar/Smoke
 [safe-promises]: https://www.npmjs.com/package/safe-promises
-[Haplo Safe View Templates]: https://github.com/haplo-org/haplo-safe-view-templates
-[SDKMAN!]: http://sdkman.io/
+[haplo safe view templates]: https://github.com/haplo-org/haplo-safe-view-templates
+[sdkman!]: http://sdkman.io/
 
 ## Moving House
 

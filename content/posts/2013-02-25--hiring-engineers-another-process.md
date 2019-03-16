@@ -15,8 +15,7 @@ number of things, but simply my thoughts on the interview process.
 
 <!--more-->
 
-"If you don't have time to read this, we are not a good fit."
--------------------------------------------------------------
+## "If you don't have time to read this, we are not a good fit."
 
 I think this is fair, but I also think it's pretty specific to Eran. You
 could interpret it one of two ways: he could be talking about reading
@@ -28,8 +27,7 @@ reflects Eran's reality, but not the realities of most of us: he's a
 notable individual in a position to dictate the means of negotiation,
 whether he's the one in the hot seat or the one grilling.
 
-"I got up and said, "I'm going home now"."
-------------------------------------------
+## "I got up and said, "I'm going home now"."
 
 Eran goes into quite a bit of detail on "What Not to Do", but it can be
 summed up fairly simply: know what you're looking for and don't
@@ -50,8 +48,7 @@ going to be a waste of time.
 
 In short, have some standards. Your interviewers do.
 
-"I don't phone screen. I don't read resumes."
----------------------------------------------
+## "I don't phone screen. I don't read resumes."
 
 Instead of resumes (or CVs), Eran favours your GitHub account. I love
 this attitude: I do too. I often tell people that the first four things
@@ -73,8 +70,7 @@ diverse personalities and backgrounds. To be honest, I don't think I'd
 ever say no to a first interview. Of course, with that comes volume. And
 that leads me to my next point.
 
-"I suck at writing code on demand."
------------------------------------
+## "I suck at writing code on demand."
 
 That's OK, because the first round is simply a technical test: write
 some code for me to solve a very simple problem, then send it back. If
@@ -110,15 +106,14 @@ client-facing jobs such as mine than in Eran's. If I change the
 requirements afterwards, you should be able to cope gracefully. This
 isn't something that can be tested well in any situation aside from a
 real-world scenario, but I can simulate it pretty well in the interview
-room. What's more, it *requires* a product to be produced there and
+room. What's more, it _requires_ a product to be produced there and
 then, after the discussion. I'm a fan of agile software development: you
 should be delivering quickly, showing me the end result, and reacting to
 any and all feedback. And being able to take a step back, realise that a
-previous decision doesn't make sense given new information, and *fix
-it*, rather than letting the problem fester.
+previous decision doesn't make sense given new information, and _fix
+it_, rather than letting the problem fester.
 
-"I'm not going to make shit up."
---------------------------------
+## "I'm not going to make shit up."
 
 Eran has definitely convinced me about a few things. The first:
 whiteboards suck. From now on, I will ask someone to write their code on
@@ -156,8 +151,7 @@ actually spend a few hours pair-programming with them on a real feature
 or bug fix. I can't pull this off at my current job right now, but I
 think I'll be pushing for something like this in the future.
 
-Do's and don'ts.
-----------------
+## Do's and don'ts.
 
 Just go read these. They're so important. My favourite, which I'm going
 to adopt immediately:
@@ -168,8 +162,7 @@ to adopt immediately:
 This is so obvious in retrospect I feel like an idiot for **not** doing
 it.
 
-"You references and past work is what we should really rely on for verifying your claims."
-------------------------------------------------------------------------------------------
+## "You references and past work is what we should really rely on for verifying your claims."
 
 I agree with this statement completely, but I don't think we're there
 yet. Most programmers don't build portfolios like designers or artists
@@ -177,8 +170,7 @@ do. That should change, because more and more organisations are starting
 to think like Eran, and if you don't have some work on display, you're
 going to be left behind.
 
-"Inspire others to break away"
-------------------------------
+## "Inspire others to break away"
 
 Eran's definitely inspired me to think more about recruiting. I wrote
 this post partially as a way to try and get some concrete thoughts out.

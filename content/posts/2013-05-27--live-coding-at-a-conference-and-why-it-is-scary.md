@@ -12,7 +12,7 @@ In less than a week, I'm giving my first ever professional talk at the
 [I.T.A.K.E. Unconference](http://itakeunconf.com/) in Romania. The
 topic: [the four elements of simple
 design](http://www.jbrains.ca/permalink/the-four-elements-of-simple-design),
-and how functional programming is *absolutely necessary* to achieve
+and how functional programming is _absolutely necessary_ to achieve
 them.
 
 I'm quite excited.

@@ -131,9 +131,9 @@ Networks don't often get created by accident, so I'd like to leave those alone f
 
 Volumes can be created in one of three ways:
 
-  1. we've created it explicitly with `docker volume create`,
-  2. we bound a volume but didn't give it a target with the `-v` flag, passed to `docker run`, or
-  3. the image we're using specifies that a certain directory must be mounted as a volume.
+1. we've created it explicitly with `docker volume create`,
+2. we bound a volume but didn't give it a target with the `-v` flag, passed to `docker run`, or
+3. the image we're using specifies that a certain directory must be mounted as a volume.
 
 I operate on a simple policy: if I care about the data, I name the volume. If I don't care, I don't bother. This allows me to easily distinguish between the volumes I care about and the one's I don't: the volumes I didn't create have names that consist of 64 characters of hexadecimal.
 
@@ -159,7 +159,7 @@ Finally, we pipe it to `docker volume rm`:
 
 ## A Simple Script
 
-I keep a simple cleanup script named [*docker-cleanup*][docker-cleanup] on my *PATH*, consisting of those three lines. I run it whenever I find myself squinting at the output of `docker ps` or `docker images`, trying to find the item I want. It doesn't just keep my system clean, but my mind too.
+I keep a simple cleanup script named [_docker-cleanup_][docker-cleanup] on my _PATH_, consisting of those three lines. I run it whenever I find myself squinting at the output of `docker ps` or `docker images`, trying to find the item I want. It doesn't just keep my system clean, but my mind too.
 
     #!/usr/bin/env zsh
 

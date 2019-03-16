@@ -16,7 +16,7 @@ Here's an easy way to make a calculator REPL:
 
 <!--more-->
 
-In Bash (and other shells), `$((…))` is the syntax for an *arithmetic expansion*. Anything inside the parentheses is evaluated as most programming languages would, for integer maths (no floating-point magic here). So you can do simple maths:
+In Bash (and other shells), `$((…))` is the syntax for an _arithmetic expansion_. Anything inside the parentheses is evaluated as most programming languages would, for integer maths (no floating-point magic here). So you can do simple maths:
 
     $ echo $((2 + 2))
     4
@@ -42,7 +42,7 @@ So, when we run our "program", we can even use variables, as long as we declare 
     3 * apple_price
     51
 
-Unfortunately, we can't do the same with functions. My [triangular number][Triangular number] function works fine in the shell itself but can't be used as part of an arithmetic expression:
+Unfortunately, we can't do the same with functions. My [triangular number][triangular number] function works fine in the shell itself but can't be used as part of an arithmetic expression:
 
     $ $ function triangular { echo $(($1 * ($1 + 1) / 2)); }
     $ triangular 4
@@ -73,7 +73,7 @@ Let's try it.
 
 Still nothing.
 
-Unfortunately, `sed` buffers when piping to something else. I was pairing with [@sleepyfox][] a couple of weeks ago in a workshop, and it really confused us, so this is actually the original inspiration for this post. When I hit *Ctrl+D* to send the end-of-file character and tell `read` we're done here, `sed` flushes its buffer.
+Unfortunately, `sed` buffers when piping to something else. I was pairing with [@sleepyfox][] a couple of weeks ago in a workshop, and it really confused us, so this is actually the original inspiration for this post. When I hit _Ctrl+D_ to send the end-of-file character and tell `read` we're done here, `sed` flushes its buffer.
 
     <Ctrl+D>
     16
@@ -96,5 +96,5 @@ Running it:
 
 Excellent.
 
-[Triangular number]: https://en.wikipedia.org/wiki/Triangular_number
+[triangular number]: https://en.wikipedia.org/wiki/Triangular_number
 [@sleepyfox]: https://twitter.com/sleepyfox

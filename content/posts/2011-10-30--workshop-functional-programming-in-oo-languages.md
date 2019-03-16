@@ -20,7 +20,7 @@ pleasure.
 
 Key to the idea of functional programming is immutability—never mutating
 existing information, only creating more. This embodies the idea of a
-*function*: a black box that takes in data, processes it in some way and
+_function_: a black box that takes in data, processes it in some way and
 then outputs something else. At no point does this function communicate
 with the outside world except to deliver the result. It's side-effect
 free, which brings us a whole host of benefits, such as parallelisation,
@@ -64,7 +64,7 @@ I've come up with a few rules you should follow.
     If you're developing in Java, this means that all fields should be
     `final`. `readonly` in C\#. Everyone else, just don't do it.
 3.  **Methods must end by returning.** Functions. One thing in, one
-    thing out. Emphasis on the *out*.
+    thing out. Emphasis on the _out_.
 4.  **Every single statement** (apart from the aforementioned return)
     **must be assignment to new variables only**. Again, mark them as
     `final` if you can.

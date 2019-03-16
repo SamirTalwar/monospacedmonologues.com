@@ -23,13 +23,12 @@ readability and maintainability by scrapping the whole concept.
 
 The real answer is a bit more complex. I'm getting to that.
 
-The first thing I want to talk about is a design pattern called *Null
-Objects*.
+The first thing I want to talk about is a design pattern called _Null
+Objects_.
 
 <!--more-->
 
-Null Objects
-------------
+## Null Objects
 
 Null Objects are more useful in a statically-typed language such as Java
 or C\#, but proponents of duck typing may also find them quite useful.
@@ -72,7 +71,7 @@ lets me instantiate my `Hash` with a default value to use instead of
 
 Now I can lose the rejection altogether, as I'll get zeroes for the days
 I'm not open, which won't impact the sum at all. In this situation, `0`
-is a *null object*: a real, live object with behaviour that doesn't at
+is a _null object_: a real, live object with behaviour that doesn't at
 all impact the operations surrounding it.
 
     dates = (Date.new(2010, 1, 1) .. Date.new(2010, 12, 31))
@@ -85,8 +84,7 @@ to see here", I could just use an empty list—it's really the same thing,
 but I don't have to litter my code with branches to ensure my code
 operates correctly.
 
-Primitives are so… primitive
-----------------------------
+## Primitives are so… primitive
 
 This is all fairly simple when dealing with numbers and other basic
 types, but it can help you with more complex structures too. Say I have

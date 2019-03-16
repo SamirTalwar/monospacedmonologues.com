@@ -8,9 +8,9 @@ aliases:
 
 I'm getting pretty excited about the idea of a completely decentralised World Wide Web.
 
-Last year I went to the [Mozilla Festival][]. I loved it. I could only make one of the two days, but it was enough for me. The highlight was the [Beaker Browser][], a browser that's able to request *and serve* web pages over a secure peer-to-peer networking protocol called [DAT][DAT Project].
+Last year I went to the [Mozilla Festival][]. I loved it. I could only make one of the two days, but it was enough for me. The highlight was the [Beaker Browser][], a browser that's able to request _and serve_ web pages over a secure peer-to-peer networking protocol called [DAT][dat project].
 
-Over the holidays, I decided to serve [my website][Noodle Sandwich] over DAT using the Beaker Browser, just to see how it goes. And I discovered something really interesting.
+Over the holidays, I decided to serve [my website][noodle sandwich] over DAT using the Beaker Browser, just to see how it goes. And I discovered something really interesting.
 
 <!--more-->
 
@@ -36,16 +36,15 @@ There's a trade-off here. My website used to just be a bunch of HTML and CSS, wi
 
 But it's also more open. Everything happens on the client now. The site can be served from anywhere (even a CDN), which makes it much truer to how the web used to be, and how I'd like it to be again: a collection of resources, shared by everyone, and not a bunch of walled gardens without any interoperability.
 
-[And now it's served over DAT too][Noodle Sandwich over DAT], and mirrored by [Hashbase][], which means I don't need to be online for you to view it. Try it out in [Beaker][Beaker Browser] sometime.
+[And now it's served over DAT too][noodle sandwich over dat], and mirrored by [Hashbase][], which means I don't need to be online for you to view it. Try it out in [Beaker][beaker browser] sometime.
 
-[Noodle Sandwich]: https://noodlesandwich.com/
-[Noodle Sandwich over DAT]: dat://noodlesandwich.com/
+[noodle sandwich]: https://noodlesandwich.com/
+[noodle sandwich over dat]: dat://noodlesandwich.com/
 [database.json]: https://noodlesandwich.com/database.json
 [database.yaml]: https://github.com/SamirTalwar/noodlesandwich.com/blob/master/database.yaml
-
-[Beaker Browser]: https://beakerbrowser.com/
-[DAT Project]: https://datproject.org/
-[Font Awesome]: http://fontawesome.io/
-[Hashbase]: https://hashbase.io/
-[Mozilla Festival]: https://mozillafestival.org/
-[Pug]: https://pugjs.org/
+[beaker browser]: https://beakerbrowser.com/
+[dat project]: https://datproject.org/
+[font awesome]: http://fontawesome.io/
+[hashbase]: https://hashbase.io/
+[mozilla festival]: https://mozillafestival.org/
+[pug]: https://pugjs.org/

@@ -42,7 +42,7 @@ My opinion is that the authors of jMock ([Nat
 Pryce](https://twitter.com/natpryce) and [Steve
 Freeman](https://twitter.com/sf105)) knew what they were doing. They
 hint at it with their JAR names—the override for mocking classes is in a
-JAR named *jmock-legacy-[version].jar*, implying that you should only
+JAR named _jmock-legacy-[version].jar_, implying that you should only
 use this when testing legacy code.
 
 That's not because they don't want you to test legacy code. It's because
@@ -62,7 +62,7 @@ function and Twitter itself, which means my code will be inflexible and
 hard to change later. The reason Nat and Steve made it difficult to mock
 out classes is because they didn't want you to couple the implementation
 of collaborators—instead, you should be mocking at the interface level.
-Testing collaboration between concrete classes *should* be hard—as Steve
+Testing collaboration between concrete classes _should_ be hard—as Steve
 has so often said, **your tests are telling you something**. Listen to
 them. Fix your code.
 
@@ -85,7 +85,7 @@ Same behaviour, roughly the same test, and the only thing to change in
 the implementation is an extra parameter. This was even easier to do
 than it is in Java or C\#! So what does it give us?
 
-By replacing some code that overrides behaviour with code that *injects*
+By replacing some code that overrides behaviour with code that _injects_
 the dependency, we reduce our system's reliance on one specific source
 of information and make it far more flexible. Now, if I decide I want to
 work with Facebook, I can add that functionality without touching the

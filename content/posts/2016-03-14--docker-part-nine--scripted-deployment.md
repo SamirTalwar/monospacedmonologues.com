@@ -6,7 +6,7 @@ aliases:
   - /post/141021458366/docker-part-nine-scripted-deployment
 ---
 
-We left off [more than a week ago][Docker, Part Eight: Turn Up The Volume] with an introduction to Docker volumes (amended in [part eight and a half][Docker, Part Eight and a Half: docker volume]), which showed how to persist data across container restarts and upgrades. By the end of it, we could start [the bemorerandom.com API service][bemorerandom.com] and its database with just a few commands:
+We left off [more than a week ago][docker, part eight: turn up the volume] with an introduction to Docker volumes (amended in [part eight and a half][docker, part eight and a half: docker volume]), which showed how to persist data across container restarts and upgrades. By the end of it, we could start [the bemorerandom.com API service][bemorerandom.com] and its database with just a few commands:
 
 <!--more-->
 
@@ -87,7 +87,7 @@ Then we can use the same technique to determine whether we need to run these at 
         $PSQL -c "CREATE DATABASE bemorerandom WITH OWNER $DB_USER"
     fi
 
-As we're now scripting this, we need to be sure that the previous command has finished. Some of the commands only terminate after completing their work, but starting the PostgreSQL container in *detached* mode means that the command terminates after starting the container, not when the database is running. We need some way of waiting for PostgreSQL to start. The simplest way is just to issue a query repeatedly until it succeeds:
+As we're now scripting this, we need to be sure that the previous command has finished. Some of the commands only terminate after completing their work, but starting the PostgreSQL container in _detached_ mode means that the command terminates after starting the container, not when the database is running. We need some way of waiting for PostgreSQL to start. The simplest way is just to issue a query repeatedly until it succeeds:
 
     while ! $PSQL -c 'SELECT 1' > /dev/null; do
         sleep 1
@@ -158,8 +158,8 @@ String that all together, and we have a script for starting up all the relevant 
 
 The only thing we're not doing is checking whether the containers already exist before starting them, which I'd like to leave as an exercise for the reader.
 
-So. That's a long script. It's not too complicated, but it does a lot of different things some of the time, and it's not clear why everything has to happen and in that order. Tomorrow, we'll take a look at a much more declarative way of doing the same thing with *Docker Compose*.
+So. That's a long script. It's not too complicated, but it does a lot of different things some of the time, and it's not clear why everything has to happen and in that order. Tomorrow, we'll take a look at a much more declarative way of doing the same thing with _Docker Compose_.
 
-[Docker, Part Eight: Turn Up The Volume]: http://monospacedmonologues.com/post/140436373509/docker-part-eight-turn-up-the-volume
-[Docker, Part Eight and a Half: docker volume]: http://monospacedmonologues.com/post/140618924626/docker-part-eight-and-a-half-docker-volume
+[docker, part eight: turn up the volume]: http://monospacedmonologues.com/post/140436373509/docker-part-eight-turn-up-the-volume
+[docker, part eight and a half: docker volume]: http://monospacedmonologues.com/post/140618924626/docker-part-eight-and-a-half-docker-volume
 [bemorerandom.com]: https://github.com/SamirTalwar/bemorerandom.com

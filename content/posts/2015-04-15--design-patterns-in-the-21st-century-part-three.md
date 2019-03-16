@@ -8,11 +8,11 @@ aliases:
 
 This is part three of my talk, [Design Patterns in the 21st Century][].
 
-[Design Patterns in the 21st Century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html
+[design patterns in the 21st century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html
 
 ---
 
-The Adapter pattern bridges worlds. In one world, we have an interface for a concept; in another world, we have a different interface. These two interfaces serve different purposes, but sometimes we need to transfer things across. In a well-written universe, we can use *adapters* to make objects following one protocol adhere to the other.
+The Adapter pattern bridges worlds. In one world, we have an interface for a concept; in another world, we have a different interface. These two interfaces serve different purposes, but sometimes we need to transfer things across. In a well-written universe, we can use _adapters_ to make objects following one protocol adhere to the other.
 
 <!--more-->
 
@@ -35,9 +35,9 @@ There are two kinds of Adapter pattern. We're not going to talk about this one:
         }
     }
 
-This form, the *class Adapter pattern*, freaks me out, because `extends` gives me the heebie jeebies. *Why* is out of the scope of this essay; feel free to ask me any time and I'll gladly talk your ears (and probably your nose) off about it.
+This form, the _class Adapter pattern_, freaks me out, because `extends` gives me the heebie jeebies. _Why_ is out of the scope of this essay; feel free to ask me any time and I'll gladly talk your ears (and probably your nose) off about it.
 
-Instead, let's talk about the *object Adapter pattern*, which is generally considered far more useful and flexible in all regards.
+Instead, let's talk about the _object Adapter pattern_, which is generally considered far more useful and flexible in all regards.
 
 Let's take a look at the same class, following this alternative:
 
@@ -67,7 +67,7 @@ That's nice, right?
 
 Yes. Sort of. We can do better.
 
-We already have a reference to a `Fire`, so constructing another object just to play with it seems a bit… overkill. And that object implements `Oven`. Which has a *single abstract method*. I'm seeing a trend here.
+We already have a reference to a `Fire`, so constructing another object just to play with it seems a bit… overkill. And that object implements `Oven`. Which has a _single abstract method_. I'm seeing a trend here.
 
 Instead, we can make a function that does the same thing.
 
@@ -112,7 +112,7 @@ This won't work:
 
     tasks.forEach(executor);
 
-It turns out the `forEach` method on `Stream` *does* take a consumer, but a very specific type:
+It turns out the `forEach` method on `Stream` _does_ take a consumer, but a very specific type:
 
     public interface Stream<T> {
         ...

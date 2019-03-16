@@ -144,7 +144,7 @@ work around this rule. AAARRGGHHHHHHH. Why is writing such a simple test
 so difficult? You keep talking until that smiling git without a
 moustache shows up and asks you why you've got a getter. "Because how
 else do we test it?" "Tell, don't ask. What does your object `do`?" It
-lives or dies, duh. "No, that's what it *is*. Its state. What's its
+lives or dies, duh. "No, that's what it _is_. Its state. What's its
 behaviour?"
 
 You don't know. "You should probably figure that out." Eventually, it
@@ -156,13 +156,13 @@ He's not shouting "DELETE YOUR CODE", but everyone else is, chanting in
 unison as they engage in the destruction of their hard-earned work as if
 it were a ritual slaughter. It almost is. The discussion for this one is
 fascinating. Many found the last rule the hardest in this situation, but
-people were asking about all of them, wondering *why* you'd want to keep
+people were asking about all of them, wondering _why_ you'd want to keep
 your classes to a maximum of two fields. It seems ridiculous. And
-wrapping *all* primitives? Wow. You collectively come to the realisation
+wrapping _all_ primitives? Wow. You collectively come to the realisation
 that these are guidelines, not hard and fast rules: you shouldn't be
 afraid to break them, but you should understand why you're doing so. The
 funny-haired man talks about how they make you name things, which in
-turn makes you think about what something actually *is*. One guy points
+turn makes you think about what something actually _is_. One guy points
 out how this goes against a lot of ideas about how functional code is
 supposed to look. He's right, it does. Functional programming and
 object-oriented programming do often go in two different directions. You
@@ -260,16 +260,16 @@ especially object calisthenics. Your brain has decided that properties
 are a bad thing, and you feel a bit of anguish every time you write one.
 Your tests are angelic in their beauty, and you feel a pang of sadness
 as the coffee mug rings and your pair gently takes the laptop from you,
-almost callously hitting the *Delete* key and vaporising your glorious
+almost callously hitting the _Delete_ key and vaporising your glorious
 creation.
 
 You feel a tear running down your cheek, but not from sadness. You've
 finally realised that it's not the destination that's important, it's
 the journey.
 
-* * * * *
+---
 
-*This is a rather dramatised account of a fictional programmer who
+_This is a rather dramatised account of a fictional programmer who
 attended last Saturday's Global Day of Coderetreat in London. The code
 and emotions are made up, but the events are real (except in the case of
 session four, where Olly and I were pretty close to smacking each other…
@@ -281,4 +281,4 @@ letting me (the man without a moustache) pretend I was helping. Cheers
 to [Valtech UK](https://twitter.com/valtech) for providing us with a
 great space and delicious food. It was, by all accounts, a great
 success, and I'm looking forward to doing it again soon. And hopefully
-I'll know what I'm doing next time.*
+I'll know what I'm doing next time._

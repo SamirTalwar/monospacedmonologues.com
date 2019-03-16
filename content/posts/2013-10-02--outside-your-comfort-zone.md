@@ -50,17 +50,17 @@ ones matter more, because other people care about them too.
 
 Sure, all of that's available on the Internet too—you don't have to have
 a conversation. There's one thing you'll get out of meeting new people
-that you really *can't* find on the Internet, though: when you talk to
+that you really _can't_ find on the Internet, though: when you talk to
 people, especially about topics they're passionate about, you'll share
 your ideas too. Some of them will help influence their thinking for the
 rest of their lives, but some will get shot down immediately. Most will
 be somewhere in between. This feedback will help you figure out which of
-your ideas are *good* and which are *bad*, and in the future, enable you
+your ideas are _good_ and which are _bad_, and in the future, enable you
 to easily differentiate between good and bad ideas. The importance of
 this across all disciplines cannot be overstated.
 
 Oh, and as a bonus, when you converse with other programmers, you'll
-improve your ability to communicate *precisely* and *clearly*, which
+improve your ability to communicate _precisely_ and _clearly_, which
 will drastically help with that whole business communication stuff I
 mentioned earlier, all for free.
 

@@ -23,7 +23,7 @@ Cleaning, of course, starts with testing.
 <!--more-->
 
 **Session one**: understand the code. Just read it. Don't change it.
-Don't start refactoring. *Please* don't start fixing it. Just find out
+Don't start refactoring. _Please_ don't start fixing it. Just find out
 what it does.
 
 Know what it does? Alright, prove it. Start writing tests. Write tests
@@ -35,11 +35,11 @@ ago. Everyone's staring at you.
 What was hard? Did you feel the urge to start changing the code? Yes?
 Good. You're normal. We all do. The trick is to not give in to instinct.
 
-Right. Onto **session two**. Session two is a *bit* different. Testing's
+Right. Onto **session two**. Session two is a _bit_ different. Testing's
 too easy. Let's make something that makes the test. We're going to
-create a *golden master*.
+create a _golden master_.
 
-The [*trivia*](https://github.com/jbrains/trivia) project is a nice one
+The [_trivia_](https://github.com/jbrains/trivia) project is a nice one
 with which to do this, as all the output is dependent on a single random
 number generator. And while the numbers are pseudorandom, we can control
 which branch of the randomness comes out simply by providing a seed. By
@@ -68,7 +68,7 @@ get stuck.
 It's important to note that the golden master is not a replacement for
 unit tests. Rather, it gives you a safety net. The tests will tell you
 that something changed, but not what. They also won't tell you whether
-it *should* have changed—you need to decide that for yourself. What you
+it _should_ have changed—you need to decide that for yourself. What you
 really have here are a lot of very slow, crap tests. This is better than
 no tests at all, but not by much. The next thing to do is to go back to
 what we were doing in session one: writing unit tests to cover code.
@@ -79,7 +79,7 @@ golden master tests sitting there, ready.
 Our **third session** brought in another technique that has been dubbed
 "subclass to test". The idea is to identify what [Michael
 Feathers](http://books.google.com/books/about/Working_effectively_with_legacy_code.html)
-calls a *seam*: an area of code you can modify without changing the
+calls a _seam_: an area of code you can modify without changing the
 actual code itself. In this case, we can modify a method for testing by
 subclassing and overriding the specific method. Combined with extracting
 methods, this is a very powerful tool for getting code under test. For
@@ -129,6 +129,6 @@ This was the first half of the day. I think it went pretty well, and the
 feedback was great. In my next post, I'll be tackling the second half:
 fixing the code base.
 
-[*Part two of the Legacy Code Retreat double act is now available. I
+[_Part two of the Legacy Code Retreat double act is now available. I
 hope you enjoy
-it.*](http://monospacedmonologues.com/post/28752243811/legacy-code-retreat-part-two-knock-it-out-of-the-park)
+it._](http://monospacedmonologues.com/post/28752243811/legacy-code-retreat-part-two-knock-it-out-of-the-park)

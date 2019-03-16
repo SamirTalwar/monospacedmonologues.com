@@ -6,7 +6,7 @@ aliases:
   - /post/139411961508/the-worst-kind-of-open-source
 ---
 
-There's a growing trend among software developers which I absolutely love. More and more, people are checking their *dotfiles* (configuration files, normally starting with "`.`") and other personal scripts into version control and pushing them up to the Internet. It's mostly selfish—just a useful way to make sure we don't lose them, to be honest, and perhaps help us set up another computer quickly.
+There's a growing trend among software developers which I absolutely love. More and more, people are checking their _dotfiles_ (configuration files, normally starting with "`.`") and other personal scripts into version control and pushing them up to the Internet. It's mostly selfish—just a useful way to make sure we don't lose them, to be honest, and perhaps help us set up another computer quickly.
 
 There's also one massive benefit I've found to pushing [my configuration files and shell scripts][fygm] up to GitHub.
 
@@ -20,10 +20,10 @@ Let's be clear. This is open-source software, same as anything else, but it's th
 
 I can't decide whether or not this is a good thing. If I were to package and release, for example, [my Git scripts][fygm/bin/git], I'd probably get it wrong. I'd have to optimistically generalise in some places, test in environments I don't have easy access to, and overall, put in way more effort than I'm ready to for things I change at a whim, while drunk, often in the middle of something else with very little forethought.
 
-After all, [as Sandi Metz said][The Wrong Abstraction]:
+After all, [as Sandi Metz said][the wrong abstraction]:
 
 > Duplication is far cheaper than the wrong abstraction.
 
 [fygm]: https://github.com/SamirTalwar/fygm
 [fygm/bin/git]: https://github.com/SamirTalwar/fygm/tree/master/bin/git
-[The Wrong Abstraction]: http://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction
+[the wrong abstraction]: http://www.sandimetz.com/blog/2016/1/20/the-wrong-abstraction

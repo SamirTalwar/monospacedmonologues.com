@@ -44,17 +44,17 @@ That's it. No mention of `finatra-jackson`, `inject-core`, `inject-app`, `inject
 
 Classifiers, in Maven, are a mechanism for publishing alternate artifacts that correspond to the same project. These all share the same POM, as they're part of the same project, but the actual contents are different. We can use this, along with a naming convention, to publish more than one artifact at a time, and often we do—the source code and the Javadoc are commonly published alongside, using the `sources` and `javadoc` classifiers respectively.
 
-Twitter have done the same, but published one further: `tests`. (Oh, and `tests-sources` and `tests-javadoc`.) The `tests` JAR contains the compiled contents of the *src/test/java* directory—essentially, Twitter are publishing their test cases. This is fine for posterity, but it's not just tests in there—it's test utilities too. A lot of these are referred to in the documentation, and you're expected to depend on these test JARs to write your own test cases.
+Twitter have done the same, but published one further: `tests`. (Oh, and `tests-sources` and `tests-javadoc`.) The `tests` JAR contains the compiled contents of the _src/test/java_ directory—essentially, Twitter are publishing their test cases. This is fine for posterity, but it's not just tests in there—it's test utilities too. A lot of these are referred to in the documentation, and you're expected to depend on these test JARs to write your own test cases.
 
 However, there's a snag. Because these are simply secondary artifacts in the same project, they share a dependency tree, and nowhere does the dependency tree specify that `finatra-http` with the `tests` classifier have a different set of dependencies to the version without. It can't—one project, one tree. This could be seen as a limitation of Maven, but regardless of the reason, the tooling simply doesn't allow for this.
 
 The result? When testing code that uses Finatra, you have to bring in all the dependencies yourself, whether you're using Maven, SBT, Gradle or something else I've never even considered. Maven is much more verbose than the other two, but any solution that requires duplication of dependencies in this fashion has got something funny going on.
 
-The solution? Stop publishing the test cases—no one needs them—and publish the test utilities as a separate project entirely. My own project, [Rekord][], publishes a set of projects, [including `rekord-test-support`][Rekord on Maven Central] which is depended upon by the tests of other subprojects. This works very well, and it's not too difficult to scale it up to one per project—just add "-testing" to the artifact name or something. This way, they don't share dependency trees and the burden of maintaining the dependency tree for testing doesn't fall on Finatra's users.
+The solution? Stop publishing the test cases—no one needs them—and publish the test utilities as a separate project entirely. My own project, [Rekord][], publishes a set of projects, [including `rekord-test-support`][rekord on maven central] which is depended upon by the tests of other subprojects. This works very well, and it's not too difficult to scale it up to one per project—just add "-testing" to the artifact name or something. This way, they don't share dependency trees and the burden of maintaining the dependency tree for testing doesn't fall on Finatra's users.
 
-So come on, Twitter. Let's get this sorted. If any of the maintainers of [Twitter's Maven repository][] are reading this and want some help, [drop me a line][@SamirTalwar].
+So come on, Twitter. Let's get this sorted. If any of the maintainers of [Twitter's Maven repository][] are reading this and want some help, [drop me a line][@samirtalwar].
 
-[Rekord]: https://github.com/SamirTalwar/Rekord
-[Rekord on Maven Central]: https://search.maven.org/#search|ga|1|g%3A%22com.noodlesandwich%22%20rekord
-[Twitter's Maven repository]: https://maven.twttr.com/
-[@SamirTalwar]: https://twitter.com/SamirTalwar
+[rekord]: https://github.com/SamirTalwar/Rekord
+[rekord on maven central]: https://search.maven.org/#search|ga|1|g%3A%22com.noodlesandwich%22%20rekord
+[twitter's maven repository]: https://maven.twttr.com/
+[@samirtalwar]: https://twitter.com/SamirTalwar

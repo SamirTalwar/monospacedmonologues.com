@@ -46,8 +46,8 @@ Now I'm exploring an idea which I think will help: what if we could compose proc
 
 I really miss working with Haskell. But not like this.
 
-[Over The Finish Line]: https://overthefinishline.com/
-[Elm]: http://elm-lang.org/
-[Eleven]: https://github.com/SamirTalwar/eleven
+[over the finish line]: https://overthefinishline.com/
+[elm]: http://elm-lang.org/
+[eleven]: https://github.com/SamirTalwar/eleven
 [@jcinnamond]: https://twitter.com/jcinnamond
 [@mateuadsuara]: https://twitter.com/mateuadsuara

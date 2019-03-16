@@ -8,11 +8,11 @@ aliases:
 
 This is part two of my talk, [Design Patterns in the 21st Century][].
 
-[Design Patterns in the 21st Century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html
+[design patterns in the 21st century]: http://talks.samirtalwar.com/design-patterns-in-the-21st-century.html
 
 ---
 
-This pattern is used *everywhere* in Java code, especially in more "enterprisey" code bases. It involves an interface and an implementation. The interface looks something like this:
+This pattern is used _everywhere_ in Java code, especially in more "enterprisey" code bases. It involves an interface and an implementation. The interface looks something like this:
 
     public interface Bakery {
         Pastry bakePastry(Topping topping);

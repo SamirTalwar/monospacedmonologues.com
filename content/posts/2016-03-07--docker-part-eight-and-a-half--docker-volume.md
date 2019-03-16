@@ -18,7 +18,7 @@ First off, we need to create one.
 
     $ docker volume create --name=bemorerandom-postgresql
 
-This will create a directory somewhere under */var/lib/docker*:
+This will create a directory somewhere under _/var/lib/docker_:
 
     $ docker volume inspect bemorerandom-postgresql
     [
@@ -37,7 +37,7 @@ Now, when we run PostgreSQL, we can just use the name of the volume rather than 
         -v bemorerandom-postgresql:/var/lib/postgresql/data \
         postgres
 
-Everything else proceeds as normal, except that as Docker is managing the volume, we don't need to worry about file permissions because the container *will* be able to write to the mount point, guaranteed. We can just start our application:
+Everything else proceeds as normal, except that as Docker is managing the volume, we don't need to worry about file permissions because the container _will_ be able to write to the mount point, guaranteed. We can just start our application:
 
     $ docker run \
         -d \

@@ -12,11 +12,11 @@ It turns out I really don't like talks.
 
 <!--more-->
 
-I mean, I knew I didn't like *attending* or watching talks (at least, those that take longer than five minutes—lightning talks are, in general, great). But 30 to 60 minutes of someone drivelling on as they wander around a stage? Count me out. Even if I'm sitting in the front row, I'll be fiddling with my phone within about 3 minutes. On a good day. On a bad day it'll be 3 seconds. (Yes, I do this in lightning talks too, but that's really, really bad of me. I promise to stop.)
+I mean, I knew I didn't like _attending_ or watching talks (at least, those that take longer than five minutes—lightning talks are, in general, great). But 30 to 60 minutes of someone drivelling on as they wander around a stage? Count me out. Even if I'm sitting in the front row, I'll be fiddling with my phone within about 3 minutes. On a good day. On a bad day it'll be 3 seconds. (Yes, I do this in lightning talks too, but that's really, really bad of me. I promise to stop.)
 
 But what surprised me this year is that I really don't like the other side of talks either: the talking.
 
-I really thought I did. I thought that I loved the sound of my own voice enough that it made the talk fun for me, and apparently not everyone is like me (a lesson I'm still learning, and will be learning for the rest of my days), so I figured that it was a win-win situation: I got to rant in front of people, and they got to listen to my wonderful voice. *(cough, cough)*
+I really thought I did. I thought that I loved the sound of my own voice enough that it made the talk fun for me, and apparently not everyone is like me (a lesson I'm still learning, and will be learning for the rest of my days), so I figured that it was a win-win situation: I got to rant in front of people, and they got to listen to my wonderful voice. _(cough, cough)_
 
 Except it turns out I don't like it at all.
 
@@ -38,4 +38,4 @@ The feedback was really good too. People seemed to appreciate that it was inform
 
 I'm going to be doing this a lot more in the future. I can't wait.
 
-[Computer Science Noobs]: https://www.meetup.com/Computer-Science-Noobs/
+[computer science noobs]: https://www.meetup.com/Computer-Science-Noobs/

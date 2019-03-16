@@ -31,8 +31,7 @@ tweet:
 pretty well. Hopefully that's enough to tell people what I do: get angry
 about code. And then hopefully fix things.
 
-The Four Elements of Simple Design
-----------------------------------
+## The Four Elements of Simple Design
 
 After that brief introduction, I started talking about the four elements
 of simple design. I used [J. B. Rainsberger's
@@ -61,11 +60,10 @@ code base so it better conformed to those three rules.
 
 Below are three examples. I won't explain why they conform better to the
 four elements; that's for you to decide. Obviously, I think they do, but
-rather than listen to me telling you *why* a piece of code is better, I
+rather than listen to me telling you _why_ a piece of code is better, I
 think you'll get more out of the exercise by reasoning about it.
 
-Refactoring \#1: Loops
-----------------------
+## Refactoring \#1: Loops
 
 I started with this code:
 
@@ -115,8 +113,7 @@ same thing without any boilerplate at all:
                .forEach(renderer::render);
     }
 
-Refactoring \#2: Comparisons
-----------------------------
+## Refactoring \#2: Comparisons
 
 The next section of the talk focused on this code:
 
@@ -202,8 +199,7 @@ have to pick a side: quite often, you can write code that encompasses
 the best principles of both. What's more object-oriented than
 polymorphism?
 
-Refactoring \#3: Mutability
----------------------------
+## Refactoring \#3: Mutability
 
 The last example concerned some horrible code to merge two Quacker
 timelines into a single feed. I'm not going to show the code here,

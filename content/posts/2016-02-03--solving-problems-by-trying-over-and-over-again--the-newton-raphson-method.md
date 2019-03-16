@@ -6,7 +6,7 @@ aliases:
   - /post/138595611508/solving-problems-by-trying-over-and-over-again
 ---
 
-I was re-reading [Slash Slash Massive Hack][] as I wrote yesterday's blog post, and was reminded of the awesomeness of the Newton-Raphson method. [Wikipedia explains it better than I][Newton's method]:
+I was re-reading [Slash Slash Massive Hack][] as I wrote yesterday's blog post, and was reminded of the awesomeness of the Newton-Raphson method. [Wikipedia explains it better than I][newton's method]:
 
 > In numerical analysis, Newton's method (also known as the Newton–Raphson method), named after Isaac Newton and Joseph Raphson, is a method for finding successively better approximations to the roots (or zeroes) of a real-valued function.
 
@@ -14,15 +14,15 @@ I was re-reading [Slash Slash Massive Hack][] as I wrote yesterday's blog post, 
 
 Well, at least, it explains it using more complicated words than I. Let's break it down a little. I will be pulling information liberally from Wikipedia, so you might find it easier to follow along there.
 
-The *root* of a function has a description as a mathematical formula:
+The _root_ of a function has a description as a mathematical formula:
 
 $ x : f(x) = 0. $
 
 What this means is that the Newton-Raphson method is a method for finding some input, $x$, such that the output of the function $f$ is $0$. This allows us to solve some problems of the form "easy to do, hard to undo".
 
-The classic example of a use of the method is the *square root* function. The method doesn't allow us to solve this directly, but it does allow us to solve a related problem.
+The classic example of a use of the method is the _square root_ function. The method doesn't allow us to solve this directly, but it does allow us to solve a related problem.
 
-The square root function, `sqrt`, is defined as $x : x^2 = y$. Unfortunately, if we want to find the square root of $9$, the method can't find $x : x^2 = 9$. However, if we subtract $9$ from both sides, we *can* solve for this function:
+The square root function, `sqrt`, is defined as $x : x^2 = y$. Unfortunately, if we want to find the square root of $9$, the method can't find $x : x^2 = 9$. However, if we subtract $9$ from both sides, we _can_ solve for this function:
 
 $ f(x) = x^2 - 9 $
 
@@ -100,6 +100,6 @@ We want the first pair where the two values are the same (or close enough), so i
 
 And that, folks, is how you calculate the square root of a number.
 
-[Slash Slash Massive Hack]: http://monospacedmonologues.com/post/137738860257/slash-slash-massive-hack
-[Newton's method]: https://en.wikipedia.org/wiki/Newton's_method
+[slash slash massive hack]: http://monospacedmonologues.com/post/137738860257/slash-slash-massive-hack
+[newton's method]: https://en.wikipedia.org/wiki/Newton's_method
 [numeric-experiments]: https://github.com/SamirTalwar/numeric-experiments

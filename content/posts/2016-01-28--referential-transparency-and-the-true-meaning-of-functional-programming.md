@@ -10,9 +10,9 @@ Programming is compromise. No matter how you design your system, you will be com
 
 Before you carry on, I suggest you read the last three articles:
 
-  1. [Getters, Setters and Properties][]
-  2. [Why Couple Data to Behaviour?][]
-  3. [The Other Trade-off: Separating Data and Behaviour][]
+1. [Getters, Setters and Properties][]
+2. [Why Couple Data to Behaviour?][]
+3. [The Other Trade-off: Separating Data and Behaviour][]
 
 The previous three articles in this series focus on different trade-offs we can make, comparing object-oriented and functional code. I'd like to tie these two together. But first, I'd like to talk about referential transparency.
 
@@ -20,7 +20,7 @@ The previous three articles in this series focus on different trade-offs we can 
 
 ## Referential Transparency
 
-From [the Haskell wiki][Referential transparency]:
+From [the Haskell wiki][referential transparency]:
 
 > Referential transparency is an oft-touted property of (pure) functional languages, which makes it easier to reason about the behavior of programs. I don't think there is any formal definition, but it usually means that an expression always evaluates to the same result in any context. Side effects like (uncontrolled) imperative update break this desirable property. C and ML are languages with constructs that are not referentially transparent.
 
@@ -32,7 +32,7 @@ In a system where everything is referentially transparent, everything must of co
 
 (The `_` symbol is a placeholder for the input to the lambda expression. `_ % 2 == 0` could also be written as `n => n % 2 == 0.`)
 
-If sequences in Scala were mutable, `numbers.filter(even)` could not be guaranteed to return the same value each time in the same context, or scope. Once `numbers` is set, it cannot be modified, but we *can* call our `even` function again with a different sequence, which results in a different context and therefore a different result.
+If sequences in Scala were mutable, `numbers.filter(even)` could not be guaranteed to return the same value each time in the same context, or scope. Once `numbers` is set, it cannot be modified, but we _can_ call our `even` function again with a different sequence, which results in a different context and therefore a different result.
 
 This style of design is antithetical to typical object-oriented design, in which messages are passed to objects and return values are optional. In this style of programming, mutation is normal, and objects can manipulate their state at will—just take our `Account` class from the first article as an example.
 
@@ -90,7 +90,7 @@ Let's step to the side for a moment and look at the `List[A]` abstract class in 
       override val isEmpty = false
     }
 
-Here, we have a linked list implemented as a union of `Nil` and `::` (pronounced "cons", because it *constructs* lists, and treated as an operator with the `head` on the left and the `tail` on the right), which we can use to construct a list. For example, `List(1, 2, 3, 4, 5)` is really:
+Here, we have a linked list implemented as a union of `Nil` and `::` (pronounced "cons", because it _constructs_ lists, and treated as an operator with the `head` on the left and the `tail` on the right), which we can use to construct a list. For example, `List(1, 2, 3, 4, 5)` is really:
 
     1 :: 2 :: 3 :: 4 :: 5 :: Nil
 
@@ -104,21 +104,20 @@ Notice that we don't have any methods on `List` except for three very basic ones
 
 We can add any behaviour we like to `List[A]` without much hassle with simple deconstruction and pattern-matching.
 
-But… what if we want to switch to handling array-backed lists instead of linked lists? Arrays don't have `head` and `tail`, they're just contiguous blocks of memory, and reimplementing them in terms of a *head* and *tail* is a great way to lose any performance benefits you might achieve from them. Any functions we implement on top of `List[A]` will have to be completely rewritten. It's a much more complicated and time-consuming operation.
+But… what if we want to switch to handling array-backed lists instead of linked lists? Arrays don't have `head` and `tail`, they're just contiguous blocks of memory, and reimplementing them in terms of a _head_ and _tail_ is a great way to lose any performance benefits you might achieve from them. Any functions we implement on top of `List[A]` will have to be completely rewritten. It's a much more complicated and time-consuming operation.
 
 ## And So, The Crux Of The Matter
 
 Object-oriented programming and functional programming are both wonderful tools, and to a certain extent you can get the values of both in your code. However, in some cases, you will need to make a decision on the direction in which you want to be flexible. Sometimes you can achieve both, but often at the cost of simplicity.
 
-Object-oriented code is made up of *open sets* of implementations, but the behaviour being implemented is generally a *closed set*.[^1] Functional programming, conversely, has a *closed set* of implementations, but the behaviour is completely *open*—anyone can add a new piece of behaviour that operates on a data structure. This is not to say that you can only write object-oriented code in Java or only functional code in Haskell, but the languages do lend themselves toward that style of design.
+Object-oriented code is made up of _open sets_ of implementations, but the behaviour being implemented is generally a _closed set_.[^1] Functional programming, conversely, has a _closed set_ of implementations, but the behaviour is completely _open_—anyone can add a new piece of behaviour that operates on a data structure. This is not to say that you can only write object-oriented code in Java or only functional code in Haskell, but the languages do lend themselves toward that style of design.
 
-Regardless of your choice of language, your choice of paradigm will have far-reaching consequences to the kinds of changes you can easily make to your software, which will have a direct impact on cost and therefore the kinds of changes that *are* made after evaluating costs and benefits. This decision is often the sort you make early on and rarely change, so give it some real consideration. You might never get to change it.
+Regardless of your choice of language, your choice of paradigm will have far-reaching consequences to the kinds of changes you can easily make to your software, which will have a direct impact on cost and therefore the kinds of changes that _are_ made after evaluating costs and benefits. This decision is often the sort you make early on and rarely change, so give it some real consideration. You might never get to change it.
 
-[^1]: Thanks to [Ganesh Sittampalam][@eleganesh] for the terminology used here; I've never heard anyone else refer to *open* vs. *closed* sets.
+[^1]: Thanks to [Ganesh Sittampalam][@eleganesh] for the terminology used here; I've never heard anyone else refer to _open_ vs. _closed_ sets.
 
-[Getters, Setters and Properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
-[Why Couple Data to Behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
-[The Other Trade-off: Separating Data and Behaviour]: http://monospacedmonologues.com/post/138140507048/the-other-trade-off-separating-data-and-behaviour
-
-[Referential transparency]: https://wiki.haskell.org/Referential_transparency
+[getters, setters and properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
+[why couple data to behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
+[the other trade-off: separating data and behaviour]: http://monospacedmonologues.com/post/138140507048/the-other-trade-off-separating-data-and-behaviour
+[referential transparency]: https://wiki.haskell.org/Referential_transparency
 [@eleganesh]: https://twitter.com/eleganesh

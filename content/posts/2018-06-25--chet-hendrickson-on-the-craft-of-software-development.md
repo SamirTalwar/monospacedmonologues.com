@@ -9,6 +9,7 @@ I was listening to [Ron Jeffries and Chet Hendrickson on the Cucumber podcast][c
 He was prompted by Sal Freudenberg talking about asking for permission to use techniques such as test-driven development, rather than treating it as part of the job.
 
 > **Chet Hendrickson:** I think you're right; it seems odd that we ask permission. We believe we have to have permission to do good work. I believe that on the first day of a new greenfield project, the codebase is perfect. It does exactly nothing, and it does it in zero lines of code.
+>
 > <!--more-->
 >
 > **Steve Tooke:** There's no bugs.

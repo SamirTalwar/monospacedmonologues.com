@@ -18,9 +18,9 @@ again, for your viewing pleasure:
                        then []
                        else f(this.head) : this.map(f, this.tail)
 
-So we have a class called *List* with a method called *map*. It takes
+So we have a class called _List_ with a method called _map_. It takes
 one parameter, `f`, and does some cool stuff. So first of all, let's
-rephrase this in Java. We'll call it *FunctionalList* so we don't clash
+rephrase this in Java. We'll call it _FunctionalList_ so we don't clash
 with the `java.util.List` interface.
 
     class FunctionalList<T> {

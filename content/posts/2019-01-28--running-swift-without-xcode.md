@@ -191,7 +191,8 @@ It turns out that _main.swift_ doesn't need to be in the root of your repository
 main()
 ```
 
-Then, in my program's real entry point (e.g. _2018/AOC\_19\_2.swift_), I declared a _main_ function and did all the work in there:
+<!-- prettier-ignore -->
+Then, in my program's real entry point (e.g. <em>2018/AOC\_19\_2.swift</em>), I declared a _main_ function and did all the work in there:
 
 ```swift
 func main() {

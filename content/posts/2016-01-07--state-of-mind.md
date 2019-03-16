@@ -10,11 +10,11 @@ On 30th December, I started a diet and exercise plan, because what the hell, it'
 
 The plan is as follows:
 
-  1. No sweets or processed sugar.
-  2. No bread or pasta.
-  3. No meat.
-  4. Exercise a little bit every day.
-  5. Run, climb or cycle a couple of times a week.
+1. No sweets or processed sugar.
+2. No bread or pasta.
+3. No meat.
+4. Exercise a little bit every day.
+5. Run, climb or cycle a couple of times a week.
 
 <!--more-->
 
@@ -24,17 +24,17 @@ The reason it's a little different is because I don't mind failing. I had a sand
 
 Failing isn't the problem. Not picking yourself up and trying again is.
 
-It reminds me of [*object calisthenics*][Object Calisthenics]. I fully recommend clicking the link and reading the entire document, but to summarise, object calisthenics are a set of rules to apply in order to write object-oriented code. They are:
+It reminds me of [_object calisthenics_][object calisthenics]. I fully recommend clicking the link and reading the entire document, but to summarise, object calisthenics are a set of rules to apply in order to write object-oriented code. They are:
 
-  1. One level of indentation per method
-  2. Don't use the `else` keyword
-  3. Wrap all primitives, including strings
-  4. First-class collections
-  5. One dot per line
-  6. Don't abbreviate
-  7. Keep all entities small
-  8. No classes with more than two instance variables
-  9. No getters/setters/properties
+1. One level of indentation per method
+2. Don't use the `else` keyword
+3. Wrap all primitives, including strings
+4. First-class collections
+5. One dot per line
+6. Don't abbreviate
+7. Keep all entities small
+8. No classes with more than two instance variables
+9. No getters/setters/properties
 
 If you've tried them, you'll know that writing anything while following these rules takes forever and ends up with fairly ugly code. However, if you opt to break them in a couple of situations, you'll find that your code is very easy to understand.
 
@@ -46,5 +46,5 @@ So this is what I'm trying to achieve with my new year's resolutions. The point 
 
 I don't expect to stop this diet or exercise regime at some point. I expect to get to the point where I don't think about it any more.
 
-[The Johnson & Johnson Official 7 Minute Workout]: https://7minuteworkout.jnj.com/
-[Object Calisthenics]: https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf
+[the johnson & johnson official 7 minute workout]: https://7minuteworkout.jnj.com/
+[object calisthenics]: https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf

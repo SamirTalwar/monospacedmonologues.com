@@ -6,7 +6,7 @@ aliases:
   - /post/140845860287/building-is-the-job-of-the-compiler
 ---
 
-A few years ago, [Kevlin Henney][@KevlinHenney] spoke on the topic of *The Programmer* at [Devoxx UK][]. In his talk, he mentioned an article by Jack Reeves, [What Is Software Design?][] It's a long piece, written in 1992, musing on design, building and the job of the programmer. In the article, the author wrote something very striking.[^Thanks to @tomwhoscontrary]
+A few years ago, [Kevlin Henney][@kevlinhenney] spoke on the topic of _The Programmer_ at [Devoxx UK][]. In his talk, he mentioned an article by Jack Reeves, [What Is Software Design?][] It's a long piece, written in 1992, musing on design, building and the job of the programmer. In the article, the author wrote something very striking.[^Thanks to @tomwhoscontrary]
 
 > This lesson is that programming is not about building software; programming is about designing software.
 >
@@ -28,9 +28,9 @@ It's my dream that one day in the future, all work will be creative work, simply
 
 Building is the job of the compiler. A machine. Humans create.
 
-[^Thanks to @tomwhoscontrary]: Thanks to [Tom Anderson][@tomwhoscontrary] for finding the article for me. The original version of this post paraphrased it, as I could not find it.
+[^thanks to @tomwhoscontrary]: Thanks to [Tom Anderson][@tomwhoscontrary] for finding the article for me. The original version of this post paraphrased it, as I could not find it.
 
-[What Is Software Design?]: http://www.bleading-edge.com/Publications/C++Journal/Cpjour2.htm
-[@KevlinHenney]: https://twitter.com/KevlinHenney
+[what is software design?]: http://www.bleading-edge.com/Publications/C++Journal/Cpjour2.htm
+[@kevlinhenney]: https://twitter.com/KevlinHenney
 [@tomwhoscontrary]: https://twitter.com/tomwhoscontrary
-[Devoxx UK]: http://www.devoxx.co.uk/
+[devoxx uk]: http://www.devoxx.co.uk/

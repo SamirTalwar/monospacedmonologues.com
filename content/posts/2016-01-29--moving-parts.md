@@ -10,15 +10,15 @@ This week, I tried to explain the difference as I see it between object-oriented
 
 <!--more-->
 
-  1. [Getters, Setters and Properties][]
-  2. [Why Couple Data to Behaviour?][]
-  3. [The Other Trade-off: Separating Data and Behaviour][]
-  4. [Referential Transparency, And The True Meaning Of Functional Programming][]
+1. [Getters, Setters and Properties][]
+2. [Why Couple Data to Behaviour?][]
+3. [The Other Trade-off: Separating Data and Behaviour][]
+4. [Referential Transparency, And The True Meaning Of Functional Programming][]
 
-[Getters, Setters and Properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
-[Why Couple Data to Behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
-[The Other Trade-off: Separating Data and Behaviour]: http://monospacedmonologues.com/post/138140507048/the-other-trade-off-separating-data-and-behaviour
-[Referential Transparency, And The True Meaning Of Functional Programming]: http://monospacedmonologues.com/post/138204666541/referential-transparency-and-the-true-meaning-of
+[getters, setters and properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
+[why couple data to behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
+[the other trade-off: separating data and behaviour]: http://monospacedmonologues.com/post/138140507048/the-other-trade-off-separating-data-and-behaviour
+[referential transparency, and the true meaning of functional programming]: http://monospacedmonologues.com/post/138204666541/referential-transparency-and-the-true-meaning-of
 
 But perhaps Michael Feathers said it best.
 

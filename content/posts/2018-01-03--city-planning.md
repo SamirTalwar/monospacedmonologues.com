@@ -18,6 +18,6 @@ In the short term, we're working on GPS. Tools to help humans navigate this city
 
 ---
 
-[We're doing this at Prodo.AI. Come and join us.][Prodo.AI]
+[We're doing this at Prodo.AI. Come and join us.][prodo.ai]
 
-[Prodo.AI]: https://prodo.ai/
+[prodo.ai]: https://prodo.ai/

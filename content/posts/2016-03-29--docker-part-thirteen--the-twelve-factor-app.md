@@ -10,7 +10,7 @@ A lot of the principles and practices I've tried to embody in my previous posts 
 
 Docker makes some of the twelve factors easier, and some of them harder. I want to go through each of them in turn and explain how and why. Before going through this, I strongly encourage you to read through the document and familiarise yourself with the principles. It changed the way I develop software, and I bet that if you haven't read it already, it'll change the way you do too.
 
-[The Twelve-Factor App]: http://12factor.net/
+[the twelve-factor app]: http://12factor.net/
 
 <!--more-->
 
@@ -30,18 +30,18 @@ Your dependencies must be specified explicitly; depending on implicitly-availabl
 
 > Store config in the environment
 
-You'll have noticed that in my *docker-compose.yml* files, I inject the database location and credentials through environment variables. This is because it's subject to change, and therefore should be considered configuration. By depending on environment variables as our sole source of configuration, we prevent implicit knowledge of the environment leaking into the application, which could make it brittle when changing the infrastructure. Keeping our application independent of the infrastructure it runs on is a key part of The Twelve-Factor App.
+You'll have noticed that in my _docker-compose.yml_ files, I inject the database location and credentials through environment variables. This is because it's subject to change, and therefore should be considered configuration. By depending on environment variables as our sole source of configuration, we prevent implicit knowledge of the environment leaking into the application, which could make it brittle when changing the infrastructure. Keeping our application independent of the infrastructure it runs on is a key part of The Twelve-Factor App.
 
 Unfortunately, Docker makes secrets harder to manage. Secure secrets don't just need to be provided to the server hosting the application, but then injected through environment variables to the container. That extra hop makes life awkward. Without extra technology such as [Kubernetes][] or [Vault][], I haven't really found a good solution to this.
 
-[Kubernetes]: http://kubernetes.io/
-[Vault]: https://www.vaultproject.io/
+[kubernetes]: http://kubernetes.io/
+[vault]: https://www.vaultproject.io/
 
 ### IV. Backing services
 
 > Treat backing services as attached resources
 
-Your backing services—database, caching layer, messaging systems, etc.—are often stateful, have independent lifecycles and very different requirements from a stateless application. As such, they need to be managed separately. In Docker Compose, these would be considered *services* in their own right, and would have their own containers, limiting communication to the network layer. Modifications to the services—for example, scaling them up, hot-swapping them or running regular maintenance tasks such as database optimisations—can be done independently of software deployment.
+Your backing services—database, caching layer, messaging systems, etc.—are often stateful, have independent lifecycles and very different requirements from a stateless application. As such, they need to be managed separately. In Docker Compose, these would be considered _services_ in their own right, and would have their own containers, limiting communication to the network layer. Modifications to the services—for example, scaling them up, hot-swapping them or running regular maintenance tasks such as database optimisations—can be done independently of software deployment.
 
 ### V. Build, release, run
 
@@ -51,12 +51,12 @@ With Docker, our image is our artifact. Once we create the image and publish it 
 
 Versioning images is hard. If your versioning is manual, it won't happen. Two solutions that have worked for me are:
 
-  1. Having the continuous integration server increment a version counter that's stored in a file in the repository, committing it, then building the image with that new version number embedded.
-  2. Using the Git commit hash as the version.
+1. Having the continuous integration server increment a version counter that's stored in a file in the repository, committing it, then building the image with that new version number embedded.
+2. Using the Git commit hash as the version.
 
 The latter is much simpler but means you can't compare two image versions by eye very easily. This has almost never been a problem for me in practice.
 
-[Docker Registry]: https://docs.docker.com/registry/
+[docker registry]: https://docs.docker.com/registry/
 
 ### VI. Processes
 
@@ -82,7 +82,7 @@ Try it on your local machine. This'll scale our `app` service to three container
 
     $ docker-compose scale app=3
 
-[Docker Swarm]: https://docs.docker.com/swarm/
+[docker swarm]: https://docs.docker.com/swarm/
 
 ### IX. Disposability
 
@@ -90,7 +90,7 @@ Try it on your local machine. This'll scale our `app` service to three container
 
 Container start-up time is something we haven't really touched upon, but should be investigated if it's taking longer than a second or two. Sure, Java isn't the fastest off the starting block, but once it's going, it should be pretty quick to start listening for HTTP requests on port 80.
 
-Shutting down is something I'll be looking at tomorrow. If you've tried our [*bemorerandom.com*][bemorerandom.com] application, you may have noticed that it takes ten seconds to die after *Ctrl+C* is sent. This is because that's Docker's default timeout for giving up and killing the process. I haven't investigated why this is happening, but it's bugging me and I'd like to fix it.
+Shutting down is something I'll be looking at tomorrow. If you've tried our [_bemorerandom.com_][bemorerandom.com] application, you may have noticed that it takes ten seconds to die after _Ctrl+C_ is sent. This is because that's Docker's default timeout for giving up and killing the process. I haven't investigated why this is happening, but it's bugging me and I'd like to fix it.
 
 [bemorerandom.com]: https://github.com/SamirTalwar/bemorerandom.com
 
@@ -110,10 +110,10 @@ And when it does go wrong, developers will be able to debug it, because the envi
 
 By capturing STDOUT and STDERR, Docker makes it very easy to follow Twelve Factor logging. Processes write to STDOUT, and we can inspect the logs with `docker logs`. It's available through the API too, so you can write tools that scrape it.
 
-In Docker 1.8, pluggable logging drivers were added to the mix. This means that we can spin up a log-capturing service such as Fluentd and [integrate Docker container logging with just a few switches][Fluentd: Docker Logging]. Wire this up to [Elasticsearch and Kibana][EFK] for easily-trawlable logs.
+In Docker 1.8, pluggable logging drivers were added to the mix. This means that we can spin up a log-capturing service such as Fluentd and [integrate Docker container logging with just a few switches][fluentd: docker logging]. Wire this up to [Elasticsearch and Kibana][efk] for easily-trawlable logs.
 
-[Fluentd: Docker Logging]: http://www.fluentd.org/guides/recipes/docker-logging
-[EFK]: https://www.digitalocean.com/community/tutorials/elasticsearch-fluentd-and-kibana-open-source-log-search-and-visualization
+[fluentd: docker logging]: http://www.fluentd.org/guides/recipes/docker-logging
+[efk]: https://www.digitalocean.com/community/tutorials/elasticsearch-fluentd-and-kibana-open-source-log-search-and-visualization
 
 ### XII. Admin processes
 
@@ -125,7 +125,7 @@ For example, if we need to migrate the database, we might run the same image as 
 
     $ docker run --rm --env=... registry.internal/super-duper-app rake db:migrate
 
-Docker Compose, unfortunately, doesn't really have a mechanism for these one-off processes, and so if we were to use that, we'd have to declare it as a service and just make sure we don't run it by accident. Not ideal. We could split the *docker-compose.yml* file into two and make sure that they share names, but managing that sounds pretty painful.
+Docker Compose, unfortunately, doesn't really have a mechanism for these one-off processes, and so if we were to use that, we'd have to declare it as a service and just make sure we don't run it by accident. Not ideal. We could split the _docker-compose.yml_ file into two and make sure that they share names, but managing that sounds pretty painful.
 
 The Twelve-Factor App also specifies that this technique is useful for running REPLs and similar debugging tools. If you're screwed enough that you're debugging in production, sideloading through `docker exec` is probably your best bet. Just hope you actually have the tools you need—often, because we try and minimise container size, even simple tools such as a text editor are missing, and seriously, good luck loading up a Java REPL if you don't have one available already. There's an art to making sure your debugging tools are present in the container, and it's not one I'm well-versed in. Best of luck.
 

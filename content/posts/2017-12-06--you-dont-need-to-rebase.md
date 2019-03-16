@@ -6,7 +6,7 @@ aliases:
   - /post/168248933254/you-dont-need-to-rebase
 ---
 
-*This post is loosely based on a discussion with [Beverley Newing][@WebDevBev] and others on the [Codebar][] Slack team.*
+_This post is loosely based on a discussion with [Beverley Newing][@webdevbev] and others on the [Codebar][] Slack team._
 
 ---
 
@@ -35,13 +35,13 @@ Now, there's a couple of problems with this. First of all, there's often merge c
 
 However, there's another solution: `git merge master` instead.
 
-Merging instead of rebasing has its downsides: people often point to the ugliness of the commit graph, and how it's difficult to read the history. It's true, and I often use `git rebase` myself. But it's worth being aware of what you're doing when you use it: you're rewriting the history. `git rebase`, just like `git commit --amend` and `git reset`, is a *destructive* change: it doesn't just write new things to the branch, but changes the past.
+Merging instead of rebasing has its downsides: people often point to the ugliness of the commit graph, and how it's difficult to read the history. It's true, and I often use `git rebase` myself. But it's worth being aware of what you're doing when you use it: you're rewriting the history. `git rebase`, just like `git commit --amend` and `git reset`, is a _destructive_ change: it doesn't just write new things to the branch, but changes the past.
 
-Now, having a clean history is definitely useful. It means that going backwards to see the steps is a lot easier. However, it's pretty much impossible to undo, especially if you've pushed and pulled this branch a couple of times. One of the benefits of a version control system is you can always roll back… but you can't (easily) `revert` a `rebase`. You threw away the old commits; they're not there any more. (Except in the *reflog*… hopefully.)
+Now, having a clean history is definitely useful. It means that going backwards to see the steps is a lot easier. However, it's pretty much impossible to undo, especially if you've pushed and pulled this branch a couple of times. One of the benefits of a version control system is you can always roll back… but you can't (easily) `revert` a `rebase`. You threw away the old commits; they're not there any more. (Except in the _reflog_… hopefully.)
 
 This is a small problem when you're working locally; you usually don't need to roll back, and when you do there are often other ways of handling it. But it causes serious problems after you push. If someone else pulls down the branch and makes their own changes, they're going to have a hard time reconciling them. And if they comment on a commit on GitHub/GitLab/Bitbucket/whatevs (which is pretty likely if you use them for code review), those comments will be detached from the changes.
 
 There are plenty of good reasons to `git rebase`. Just make sure you know what you're doing. Git's a very powerful tool, and rewriting history is a pretty dangerous endeavour. Put your steel-toed boots on first.
 
-[@WebDevBev]: https://twitter.com/WebDevBev
-[Codebar]: https://codebar.io/
+[@webdevbev]: https://twitter.com/WebDevBev
+[codebar]: https://codebar.io/

@@ -6,13 +6,13 @@ aliases:
   - /post/138532840924/naming-things
 ---
 
-A couple of weeks ago, [I promised to talk about naming][Slash Slash Massive Hack].
+A couple of weeks ago, [I promised to talk about naming][slash slash massive hack].
 
 > If you can name a function really well, it probably does one thing and one thing only. This means you've figured out a decent way to separate your concerns, which means that often, the name is really all you need to know. (Expect more on naming in a future post.)
 
 <!--more-->
 
-I just opened up Stack Overflow and clicked on [the latest question][Stack Overflow Question #35119755][^1] to find this code:
+I just opened up Stack Overflow and clicked on [the latest question][stack overflow question #35119755][^1] to find this code:
 
     function createList() {
         $.ajax({
@@ -37,12 +37,12 @@ I just opened up Stack Overflow and clicked on [the latest question][Stack Overf
 
 Look at the contents, and then look at the name of the function: `createList`. Does that resonate with you?
 
-Let me enumerate the things *I* think this function's doing. Of course, I could be wrong. One of the issues with legacy code is that we often are.
+Let me enumerate the things _I_ think this function's doing. Of course, I could be wrong. One of the issues with legacy code is that we often are.
 
-  * Make an AJAX call to fetch a list of registered *somethings*… I guess users, because it gets sent back as a JSON array with fields like "name", "email" and "phone".
-  * Remove all rows from our table except the first one.
-  * Iterate through the array returned as JSON, construct a table row as an HTML string and append it to a string containing all the HTML generated.
-  * Add this HTML to the DOM after the first (and now only) row of the table.
+- Make an AJAX call to fetch a list of registered _somethings_… I guess users, because it gets sent back as a JSON array with fields like "name", "email" and "phone".
+- Remove all rows from our table except the first one.
+- Iterate through the array returned as JSON, construct a table row as an HTML string and append it to a string containing all the HTML generated.
+- Add this HTML to the DOM after the first (and now only) row of the table.
 
 Right. Let's think of a better name for this.
 
@@ -123,6 +123,6 @@ Marvellous.
 
 [^1]: I'm really sorry to the author of this code. I don't mean to pick on them—it really was at random, and I honestly wouldn't have an issue with this code as-is most of the time. Code on Stack Overflow is licenced under [Creative Commons Attribution-ShareAlike 3.0 Unported][].
 
-[Slash Slash Massive Hack]: http://monospacedmonologues.com/post/137738860257/slash-slash-massive-hack
-[Stack Overflow Question #35119755]: https://stackoverflow.com/questions/35119755/checkboxes-and-number-fields-set-by-jquery-appear-for-a-split-second-then-sudde
-[Creative Commons Attribution-ShareAlike 3.0 Unported]: https://creativecommons.org/licenses/by-sa/3.0/
+[slash slash massive hack]: http://monospacedmonologues.com/post/137738860257/slash-slash-massive-hack
+[stack overflow question #35119755]: https://stackoverflow.com/questions/35119755/checkboxes-and-number-fields-set-by-jquery-appear-for-a-split-second-then-sudde
+[creative commons attribution-sharealike 3.0 unported]: https://creativecommons.org/licenses/by-sa/3.0/

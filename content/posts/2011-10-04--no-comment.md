@@ -13,7 +13,7 @@ And if you see a comment, you should probably delete it.
 I didn't come up with this—it's the policy in the office, as well as
 various tech shops all over the planet. I thought I'd start with a fun
 one though. Half the people that read that will think I'm an idiot. The
-other half will shrug and say, "We taught *you* this, boy." (The latter
+other half will shrug and say, "We taught _you_ this, boy." (The latter
 don't need to keep reading.)
 
 <!--more-->
@@ -157,7 +157,7 @@ are more than adequate. "No comments" might sound silly at first, but
 it's simply a natural extension of developing readable and maintainable
 code. I think it looks pretty good.
 
-* * * * *
+---
 
 I should probably point out that while the title is "No Comment",
 comments are indeed open. Hit me.

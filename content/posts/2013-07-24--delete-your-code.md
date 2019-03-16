@@ -20,8 +20,7 @@ Joe and Michael for organising the event and the venue.
 
 <!--more-->
 
-Level 1: TDD
-------------
+## Level 1: TDD
 
 We started with an introduction to test-driven development, partially
 historical, but mostly practical. I wrote the simplest test I've ever
@@ -53,8 +52,7 @@ more essentially reinvented property-based testing.
 And then we went and had some drinks and a good night's sleep. Tiredness
 kills, and I was planning on tiring everyone out tomorrow.
 
-Level 2: The Code Retreat
--------------------------
+## Level 2: The Code Retreat
 
 I've blogged extensively about [code
 retreats](http://monospacedmonologues.com/post/13794728271/global-day-of-coderetreat)
@@ -112,8 +110,7 @@ we're pretty spoilt.
 ![Code Retreat
 Feedback](https://lh5.googleusercontent.com/-1dT75aTHFMY/UeuXs-PydUI/AAAAAAAAAcE/aGQAxEpW_Rs/w718-h957-no/IMG_20130721_091015.jpg)
 
-Level 3: (Not a) Hackday
-------------------------
+## Level 3: (Not a) Hackday
 
 Because everyone loves hackdays, we had one. Except this was a hackday
 with a twist: no hacking allowed. Pair programming was mandatory and not

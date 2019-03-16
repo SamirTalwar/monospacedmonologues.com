@@ -10,13 +10,13 @@ The last rule of [Object Calisthenics][] is:
 
 > No getters, setters or properties.
 
-Last week, I was at [eXtreme Tuesday Club][] (a.k.a. *XTC*) for a beer and a conversation, and something happened that hasn't happened there in a while. Someone new to the industry came along. (I can't remember their name, but if it was you, post a comment!) For ages, XTC has been dying because no new blood, but due to stellar leadership and [fantastic marketing][Extreme all the Tuesdays!], things are starting to pick up again.
+Last week, I was at [eXtreme Tuesday Club][] (a.k.a. _XTC_) for a beer and a conversation, and something happened that hasn't happened there in a while. Someone new to the industry came along. (I can't remember their name, but if it was you, post a comment!) For ages, XTC has been dying because no new blood, but due to stellar leadership and [fantastic marketing][extreme all the tuesdays!], things are starting to pick up again.
 
 In our discussion, something came up. Some people will tell you that current wisdom in programming preaches no getters, setters or properties. But why? Often, no explanation is given.
 
-[Object Calisthenics]: https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf
-[eXtreme Tuesday Club]: http://www.meetup.com/eXtreme-Tuesday-Club-XTC/
-[Extreme all the Tuesdays!]: https://twitter.com/extremetuesday/status/689467737698099200
+[object calisthenics]: https://www.cs.helsinki.fi/u/luontola/tdd-2009/ext/ObjectCalisthenics.pdf
+[extreme tuesday club]: http://www.meetup.com/eXtreme-Tuesday-Club-XTC/
+[extreme all the tuesdays!]: https://twitter.com/extremetuesday/status/689467737698099200
 
 <!--more-->
 
@@ -79,9 +79,9 @@ Finally, **a property** is a combination of the two, and is usually a language f
 
 Damn good question.
 
-At their heart, getters, setters and properties are mechanisms to provide a layer of indirection between data and *unrelated* behaviour. As *related* behaviour would be in the same class and have access to the fields of that class, they only really apply to external callers, and so only make sense when we differentiate between external behaviour and internal behaviour.
+At their heart, getters, setters and properties are mechanisms to provide a layer of indirection between data and _unrelated_ behaviour. As _related_ behaviour would be in the same class and have access to the fields of that class, they only really apply to external callers, and so only make sense when we differentiate between external behaviour and internal behaviour.
 
-Let's take a look at a piece of logic *calling* the setter.
+Let's take a look at a piece of logic _calling_ the setter.
 
     class ATM {
         public void withdraw(Account account, Money amount, Instant time) {
@@ -93,7 +93,7 @@ Let's take a look at a piece of logic *calling* the setter.
         ...
     }
 
-Simple, right? I just have one problem: what happens if someone implements the caller wrongly? What if they forget to add a transaction? What if they add the transaction *after* modifying the balance, and that throws an exception, leaving the object in an inconsistent state?
+Simple, right? I just have one problem: what happens if someone implements the caller wrongly? What if they forget to add a transaction? What if they add the transaction _after_ modifying the balance, and that throws an exception, leaving the object in an inconsistent state?
 
 In this example, the refactoring is simple. Let's move the code into the `Account` class.
 
@@ -113,6 +113,6 @@ In this example, the refactoring is simple. Let's move the code into the `Accoun
         }
     }
 
-The beauty of this is that we don't use the getters any more, and the setter now private. The behaviour is now *internal* to the class, and so we don't need to break encapsulation by exposing the internal state. Calling a method on this object is now guaranteed to leave it in a consistent state.
+The beauty of this is that we don't use the getters any more, and the setter now private. The behaviour is now _internal_ to the class, and so we don't need to break encapsulation by exposing the internal state. Calling a method on this object is now guaranteed to leave it in a consistent state.
 
 Turns out we didn't need getters or setters at all.

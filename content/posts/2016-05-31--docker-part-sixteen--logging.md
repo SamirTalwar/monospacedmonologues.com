@@ -18,28 +18,27 @@ The first thing to remember is that if it's important, log it. Treat your log as
 
 The next most important thing is that if it might fail, log it. Events of this type include:
 
-  * long-running computations,
-  * asynchronous behaviour,
-  * network I/O,
-  * disk I/O,
-  * database access,
-  * user input,
-  * and lots more.
+- long-running computations,
+- asynchronous behaviour,
+- network I/O,
+- disk I/O,
+- database access,
+- user input,
+- and lots more.
 
-In the toy application I'm building, [*bemorerandom.com*][bemorerandom.com], the interesting parts here are HTTP requests, which can go wrong in a million different ways, and access to the database, which can often be the cause of failures and slowdown. Because I'm using the [Finatra][] and [Slick][] libraries to handle these kinds of events, I need to configure them to log them appropriately. Fortunately, they both use [SLF4J][], which unifies Java logging libraries, so its just a matter of configuring Logback, my logging library, to pick up on the logging events.
+In the toy application I'm building, [_bemorerandom.com_][bemorerandom.com], the interesting parts here are HTTP requests, which can go wrong in a million different ways, and access to the database, which can often be the cause of failures and slowdown. Because I'm using the [Finatra][] and [Slick][] libraries to handle these kinds of events, I need to configure them to log them appropriately. Fortunately, they both use [SLF4J][], which unifies Java logging libraries, so its just a matter of configuring Logback, my logging library, to pick up on the logging events.
 
 [bemorerandom.com]: https://github.com/SamirTalwar/bemorerandom.com
-
-[Finatra]: https://twitter.github.io/finatra/
-[Logback]: http://logback.qos.ch/
-[SLF4J]: http://www.slf4j.org/
-[Slick]: http://slick.lightbend.com/
+[finatra]: https://twitter.github.io/finatra/
+[logback]: http://logback.qos.ch/
+[slf4j]: http://www.slf4j.org/
+[slick]: http://slick.lightbend.com/
 
 ## Log All The Things
 
-SLF4J standarises two things: a mechanism for naming various log output (usually after the class that's logging), and a list of *log levels*: *trace* (the least serious), *debug*, *info*, *warn*, *error*, and *fatal* (the most serious).
+SLF4J standarises two things: a mechanism for naming various log output (usually after the class that's logging), and a list of _log levels_: _trace_ (the least serious), _debug_, _info_, _warn_, _error_, and _fatal_ (the most serious).
 
-The various libraries already log at vaguely-appropriate levels, so I'll configure Logback by creating a *logback.xml* resource file:
+The various libraries already log at vaguely-appropriate levels, so I'll configure Logback by creating a _logback.xml_ resource file:
 
     <?xml version="1.0" encoding="UTF-8"?>
     <configuration>
@@ -58,9 +57,9 @@ The various libraries already log at vaguely-appropriate levels, so I'll configu
         </root>
     </configuration>
 
-This says that I want to log everything at info level to the console (not a file; [I can route logs to files later if I like][Docker, Part Thirteen: The Twelve-Factor App]). Requests are logged at the info level (unless they fail, in which case we get an error instead), so no further customisation is necessary. Anything custom that I want to log (i.e. in the "com.bemorerandom" package) is logged at the debug level. And because I want to see *some* output, I've selected a specific part of Slick to log at the debug level—this allows me to see the actual SQL queries as they execute.
+This says that I want to log everything at info level to the console (not a file; [I can route logs to files later if I like][docker, part thirteen: the twelve-factor app]). Requests are logged at the info level (unless they fail, in which case we get an error instead), so no further customisation is necessary. Anything custom that I want to log (i.e. in the "com.bemorerandom" package) is logged at the debug level. And because I want to see _some_ output, I've selected a specific part of Slick to log at the debug level—this allows me to see the actual SQL queries as they execute.
 
-[Docker, Part Thirteen: The Twelve-Factor App]: http://monospacedmonologues.com/post/141886562802/docker-part-thirteen-the-twelve-factor-app
+[docker, part thirteen: the twelve-factor app]: http://monospacedmonologues.com/post/141886562802/docker-part-thirteen-the-twelve-factor-app
 
 When making a request that hits the database:
 
@@ -138,8 +137,8 @@ We could then just pull out the request.
 
 You could do the same sort of processing to find only errors and fatal events, or maybe all the requests that took over a second. You could even pipe them into [Logstash][] or [Fluentd][] and use [Kibana][] to visualise the data, or search them in a much more advanced fashion.
 
-[Fluentd]: http://www.fluentd.org/
-[Kibana]: https://www.elastic.co/products/kibana
-[Logstash]: https://www.elastic.co/products/logstash
+[fluentd]: http://www.fluentd.org/
+[kibana]: https://www.elastic.co/products/kibana
+[logstash]: https://www.elastic.co/products/logstash
 
 When logging in this fashion, your logs become useful even for routine operations. For example, I'm working on a booking system for a client, and I can just search the logs for `.event_type == "booking"` to get an array of all bookings, then group by date and count them to find out how many bookings we've made each day. One day this'll make its way onto a dashboard, but I like to explore my data, and so it's really useful to have an event stream that's easy to control.

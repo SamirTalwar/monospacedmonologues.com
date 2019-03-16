@@ -20,23 +20,23 @@ In a café where the staff know their trade, no one really has a "job". People h
 
 ---
 
-When developing a product, allocating people to jobs is wasteful. If you have two programmers, a designer, a tester, a sysadmin, a product owner and a coach, at any given moment, most of them will be either idle or doing busy-work. Because the reality is that the distribution of work to be done isn't fixed. You don't always need design work, programming is useless if you haven't decided what to make, and testers are *always* overworked.
+When developing a product, allocating people to jobs is wasteful. If you have two programmers, a designer, a tester, a sysadmin, a product owner and a coach, at any given moment, most of them will be either idle or doing busy-work. Because the reality is that the distribution of work to be done isn't fixed. You don't always need design work, programming is useless if you haven't decided what to make, and testers are _always_ overworked.
 
 Instead, what if we worked on one feature at a time?
 
 Figure out what we want, design the UX, implement it, test it, ship it.
 
-It sounds *more* wasteful. After all, our designers can't test, and our programmers can't design.
+It sounds _more_ wasteful. After all, our designers can't test, and our programmers can't design.
 
 Yet.
 
-If they could, it would be vastly less wasteful. We'd end up [mobbing][Mob programming] most of the time. And then we could approach the wastefulness problem from the opposite direction. Instead of figuring out what to do with idle time, we could figure out when we're putting too many people on the problem. They could then peel off to prep the next piece of work—but only when necessary.
+If they could, it would be vastly less wasteful. We'd end up [mobbing][mob programming] most of the time. And then we could approach the wastefulness problem from the opposite direction. Instead of figuring out what to do with idle time, we could figure out when we're putting too many people on the problem. They could then peel off to prep the next piece of work—but only when necessary.
 
 If we did this, we'd end up with similar roles to the way we started, except everyone would be able to change roles to meet demand.
 
 Because when you're a programmer blocked on testing, the right thing to do isn't to program more, it's to go and be a tester.
 
-[Brooklyn Coffee]: http://www.brooklyncoffee.co.uk/
-[Mob programming]: https://en.wikipedia.org/wiki/Mob_programming
+[brooklyn coffee]: http://www.brooklyncoffee.co.uk/
+[mob programming]: https://en.wikipedia.org/wiki/Mob_programming
 
 <script async defer src="//platform.instagram.com/en_US/embeds.js"></script>

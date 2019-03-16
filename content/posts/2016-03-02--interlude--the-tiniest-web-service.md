@@ -8,7 +8,7 @@ aliases:
 
 I don't have Internet now and I'm tethered to my phone, so I can't play with databases and Docker like I wanted to today. So instead, let's talk about a little project I made to demonstrate that you don't always need your favourite programming language to deliver something useful.
 
-`nc`, or *netcat*, is a program that will connect to a **net**work socket and *cat* (just like `cat`) the result. It's on basically any Linux or BSD (including Mac) operating system. Let's try it.
+`nc`, or _netcat_, is a program that will connect to a **net**work socket and _cat_ (just like `cat`) the result. It's on basically any Linux or BSD (including Mac) operating system. Let's try it.
 
     $ nc google.com 80
 
@@ -20,7 +20,7 @@ Let's request the root path, `/`. Type this:
 
     GET / HTTP/1.1
 
-Then hit *Return* twice. That signals the end of the request. You should get back something like this:
+Then hit _Return_ twice. That signals the end of the request. You should get back something like this:
 
     HTTP/1.1 302 Found
     Cache-Control: private
@@ -40,25 +40,25 @@ By the by, if you don't have `nc` on your computer, don't worry. It's available 
 
     $ docker run --rm -it busybox nc google.com 80
 
-Right. Back to the response. The first line's status code, `302`, is in the *3xx* range, which tells us that's a redirect. You can follow it if you like—just enter the "resource" (as it's known in [the specification][RFC 2616]) given in the `Location` header. The resource is everything after the host (and port, if it's there)—in my case it's `/?gfe_rd=cr&ei=RRbWVqaPC4rCaJeckLAF`. If you like, you can issue a request to that by typing the following:
+Right. Back to the response. The first line's status code, `302`, is in the _3xx_ range, which tells us that's a redirect. You can follow it if you like—just enter the "resource" (as it's known in [the specification][rfc 2616]) given in the `Location` header. The resource is everything after the host (and port, if it's there)—in my case it's `/?gfe_rd=cr&ei=RRbWVqaPC4rCaJeckLAF`. If you like, you can issue a request to that by typing the following:
 
     GET /?gfe_rd=cr&ei=RRbWVqaPC4rCaJeckLAF HTTP/1.1
 
-(If the connection is still open, type it there. If not, start a new one. Either way, don't forget to hit *Return* twice.)
+(If the connection is still open, type it there. If not, start a new one. Either way, don't forget to hit _Return_ twice.)
 
 That gave me another redirect… Google bounces you around for a while.
 
-However, just like `cat`, `nc` doesn't just go in one direction. It can also *listen* on sockets. To prove it, let's start a *server* by using `nc` to listen on port 3000:
+However, just like `cat`, `nc` doesn't just go in one direction. It can also _listen_ on sockets. To prove it, let's start a _server_ by using `nc` to listen on port 3000:
 
     $ nc -l -p 3000
 
 (If you're on BSD or Mac OS, you may need to drop the `-p` and just type `nc -l 3000`.)
 
-Now open up another terminal and connect to it with a *client*:
+Now open up another terminal and connect to it with a _client_:
 
     $ nc localhost 3000
 
-You should have two terminals waiting for input. The client is waiting for the server, and the server is waiting for you. So give it it something. Type anything you like in that terminal, and hit *Ctrl+D* when you're done to send the end-of-file character. (You may need to start a new line by typing *Return* first.)
+You should have two terminals waiting for input. The client is waiting for the server, and the server is waiting for you. So give it it something. Type anything you like in that terminal, and hit _Ctrl+D_ when you're done to send the end-of-file character. (You may need to start a new line by typing _Return_ first.)
 
 See what happened? Your input got sent straight to the client.
 
@@ -73,7 +73,7 @@ And in another:
     $ nc localhost 3000
     Hi there!
 
-This time it's instant. We can use this to make a rudimentary web server. All you really need is the HTTP response header, which should look like this for an *OK* response:
+This time it's instant. We can use this to make a rudimentary web server. All you really need is the HTTP response header, which should look like this for an _OK_ response:
 
     HTTP/1.1 200 OK
 
@@ -112,5 +112,5 @@ Easy, right? Just build it and spin it up. And, in case you lose this, remember 
 
 {{% asset "the-tiniest-service" "2016-03-02+-+the-tiniest-service.png" %}}
 
-[RFC 2616]: https://www.w3.org/Protocols/rfc2616/rfc2616.txt
+[rfc 2616]: https://www.w3.org/Protocols/rfc2616/rfc2616.txt
 [the-tiniest-service]: https://github.com/SamirTalwar/the-tiniest-service/tree/dockerfile

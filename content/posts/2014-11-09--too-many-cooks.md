@@ -6,15 +6,15 @@ aliases:
   - /post/102172024165/too-many-cooks
 ---
 
-Last week, [Sandro][Codurance Team] and I flew to Bucharest to meet [Alex][Alex Bolboaca] and [Adi Bolboaca][], [Aki Salmi][] and [Peter Kofler][]. We didn't know what to expect: the agenda was to try a "hardcore coderetreat", in which the constraints would be incredibly difficult, but when you have six headstrong, opinionated people in a room, you really have no idea what's going to happen.
+Last week, [Sandro][codurance team] and I flew to Bucharest to meet [Alex][alex bolboaca] and [Adi Bolboaca][], [Aki Salmi][] and [Peter Kofler][]. We didn't know what to expect: the agenda was to try a "hardcore coderetreat", in which the constraints would be incredibly difficult, but when you have six headstrong, opinionated people in a room, you really have no idea what's going to happen.
 
-[Codurance Team]: http://codurance.com/aboutus/ourteam/
-[Adi Bolboaca]: http://adrianbolboaca.ro/
-[Aki Salmi]: https://about.me/rinkkasatiainen
-[Alex Bolboaca]: http://alexbolboaca.ro/
-[Peter Kofler]: http://code-cop.org/
+[codurance team]: http://codurance.com/aboutus/ourteam/
+[adi bolboaca]: http://adrianbolboaca.ro/
+[aki salmi]: https://about.me/rinkkasatiainen
+[alex bolboaca]: http://alexbolboaca.ro/
+[peter kofler]: http://code-cop.org/
 
-So it was surprising, but not, when we decided as a group to try and [mob][Mob Programming] on a real project. We started on a website for people to find pair programming partners (which we still plan to launch some time after the Global Day of Coderetreat), with one person driving and the rest <del>yelling at them</del> <ins>navigating</ins>.
+So it was surprising, but not, when we decided as a group to try and [mob][mob programming] on a real project. We started on a website for people to find pair programming partners (which we still plan to launch some time after the Global Day of Coderetreat), with one person driving and the rest <del>yelling at them</del> <ins>navigating</ins>.
 
 <!--more-->
 
@@ -22,10 +22,10 @@ We started off quite well, driving a simple set of static pages to get the flow 
 
 That feeling didn't last. By mid-afternoon, we were lagging, and people were drifting off. The experiment wasn't working as well as we hoped. In our fifth retrospective, we decided to get to a point where it would be sensible to split into pairs and play with the code, so we quickly knocked out the rest of the flow and broke apart to do the things we cared about doing.
 
-[Mob Programming]: http://monospacedmonologues.com/post/91841399505/mob-programming-and-the-importance-of-fun-at-work
+[mob programming]: http://monospacedmonologues.com/post/91841399505/mob-programming-and-the-importance-of-fun-at-work
 [minimum viable product]: http://en.wikipedia.org/wiki/Minimum_viable_product
 
-I, personally, was a bit dejected when we split apart. I thought that six skilled people should be able to do anything together. Pairing with Alex cheered me up very quickly, as we worked towards an acceptance test that focused us on what *we* really cared about, while the others did different things. Aki and Peter worked on a new interface for the page handling, extending its capabilities while preserving the functionality at first. Sandro and Adi decided to show each other their styles of unit testing, as they're very different.
+I, personally, was a bit dejected when we split apart. I thought that six skilled people should be able to do anything together. Pairing with Alex cheered me up very quickly, as we worked towards an acceptance test that focused us on what _we_ really cared about, while the others did different things. Aki and Peter worked on a new interface for the page handling, extending its capabilities while preserving the functionality at first. Sandro and Adi decided to show each other their styles of unit testing, as they're very different.
 
 A few hours later, we had lots of cool changes to the product that we'll probably blend back together.
 
@@ -43,15 +43,15 @@ We had six people on the team, but it was very unstable. I'll explain why.
 
 ### We had never worked with each other before.
 
-We all knew each other, but only Sandro and I have worked with each other for more than a few hours. We have our own style, which is often quite loud and heated. We argue *a lot*. It seems to work quite well for us, but it alienated the others, as they weren't expecting it.
+We all knew each other, but only Sandro and I have worked with each other for more than a few hours. We have our own style, which is often quite loud and heated. We argue _a lot_. It seems to work quite well for us, but it alienated the others, as they weren't expecting it.
 
 ### We had not agreed that we would work on this problem at all.
 
-The problem was a matter of consent, not consensus. Not everyone was committed to delivering a website; some wanted to just play around, and we didn't so much decide to do one as assume that everyone was on the same page. While we did *state* that we would build a website, simply stating something is not enough. People have to be emotionally committed, not just verbally committed.
+The problem was a matter of consent, not consensus. Not everyone was committed to delivering a website; some wanted to just play around, and we didn't so much decide to do one as assume that everyone was on the same page. While we did _state_ that we would build a website, simply stating something is not enough. People have to be emotionally committed, not just verbally committed.
 
 ### We didn't know what we were building.
 
-Alex had the idea for the website, which everyone *seemed to* like, and for the first two iterations, he served as the product owner. However, he didn't give us too much direction, which was probably a good move, as some people were there to build stuff, and some to experiment with code. Unfortunately, it meant that there was no clear focus on what we should be building.
+Alex had the idea for the website, which everyone _seemed to_ like, and for the first two iterations, he served as the product owner. However, he didn't give us too much direction, which was probably a good move, as some people were there to build stuff, and some to experiment with code. Unfortunately, it meant that there was no clear focus on what we should be building.
 
 ### We didn't set iteration goals.
 
@@ -59,11 +59,11 @@ We had Scrum-style iterations, but no expectation of what we should be deliverin
 
 ## So, we propose a new experiment.
 
-This was a great experiment, and one I actually really enjoyed, despite my negative tone throughout this post. We didn't get very far, but I derived a *lot* of value from it, and that's what I came for. It helped my refine my hypothesis, after all. It also helped me understand the value of planning meetings, product owners and defined backlogs in a way I hadn't before. I honestly think that with those things, this would have been a success from the start.
+This was a great experiment, and one I actually really enjoyed, despite my negative tone throughout this post. We didn't get very far, but I derived a _lot_ of value from it, and that's what I came for. It helped my refine my hypothesis, after all. It also helped me understand the value of planning meetings, product owners and defined backlogs in a way I hadn't before. I honestly think that with those things, this would have been a success from the start.
 
-As a result of this experiment, Adi and I would like to run a new one. Two teams, working separately on the same thing with the intention of shipping it. One would start with a mob. The other would start with a pair, and increase by one every "iteration". We'd conduct retrospectives after each iteration, with the goal of finding out who made more progress *and* who felt better connected as a team. Perhaps we'll give it a shot at the next [SoCraTes DE][] or [SoCraTes UK][].
+As a result of this experiment, Adi and I would like to run a new one. Two teams, working separately on the same thing with the intention of shipping it. One would start with a mob. The other would start with a pair, and increase by one every "iteration". We'd conduct retrospectives after each iteration, with the goal of finding out who made more progress _and_ who felt better connected as a team. Perhaps we'll give it a shot at the next [SoCraTes DE][] or [SoCraTes UK][].
 
-[SoCraTes DE]: http://www.socrates-conference.de/
-[SoCraTes UK]: http://socratesuk.org/
+[socrates de]: http://www.socrates-conference.de/
+[socrates uk]: http://socratesuk.org/
 
-*I'd be really interested if anyone else has seen some studies on this or read about a similar concept elsewhere—drop me a line in the comments below or by email or Twitter.*
+_I'd be really interested if anyone else has seen some studies on this or read about a similar concept elsewhere—drop me a line in the comments below or by email or Twitter._

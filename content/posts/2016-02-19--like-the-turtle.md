@@ -26,7 +26,7 @@ If you're looking for a place to start, try the man page for `grep`:
 
     $ man grep
 
-Scroll down to the *Examples* section. `man` uses `less` as its pager by default in most modern operating systems, so the same keyboard shortcuts that `less` uses apply here. You can use your spacebar to scroll down a page, and `b` to scroll up. `d` and `u` scroll half a page, and I think you can guess which one does which.
+Scroll down to the _Examples_ section. `man` uses `less` as its pager by default in most modern operating systems, so the same keyboard shortcuts that `less` uses apply here. You can use your spacebar to scroll down a page, and `b` to scroll up. `d` and `u` scroll half a page, and I think you can guess which one does which.
 
 When you're done, hit `q` to quit. You might want to open up two terminals so you can experiment.
 

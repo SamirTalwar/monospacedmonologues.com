@@ -8,11 +8,11 @@ aliases:
 
 > It is practically impossible to teach good programming to students that have had a prior exposure to BASIC: as potential programmers they are mentally mutilated beyond hope of regeneration.
 >
-> <cite>[Edgar W. Dijkstra, 18th June 1975][How do we tell truths that might hurt?]</cite>
+> <cite>[Edgar W. Dijkstra, 18th June 1975][how do we tell truths that might hurt?]</cite>
 
 <!--more-->
 
-We could replace "BASIC" with the flavour of the month. A little while ago, it was PHP. For a while, it was Rails. I think last week it was Node.js. Next week it'll probably be Go. Regardless of the programming language or framework we're vilifying, there's an important lesson here: most people who were exposed to BASIC in the 1970s were learning from [what Dijkstra considered to be the worst programming practices of the day][A Case against the GO TO Statement]. How could they possibly be rescued?
+We could replace "BASIC" with the flavour of the month. A little while ago, it was PHP. For a while, it was Rails. I think last week it was Node.js. Next week it'll probably be Go. Regardless of the programming language or framework we're vilifying, there's an important lesson here: most people who were exposed to BASIC in the 1970s were learning from [what Dijkstra considered to be the worst programming practices of the day][a case against the go to statement]. How could they possibly be rescued?
 
 I think Dijkstra was being facetious. Of course you can unlearn; it's just much harder than learning the right way (whatever that is) to begin with. However, if you only have bad examples, you will write bad code. And I don't know about you, but I spent a lot of my time looking at code I consider pretty bad.
 
@@ -20,5 +20,5 @@ It stands to reason, then, that in order to write great software, we must offset
 
 We are not in a vacuum. The works of others impact us far more than many of us would like to believe. Don't fight it, embrace it: let them make you better.
 
-[How do we tell truths that might hurt?]: https://www.cs.virginia.edu/~evans/cs655-S00/readings/ewd498.html
-[A Case against the GO TO Statement]: https://www.cs.utexas.edu/users/EWD/transcriptions/EWD02xx/EWD215.html
+[how do we tell truths that might hurt?]: https://www.cs.virginia.edu/~evans/cs655-S00/readings/ewd498.html
+[a case against the go to statement]: https://www.cs.utexas.edu/users/EWD/transcriptions/EWD02xx/EWD215.html

@@ -60,5 +60,4 @@ Give it a try and let me know how it goes. This lot had fun.
 ![Dysfunctional programming at SoCraTes
 2013](https://lh3.googleusercontent.com/--Oj-xgmIRCw/Ufz8Lws_xCI/AAAAAAAAAfc/Rqcg3d2nhDk/w1276-h957-no/1375534092829.jpg)
 
-Next time on Monospaced Monologues: everything I learnt at SoCraTes
-2013.
+Next time on Monospaced Monologues: everything I learnt at SoCraTes 2013.

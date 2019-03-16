@@ -12,9 +12,9 @@ I use Tumblr as my blogging engine, which lets me schedule posts. I then use [IF
 
 <!--more-->
 
-I subscribe to developer blogs all the time, but Feedly isn't really geared for trivially adding feeds. I have to find the RSS or Atom feed URL, paste it into the search box, then click the *+feedly* button to subscribe. The first bit, finding the feed URL on the page, is usually quite difficult, as there isn't a standard place to put it. Fortunately, the DOM is another story.
+I subscribe to developer blogs all the time, but Feedly isn't really geared for trivially adding feeds. I have to find the RSS or Atom feed URL, paste it into the search box, then click the _+feedly_ button to subscribe. The first bit, finding the feed URL on the page, is usually quite difficult, as there isn't a standard place to put it. Fortunately, the DOM is another story.
 
-Take a look at the DOM structure of this website. Specifically, the `<head>`. Open up your developer tools (usually with *Ctrl+Shift+I* or *Cmd+Shift+I*), and then the *Inspector* tab:
+Take a look at the DOM structure of this website. Specifically, the `<head>`. Open up your developer tools (usually with _Ctrl+Shift+I_ or _Cmd+Shift+I_), and then the _Inspector_ tab:
 
 {{% asset "monospacedmonologues.com DOM head structure" "2016-01-18+-+monospacedmonologues.com+DOM+head+structure.png" %}}
 
@@ -22,7 +22,7 @@ Right before the variables start, there's a line that looks like this:
 
     <link href="http://monospacedmonologues.com/rss" type="application/rss+xml" rel="alternate"></link>
 
-Most websites with RSS feeds have one of these. Similarly, sites with Atom feeds, such as [Seth Godin's blog][Seth's Blog], usually have something like this:
+Most websites with RSS feeds have one of these. Similarly, sites with Atom feeds, such as [Seth Godin's blog][seth's blog], usually have something like this:
 
     <link href="http://sethgodin.typepad.com/seths_blog/atom.xml" title="Posts on Seth's Blog (Atom)" type="application/atom+xml" rel="alternate"></liink>
 
@@ -36,7 +36,7 @@ Once we have that, we can get the feed's URL by accessing the `href` property:
 
     var feedUrl = element.href;
 
-Feedly has a standard URL structure for the page where you can view a feed and potentially subscribe to it. It looks like this: *https://feedly.com/i/subscription/feed/&lt;feed URL&gt;*. We can construct it with simple string concatenation:
+Feedly has a standard URL structure for the page where you can view a feed and potentially subscribe to it. It looks like this: _https://feedly.com/i/subscription/feed/&lt;feed URL&gt;_. We can construct it with simple string concatenation:
 
     var feedlySubscriptionUrl = 'https://feedly.com/i/subscription/feed/' + feedUrl;
 
@@ -93,16 +93,16 @@ Now all we have to do is wrap it in a function and prefix it with `javascript:`.
 
 To use it:
 
-  1. Create a new bookmark in your Bookmarks Bar.
-  2. Name it "Subscribe".
-  3. Add your code, surrounded by the auto-running function and the `javascript:` prefix, into the "Location" or "URL" field. You can copy it from [feedly-subscribe.js][] (a gist on my GitHub) if you're feeling lazy.
-  4. Save the bookmark.
-  5. Click the button whenever you're on an interesting blog.
+1. Create a new bookmark in your Bookmarks Bar.
+2. Name it "Subscribe".
+3. Add your code, surrounded by the auto-running function and the `javascript:` prefix, into the "Location" or "URL" field. You can copy it from [feedly-subscribe.js][] (a gist on my GitHub) if you're feeling lazy.
+4. Save the bookmark.
+5. Click the button whenever you're on an interesting blog.
 
-You can, of course, use the same technique to automate many web interactions, as long as it's a real website and not [a single-page application that breaks the web][Why I hate your Single Page App]. If it's something you do often and requires traipsing the DOM, JavaScript and bookmarklets have your back.
+You can, of course, use the same technique to automate many web interactions, as long as it's a real website and not [a single-page application that breaks the web][why i hate your single page app]. If it's something you do often and requires traipsing the DOM, JavaScript and bookmarklets have your back.
 
-[Feedly]: https://feedly.com/
-[IFTTT]: https://ifttt.com/
-[Seth's Blog]: http://sethgodin.typepad.com/
+[feedly]: https://feedly.com/
+[ifttt]: https://ifttt.com/
+[seth's blog]: http://sethgodin.typepad.com/
 [feedly-subscribe.js]: https://gist.github.com/SamirTalwar/6730180
-[Why I hate your Single Page App]: https://medium.com/@stilkov/why-i-hate-your-single-page-app-f08bb4ff9134
+[why i hate your single page app]: https://medium.com/@stilkov/why-i-hate-your-single-page-app-f08bb4ff9134

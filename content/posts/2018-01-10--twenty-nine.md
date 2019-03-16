@@ -12,7 +12,7 @@ Here's what I'd like for my birthday.
 
 I'd like you to ask yourself why you do what you do.
 
-And then I'd like you to post that online somewhere public (even if it's bloody Facebook), and leave a link in the comments, or [email me][samir@noodlesandwich.com], or [tweet me][@SamirTalwar], or… you get the idea.
+And then I'd like you to post that online somewhere public (even if it's bloody Facebook), and leave a link in the comments, or [email me][samir@noodlesandwich.com], or [tweet me][@samirtalwar], or… you get the idea.
 
 That'd be the best present I could ask for.
 
@@ -29,4 +29,4 @@ I don't promise to read it straight away. If all goes to plan I won't be anywher
 I do promise I'll read it.
 
 [samir@noodlesandwich.com]: mailto:samir@noodlesandwich.com
-[@SamirTalwar]: https://twitter.com/SamirTalwar
+[@samirtalwar]: https://twitter.com/SamirTalwar
