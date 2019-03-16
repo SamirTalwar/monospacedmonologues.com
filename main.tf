@@ -18,6 +18,11 @@ provider "cloudflare" {}
 
 resource "aws_s3_bucket" "site" {
   bucket = "${local.domain}"
+  acl    = "public-read"
+
+  website {
+    index_document = "index.html"
+  }
 }
 
 resource "aws_s3_bucket" "assets" {
@@ -30,14 +35,21 @@ resource "aws_cloudfront_distribution" "site_distribution" {
   aliases             = ["${local.domain}", "www.${local.domain}"]
 
   origin {
-    domain_name = "${aws_s3_bucket.site.bucket_regional_domain_name}"
-    origin_id   = "S3-${aws_s3_bucket.site.id}"
+    origin_id   = "S3-Website-${aws_s3_bucket.site.id}"
+    domain_name = "${aws_s3_bucket.site.website_endpoint}"
+
+    custom_origin_config {
+      http_port              = 80
+      https_port             = 443
+      origin_protocol_policy = "match-viewer"
+      origin_ssl_protocols   = ["TLSv1.2"]
+    }
   }
 
   default_cache_behavior {
     allowed_methods  = ["GET", "HEAD"]
     cached_methods   = ["GET", "HEAD"]
-    target_origin_id = "S3-${aws_s3_bucket.site.id}"
+    target_origin_id = "S3-Website-${aws_s3_bucket.site.id}"
 
     viewer_protocol_policy = "allow-all"
     min_ttl                = 0
@@ -69,8 +81,8 @@ resource "aws_cloudfront_distribution" "assets_distribution" {
   aliases = ["assets.${local.domain}"]
 
   origin {
-    domain_name = "${aws_s3_bucket.assets.bucket_regional_domain_name}"
     origin_id   = "S3-${aws_s3_bucket.assets.id}"
+    domain_name = "${aws_s3_bucket.assets.bucket_regional_domain_name}"
   }
 
   default_cache_behavior {
