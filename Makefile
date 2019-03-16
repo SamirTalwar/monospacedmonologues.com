@@ -1,7 +1,7 @@
 SHELL := zsh -e -u
 
 assets:
-	aws s3 sync s3://monospacedmonologues.com assets
+	aws s3 sync s3://assets.monospacedmonologues.com assets
 
 .PHONY: build
 build:
@@ -17,8 +17,10 @@ push: pushable push-assets build
 	git push
 
 .PHONY: push-assets
-push-assets: pushable
-	aws s3 sync assets s3://monospacedmonologues.com
+push-assets:
+	terraform init
+	terraform apply
+	aws s3 sync assets s3://assets.monospacedmonologues.com --acl=public-read --delete
 
 .PHONY: run
 run: build
