@@ -7,19 +7,21 @@ assets:
 build:
 	docker-compose build
 
-.PHONY: pushable
-pushable:
-	@ [[ -z "$$(git status --porcelain)" ]] || { echo >&2 "Cannot push with a dirty working tree."; exit 1; }
+.PHONY: deploy
+deploy: deploy-site deploy-assets
 
-.PHONY: push
-push: pushable push-assets build
+.PHONY: hardware
+hardware:
+	terraform init
+	terraform apply
+
+.PHONY: deploy-site
+deploy-site: hardware build
 	docker-compose push
 	git push
 
-.PHONY: push-assets
-push-assets:
-	terraform init
-	terraform apply
+.PHONY: deploy-assets
+deploy-assets: hardware assets
 	aws s3 sync assets s3://assets.monospacedmonologues.com --acl=public-read --delete
 
 .PHONY: run
