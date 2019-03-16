@@ -21,7 +21,7 @@ This initially stumped a lot of people. It was really interesting to see people 
 So how do you get around this? Well, you make your tests very easy to implement and run.
 
 <figure>
-  <p>{{% asset "Conway's Game of Life tests on paper" "2017-11-22+-+conways-game-of-life-tests-on-paper.jpg" %}}</p>
+  <p>{{% asset "Conway's Game of Life tests on paper" "2017-11-22--conways-game-of-life-tests-on-paper.jpg" %}}</p>
   <figcaption>Reproduced because I forgot to take photos.</figcaption>
 </figure>
 
@@ -34,7 +34,7 @@ As developers, engineers, coders, programmers, or whatever you want to call your
 I'm gonna be doing a lot more of this.
 
 <figure>
-  <p>{{% asset "Conway's Game of Life on paper" "2017-11-22+-+conways-game-of-life-on-paper.jpg" %}}</p>
+  <p>{{% asset "Conway's Game of Life on paper" "2017-11-22--conways-game-of-life-on-paper.jpg" %}}</p>
   <figcaption>And eventually, they figured out how to have fun.</figcaption>
 </figure>
 

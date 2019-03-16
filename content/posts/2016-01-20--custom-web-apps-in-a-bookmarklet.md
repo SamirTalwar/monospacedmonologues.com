@@ -16,7 +16,7 @@ Now, I hate JIRA with a passion, so we're not going to use that as an example. I
 
 The simplest form of modification is removing content, so I'm going to focus on that. Adding or changing content follows similar principles. Here's an example Trello board—in fact, the Welcome Board that shows up when you sign up.
 
-{{% asset "Welcome Board" "2016-01-20+-+Welcome+Board.png" %}}
+{{% asset "Welcome Board" "2016-01-20--welcome-board.png" %}}
 
 When using Trello as a kind of [kanban board][], we often want to focus on just a few columns. For example, we might not be interested in the first or last column, as they describe things that have been done ages ago or won't be started for a while.
 
@@ -66,7 +66,7 @@ Brilliant. That's the one we want. (If we wanted more, we could check that the `
 
     listsToHide.hide();
 
-{{% asset "Welcome Board with missing column" "2016-01-20+-+Welcome+Board+with+missing+column.png" %}}
+{{% asset "Welcome Board with missing column" "2016-01-20--welcome-board-with-missing-column.png" %}}
 
 Brilliant. It's gone… but the space is still there.
 
@@ -74,7 +74,7 @@ Turns out there was a wrapper element. Now, we could go and change the code to r
 
     listsToHide.parent().hide();
 
-{{% asset "Welcome Board with hidden column" "2016-01-20+-+Welcome+Board+with+hidden+column.png" %}}
+{{% asset "Welcome Board with hidden column" "2016-01-20--welcome-board-with-hidden-column.png" %}}
 
 Fantastic. If we want to show it again, we can just call `show()`. Now all we need to do is stick it in a bookmark to make a useful button that formats the page just how we need it, when we need it.
 
