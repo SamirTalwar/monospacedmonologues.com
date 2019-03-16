@@ -6,7 +6,7 @@ aliases:
   - /post/51465038762/live-coding-at-a-conference-and-why-it-is-scary
 ---
 
-![I'm speaking at I.T.A.K.E.](http://i.imgur.com/X6MvZiU.png)
+{{% asset "I'm speaking at I.T.A.K.E. Unconference" "2013-05-27--i-speak-at-itake-unconference.png" %}}
 
 In less than a week, I'm giving my first ever professional talk at the
 [I.T.A.K.E. Unconference](http://itakeunconf.com/) in Romania. The

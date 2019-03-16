@@ -73,4 +73,4 @@ pretty damn friendly.
 
 In short:
 
-![Go Outside and Meet People](http://i.imgur.com/08Y3HI1.png)
+{{% asset "Go Outside and Meet People" "2013-10-02--go-outside-and-meet-people.png" %}}

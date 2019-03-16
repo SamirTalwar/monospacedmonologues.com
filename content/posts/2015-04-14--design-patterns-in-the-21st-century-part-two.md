@@ -35,7 +35,7 @@ And the implementation:
 
 More generally, the Abstract Factory pattern is usually implemented according to this structure.
 
-![Abstract Factory pattern UML diagram](http://i.imgur.com/JAaSWIH.png)
+{{% asset "Abstract Factory pattern UML diagram" "2015-04-14--abstract-factory-pattern-uml.png" %}}
 
 In this example, `Pastry` and `Cake` are "abstract products", and `Bakery` is an "abstract factory". Their implementations are the concrete variants.
 
@@ -101,7 +101,7 @@ In this case, we might want to keep it, as it has a name relevant to our busines
 
 Here's our updated UML diagram:
 
-![Updated Abstract Factory pattern UML diagram](http://i.imgur.com/9j9yh0m.png)
+{{% asset "Updated Abstract Factory pattern UML diagram" "2015-04-14--abstract-factory-pattern-uml-functional.png" %}}
 
 Aaaaaah. Much better.
 

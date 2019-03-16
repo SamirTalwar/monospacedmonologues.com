@@ -28,7 +28,7 @@ I want you to stop using design patterns like it's _1999_.
 
 ## This is a book.
 
-<p style="text-align: center;"><img src="http://i.imgur.com/Or4VpcI.jpg" alt="Design Patterns, by Gamma, Helm, Johnson and Vlissides" style="max-width: 50%;"/></p>
+{{% asset "Design Patterns, by Gamma, Helm, Johnson and Vlissides" "2015-04-13--design-patterns-book.jpg" %}}
 
 _Design Patterns_ was a book by the "Gang of Four", first published very nearly 20 years ago (at the time of writing this essay), which attempted to canonicalise and formalise the tools that many experienced software developers and designers found themselves using over and over again.
 

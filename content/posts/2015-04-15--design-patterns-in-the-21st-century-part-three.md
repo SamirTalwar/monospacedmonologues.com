@@ -61,7 +61,7 @@ And we'd use it like this:
 
 The pattern generally follows this simple structure:
 
-![Adapter pattern UML diagram](http://i.imgur.com/Fnyuq34.png)
+{{% asset "Adapter pattern UML diagram" "2015-04-15--adapter-pattern-uml.png" %}}
 
 That's nice, right?
 
@@ -86,7 +86,7 @@ This is because Java can't convert between functional interfaces implicitly, so 
 
 Our new UML diagram will look something like this:
 
-![Updated Adapter pattern UML diagram](http://i.imgur.com/vOwEO9t.png)
+{{% asset "Updated Adapter pattern UML diagram" "2015-04-15--adapter-pattern-uml-functional.png" %}}
 
 Often, though, all we really need is a method reference. For example, take the `Executor` interface.
 

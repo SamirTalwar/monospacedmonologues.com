@@ -36,7 +36,7 @@ Cue slow progress, lots of discussion and many different ideas about the right w
 
 It looked something like this.
 
-![Mob Programming at SoCraTes UK 2014](http://i.imgur.com/DKwJ4LN.jpg)
+{{% asset "Mob Programming at SoCraTes UK 2014" "2014-07-15--mob-programming-at-socrates-uk-2014.jpg" %}}
 
 I found it remarkable how much enjoyed the exercise. The conversations that sprung up were really useful, and I could see the direction we were going was one none of us would have considered individually. That buzz I seek out every day at work from good conversations and solving interesting problems was there from the start, and throughout the exercise, it never left.
 
