@@ -105,3 +105,16 @@ resource "cloudflare_page_rule" "redirect_www" {
     }
   }
 }
+
+resource "cloudflare_page_rule" "redirect_rss" {
+  zone     = "${local.domain}"
+  target   = "${local.domain}/rss"
+  priority = 3
+
+  actions = {
+    forwarding_url {
+      url         = "/index.xml"
+      status_code = 301
+    }
+  }
+}
