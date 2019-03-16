@@ -1,5 +1,18 @@
 version: 2
 
+references:
+  deploy_jobs: &deploy_jobs
+    - build
+
+    - deploy-infrastructure:
+        context: Deployment
+
+    - deploy-site:
+        requires:
+          - build
+          - deploy-infrastructure
+        context: Deployment
+
 jobs:
   build:
     docker:
@@ -81,15 +94,16 @@ jobs:
 
 workflows:
   version: 2
+
   deploy:
-    jobs:
-      - build
+    jobs: *deploy_jobs
 
-      - deploy-infrastructure:
-          context: Deployment
-
-      - deploy-site:
-          requires:
-            - build
-            - deploy-infrastructure
-          context: Deployment
+  deploy_hourly:
+    jobs: *deploy_jobs
+    triggers:
+      - schedule:
+          cron: "0 * * * *"
+          filters:
+            branches:
+              only:
+                - master
