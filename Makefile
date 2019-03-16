@@ -1,11 +1,24 @@
 SHELL := zsh -e -u
 
+INPUT_FILES := $(wildcard archetypes/**/* content/**/* layouts/**/* resources/**/* static/**/* themes/**/*)
+
+.PHONY: build
+build: assets public
+
 assets:
 	aws s3 sync s3://assets.monospacedmonologues.com assets
 
-.PHONY: build
-build:
-	docker-compose build
+public: $(INPUT_FILES)
+	HUGO_ENV=production hugo --cleanDestinationDir
+	touch $@
+
+.PHONY: serve
+serve:
+	hugo server
+
+.PHONY: serve-future
+serve-future:
+	hugo server --buildFuture
 
 .PHONY: deploy
 deploy: deploy-site deploy-assets
@@ -16,14 +29,9 @@ hardware:
 	terraform apply
 
 .PHONY: deploy-site
-deploy-site: hardware build
-	docker-compose push
-	git push
+deploy-site: hardware public
+	aws s3 sync public s3://monospacedmonologues.com --acl=public-read --delete
 
 .PHONY: deploy-assets
 deploy-assets: hardware assets
 	aws s3 sync assets s3://assets.monospacedmonologues.com --acl=public-read --delete
-
-.PHONY: run
-run: build
-	docker-compose up
