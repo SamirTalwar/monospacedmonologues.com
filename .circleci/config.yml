@@ -1,0 +1,88 @@
+version: 2
+
+jobs:
+  build:
+    docker:
+      - image: circleci/buildpack-deps:bionic
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          name: Restore Hugo
+          keys:
+            - v1-hugo-0.54.0
+
+      - run:
+          name: Install Hugo
+          command: |
+            if [[ ! -d /opt/hugo ]]; then
+              sudo mkdir /opt/hugo
+              curl -fsSL https://github.com/gohugoio/hugo/releases/download/v0.54.0/hugo_0.54.0_Linux-64bit.tar.gz \
+                > /tmp/hugo.tar.gz
+              sudo tar x -C /opt/hugo -f /tmp/hugo.tar.gz
+            fi
+            sudo ln -s /opt/hugo /usr/local/bin/hugo
+
+      - save_cache:
+          name: Cache Hugo
+          paths:
+            - /opt/hugo
+          key: v1-hugo-0.54.0
+
+      - run:
+          name: Build
+          command: make public
+
+      - persist_to_workspace:
+          root: .
+          paths:
+            - public
+
+  deploy-infrastructure:
+    docker:
+      - image: hashicorp/terraform
+
+    steps:
+      - checkout
+
+      - run:
+          name: Initialize Terraform
+          command: terraform init
+
+      - run:
+          name: Deploy infrastructure
+          command: terraform apply -auto-approve
+
+  deploy-site:
+    docker:
+      - image: circleci/python
+
+    steps:
+      - checkout
+
+      - run:
+          name: Install the AWS CLI
+          command: pip install --user awscli
+
+      - attach_workspace:
+          at: ./public
+
+      - run:
+          name: Push to AWS S3
+          command: ~/.local/bin/aws s3 sync public s3://monospacedmonologues.com --acl=public-read --delete
+
+workflows:
+  version: 2
+  deploy:
+    jobs:
+      - build
+
+      - deploy-infrastructure:
+          context: Deployment
+
+      - deploy-site:
+          requires:
+            - build
+            - deploy-infrastructure
+          context: Deployment
