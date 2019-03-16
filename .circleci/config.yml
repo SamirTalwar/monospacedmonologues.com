@@ -73,7 +73,7 @@ jobs:
           command: pip install --user awscli
 
       - attach_workspace:
-          at: ./public
+          at: .
 
       - run:
           name: Push to AWS S3
