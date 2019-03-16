@@ -6,12 +6,20 @@ references:
 
     - deploy-infrastructure:
         context: Deployment
+        filters:
+          branches:
+            only:
+              - master
 
     - deploy-site:
         requires:
           - build
           - deploy-infrastructure
         context: Deployment
+        filters:
+          branches:
+            only:
+              - master
 
 jobs:
   build:
