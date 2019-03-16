@@ -6,8 +6,6 @@ jobs:
       - image: circleci/buildpack-deps:bionic
 
     steps:
-      - checkout
-
       - restore_cache:
           name: Restore Hugo
           keys:
@@ -28,6 +26,14 @@ jobs:
           paths:
             - ~/hugo
           key: v2-hugo-0.54.0
+
+      - checkout
+
+      - run:
+          name: Check out submodules
+          command: |
+            git submodule sync
+            git submodule update --init
 
       - run:
           name: Build
