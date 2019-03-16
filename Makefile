@@ -1,4 +1,4 @@
-SHELL := zsh -e -u
+SHELL := bash -e -u
 
 INPUT_FILES := $(wildcard archetypes/**/* content/**/* layouts/**/* resources/**/* static/**/* themes/**/*)
 
