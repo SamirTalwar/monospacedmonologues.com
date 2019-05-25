@@ -14,10 +14,11 @@ provider "aws" {
   region = "eu-west-1"
 }
 
-provider "cloudflare" {}
+provider "cloudflare" {
+}
 
 resource "aws_s3_bucket" "site" {
-  bucket = "${local.domain}"
+  bucket = local.domain
   acl    = "public-read"
 
   website {
@@ -32,11 +33,11 @@ resource "aws_s3_bucket" "assets" {
 resource "aws_cloudfront_distribution" "site_distribution" {
   enabled             = true
   default_root_object = "index.html"
-  aliases             = ["${local.domain}", "www.${local.domain}"]
+  aliases             = [local.domain, "www.${local.domain}"]
 
   origin {
     origin_id   = "S3-Website-${aws_s3_bucket.site.id}"
-    domain_name = "${aws_s3_bucket.site.website_endpoint}"
+    domain_name = aws_s3_bucket.site.website_endpoint
 
     custom_origin_config {
       http_port              = 80
@@ -82,7 +83,7 @@ resource "aws_cloudfront_distribution" "assets_distribution" {
 
   origin {
     origin_id   = "S3-${aws_s3_bucket.assets.id}"
-    domain_name = "${aws_s3_bucket.assets.bucket_regional_domain_name}"
+    domain_name = aws_s3_bucket.assets.bucket_regional_domain_name
   }
 
   default_cache_behavior {
@@ -116,45 +117,45 @@ resource "aws_cloudfront_distribution" "assets_distribution" {
 }
 
 resource "cloudflare_record" "root" {
-  domain  = "${local.domain}"
+  domain  = local.domain
   name    = "@"
   type    = "CNAME"
-  value   = "${aws_cloudfront_distribution.site_distribution.0.domain_name}"
+  value   = aws_cloudfront_distribution.site_distribution.domain_name
   proxied = true
 }
 
 resource "cloudflare_record" "www" {
-  domain  = "${local.domain}"
+  domain  = local.domain
   name    = "www"
   type    = "CNAME"
-  value   = "${local.domain}"
+  value   = local.domain
   proxied = true
 }
 
 resource "cloudflare_record" "assets" {
-  domain  = "${local.domain}"
+  domain  = local.domain
   name    = "assets"
   type    = "CNAME"
-  value   = "${aws_cloudfront_distribution.assets_distribution.0.domain_name}"
+  value   = aws_cloudfront_distribution.assets_distribution.domain_name
   proxied = true
 }
 
 resource "cloudflare_page_rule" "always_use_https" {
-  zone     = "${local.domain}"
+  zone     = local.domain
   target   = "http://*${local.domain}/*"
   priority = 1
 
-  actions = {
+  actions {
     always_use_https = true
   }
 }
 
 resource "cloudflare_page_rule" "redirect_www" {
-  zone     = "${local.domain}"
+  zone     = local.domain
   target   = "www.${local.domain}/*"
   priority = 2
 
-  actions = {
+  actions {
     forwarding_url {
       url         = "https://${local.domain}/$1"
       status_code = 301
@@ -163,11 +164,11 @@ resource "cloudflare_page_rule" "redirect_www" {
 }
 
 resource "cloudflare_page_rule" "redirect_rss" {
-  zone     = "${local.domain}"
+  zone     = local.domain
   target   = "${local.domain}/rss"
   priority = 3
 
-  actions = {
+  actions {
     forwarding_url {
       url         = "/index.xml"
       status_code = 301
