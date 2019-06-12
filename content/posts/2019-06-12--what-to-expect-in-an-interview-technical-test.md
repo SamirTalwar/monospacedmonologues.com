@@ -8,15 +8,15 @@ Chipo, on the [Codebar Slack][], asked what they could expect in a technical tes
 
 ---
 
-I'd typically expect a "tech test" to involve implementing a small program, typically on the command line, as well as you can. Often they’ll expect you to write unit tests and practice good design principles (low coupling, good names, etc.)
+I'd typically expect a "tech test" to be part of an interview for a software development role. It involves implementing a small program, typically on the command line, as well as you can. Often, the interviewer will expect you to write unit tests and practice good design principles (low coupling, good names, etc.)
 
-Sometimes they send you an exercise to do and you send the results back, and sometimes you do it in their office with someone looking over their shoulder. They’ll usually ask you to bring a computer if it’s the latter, but don’t be afraid to ask to borrow one (and specify the kind of coding environment you’re used to) if you don’t have one available.
+Sometimes the interviewer will send you an exercise to do and expect you to send the results back, and sometimes you'll do it in their office (or online, over video chat and screen sharing) with someone looking over your shoulder. They’ll usually ask you to bring a computer if it’s the latter, but don’t be afraid to ask to borrow one (and specify the kind of coding environment you’re used to) if you don’t have one available.
 
 <!--more-->
 
-If the interviewer expects you to use a specific programming language, framework or set of libraries, they should specify them up-front. If you're not clear on the technical requirements (for example, if they expect you to use a language or framework you've not used before), be up-front and honest. They might change the conditions for you, and if they don't, at least you'll have a good idea of whether you can get the job before you put much effort into it.
+If they expect you to use a specific programming language, framework or set of libraries, they should specify them up-front. If you're not clear on the technical requirements (for example, if they expect you to use a language or framework you've not used before), be up-front and honest. They might change the conditions for you, and if they don't, at least you'll have a good idea of whether you can get the job before you put much effort into it.
 
-I recommend doing a few of the exercises from [Kata-Log][] to start. Perhaps one from [the software design section][kata-log: software design]. (Choose one that doesn’t have a “Constraint” and isn’t “Refactoring”-oriented.)
+I recommend doing a few of the exercises from [Kata-Log][] to practice. Perhaps one from [the software design section][kata-log: software design]. (Choose one that doesn’t have a “Constraint” and isn’t “Refactoring”-oriented.)
 
 If you want a recommendation or three, I suggest:
 
