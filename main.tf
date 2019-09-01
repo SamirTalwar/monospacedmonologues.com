@@ -140,6 +140,13 @@ resource "cloudflare_record" "assets" {
   proxied = true
 }
 
+resource "cloudflare_record" "google_verification" {
+  domain = local.domain
+  name   = "@"
+  type   = "TXT"
+  value  = "google-site-verification=8IZ4RTYSQArXX4XbKdoSAP1G7aMRFQPg3ONvbvhiglc"
+}
+
 resource "cloudflare_page_rule" "always_use_https" {
   zone     = local.domain
   target   = "http://*${local.domain}/*"
