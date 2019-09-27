@@ -6,6 +6,10 @@ aliases:
   - /post/139778567016/docker-part-one-getting-started
 ---
 
+_Note: This article is pretty old. On Windows and Mac, I now recommend checking out [Docker Desktop][] instead._
+
+[docker desktop]: https://www.docker.com/products/docker-desktop
+
 I've been using Docker heavily in development, test and production for almost a year now, and more and more, I'm asked how to get started with it and use it. I thought I'd write a quick guide to Making Things Happen™ on your local machine, and perhaps touch on deploying services inside Docker containers in the future.
 
 <!--more-->
@@ -29,9 +33,8 @@ Of course, all this means you need to be running Linux. Fortunately, it's easy t
 
 The recommended method of running Docker on a non-Linux operating system is to use Docker Machine, a VM provisioning tool, to spin up a Linux virtual machine. It's suggested you use the [Docker Toolbox][] to install Docker and Docker Machine. Docker Toolbox also installs [Docker Compose][], which we use for managing multiple containers at once, and [VirtualBox][], a free, open-source virtual machine host.
 
-On Windows, Docker Toolbox is your best choice—just download and run the installer. On Mac OS, you can take the same approach, but I prefer to use [Homebrew][] and [Caskroom][], which I use for installing most of my developer tools. If you already have Homebrew, you can install everything you need by running:
+On Windows, Docker Toolbox is your best choice—just download and run the installer. On Mac OS, you can take the same approach, but I prefer to use [Homebrew][], which I use for installing most of my developer tools. If you already have Homebrew, you can install everything you need by running:
 
-    $ brew tap caskroom/cask
     $ brew update
     $ brew install docker docker-machine docker-compose
     $ brew cask install virtualbox
@@ -40,7 +43,6 @@ On Windows, Docker Toolbox is your best choice—just download and run the insta
 [docker compose]: https://docs.docker.com/compose/
 [virtualbox]: https://www.virtualbox.org/
 [homebrew]: http://brew.sh/
-[caskroom]: http://caskroom.io/
 
 ### Creating a VM
 
