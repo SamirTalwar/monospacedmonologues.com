@@ -215,11 +215,11 @@ We don't just pump information into software; sometimes, we spit it out as well.
 
 So, of course, rekords are serializable. Not Java `Serializable` (with a capital _S_), but something a bit more controllable. Because we expose the keys of a rekord, no reflection is required to transform one straight into a form of your choosing.
 
-So, `woz.serialize(JacksonSerializer.writingToString())` returns this:
+So, <code>woz<wbr/>.serialize(<wbr/>JacksonSerializer<wbr/>.writingToString())</code> returns this:
 
     {"first name":"Steve","last name":"Wozniak","date of birth":"1950-08-11","address":{"city":"Cupertino"}}
 
-And `woz.serialize(new DomXmlSerializer())` returns a `Document` object containing this:
+And <code>woz<wbr/>.serialize(<wbr/>new DomXmlSerializer())</code> returns a `Document` object containing this:
 
     <?xml version="1.0" encoding="UTF-8" standalone="no"?>
     <person>
