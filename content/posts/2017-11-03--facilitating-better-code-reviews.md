@@ -20,10 +20,7 @@ Code reviews are a pretty charged topic for many developers. Some argue they don
 
 What this tells us is that they're pretty popular. If they weren't, no one would have an opinion in the first place.
 
-<figure>
-  <p><img src="https://imgs.xkcd.com/comics/duty_calls.png" alt="xkcd #386: Duty Calls"/></p>
-  <figcaption><a href="https://xkcd.com/386/">Obligatory xkcd.</a></figcaption>
-</figure>
+{{< figure src="https://imgs.xkcd.com/comics/duty_calls.png" alt="xkcd #386: Duty Calls" caption="[Obligatory xkcd.](https://xkcd.com/386/)" >}}
 
 So, given that many teams use code reviews as a technique to improve code quality, how can we make them more efficient, more effective, and most of all, more fun?
 
@@ -37,7 +34,7 @@ The latest edition of The State of Code Review claims:
 
 We wanted to understand what it is that's stopping people from jumping into code review. There are so many questions we wanted to ask, but with the aim of keeping the poll brief, we settled on one:
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en-gb"><p lang="en" dir="ltr">1/3. How long does it usually take you to do a code review?</p>&mdash; Samir Talwar (@SamirTalwar) <a href="https://twitter.com/SamirTalwar/status/921680972608933889?ref_src=twsrc%5Etfw">21 October 2017</a></blockquote>
+{{< tweet 921680972608933889 >}}
 
 (If you can't see the poll, click the date to view it on Twitter.)
 
@@ -62,7 +59,7 @@ We believe in making machines work for humans. It's time to start thinking about
 
 There's a reason people review code (and sometimes enforce it). We wanted to find out a little more about why.
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en-gb"><p lang="en" dir="ltr">2/3. What&#39;s the most important benefit of code review?</p>&mdash; Samir Talwar (@SamirTalwar) <a href="https://twitter.com/SamirTalwar/status/921681193078272000?ref_src=twsrc%5Etfw">21 October 2017</a></blockquote>
+{{< tweet 921681193078272000 >}}
 
 This really helped us clarify what people (or, at least, my bubble of people) are looking for when they review code. There's a lot of different areas in which we can derive value, but for many, they're looking to make sure that everyone understands and agrees with the changes made. Personally, I'm a big fan of this, because it changes the conversation from "no, do this" to "yes, and also this!" Providing a gateway to ask and answer questions really helps with healthy team dynamics. After all, software is a human endeavour: we work with pure thought-stuff, collaboratively creating something out of nothing. Communication is key.
 
@@ -83,7 +80,7 @@ Code is hard, but people are harder.
 
 We all have problems with sub-par code. Often the question is not "How do we fix it?", but one step earlier: "Is there a problem?"
 
-<blockquote class="twitter-tweet" data-conversation="none" data-lang="en-gb"><p lang="en" dir="ltr">3/3. What&#39;s the hardest part of code review?</p>&mdash; Samir Talwar (@SamirTalwar) <a href="https://twitter.com/SamirTalwar/status/921681356400349185?ref_src=twsrc%5Etfw">21 October 2017</a></blockquote>
+{{< tweet 921681356400349185 >}}
 
 Despite its relatively low (but still substantial) value, many find it very difficult to identify defects in code submitted for review. There's many reasons for this, but we at Prodo.AI believe that it's partially down to a lack of tooling and the inability to explore quickly. While we're interacting with a text diff on our source code, spotting problems is very much trying to find needles in a haystack.
 
@@ -108,5 +105,3 @@ And we'd love to work with you. [Get in touch.][samir@prodo.ai]
 [@sf105]: https://twitter.com/sf105
 [disagree and commit]: https://en.wikipedia.org/wiki/Disagree_and_commit
 [samir@prodo.ai]: mailto:samir@prodo.ai
-
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>

@@ -14,8 +14,7 @@ Anyway, [I thought you might be interested in reading it.][talk] Yes, reading it
 
 It's got lots of lovely buttons in it that you can click. Like this one:
 
-<p data-height="600" data-theme-id="26053" data-slug-hash="PGVpgQ" data-default-tab="js,result" data-user="SamirTalwar" data-embed-version="2" class="codepen">See the Pen <a href="https://codepen.io/SamirTalwar/pen/PGVpgQ/">99 bottles, take 5</a> by Samir Talwar (<a href="http://codepen.io/SamirTalwar">@SamirTalwar</a>) on <a href="http://codepen.io">CodePen</a>.</p>
-<script async src="//assets.codepen.io/assets/embed/ei.js"></script>
+{{< codepen slug="PGVpgQ" height=600 >}}99 bottles, take 5{{< /codepen >}}
 
 So [check it out][talk], and let me know what you think in the comments!
 

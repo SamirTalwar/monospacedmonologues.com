@@ -9,10 +9,7 @@ Last time, we figured out how to host static web pages for free on GitHub pages.
 
 My blog, [_monospacedmonologues.com_][monospacedmonologues.com], is pretty text-heavy, but gets a sprinkling of pictures once in a while. The blog itself is really just a [Tumblr][] blog, and so I don't host it anywhere I can store files. But that doesn't matter, because the images can be hosted anywhere.
 
-<figure>
-    <p><img src="blog.png" alt="my blog"/></p>
-    <figcaption>Even the pictures on my blog are code-heavy.</figcaption>
-</figure>
+{{< figure src="blog.png" alt="my blog" caption="Even the pictures on my blog are code-heavy." >}}
 
 Personally, I use [Amazon Web Services][] to host my images, but there are lots of other storage providers, such as [Rackspace Cloud][], [Google Cloud][] and [Microsoft Azure][]. The important thing is to pick one that isn't going away any time soon, so I'd suggest sticking to the big players.
 
@@ -31,10 +28,7 @@ Amazon, along with a few of the other cloud providers, use the term "bucket" to 
 
 Open up the _S3_ service.
 
-<figure>
-    <p><img src="opening S3.png" alt="opening S3"/></p>
-    <figcaption>The list of services can be a little daunting.</figcaption>
-</figure>
+{{< figure src="opening S3.png" alt="opening S3" caption="The list of services can be a little daunting." >}}
 
 Once we're on the S3 home page, create your bucket. If you have a domain name already, I'd recommend naming it the same as your domain—it'll stop you getting confused later if you end up with multiple buckets for multiple purposes. I named mine "monospacedmonologues.com". Your bucket name needs to be globally unique, so if you don't own a domain name, you may have to be fairly inventive.
 

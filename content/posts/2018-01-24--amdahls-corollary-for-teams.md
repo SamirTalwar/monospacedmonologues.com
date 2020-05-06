@@ -81,10 +81,7 @@ Legacy code, bottlenecks in the development pipeline, and re-work caused by misu
 
 Now watch [J. B. Rainsberger][] explain the same thing in 7 minutes and 26 seconds.
 
-<figure>
-  <iframe src="https://player.vimeo.com/video/79106557" width="640" height="384" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  <figcaption><a href="https://vimeo.com/79106557">7 minutes, 26 seconds, and the Fundamental Theorem of Agile Software Development</a>,<br/>by J. B. Rainsberger.</figcaption>
-</figure>
+{{< youtube WSes_PexXcA >}}
 
 [gustafson's law]: https://en.wikipedia.org/wiki/Gustafson's_law
 [j. b. rainsberger]: http://www.jbrains.ca/

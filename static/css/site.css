@@ -36,3 +36,20 @@ blockquote *:first-child {
 blockquote *:last-child {
   margin-bottom: 0;
 }
+
+figcaption {
+  text-align: center;
+  font-style: italic;
+}
+
+figcaption em {
+  font-style: normal;
+}
+
+.citation {
+  text-align: right;
+}
+
+.citation::before {
+  content: "—";
+}

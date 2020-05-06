@@ -1,0 +1,9 @@
+<figure>
+  <p>
+    <img
+      src="{{ $.Site.Params.assets_prefix }}/{{ .Get 1 | html }}"
+      alt="{{ .Get 0 | html }}"
+    />
+  </p>
+  <figcaption>{{ .Inner }}</figcaption>
+</figure>

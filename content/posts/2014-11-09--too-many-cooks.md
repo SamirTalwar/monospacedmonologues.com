@@ -33,7 +33,7 @@ So what went wrong in the mobbing, and why did pairing work? As mob programming 
 
 ## By failing to prepare, you are preparing to fail.
 
-<p class="citation"><cite>Benjamin Franklin</cite></p>
+{{< cite >}}Benjamin Franklin{{< /cite >}}
 
 This exercise gave me some more confirmation of a hypothesis I've been kicking around in my head for a while:
 

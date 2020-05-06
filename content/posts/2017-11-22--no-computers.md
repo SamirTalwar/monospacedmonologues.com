@@ -20,10 +20,9 @@ This initially stumped a lot of people. It was really interesting to see people 
 
 So how do you get around this? Well, you make your tests very easy to implement and run.
 
-<figure>
-  <p>{{% asset "Conway's Game of Life tests on paper" "2017-11-22--conways-game-of-life-tests-on-paper.jpg" %}}</p>
-  <figcaption>Reproduced because I forgot to take photos.</figcaption>
-</figure>
+{{< asset-figure "Conway's Game of Life tests on paper" "2017-11-22--conways-game-of-life-tests-on-paper.jpg" >}}
+Reproduced because I forgot to take photos.
+{{< /asset-figure >}}
 
 Paper opens up avenues that are typically very difficult in code; in this case, it lets us draw inputs and outputs that we can parse really easily without having to engage the analytical portion of our brain. In my experience, allowing myself to use the intuitive part of my brain means I can do things like run a bunch of scenarios in parallel instead of having to evaluate each one separately. It also uses way less energy. (Way more on this topic in [Thinking, Fast and Slow][].)
 
@@ -33,10 +32,9 @@ As developers, engineers, coders, programmers, or whatever you want to call your
 
 I'm gonna be doing a lot more of this.
 
-<figure>
-  <p>{{% asset "Conway's Game of Life on paper" "2017-11-22--conways-game-of-life-on-paper.jpg" %}}</p>
-  <figcaption>And eventually, they figured out how to have fun.</figcaption>
-</figure>
+{{< asset-figure "Conway's Game of Life on paper" "2017-11-22--conways-game-of-life-on-paper.jpg" >}}
+And eventually, they figured out how to have fun.
+{{< /asset-figure >}}
 
 [@ameliecornelis]: https://twitter.com/AmelieCornelis
 [@alastairs]: https://twitter.com/alastairs

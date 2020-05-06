@@ -1,0 +1,13 @@
+<p
+  data-height="{{ or (.Get "height") 320 | html }}"
+  data-theme-id="0"
+  data-slug-hash="{{ .Get "slug" | html }}"
+  data-default-tab="{{ or (.Get "default-tab") "result" | html }}"
+  data-user="SamirTalwar"
+  class="codepen"
+>
+  See the Pen
+  <a href="http://codepen.io/SamirTalwar/pen/{{ .Get "slug" | html }}/">{{ .Inner }}</a>
+  by Samir Talwar (<a href="http://codepen.io/SamirTalwar">@SamirTalwar</a>)
+  on <a href="http://codepen.io">CodePen</a>.
+</p>

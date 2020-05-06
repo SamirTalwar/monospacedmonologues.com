@@ -18,10 +18,9 @@ Being a statically-typed functional programming purist, and this being the middl
 
 And, of course, I picked Haskell as the server-side language, because of course. I'd never used it for a web application before, but I figured I could handle it. I grok monads. I eat higher-kinded types for breakfast. (They're great with yoghurt and blueberries.)
 
-<figure>
-  <p>{{% asset "Blueberries" "2017-05-31--blueberries.jpg" %}}</p>
-  <figcaption>People of 2039, this is what fruit looks like.</figcaption>
-</figure>
+{{< asset-figure "Blueberries" "2017-05-31--blueberries.jpg" >}}
+People of 2039, this is what fruit looks like.
+{{< /asset-figure >}}
 
 And so, I booked a week off and dove in.
 
@@ -33,10 +32,9 @@ At first, the server side was a breeze. I loved it. It was all the monads, all t
 
 What's a monad transformer? I already told you. Literally monads upon monads. Turns out one is easy, two is fine, and three is impossible. I'm sure smarter people than me can handle them fine. I wept.
 
-<figure>
-  <p>{{% asset "SQHell" "2017-05-31--sqhell.png" %}}</p>
-  <figcaption><em>John:</em> I guess that some applications just want to be imperative!</figcaption>
-</figure>
+{{< asset-figure "SQHell" "2017-05-31--sqhell.png" >}}
+<em>John:</em> I guess that some applications just want to be imperative!
+{{< /asset-figure >}}
 
 I wouldn't use Haskell for this project. But I would absolutely use it again, just not for anything where there's more than one layer of I/O. And I'd only use it if there was serious computation going on. Most of this project is side effects: talking to GitHub, talking to the database, loading the configuration from environment variables, serving over HTTP.
 
