@@ -46,6 +46,10 @@ figcaption em {
   font-style: normal;
 }
 
+dt {
+  font-weight: bold;
+}
+
 .citation {
   text-align: right;
 }
