@@ -1,4 +1,10 @@
+# Direnv
+.direnv
+.envrc.local
+
+# Terraform
+.terraform
+
+# Outputs
 /assets
 /public
-
-.terraform
