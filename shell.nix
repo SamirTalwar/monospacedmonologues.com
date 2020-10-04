@@ -8,6 +8,6 @@ mkShell {
     awscli
     gnumake
     hugo
-    terraform
+    terraform_0_13
   ];
 }
