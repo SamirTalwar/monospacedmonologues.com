@@ -9,7 +9,7 @@ references:
         filters:
           branches:
             only:
-              - master
+              - main
 
     - deploy-site:
         requires:
@@ -19,7 +19,7 @@ references:
         filters:
           branches:
             only:
-              - master
+              - main
 
 jobs:
   build:
@@ -114,4 +114,4 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
