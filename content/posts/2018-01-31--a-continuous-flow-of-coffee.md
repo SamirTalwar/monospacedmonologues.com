@@ -12,8 +12,6 @@ Recently I was reminded of my favourite metaphor for this. I was in [Brooklyn Co
 
 <!--more-->
 
-{{< instagram BRgMWO4DUKb >}}
-
 Now, the reason I had to wait is because there was a couple of large orders in front of me: 2–4 coffees each. There was absolutely no point taking my order earlier—it wouldn't save me any time, and it would just slow down the orders in front. And after she took my order, our hero went straight back to making coffee.
 
 In a café where the staff know their trade, no one really has a "job". People have skills—some can use the espresso machine, some the V60s, some are good at waiting tables, some best at cleaning up. But everyone does everything as necessary. In a well-oiled café, there are no bottlenecks in the pipeline, because the (human) resources are fluid, changing to adapt to the situation at any given moment.
