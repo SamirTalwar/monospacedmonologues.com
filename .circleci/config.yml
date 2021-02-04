@@ -30,14 +30,14 @@ jobs:
       - restore_cache:
           name: Restore Hugo
           keys:
-            - v2-hugo-0.68.0
+            - v2-hugo-0.80.0
 
       - run:
           name: Install Hugo
           command: |
             if [[ ! -d ~/hugo ]]; then
               mkdir ~/hugo
-              curl -fsSL https://github.com/gohugoio/hugo/releases/download/v0.68.0/hugo_0.68.0_Linux-64bit.tar.gz \
+              curl -fsSL https://github.com/gohugoio/hugo/releases/download/v0.80.0/hugo_0.80.0_Linux-64bit.tar.gz \
                 > /tmp/hugo.tar.gz
               tar x -C ~/hugo -f /tmp/hugo.tar.gz
             fi
@@ -46,7 +46,7 @@ jobs:
           name: Cache Hugo
           paths:
             - ~/hugo
-          key: v2-hugo-0.68.0
+          key: v2-hugo-0.80.0
 
       - checkout
 
