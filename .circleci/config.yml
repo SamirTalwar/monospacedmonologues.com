@@ -105,13 +105,3 @@ workflows:
 
   deploy:
     jobs: *deploy_jobs
-
-  deploy_hourly:
-    jobs: *deploy_jobs
-    triggers:
-      - schedule:
-          cron: "0 * * * *"
-          filters:
-            branches:
-              only:
-                - main
