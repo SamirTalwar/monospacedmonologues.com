@@ -1,26 +1,5 @@
 version: 2
 
-references:
-  deploy_jobs: &deploy_jobs
-    - build
-
-    - deploy-infrastructure:
-        context: Deployment
-        filters:
-          branches:
-            only:
-              - main
-
-    - deploy-site:
-        requires:
-          - build
-          - deploy-infrastructure
-        context: Deployment
-        filters:
-          branches:
-            only:
-              - main
-
 jobs:
   build:
     docker:
@@ -104,4 +83,22 @@ workflows:
   version: 2
 
   deploy:
-    jobs: *deploy_jobs
+    jobs:
+      - build
+
+      - deploy-infrastructure:
+          context: Deployment
+          filters:
+            branches:
+              only:
+                - main
+
+      - deploy-site:
+          requires:
+            - build
+            - deploy-infrastructure
+          context: Deployment
+          filters:
+            branches:
+              only:
+                - main
