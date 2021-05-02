@@ -9,15 +9,11 @@ assets:
 	aws s3 sync s3://assets.monospacedmonologues.com assets
 
 public: $(INPUT_FILES)
-	HUGO_ENV=production hugo --cleanDestinationDir
+	HUGO_ENV=production hugo --cleanDestinationDir --buildFuture
 	touch $@
 
 .PHONY: serve
 serve:
-	hugo server
-
-.PHONY: serve-future
-serve-future:
 	hugo server --buildFuture
 
 .PHONY: deploy
