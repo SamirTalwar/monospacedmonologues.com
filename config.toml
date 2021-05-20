@@ -24,6 +24,3 @@ background_color_class = "bg-near-black"
 custom_css = ["css/site.css"]
 assets_prefix = "https://assets.monospacedmonologues.com"
 recent_posts_number = 5
-
-[blackfriday]
-extensionsmask = ["noIntraEmphasis"]
