@@ -18,6 +18,7 @@ posts = "/:year/:month/:slug/"
   url = "https://noodlesandwich.com"
 
 [params]
+email = "samir@noodlesandwich.com"
 twitter = "https://twitter.com/SamirTalwar"
 featured_image = false
 background_color_class = "bg-near-black"

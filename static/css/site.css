@@ -5,6 +5,15 @@ main[role="main"] {
   margin-right: 2rem;
 }
 
+.reply {
+  font-style: italic;
+}
+
+.share {
+  display: flex;
+  justify-content: center;
+}
+
 .ma0 h1,
 .ma0 h2,
 .ma0 h3,
