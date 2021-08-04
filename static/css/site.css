@@ -64,5 +64,5 @@ dt {
 }
 
 .citation::before {
-  content: "—";
+  content: "— ";
 }
