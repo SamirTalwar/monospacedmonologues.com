@@ -73,7 +73,7 @@ jobs:
           command: |
             mkdir /tmp/aws
             cd /tmp/aws
-            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            curl 'https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip' -o 'awscliv2.zip'
             unzip -q awscliv2.zip
             sudo ./aws/install
 
@@ -83,6 +83,12 @@ jobs:
       - run:
           name: Push to AWS S3
           command: aws s3 sync public s3://monospacedmonologues.com --acl=public-read --delete
+
+      - run:
+          name: Refresh AWS CloudFront
+          command: |
+            distribution_id="$(aws cloudfront list-distributions | jq -r --arg domain 'monospacedmonologues.com' '.DistributionList.Items | .[] | select(.Aliases.Items | index($domain)) | .Id')"
+            aws cloudfront create-invalidation --distribution-id "$distribution_id" --paths '/*'
 
 workflows:
   version: 2
