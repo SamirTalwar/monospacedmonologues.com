@@ -63,21 +63,26 @@ jobs:
 
   deploy-site:
     docker:
-      - image: circleci/python
+      - image: cimg/base:stable
 
     steps:
       - checkout
 
       - run:
           name: Install the AWS CLI
-          command: pip install --user awscli
+          command: |
+            mkdir /tmp/aws
+            cd /tmp/aws
+            curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+            unzip -q awscliv2.zip
+            sudo ./aws/install
 
       - attach_workspace:
           at: .
 
       - run:
           name: Push to AWS S3
-          command: ~/.local/bin/aws s3 sync public s3://monospacedmonologues.com --acl=public-read --delete
+          command: aws s3 sync public s3://monospacedmonologues.com --acl=public-read --delete
 
 workflows:
   version: 2
