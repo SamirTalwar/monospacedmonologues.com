@@ -3,6 +3,7 @@ languageCode = "en-gb"
 title = "Monospaced Monologues"
 theme = "ananke"
 
+paginate = 1000
 summaryLength = 1048576
 
 pygmentsCodefences = true
