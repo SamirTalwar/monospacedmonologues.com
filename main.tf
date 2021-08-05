@@ -29,6 +29,10 @@ resource "aws_s3_bucket" "assets" {
   bucket = "assets.${local.domain}"
 }
 
+data "aws_cloudfront_cache_policy" "caching_optimized" {
+  name = "Managed-CachingOptimized"
+}
+
 resource "aws_cloudfront_distribution" "site_distribution" {
   enabled             = true
   default_root_object = "index.html"
@@ -52,17 +56,7 @@ resource "aws_cloudfront_distribution" "site_distribution" {
     target_origin_id = "S3-Website-${aws_s3_bucket.site.id}"
 
     viewer_protocol_policy = "allow-all"
-    min_ttl                = 0
-    default_ttl            = 900
-    max_ttl                = 86400
-
-    forwarded_values {
-      query_string = false
-
-      cookies {
-        forward = "none"
-      }
-    }
+    cache_policy_id        = data.aws_cloudfront_cache_policy.caching_optimized.id
   }
 
   restrictions {
