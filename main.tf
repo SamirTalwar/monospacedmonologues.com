@@ -179,3 +179,14 @@ resource "cloudflare_page_rule" "redirect_rss" {
     }
   }
 }
+
+resource "cloudflare_worker_script" "plausible_proxy" {
+  name    = "plsbl_proxy"
+  content = file("infrastructure/plausible-proxy.js")
+}
+
+resource "cloudflare_worker_route" "plausible_route" {
+  zone_id     = cloudflare_zone.site.id
+  pattern     = "${local.domain}/plsbl/*"
+  script_name = cloudflare_worker_script.plausible_proxy.name
+}
