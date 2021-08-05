@@ -6,6 +6,7 @@ mkShell {
     nixpkgs-fmt
 
     awscli2
+    coreutils
     gnumake
     hugo
     terraform_0_15
