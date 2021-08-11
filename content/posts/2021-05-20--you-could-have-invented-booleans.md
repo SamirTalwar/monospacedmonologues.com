@@ -6,11 +6,17 @@ date: 2021-05-20T16:00:00Z
 
 Booleans can be confusing.
 
-{{< tweet 1392041013800210432 >}}
+{{< asset-figure "Screenshot of the file_diff::diff documentation." "2021-05-20--diff.png" >}}
+[The `file_diff::diff` documentation.](https://docs.rs/file_diff/1.0.0/file_diff/fn.diff.html)
+{{< /asset-figure >}}
+
+_Note: The original version of this article used a tweet by [David Flanagan][@rawkode], but it's gone missing, so I have replaced it with this screenshot._
 
 Now, let's first establish that we're glad the `file_diff` crate exists and we appreciate the maintainers for their time. This is not an accusation or criticism of their work, simply an exercise in imagining a different universe where the API of `diff` is different.
 
-So, with that in mind, let's imagine we are reading some code that uses `diff`, and we are confused, just as [David][@rawkode] was. There are a couple of ways we could improve this situation for comprehensibility.
+So, with that in mind, let's imagine we are reading some code that uses `diff`, and we are confused, because there' a function called "diff", short for "different", that returns `true` if the two arguments are identical, or _not_ different.
+
+There are a couple of ways we could improve this situation for comprehensibility.
 
 For example, we could change the logic so it returns `true` when the inputs are different (as implied by the name). That'd work, but then it'd have different behaviour to the `diff` or `git diff` programs, which exit with the code `0` (success) when the input files are identical.
 
