@@ -10,8 +10,8 @@ _Apologies folks. I wrote this ages ago and apparently never published it. Well,
 
 _You may want to remind yourself of [Docker Compose][docker, part ten: docker compose] and [The Guts Of Docker Compose][docker, part eleven: the guts of docker compose] first._
 
-[docker, part ten: docker compose]: http://monospacedmonologues.com/post/141079525786/docker-part-ten-docker-compose
-[docker, part eleven: the guts of docker compose]: http://monospacedmonologues.com/post/141136358098/docker-part-eleven-the-guts-of-docker-compose
+[docker, part ten: docker compose]: /post/141079525786/docker-part-ten-docker-compose
+[docker, part eleven: the guts of docker compose]: /post/141136358098/docker-part-eleven-the-guts-of-docker-compose
 
 ---
 

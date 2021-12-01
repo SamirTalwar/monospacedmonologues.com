@@ -52,7 +52,7 @@ I talked last week about programming being a set of trade-offs. In this, using a
 
 [^1]: I used to work for TIM Group, but left in late 2012, at around the same time Play was introduced. I missed the revolution.
 
-[don't call us. we'll call you.]: http://monospacedmonologues.com/post/46427054295/dont-call-us-well-call-you
+[don't call us. we'll call you.]: /post/46427054295/dont-call-us-well-call-you
 [htmlunit]: http://htmlunit.sourceforge.net/
 [npm]: https://www.npmjs.com/
 [play framework]: https://playframework.com/

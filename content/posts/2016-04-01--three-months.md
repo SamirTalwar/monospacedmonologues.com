@@ -32,7 +32,7 @@ In January, I had very little meat. In February, I had a lot. Now I'm back to a 
 
 I'm exercising, but not every day. I managed every single day in January, but starting full-time work near the beginning of February put a stop to that. I'm currently averaging a couple times per week. I've found that mornings really aren't my thing, no matter how much I _really want_ to exercise then, so I'm going to start looking into lunchtime or after-work gym classes instead.
 
-[state of mind]: http://monospacedmonologues.com/post/136803119487/state-of-mind
+[state of mind]: /post/136803119487/state-of-mind
 
 ## Consulting
 

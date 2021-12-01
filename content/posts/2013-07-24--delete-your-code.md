@@ -54,10 +54,8 @@ kills, and I was planning on tiring everyone out tomorrow.
 
 ## Level 2: The Code Retreat
 
-I've blogged extensively about [code
-retreats](http://monospacedmonologues.com/post/13794728271/global-day-of-coderetreat)
-and [legacy code
-retreats](http://monospacedmonologues.com/post/28626062275/legacy-code-retreat-part-one-get-it-under-test)
+I've blogged extensively about [code retreats](/post/13794728271/global-day-of-coderetreat)
+and [legacy code retreats](/post/28626062275/legacy-code-retreat-part-one-get-it-under-test)
 before, but there were some notable differences between this one and the
 others in which I've participated or facilitated. They were mostly due
 to the inexperience of the attendees, resulting in a retreat that was

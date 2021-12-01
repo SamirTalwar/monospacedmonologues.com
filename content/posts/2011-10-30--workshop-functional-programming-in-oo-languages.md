@@ -91,13 +91,12 @@ I'm not going to leave you completely in the lurch. You'll find
 [implementations of the functional linked
 list](https://github.com/SamirTalwar/Lists) for Java, C\#, Python, Ruby
 and JavaScript on GitHub. I've also written [an explanation of said
-list](http://monospacedmonologues.com/post/11969111291/comprehending-lists),
-and [how to implement them in
-Java](http://monospacedmonologues.com/post/12051343792/function). Each
-one has `map` implemented on it already, and you're encouraged to add
-methods to it as you need them. You'll also find they follow all the
-rules set out above. That should get you started. If there isn't one in
-your chosen language, it shouldn't be hard to reimplement.
+list](/post/11969111291/comprehending-lists), and [how to implement them
+in Java](/post/12051343792/function). Each one has `map` implemented on
+it already, and you're encouraged to add methods to it as you need them.
+You'll also find they follow all the rules set out above. That should get
+you started. If there isn't one in your chosen language, it shouldn't be
+hard to reimplement.
 
 I asked people in the workshop to pair, as it leads to discussion and
 helps people get through the tricky bits. A couple of colleagues of mine

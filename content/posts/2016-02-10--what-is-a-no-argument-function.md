@@ -94,5 +94,5 @@ Now, _procedures_ without arguments…
 [north of house]: http://ericlippert.com/2016/02/03/north-of-house/
 [guava]: https://github.com/google/guava
 [java.util.function.function]: https://docs.oracle.com/javase/8/docs/api/java/util/function/Function.html
-[functions are objects: the other point of view]: http://monospacedmonologues.com/post/58923319303/functions-are-objects-the-other-point-of-view
-[referential transparency, and the true meaning of functional programming]: http://monospacedmonologues.com/post/138204666541/referential-transparency-and-the-true-meaning-of
+[functions are objects: the other point of view]: /post/58923319303/functions-are-objects-the-other-point-of-view
+[referential transparency, and the true meaning of functional programming]: /post/138204666541/referential-transparency-and-the-true-meaning-of

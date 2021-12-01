@@ -123,6 +123,6 @@ Marvellous.
 
 [^1]: I'm really sorry to the author of this code. I don't mean to pick on them—it really was at random, and I honestly wouldn't have an issue with this code as-is most of the time. Code on Stack Overflow is licenced under [Creative Commons Attribution-ShareAlike 3.0 Unported][].
 
-[slash slash massive hack]: http://monospacedmonologues.com/post/137738860257/slash-slash-massive-hack
+[slash slash massive hack]: /post/137738860257/slash-slash-massive-hack
 [stack overflow question #35119755]: https://stackoverflow.com/questions/35119755/checkboxes-and-number-fields-set-by-jquery-appear-for-a-split-second-then-sudde
 [creative commons attribution-sharealike 3.0 unported]: https://creativecommons.org/licenses/by-sa/3.0/

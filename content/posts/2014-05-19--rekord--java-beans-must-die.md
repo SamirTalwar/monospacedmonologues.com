@@ -207,7 +207,7 @@ Now, when we construct our `Person`, we can't just `get` values out. We need to 
 
 `ValidatingRekord` takes a Hamcrest matcher, which means you can use all of the built-in functionality of Hamcrest, plus and custom matchers you may have already made. And because our keys are objects in their own right, the `hasProperty` matcher (in the `RekordMatchers` class) is completely type-safe.
 
-[check your i/o]: http://monospacedmonologues.com/post/75704273387/check-your-i-o
+[check your i/o]: /post/75704273387/check-your-i-o
 
 ## And data goes out
 

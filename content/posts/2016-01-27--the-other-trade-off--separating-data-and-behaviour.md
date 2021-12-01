@@ -115,5 +115,5 @@ Notice that these functions are independent of any `Transaction` object. They ge
 
 Just like object-oriented programming, structured (and therefore imperative or functional) programming has a set of trade-offs. Structured programming allows us to quickly add behaviour to fixed data representations, but adding new data representations is much trickier. Often, this is what we need, and it would be a misuse of object-oriented design to push the behaviour too deep into classes. Good software development includes designing for maintainability, and this means we need to make predictions about what might change in the future, then design accordingly.
 
-[why couple data to behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
-[getters, setters and properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
+[why couple data to behaviour?]: /post/138076164433/why-couple-data-to-behaviour
+[getters, setters and properties]: /post/138009972532/getters-setters-and-properties

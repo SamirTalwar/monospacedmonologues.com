@@ -134,7 +134,7 @@ C# doesn't have methods in enums, but you can do the same thing with an abstract
 
 This is [exactly how Smalltalk implements booleans][smalltalk: a functional programming language]: they're simply subclasses of the `Boolean` interface with `if` methods.
 
-[smalltalk: a functional programming language]: https://monospacedmonologues.com/2016/02/smalltalk-a-functional-programming-language/
+[smalltalk: a functional programming language]: /2016/02/smalltalk-a-functional-programming-language/
 
 ## So we can make a boolean.
 

@@ -11,11 +11,10 @@ Wow, that was a lot of great feedback in a few hours.
 So let's talk about it.
 
 The first thing I want to talk about is the tone of [the
-piece](http://monospacedmonologues.com/post/48868525510/quality). It's
-kind of idealistic. Of course, things didn't always go that smoothly,
-but we aspired to meet the standards we set for ourselves. And things
-were definitely improving everywhere you looked. [syl
-commented](http://monospacedmonologues.com/post/48868525510/quality#comment-875718483)
+piece](/post/48868525510/quality). It's kind of idealistic. Of course,
+things didn't always go that smoothly, but we aspired to meet the
+standards we set for ourselves. And things were definitely improving
+everywhere you looked. [syl commented](/post/48868525510/quality#comment-875718483)
 on how the TV screens were mostly red. This is actually true at a lot of
 places that measure build breakages, because keeping all 200 builds
 green at all times is an absolute nightmare. Especially when a lot of

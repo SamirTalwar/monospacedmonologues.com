@@ -116,8 +116,8 @@ Regardless of your choice of language, your choice of paradigm will have far-rea
 
 [^1]: Thanks to [Ganesh Sittampalam][@eleganesh] for the terminology used here; I've never heard anyone else refer to _open_ vs. _closed_ sets.
 
-[getters, setters and properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
-[why couple data to behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
-[the other trade-off: separating data and behaviour]: http://monospacedmonologues.com/post/138140507048/the-other-trade-off-separating-data-and-behaviour
+[getters, setters and properties]: /post/138009972532/getters-setters-and-properties
+[why couple data to behaviour?]: /post/138076164433/why-couple-data-to-behaviour
+[the other trade-off: separating data and behaviour]: /post/138140507048/the-other-trade-off-separating-data-and-behaviour
 [referential transparency]: https://wiki.haskell.org/Referential_transparency
 [@eleganesh]: https://twitter.com/eleganesh

@@ -87,5 +87,5 @@ I can use it to force the lambda to the type of `Supplier` with far less noise t
 
 I can be fairly confident here that the JVM will take care of any performance impact in the long run, and the compiler is happy. Not only that, my eyes can stop hurting now.
 
-[functions are objects: the other point of view]: http://monospacedmonologues.com/post/58923319303/functions-are-objects-the-other-point-of-view
+[functions are objects: the other point of view]: /post/58923319303/functions-are-objects-the-other-point-of-view
 [guava]: https://github.com/google/guava

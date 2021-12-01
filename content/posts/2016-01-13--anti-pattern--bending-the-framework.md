@@ -30,5 +30,5 @@ Of course, if all of that sounds too expensive, you could always decide not to i
 
 Whatever you decide, make sure you're considering the whole cost. Bending the framework is very, very expensive. Make sure you've got the budget.
 
-[don't call us. we'll call you.]: http://monospacedmonologues.com/post/46427054295/dont-call-us-well-call-you
+[don't call us. we'll call you.]: /post/46427054295/dont-call-us-well-call-you
 [rack]: https://rack.github.io/

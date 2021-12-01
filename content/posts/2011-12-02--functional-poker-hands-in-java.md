@@ -7,7 +7,7 @@ aliases:
 ---
 
 A few weeks ago, I wrote about [a workshop I ran at Skills
-Matter](http://monospacedmonologues.com/post/12118361399/workshop-functional-programming-in-oo-languages)
+Matter](/post/12118361399/workshop-functional-programming-in-oo-languages)
 and posed the question to you guys. If you haven't seen it, I encourage
 you to go check it out—everybody had a lot of fun. What better way to
 spend a weekend than writing interesting code, right?

@@ -6,8 +6,7 @@ aliases:
   - /post/12745057103/fairy-godmother
 ---
 
-In our [last
-installment](http://monospacedmonologues.com/post/12627672433/pinocchio),
+In our [last installment](/post/12627672433/pinocchio),
 we looked at a piece of code and removed some of the nulls. At the end
 of it, it looked like this:
 

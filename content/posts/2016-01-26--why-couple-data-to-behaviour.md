@@ -140,7 +140,7 @@ We call this behaviour [_subtype polymorphism_][subtyping]. In this example, the
 
 Increasing coupling in one area allows us to reduce coupling in another. Programming is really a set of trade-offs in this regard, and by being aware of the ramifications of your choices, you can make the right trade-off for your software.
 
-[getters, setters and properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
+[getters, setters and properties]: /post/138009972532/getters-setters-and-properties
 [open-closed principle]: http://c2.com/cgi/wiki?OpenClosedPrinciple
 [anemic domain model]: http://www.martinfowler.com/bliki/AnemicDomainModel.html
 [subtyping]: https://en.wikipedia.org/wiki/Subtyping

@@ -23,8 +23,7 @@ object-oriented languages. This time, I reworded it a little bit, and
 entitled the session "functional programming in your favourite
 language". In this workshop, I gave people [an implementation of an
 immutable list](https://github.com/SamirTalwar/Lists) and [an
-explanation of how they
-work](http://monospacedmonologues.com/post/11969111291/comprehending-lists)
+explanation of how they work](/post/11969111291/comprehending-lists)
 and set them to work determining whether a given poker hand contains a
 pair. Easy, right?
 

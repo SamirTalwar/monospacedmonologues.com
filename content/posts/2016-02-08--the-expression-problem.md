@@ -30,11 +30,11 @@ If you read the previous articles, you'll see that this is a much more accurate 
 
 So if you want to get a better handle on the differences between OO and FP, check out the literature on the expression problem. [C2wiki has a great handle on it too.][c2: expression problem] Get reading.
 
-[getters, setters and properties]: http://monospacedmonologues.com/post/138009972532/getters-setters-and-properties
-[why couple data to behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
-[the other trade-off: separating data and behaviour]: http://monospacedmonologues.com/post/138140507048/the-other-trade-off-separating-data-and-behaviour
-[referential transparency, and the true meaning of functional programming]: http://monospacedmonologues.com/post/138204666541/referential-transparency-and-the-true-meaning-of
-[moving parts]: http://monospacedmonologues.com/post/138268503035/moving-parts
+[getters, setters and properties]: /post/138009972532/getters-setters-and-properties
+[why couple data to behaviour?]: /post/138076164433/why-couple-data-to-behaviour
+[the other trade-off: separating data and behaviour]: /post/138140507048/the-other-trade-off-separating-data-and-behaviour
+[referential transparency, and the true meaning of functional programming]: /post/138204666541/referential-transparency-and-the-true-meaning-of
+[moving parts]: /post/138268503035/moving-parts
 [@eleganesh]: https://twitter.com/eleganesh
 [@philipwadler]: https://twitter.com/PhilipWadler
 [the expression problem]: http://homepages.inf.ed.ac.uk/wadler/papers/expression/expression.txt

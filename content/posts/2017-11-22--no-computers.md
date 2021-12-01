@@ -40,6 +40,6 @@ And eventually, they figured out how to have fun.
 [@alastairs]: https://twitter.com/alastairs
 [cambridge software crafters]: https://www.meetup.com/Cambridge-Software-Crafters/
 [coderetreat]: http://coderetreat.org/
-[conway's game of life]: http://monospacedmonologues.com/post/13794728271/global-day-of-coderetreat
-[post: global day of coderetreat]: http://monospacedmonologues.com/post/13794728271/global-day-of-coderetreat
+[conway's game of life]: /post/13794728271/global-day-of-coderetreat
+[post: global day of coderetreat]: /post/13794728271/global-day-of-coderetreat
 [thinking, fast and slow]: http://amzn.to/2AZD9M7

@@ -6,8 +6,7 @@ aliases:
   - /post/28752243811/legacy-code-retreat-part-two-knock-it-out-of-the
 ---
 
-[Part
-one](http://monospacedmonologues.com/post/28626062275/legacy-code-retreat-part-one-get-it-under-test)
+[Part one](/post/28626062275/legacy-code-retreat-part-one-get-it-under-test)
 was about understanding the code. Part two is all about changing it.
 
 So after a tasty lunch, we cracked on. Throughout the first half, I was

@@ -67,8 +67,8 @@ This behaviour highlights [the difference between functional and object-oriented
 So, if a Java programmer tells you that lambdas and higher-order functions weren't encouraged in the language for so long because they're not object-oriented, point them towards Smalltalk.
 
 [nothing is something]: https://www.youtube.com/watch?v=OMPfEXIlTVE
-[why couple data to behaviour?]: http://monospacedmonologues.com/post/138076164433/why-couple-data-to-behaviour
-[referential transparency, and the true meaning of functional programming]: http://monospacedmonologues.com/post/138204666541/referential-transparency-and-the-true-meaning-of
+[why couple data to behaviour?]: /post/138076164433/why-couple-data-to-behaviour
+[referential transparency, and the true meaning of functional programming]: /post/138204666541/referential-transparency-and-the-true-meaning-of
 [true.st]: http://git.savannah.gnu.org/gitweb/?p=smalltalk.git;a=blob;f=kernel/True.st;hb=HEAD
 [racket]: https://racket-lang.org/
 [@pawelduda]: https://twitter.com/pawelduda

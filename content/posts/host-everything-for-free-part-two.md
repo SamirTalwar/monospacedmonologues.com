@@ -15,7 +15,7 @@ Personally, I use [Amazon Web Services][] to host my images, but there are lots 
 
 If you want to follow along, you'll first need an [Amazon Web Services][] account. The process is pretty similar for all of the above cloud providers though.
 
-[monospacedmonologues.com]: http://monospacedmonologues.com/
+[monospacedmonologues.com]: https://monospacedmonologues.com/
 [tumblr]: https://www.tumblr.com/
 [amazon web services]: https://aws.amazon.com/
 [google cloud]: https://cloud.google.com/

@@ -90,7 +90,7 @@ Sometimes, great software requires great design. But sometimes, it's great engin
 [layout & typography for beautiful code]: http://hilton.org.uk/presentations/beautiful-code
 [@shipilev]: https://twitter.com/shipilev
 [jmh]: http://openjdk.java.net/projects/code-tools/jmh/
-[solving problems by trying over and over again: the newton-raphson method]: http://monospacedmonologues.com/post/138595611508/solving-problems-by-trying-over-and-over-again
+[solving problems by trying over and over again: the newton-raphson method]: /post/138595611508/solving-problems-by-trying-over-and-over-again
 [numeric-experiments]: https://github.com/SamirTalwar/numeric-experiments
 [newtonraphson.scala]: https://github.com/SamirTalwar/numeric-experiments/blob/master/implementation/src/main/scala/com/noodlesandwich/numeric/NewtonRaphson.scala
 [fastinversesquareroot.scala]: https://github.com/SamirTalwar/numeric-experiments/blob/master/implementation/src/main/scala/com/noodlesandwich/numeric/FastInverseSquareRoot.scala

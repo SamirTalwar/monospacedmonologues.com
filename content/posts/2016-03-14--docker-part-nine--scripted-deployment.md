@@ -160,6 +160,6 @@ The only thing we're not doing is checking whether the containers already exist 
 
 So. That's a long script. It's not too complicated, but it does a lot of different things some of the time, and it's not clear why everything has to happen and in that order. Tomorrow, we'll take a look at a much more declarative way of doing the same thing with _Docker Compose_.
 
-[docker, part eight: turn up the volume]: http://monospacedmonologues.com/post/140436373509/docker-part-eight-turn-up-the-volume
-[docker, part eight and a half: docker volume]: http://monospacedmonologues.com/post/140618924626/docker-part-eight-and-a-half-docker-volume
+[docker, part eight: turn up the volume]: /post/140436373509/docker-part-eight-turn-up-the-volume
+[docker, part eight and a half: docker volume]: /post/140618924626/docker-part-eight-and-a-half-docker-volume
 [bemorerandom.com]: https://github.com/SamirTalwar/bemorerandom.com

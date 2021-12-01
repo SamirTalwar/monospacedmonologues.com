@@ -59,7 +59,7 @@ The various libraries already log at vaguely-appropriate levels, so I'll configu
 
 This says that I want to log everything at info level to the console (not a file; [I can route logs to files later if I like][docker, part thirteen: the twelve-factor app]). Requests are logged at the info level (unless they fail, in which case we get an error instead), so no further customisation is necessary. Anything custom that I want to log (i.e. in the "com.bemorerandom" package) is logged at the debug level. And because I want to see _some_ output, I've selected a specific part of Slick to log at the debug level—this allows me to see the actual SQL queries as they execute.
 
-[docker, part thirteen: the twelve-factor app]: http://monospacedmonologues.com/post/141886562802/docker-part-thirteen-the-twelve-factor-app
+[docker, part thirteen: the twelve-factor app]: /post/141886562802/docker-part-thirteen-the-twelve-factor-app
 
 When making a request that hits the database:
 

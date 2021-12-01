@@ -131,4 +131,4 @@ fixing the code base.
 
 [_Part two of the Legacy Code Retreat double act is now available. I
 hope you enjoy
-it._](http://monospacedmonologues.com/post/28752243811/legacy-code-retreat-part-two-knock-it-out-of-the-park)
+it._](/post/28752243811/legacy-code-retreat-part-two-knock-it-out-of-the-park)

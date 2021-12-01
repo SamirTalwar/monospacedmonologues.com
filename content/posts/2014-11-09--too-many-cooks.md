@@ -22,7 +22,7 @@ We started off quite well, driving a simple set of static pages to get the flow 
 
 That feeling didn't last. By mid-afternoon, we were lagging, and people were drifting off. The experiment wasn't working as well as we hoped. In our fifth retrospective, we decided to get to a point where it would be sensible to split into pairs and play with the code, so we quickly knocked out the rest of the flow and broke apart to do the things we cared about doing.
 
-[mob programming]: http://monospacedmonologues.com/post/91841399505/mob-programming-and-the-importance-of-fun-at-work
+[mob programming]: /post/91841399505/mob-programming-and-the-importance-of-fun-at-work
 [minimum viable product]: http://en.wikipedia.org/wiki/Minimum_viable_product
 
 I, personally, was a bit dejected when we split apart. I thought that six skilled people should be able to do anything together. Pairing with Alex cheered me up very quickly, as we worked towards an acceptance test that focused us on what _we_ really cared about, while the others did different things. Aki and Peter worked on a new interface for the page handling, extending its capabilities while preserving the functionality at first. Sandro and Adi decided to show each other their styles of unit testing, as they're very different.

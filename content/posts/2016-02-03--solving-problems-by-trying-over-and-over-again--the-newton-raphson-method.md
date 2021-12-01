@@ -100,6 +100,6 @@ We want the first pair where the two values are the same (or close enough), so i
 
 And that, folks, is how you calculate the square root of a number.
 
-[slash slash massive hack]: http://monospacedmonologues.com/post/137738860257/slash-slash-massive-hack
+[slash slash massive hack]: /post/137738860257/slash-slash-massive-hack
 [newton's method]: https://en.wikipedia.org/wiki/Newton's_method
 [numeric-experiments]: https://github.com/SamirTalwar/numeric-experiments

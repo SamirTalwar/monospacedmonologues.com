@@ -10,7 +10,7 @@ That was the name of the ~~talk~~ live-coding demonstration I gave at [I
 T.A.K.E.](http://itakeunconf.com/), a conference in Bucharest, Romania.
 
 [My last blog
-post](http://monospacedmonologues.com/post/51465038762/live-coding-at-a-conference-and-why-it-is-scary)
+post](/post/51465038762/live-coding-at-a-conference-and-why-it-is-scary)
 was on why I was pretty scared of doing this. This one (which is late)
 is going to be talking about what I covered in the talk. A written
 version of it, if you will.
