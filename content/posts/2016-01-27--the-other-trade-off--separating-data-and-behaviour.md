@@ -19,8 +19,6 @@ Yesterday, in our `Account` class, we had a `Transaction` type, one of the imple
 
 Now, that's not very useful in our object-oriented world, as it has no behaviour—it's just a holder of some data. One useful behaviour of withdrawals might be to be treated as a transformation on a balance—that is, they might apply themselves to a balance to create a balance that had the amount deducted.
 
-<!--more-->
-
     interface Transaction {
         Money apply(Money balance);
     }
@@ -40,6 +38,8 @@ Now, that's not very useful in our object-oriented world, as it has no behaviour
 Of course, the `Deposit` class would look pretty similar. Great, job done. No [exposed getters][getters, setters and properties], and it does the right thing. And we can add more transaction types trivially, just by implementing the `apply` method!
 
 Wait. Are there more transaction types?
+
+<!--more-->
 
 So far, there are `Deposit` and `Withdrawal` objects. We could also name them `Debit` and `Credit`. Are there any others? I can't think of any in this circumstance. When I try to think of extended functionality related to transactions, I think of new _behaviours_. For example, what if we wanted to view all transactions for a given date, or a given month? Perhaps we might like to see only withdrawals, so we can get a feel for how much spending there is? Maybe we want to tie together a withdrawal in a customer's current account with a deposit in their savings account so we can understand how they're saving money?
 
