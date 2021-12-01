@@ -24,7 +24,7 @@ $ f^\\prime(x) = -2 / x^3 $
 
 Which means that the Newton-Raphson method for the inverse square root function is:
 
-$ x\_(n + 1) = x\_n - (f(x\_n)) / (f^\prime(x\_n)) = x\_n - (1 / x\_n^2 - y) / (-2 / x\_n^3) = x\_n(3 / 2 - y / 2 x\_n^2) $
+$ x\_(n + 1) = x_n - (f(x_n)) / (f^\prime(x_n)) = x_n - (1 / x_n^2 - y) / (-2 / x_n^3) = x_n(3 / 2 - y / 2 x_n^2) $
 
 I experimented a bit with starting values and found that $1$ is always pretty good, just like when calculating the square root, so I went with that.
 
@@ -64,7 +64,7 @@ As useful as the Newton-Raphson method is, it's _slow_. Iteration is not a good 
 
 … Yup. That makes sense. One of the lines really does make use of the magic number, `0x5f3759df`. No, I don't know where it came from, and clearly, from the comment, no one else does either. But it works. Looking at it, we can see that it does some bit-wise magic, then performs one iteration of _something_. This iteration is actually the same mathematical expression we came up with earlier, but with different variable names; `x2` is $y / 2$ and `y` is $x\_n$, except on the left-hand side, where it's $x\_(n + 1)$. When we substitute those values in, this is what we get:
 
-$ x\_(n + 1) = x\_n(3 / 2 - y / 2 x\_n^2) $
+$ x\_(n + 1) = x_n(3 / 2 - y / 2 x_n^2) $
 
 This is, believe it or not, the Newton-Raphson method, disguised very well.
 

@@ -20,25 +20,25 @@ When we break work up across a team, in order to optimise for the team, we often
 
 Amdahl's law can be formulated as follows:
 
-$ S_(latency) = 1 / ((1 - p) + p / s) $
+$ S\_(latency) = 1 / ((1 - p) + p / s) $
 
 In words, it predicts the maximum potential speedup ($S_(latency)$), given a proportion of the task, $p$, that will benefit from improved (either more or better) resources, and a parallel speedup factor, $s$.
 
 To demonstrate, if we can speed up 10% of the task ($p = 0.1$) by a factor of 5 ($s = 5$), we get the following:
 
-$ S_(latency) = 1 / ((1 - 0.1) + 0.1 / 5) ~~ 1.09 $
+$ S\_(latency) = 1 / ((1 - 0.1) + 0.1 / 5) ~~ 1.09 $
 
 That's about an 9% speedup. Eh, fair enough. If we can swing it, sounds good.
 
 However, if we can speed up 90% of the task ($p = 0.9$) by a factor of 5 ($s = 5$), we get the following:
 
-$ S_(latency) = 1 / ((1 - 0.9) + 0.9 / 5) ~~ 3.58 $
+$ S\_(latency) = 1 / ((1 - 0.9) + 0.9 / 5) ~~ 3.58 $
 
 That's roughly a 250% increase! Big enough that it's actually worth creating twice as much work; it still pays off, assuming the value of the work dwarfs the cost of the resources.
 
 $s -> oo$, which means $p / s -> 0$, so we can also drop the $p / s$ term if we can afford potentially infinite resources at no additional cost.
 
-$ S_(latency) = 1 / (1 - 0.9) = 10 $
+$ S\_(latency) = 1 / (1 - 0.9) = 10 $
 
 In other words, if 90% of the work can be parallelised, we can achieve a theoretical maximum speedup of 10x, or a 900% increase. This is highly unlikely, but gives us a useful upper bound to help us identify where the bottleneck lies.
 
@@ -50,17 +50,17 @@ This means that when computing $s$, the parallel speedup, we should divide it by
 
 So, if we take the example from earlier, where 90% of the work is parallelisable _but_ it costs twice as much to parellelise, we'll get the following result:
 
-$ S_(latency) = 1 / ((1 - 0.9) + 0.9 / (5 / 2)) ~~ 2.18 $
+$ S\_(latency) = 1 / ((1 - 0.9) + 0.9 / (5 / 2)) ~~ 2.18 $
 
 It's still about a 117% increase in output!
 
 However, if $p = 0.1$, then there's really very little point in adding more resources.
 
-$ S_(latency) = 1 / ((1 - 0.1) + 0.1 / (5 / 2)) ~~ 1.06 $
+$ S\_(latency) = 1 / ((1 - 0.1) + 0.1 / (5 / 2)) ~~ 1.06 $
 
 And if the cost of parallelisation is greater than the potential speedup, bad things happen:
 
-$ S_(latency) = 1 / ((1 - 0.1) + 0.1 / (5 / 20)) ~~ 0.769 $
+$ S\_(latency) = 1 / ((1 - 0.1) + 0.1 / (5 / 20)) ~~ 0.769 $
 
 Adding 4 more resources slows us down by 23%. Many of us have seen this happen in practice with poor parallelisation techniques—poor usage of locks, resource contention (especially with regards to I/O), or even redundant work due to mismanaged job distribution.
 

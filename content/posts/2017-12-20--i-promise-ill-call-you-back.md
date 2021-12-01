@@ -71,11 +71,11 @@ new Promise((resolve, reject) => {
     resolve(JSON.parse(body));
   });
 })
-  .then(thing => {
+  .then((thing) => {
     // this function is called *if and only if* the previous function succeeded
     document.querySelector("#thing .name").textContent = thing.name;
   })
-  .catch(error => {
+  .catch((error) => {
     // this function is called *if and only if* one of the previous functions failed
     const element = document.querySelector("#error");
     element.textContent = error.message;
@@ -86,7 +86,7 @@ new Promise((resolve, reject) => {
 Sometimes, though, we want to run a function more than once. An obvious example is in the case of the `.map` or `.filter` methods on arrays, which both run the function passed once for each element in the array.
 
 ```javascript
-[1, 2, 3, 4, 5].filter(value => value % 2 === 1); // run 5 times
+[1, 2, 3, 4, 5].filter((value) => value % 2 === 1); // run 5 times
 ```
 
 In the context of asynchronous behaviour, it's still useful to run a function more than once. For example, we might want to retry on failure. For example, take a look at the function, [`async.retry`][async.retry], which tries a piece of behaviour more than once:
@@ -94,7 +94,7 @@ In the context of asynchronous behaviour, it's still useful to run a function mo
 ```javascript
 async(
   { times: 3 },
-  callback => requestUserProfile(user, callback),
+  (callback) => requestUserProfile(user, callback),
   (error, profile) => {
     // do something
   }
@@ -110,7 +110,7 @@ tmp.file({ keep: true }, (error, path, fd, cleanup) => {
   if (error) {
     throw error;
   }
-  doThingsWith(path, error => {
+  doThingsWith(path, (error) => {
     if (error) {
       handle(error);
     }
@@ -126,13 +126,13 @@ This is a problem. But it's not a problem we can solve using promises. If we tri
 ```javascript
 tmp
   .file()
-  .then(file => {
+  .then((file) => {
     return doThingsWith(file.path).then(
       () => file.cleanup(),
       () => file.cleanup()
     ); // handles the case in which there was an error
   })
-  .catch(error => handle(error));
+  .catch((error) => handle(error));
 ```
 
 We still have to call `cleanup`, because we don't know when we're done.
@@ -141,9 +141,9 @@ However, if we combine the two techniques, something interesting happens:
 
 ```javascript
 tmp
-  .withFile(file => doThingsWith(file.path))
+  .withFile((file) => doThingsWith(file.path))
   // after `doThingsWith(file.path)` resolves, the file is cleaned up
-  .catch(error => handle(error));
+  .catch((error) => handle(error));
 ```
 
 _(Both styles above are available in the [tmp-promise][] package.)_

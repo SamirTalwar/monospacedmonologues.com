@@ -32,31 +32,31 @@ We then pick a starting value, $x\_0$. This should be a value that's a good gues
 
 Then we iterate using the method to find $x\_1$, then $x\_2$, then $x\_3$, and so on. In general, we can calculate $x\_(n + 1)$ as:
 
-$ x\_(n + 1) = x\_n - (f(x\_n)) / (f^\prime(x\_n)) $
+$ x\_(n + 1) = x_n - (f(x_n)) / (f^\prime(x_n)) $
 
 In the case of the square root function, this is:
 
-$ x\_(n + 1) = x\_n - ({:x\_n:}^2 - y) / (2 x\_n) $
+$ x\_(n + 1) = x_n - ({:x_n:}^2 - y) / (2 x_n) $
 
 We keep iterating until the change is 0, or so close to it as to be negligible.
 
 So let's try it with $y = 9$, starting from $x\_0 = 1$, which is probably not the right answer, but is probably not too far off in the grand scheme of things:
 
-$ x\_0 = 1 $
+$ x_0 = 1 $
 
-$ x\_1 = x\_0 - ({:x\_0:}^2 - 9) / (2 x\_0) = 5 $
+$ x_1 = x_0 - ({:x_0:}^2 - 9) / (2 x_0) = 5 $
 
-$ x\_2 = x\_1 - ({:x\_1:}^2 - 9) / (2 x\_1) = 3.4 $
+$ x_2 = x_1 - ({:x_1:}^2 - 9) / (2 x_1) = 3.4 $
 
-$ x\_3 = x\_2 - ({:x\_2:}^2 - 9) / (2 x\_2) = 3.02352941176471... $
+$ x_3 = x_2 - ({:x_2:}^2 - 9) / (2 x_2) = 3.02352941176471... $
 
-$ x\_4 = x\_3 - ({:x\_3:}^2 - 9) / (2 x\_3) = 3.00009155413138... $
+$ x_4 = x_3 - ({:x_3:}^2 - 9) / (2 x_3) = 3.00009155413138... $
 
-$ x\_5 = x\_4 - ({:x\_4:}^2 - 9) / (2 x\_4) = 3.00000000139698... $
+$ x_5 = x_4 - ({:x_4:}^2 - 9) / (2 x_4) = 3.00000000139698... $
 
-$ x\_6 = x\_5 - ({:x\_5:}^2 - 9) / (2 x\_5) = 3.0 $
+$ x_6 = x_5 - ({:x_5:}^2 - 9) / (2 x_5) = 3.0 $
 
-$ x\_7 = x\_6 - ({:x\_6:}^2 - 9) / (2 x\_6) = 3.0 $
+$ x_7 = x_6 - ({:x_6:}^2 - 9) / (2 x_6) = 3.0 $
 
 And we're done. The square root of 9 is 3.0 exactly.
 
@@ -90,11 +90,11 @@ The `squareRoot` function primes the method with $f$ and $f^\\prime$, then immed
 
 First of all, it constructs a lazy stream of subsequent iterations of $x\_0$:
 
-$ x\_0, x\_1, x\_2, ... $
+$ x_0, x_1, x_2, ... $
 
 It then creates a sliding iterator of two items on top of that, and converts it from a `Stream[Stream[Double]]`, where the inner stream always has two items, to a `Stream[(Double, Double)]`.
 
-$ (x\_0, x\_1), (x\_1, x\_2), (x\_2, x\_3), ... $
+$ (x_0, x_1), (x_1, x_2), (x_2, x_3), ... $
 
 We want the first pair where the two values are the same (or close enough), so it drops elements from this stream while the difference is greater than `epsilon`. It then grabs the first element from the resulting stream, and then the second part of the tuple. It gets the second, rather than the first, because it's one more iteration and will therefore be the more accurate answer if they are still different.
 
