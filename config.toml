@@ -26,6 +26,7 @@ twitter = "https://twitter.com/SamirTalwar"
 date_format = "2 January, 2006"
 featured_image = false
 background_color_class = "bg-near-black"
+post_content_classes = "avenir"
 custom_css = ["css/site.css"]
 assets_prefix = "https://assets.monospacedmonologues.com"
 recent_posts_number = 5
