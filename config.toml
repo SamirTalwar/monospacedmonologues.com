@@ -22,6 +22,8 @@ posts = "/:year/:month/:slug/"
 rss = "/index.xml"
 email = "samir@noodlesandwich.com"
 twitter = "https://twitter.com/SamirTalwar"
+
+date_format = "2 January, 2006"
 featured_image = false
 background_color_class = "bg-near-black"
 custom_css = ["css/site.css"]
