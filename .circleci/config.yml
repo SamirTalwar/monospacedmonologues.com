@@ -16,7 +16,7 @@ jobs:
           command: |
             if [[ ! -d ~/hugo ]]; then
               mkdir ~/hugo
-              curl -fsSL https://github.com/gohugoio/hugo/releases/download/v0.91.1/hugo_0.91.1_Linux-64bit.tar.gz \
+              curl -fsSL https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_extended_0.91.2_Linux-64bit.tar.gz \
                 > /tmp/hugo.tar.gz
               tar x -C ~/hugo -f /tmp/hugo.tar.gz
             fi
