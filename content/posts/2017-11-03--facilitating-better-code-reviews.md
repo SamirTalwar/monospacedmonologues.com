@@ -34,7 +34,7 @@ The latest edition of The State of Code Review claims:
 
 We wanted to understand what it is that's stopping people from jumping into code review. There are so many questions we wanted to ask, but with the aim of keeping the poll brief, we settled on one:
 
-{{< tweet 921680972608933889 >}}
+{{< tweet SamirTalwar 921680972608933889 >}}
 
 (If you can't see the poll, click the date to view it on Twitter.)
 
@@ -59,7 +59,7 @@ We believe in making machines work for humans. It's time to start thinking about
 
 There's a reason people review code (and sometimes enforce it). We wanted to find out a little more about why.
 
-{{< tweet 921681193078272000 >}}
+{{< tweet SamirTalwar 921681193078272000 >}}
 
 This really helped us clarify what people (or, at least, my bubble of people) are looking for when they review code. There's a lot of different areas in which we can derive value, but for many, they're looking to make sure that everyone understands and agrees with the changes made. Personally, I'm a big fan of this, because it changes the conversation from "no, do this" to "yes, and also this!" Providing a gateway to ask and answer questions really helps with healthy team dynamics. After all, software is a human endeavour: we work with pure thought-stuff, collaboratively creating something out of nothing. Communication is key.
 
@@ -80,7 +80,7 @@ Code is hard, but people are harder.
 
 We all have problems with sub-par code. Often the question is not "How do we fix it?", but one step earlier: "Is there a problem?"
 
-{{< tweet 921681356400349185 >}}
+{{< tweet SamirTalwar 921681356400349185 >}}
 
 Despite its relatively low (but still substantial) value, many find it very difficult to identify defects in code submitted for review. There's many reasons for this, but we at Prodo.AI believe that it's partially down to a lack of tooling and the inability to explore quickly. While we're interacting with a text diff on our source code, spotting problems is very much trying to find needles in a haystack.
 

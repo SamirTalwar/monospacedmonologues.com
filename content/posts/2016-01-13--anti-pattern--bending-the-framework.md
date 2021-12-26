@@ -11,8 +11,8 @@ aliases:
 [@wolframkriesing]: https://twitter.com/wolframkriesing
 [@jsuchy]: https://twitter.com/jsuchy
 
-{{< tweet 685582663118385152 >}}
-{{< tweet 685582805036830720 >}}
+{{< tweet wolframkriesing 685582663118385152 >}}
+{{< tweet wolframkriesing 685582805036830720 >}}
 
 Specifically, they were talking about what happens when you come up against the walls of the framework. Because of the nature of frameworks, implementing certain pieces of behaviour is often unreasonably difficult, usually because the framework itself was not designed with capabilities for that particular functionality.
 
@@ -20,7 +20,7 @@ Specifically, they were talking about what happens when you come up against the 
 
 They discussed the relative merits of working around the framework, bending it to their will or just abandoning it for that functionality, but pretty quickly, Jim decided that the latter made much more sense.
 
-{{< tweet 685585160931258368 >}}
+{{< tweet jsuchy 685585160931258368 >}}
 
 I completely agree. By its nature, a workaround will necessarily be a headache for every developer who comes across that piece of code in the future. It won't look like anything else in the project, which means people will have to learn something new just for that one bit of functionality. It won't fit the framework's mould, which will make it much harder for people new to the project to understand it. It will probably be quite arcane, as most frameworks don't make it easy to work around them—often, dark magic such as reflection is required to access parts of objects and modules that aren't usually available, and invoking them in undocumented ways makes upgrading a nightmare as the interfaces change, functions disappear and the underlying behaviour does something completely unexpected. And because of all this, hacks around the framework are a major source of bugs, not just initially but throughout the lifetime of the project.
 
