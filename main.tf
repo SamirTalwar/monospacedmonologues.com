@@ -68,6 +68,20 @@ resource "aws_cloudfront_distribution" "site_distribution" {
   viewer_certificate {
     cloudfront_default_certificate = true
   }
+
+  custom_error_response {
+    error_code            = 403
+    response_code         = 404
+    response_page_path    = "/404.html"
+    error_caching_min_ttl = 300
+  }
+
+  custom_error_response {
+    error_code            = 404
+    response_code         = 404
+    response_page_path    = "/404.html"
+    error_caching_min_ttl = 300
+  }
 }
 
 resource "aws_cloudfront_distribution" "assets_distribution" {
