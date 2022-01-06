@@ -67,6 +67,8 @@ dt {
 }
 
 .code,
-code {
+code,
+pre code {
   font-family: "Iosevka Web", monospace;
+  font-size: 1rem;
 }
