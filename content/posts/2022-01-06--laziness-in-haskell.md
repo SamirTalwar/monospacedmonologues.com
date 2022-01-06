@@ -38,7 +38,7 @@ numbers = [0..]
 [0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
 ```
 
-This works because In Haskell, a list is a pair of `(head, tail)`. In memory, `numbers` will look something like this:
+This works in Haskell because a list is a structure containing a `head` and a `tail`, both of which are lazily evaluated on demand. In memory, `numbers` will look something like this:
 
 ```haskell
 List { head = <thunk>, tail = <thunk> }
@@ -111,7 +111,7 @@ it :: Integer
 
 We didn’t need to compute the whole list to get that value, which is good, because it’s infinite, and so computing the whole list would take infinite time and space.
 
-Usually this is unnoticeable, but you might spot it if you try and do something long-running twice. The first time will take a while. The second time, it’ll be instant.
+Fortunately, once we have that element in the list, just like with the `numbers` list above, it will be stored for future reads. In Haskell, values are only evaluated once. Usually this is unnoticeable, because we often use data as we compute it, but you might spot it if you try and do something long-running twice. The first time will take a while. The second time, it’ll be instant.
 
 ```haskell
 λ fibs !! 30
