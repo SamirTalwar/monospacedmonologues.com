@@ -30,4 +30,5 @@ deploy-site: hardware public
 
 .PHONY: deploy-assets
 deploy-assets: hardware assets
+	find assets -name '.DS_Store' -delete
 	aws s3 sync assets s3://assets.monospacedmonologues.com --acl=public-read --delete
