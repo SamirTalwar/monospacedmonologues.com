@@ -1,0 +1,6 @@
+{{ $pages := (where .Site.RegularPages ".Params.series" "intersect" (slice (.Get "series"))).Reverse }}
+<ol>
+  {{ range $pages }}
+  <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+  {{ end }}
+</ol>

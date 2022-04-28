@@ -15,6 +15,11 @@
         {{with .CurrentSection.Title }}{{. | upper }}{{end}}
       </aside>
       {{ partial "social-share.html" . }}
+      {{ if .Params.series }}
+        <h2 class="f2 athelas mt3 mb1">
+          {{- index .Params.series 0 -}}
+        </h2>
+      {{ end }}
       <h1 class="f1 athelas mt3 mb1">
         {{- .Title -}}
       </h1>
