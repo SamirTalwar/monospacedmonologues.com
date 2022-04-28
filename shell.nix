@@ -11,6 +11,6 @@ mkShell {
     coreutils
     gnumake
     hugo
-    terraform_0_15
+    terraform
   ];
 }
