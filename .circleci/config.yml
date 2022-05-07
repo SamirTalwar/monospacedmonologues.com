@@ -8,7 +8,7 @@ jobs:
         default: 0.92.2
 
     docker:
-      - image: circleci/buildpack-deps:bionic
+      - image: cimg/base:current
 
     steps:
       - restore_cache:
