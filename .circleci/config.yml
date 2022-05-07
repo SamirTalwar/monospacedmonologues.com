@@ -1,7 +1,12 @@
-version: 2
+version: 2.1
 
 jobs:
   build:
+    parameters:
+      hugo_version:
+        type: string
+        default: 0.92.2
+
     docker:
       - image: circleci/buildpack-deps:bionic
 
@@ -9,14 +14,14 @@ jobs:
       - restore_cache:
           name: Restore Hugo
           keys:
-            - v2-hugo-0.91.1
+            - v2-hugo-<< parameters.hugo_version >>
 
       - run:
           name: Install Hugo
           command: |
             if [[ ! -d ~/hugo ]]; then
               mkdir ~/hugo
-              curl -fsSL https://github.com/gohugoio/hugo/releases/download/v0.91.2/hugo_extended_0.91.2_Linux-64bit.tar.gz \
+              curl -fsSL https://github.com/gohugoio/hugo/releases/download/v<< parameters.hugo_version >>/hugo_extended_<< parameters.hugo_version >>_Linux-64bit.tar.gz \
                 > /tmp/hugo.tar.gz
               tar x -C ~/hugo -f /tmp/hugo.tar.gz
             fi
@@ -25,7 +30,7 @@ jobs:
           name: Cache Hugo
           paths:
             - ~/hugo
-          key: v2-hugo-0.83.0
+          key: v2-hugo-<< parameters.hugo_version >>
 
       - checkout
 
