@@ -10,9 +10,9 @@ Nix is a bunch of different things. It’s a programming language, designed for 
 
 Today I’d like to talk about the package manager. Specifically, a lovely gateway into the rest of the ecosystem, `nix-shell`.
 
-People will tell you that the point of Nix is to set up your software so it can be built with Nix, which allows you to tightly control all dependencies and emit something that is as close to reproducible as possible. I am all for this, but if we can tightly control the dependencies _without_ actually building inside a Nix environment, we’ve still improved the reproducibility a lot, and it’s not that hard.
+Some people will tell you that the point of Nix is to set up your software so it can be built with Nix, which allows you to tightly control all dependencies and emit something that is as close to reproducible as possible. I am all for this, but if we can tightly control the dependencies _without_ actually building inside a Nix environment, we’ve still improved the reproducibility a lot, and it’s not that hard.
 
-To follow along, you’ll need to first [install Nix][].
+To follow along, you’ll need to first [install Nix][]. It works on Linux and macOS; if you use Windows, I recommend checking out the [Windows Subsystem for Linux][].
 
 ## Running an arbitrary program with `nix-shell`
 
@@ -152,18 +152,27 @@ array([[ 0,  1,  2,  3,  4],
 
 There we go. Instant numpy.
 
-_nixpkgs_ provides this functionality for a lot of languages. For example, we might want to load up GHC, with a package or two:
+_nixpkgs_ provides this functionality for a lot of languages. For example, if we like writing Haskell (and I do), we might want to load up GHC, with a package or two:
 
 ```
-$ nix-shell -p 'ghc.withPackages(ps: [ps.unordered-containers])' --run ghci
+$ nix-shell -p 'ghc.withPackages(ps: [ps.hashmap])' --run ghci
 this derivation will be built:
-  /nix/store/nrc3y54yrihm007y9hsjswmaahycvgdw-ghc-9.0.2-with-packages.drv
-building '/nix/store/nrc3y54yrihm007y9hsjswmaahycvgdw-ghc-9.0.2-with-packages.drv'...
-/nix/store/7y9561zfi62w53b6ilyrcah8djarph7g-unordered-containers-0.2.17.0/nix-support:
-propagated-build-inputs: /nix/store/krpbr2bp35cykm7hnjx1w28g97nmbwbm-hashable-1.3.5.0/nix-support/propagated-build-inputs
+  /nix/store/05j0fjlsvn63dd1kq4qjf9s5nwg8rkrf-ghc-9.0.2-with-packages.drv
+these 4 paths will be fetched (0.59 MiB download, 7.82 MiB unpacked):
+  /nix/store/4jx5zj0ps5afssk6a2vv3bascialx0kd-hashable-1.3.5.0
+  /nix/store/avi7fhnydh40g9vd5wpcfs8g4h6rpp27-hashmap-1.3.3
+  /nix/store/fbn8npg6cgr2qlxn3xw5pflpn382gyp4-hashmap-1.3.3-doc
+  /nix/store/q80f2mrfxjxss0xmc0ikcgy731vhx620-hashable-1.3.5.0-doc
+copying path '/nix/store/q80f2mrfxjxss0xmc0ikcgy731vhx620-hashable-1.3.5.0-doc' from 'https://cache.nixos.org'...
+copying path '/nix/store/4jx5zj0ps5afssk6a2vv3bascialx0kd-hashable-1.3.5.0' from 'https://cache.nixos.org'...
+copying path '/nix/store/fbn8npg6cgr2qlxn3xw5pflpn382gyp4-hashmap-1.3.3-doc' from 'https://cache.nixos.org'...
+copying path '/nix/store/avi7fhnydh40g9vd5wpcfs8g4h6rpp27-hashmap-1.3.3' from 'https://cache.nixos.org'...
+building '/nix/store/05j0fjlsvn63dd1kq4qjf9s5nwg8rkrf-ghc-9.0.2-with-packages.drv'...
+/nix/store/avi7fhnydh40g9vd5wpcfs8g4h6rpp27-hashmap-1.3.3/nix-support:
+propagated-build-inputs: /nix/store/4jx5zj0ps5afssk6a2vv3bascialx0kd-hashable-1.3.5.0/nix-support/propagated-build-inputs
 GHCi, version 9.0.2: https://www.haskell.org/ghc/  :? for help
-ghci> import Data.Set as Set
-ghci> Set.fromList [1, 2, 3, 2, 1]
+ghci> import Data.HashSet as HashSet
+ghci> HashSet.fromList [1, 2, 3, 2, 1]
 fromList [1,2,3]
 ```
 
@@ -212,13 +221,37 @@ This works because every revision of nixpkgs is just a commit to a Git repositor
 
 With this new _shell.nix_ file, everyone is running the same dependencies.
 
+## Tidying up
+
+We've downloaded a lot of random packages for testing. They take up space. If you want to clean up your mess, you can run `nix-collect-garbage --delete-old`. This will remove any packages that aren't linked to by a "root", i.e. an actual output preserved on your disk. If you're using `nix-shell` for purely ephemeral testing, this will be basically everything.
+
+I suggest also running `nix store optimise` to shrink the store size down (through hard-linking) without having to delete anything.
+
 ## Discoverability… or not
 
 So var I have been seriously extolling the virtues of Nix and nixpkgs. I think there’s one thing worth pointing out that makes it very difficult to get started: knowing what’s available.
 
-While nixpkgs does have [documentation][nixpkgs], it’s far from complete, and it often presumes a level of knowledge lacking in anyone who needs to read the documentation. I have found that I’m most lucky when I’m browsing in the `nix repl` and using tab-completion to suss out what I’m looking for. This is, of course, not ideal; it’s very easy to miss the “correct” way to do things. Sometimes you can trawl through [the nixpkgs code][nixpkgs on github] to find a package that does something similar to what you want, but again, it requires a level of knowledge it’s unreasonable to expect in a beginner.
+While nixpkgs does have [documentation][nixpkgs], it’s far from complete, and it often presumes a level of knowledge lacking in anyone who needs to read the documentation. I have found that I’m most lucky when I’m browsing in the `nix repl` and using tab-completion to suss out what I’m looking for. This is, of course, not ideal; it’s very easy to miss the “correct” way to do things; for example, I only discovered `withPackages` through articles on the web. Sometimes you can trawl through [the nixpkgs code][nixpkgs on github] to find a package that does something similar to what you want, but again, it requires a level of knowledge it’s unreasonable to expect in a beginner.
 
 Part of the reason I’m writing this post is to try and improve the situation, by providing patterns which can be used even if you have no idea what you’re doing. This post only scratches the surface, but it may be enough for you for now.
+
+## Q: I am very lazy and `nix-shell` seems like effort.
+
+That’s not a question, but I will endeavour to answer it anyway.
+
+If you have a _shell.nix_ file, but don’t want to type `nix-shell` (and I don’t):
+
+1. Install [direnv][].
+2. Install and configure [nix-direnv][].
+3. Write a _shell.nix_ file.
+4. Create a file called _.envrc_ in your project file that says `use nix`.
+5. Run `direnv allow`.
+
+Now when you `cd` into the appropriate directory, your Nix environment will be loaded. This has a few advantages over not having to run `nix-shell`:
+
+1. It runs in your favourite shell, as long as `direnv` supports it.
+2. Many editors have direnv plugins, which means that they can also load your Nix environment, pulling all your tools and dependencies into your editing environment to give you that wonderful IDE experience.
+3. It also creates a "root" which means that your shell environment won't get garbage-collected.
 
 ## Addendum: new tooling
 
@@ -243,28 +276,17 @@ I use it a lot, but it has two big downsides:
 1. it doesn’t support arbitrary expressions, so you can’t use `withPackages`, and
 2. it always tries to download the latest nixpkgs, rather than using your cached copy, which is mostly useless and takes a few extra seconds.
 
-The second tool is called `nix develop`. This is a bit like `nix-shell` loading _shell.nix_, except it tries to load your shell from a “flake”. Flakes are quite new, more complicated, and even less documented than the rest of Nix, and so while they seem pretty useful, I have mostly avoided them until now.
+The second tool is called `nix develop`. This is a bit like `nix-shell` loading _shell.nix_, except it tries to load your shell from a “flake”. Flakes are quite new, more complicated, and [even less documented][nix flakes] than the rest of Nix, and so while they seem pretty useful, I have mostly avoided them until now.
 
 `nix develop` is mostly designed around spawning a shell so that you can build your program in the same way that Nix would build it, so it also makes some trade-offs that I find quite unfriendly to a beginner.
 
 I’m really hoping Nix flakes mature to the point where they’re easy to use, but currently, I suggest avoiding them at first. Go play with `nix-shell` instead and discover a universe where you don’t have to globally install tools just to try them out.
 
-## Q: I am very lazy and `nix-shell` seems like effort.
-
-That’s not a question, but I will endeavour to answer it anyway.
-
-If you have a _shell.nix_ file, but don’t want to type `nix-shell` (and I don’t):
-
-1. Install [direnv][].
-2. Install and configure [nix-direnv][].
-3. Create a file called _.envrc_ in your project file that says `use nix`.
-4. There is no step 4. That was it.
-
-Now when you `cd` into the appropriate directory, your Nix environment will be loaded, in your favourite shell. This also has a massive advantage in that many editors have direnv plugins, which means that they can also load your Nix environment, pulling all your tools and dependencies into your editing environment to give you that wonderful IDE experience.
-
 [nix]: https://nixos.org/
 [install nix]: https://nixos.org/download.html
+[nix flakes]: https://nixos.wiki/wiki/Flakes
 [nixpkgs]: https://nixos.org/manual/nixpkgs/
 [nixpkgs on github]: https://github.com/NixOS/nixpkgs
 [direnv]: https://direnv.net/
 [nix-direnv]: https://github.com/nix-community/nix-direnv
+[windows subsystem for linux]: https://docs.microsoft.com/en-us/windows/wsl/about
