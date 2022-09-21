@@ -5,7 +5,7 @@ jobs:
     parameters:
       hugo_version:
         type: string
-        default: 0.92.2
+        default: 0.103.0
 
     docker:
       - image: cimg/base:current
@@ -21,7 +21,7 @@ jobs:
           command: |
             if [[ ! -d ~/hugo ]]; then
               mkdir ~/hugo
-              curl -fsSL https://github.com/gohugoio/hugo/releases/download/v<< parameters.hugo_version >>/hugo_extended_<< parameters.hugo_version >>_Linux-64bit.tar.gz \
+              curl -fsSL https://github.com/gohugoio/hugo/releases/download/v<< parameters.hugo_version >>/hugo_extended_<< parameters.hugo_version >>_linux-amd64.tar.gz \
                 > /tmp/hugo.tar.gz
               tar x -C ~/hugo -f /tmp/hugo.tar.gz
             fi
