@@ -26,7 +26,7 @@ tag = "tags"
 [params]
 rss = "/index.xml"
 email = "samir@noodlesandwich.com"
-twitter = "https://twitter.com/SamirTalwar"
+mastodon = "https://mastodon.functional.computer/@samir"
 
 date_format = "2 January, 2006"
 featured_image = false

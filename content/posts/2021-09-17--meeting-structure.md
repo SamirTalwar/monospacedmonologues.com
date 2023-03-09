@@ -16,7 +16,6 @@ And if it's to come up with ideas, debate them, and then make a decision, call i
 
 A lot of software development boils down to naming things well, recognising smells, and refactoring mercilessly. I encourage you to do the same thing with your conversations.
 
-Again, I'm really interested to know your thoughts and reflections on this topic. Please let me know in the comments or [on Twitter][@samirtalwar].
+Again, I'm really interested to know your thoughts and reflections on this topic. Please let me know.
 
-[@samirtalwar]: {{< param twitter >}}
 [what-kind-of-meetings]: /2021/09/what-kind-of-meetings/

@@ -26,7 +26,6 @@ When the event comes around, make some notes: see if the format aligns with what
 
 In order to improve, we begin by gathering data.
 
-I'd love to hear how this experiment goes. Please let me know in the comments or [on Twitter][@samirtalwar].
+I'd love to hear how this experiment goes. Please let me know.
 
-[@samirtalwar]: {{< param twitter >}}
 [agile conversations]: https://agileconversations.com/

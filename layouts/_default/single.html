@@ -65,7 +65,7 @@
         {{ $escapedRSS := replace (replace (printf "%s%s" .Site.BaseURL (.Param "rss" | replaceRE "^/" "")) ":" "%3A") "/" "%2F" }}
         <p class="subscribe">If you enjoyed this post, you can subscribe to this blog using RSS. I personally use Feedly; <a href="https://feedly.com/i/subscription/feed/{{ $escapedRSS }}">you can subscribe here.</a></p>
 
-        <p class="reply">Maybe you have something to say. You can comment below, <a href="mailto:{{ .Param "email" }}?subject={{ printf "%s: %s" .Site.Title .Title }}">email me</a>, or <a href="{{ .Param "twitter" }}">tweet at me</a>. I love feedback. I also love gigantic compliments, so please send those too.</p>
+        <p class="reply">Maybe you have something to say. You can comment below, <a href="mailto:{{ .Param "email" }}?subject={{ printf "%s: %s" .Site.Title .Title }}">email me</a>, or <a href="{{ .Param "mastodon" }}">toot at me</a>. I love feedback. I also love gigantic compliments, so please send those too.</p>
 
         <div class="mt6 instapaper_ignoref">
         {{ if .Site.DisqusShortname }}
