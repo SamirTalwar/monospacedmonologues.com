@@ -21,11 +21,10 @@ tag = "tags"
 [menu]
   [[menu.main]]
   name = "by Samir Talwar"
-  url = "https://noodlesandwich.com"
 
 [params]
 rss = "/index.xml"
-email = "samir@noodlesandwich.com"
+email = "samir@functional.computer"
 mastodon = "https://mastodon.functional.computer/@samir"
 
 date_format = "2 January, 2006"
