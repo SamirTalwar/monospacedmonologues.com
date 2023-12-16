@@ -67,7 +67,7 @@ memoize f x = do
       return result
     Nothing -> do
       result <- f x
-      put $ Map.insert x result computed
+      modify $ Map.insert x result
       return result
 
 fib :: Integer -> State (Map Integer Integer) Integer
