@@ -1,6 +1,6 @@
 SHELL := bash -e -u
 
-INPUT_FILES := $(wildcard archetypes/**/* content/**/* layouts/**/* resources/**/* static/**/* themes/**/*)
+INPUT_FILES := $(wildcard config.toml archetypes/**/* content/**/* layouts/**/* resources/**/* static/**/* themes/**/*)
 
 .PHONY: build
 build: assets public

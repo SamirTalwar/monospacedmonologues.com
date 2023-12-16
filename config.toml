@@ -10,6 +10,9 @@ pygmentsCodefences = true
 
 disqusShortname = "monospacedmonologues"
 
+# if a tweet disappears, don't worry about it
+ignoreErrors = ["error-remote-getjson"]
+
 [permalinks]
 posts = "/:year/:month/:slug/"
 
